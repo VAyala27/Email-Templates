@@ -1,0 +1,1079 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .two-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .two-third-columns .padding.first {
+          padding-bottom: 0 !important;
+        }
+
+        .two-third-columns .padding.last {
+          padding-top: 0 !important;
+        }
+
+        .two-third-columns .content {
+          text-align: center !important;
+        }
+
+        .three-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .three-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .banner {
+          padding-top: 10px !important;
+          padding-bottom: 40px !important;
+        }
+
+        .two-col-img-container img {
+          max-width: 175px !important;
+          width: 175px !important;
+          margin-bottom: 10px;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START LOGO -->
+          <tr>
+            <td style="padding: 0">
+              <table
+                width="100%"
+                style="border-spacing: 0; background-color: #1a4140"
+                role="presentation"
+              >
+                <tr>
+                  <td style="padding: 20px 20px 20px 20px">
+                    <a href="https://example.com" target="_blank">
+                      <img
+                        width="75"
+                        style="width: 100%; max-width: 75px"
+                        src="https://i.ibb.co/BZSKvzK/welcome-newsletter-logo.png"
+                        alt="welcome-newsletter-logo"
+                        border="0"
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END LOGO -->
+
+          <!-- START hero text -->
+          <tr>
+            <td style="padding: 20px; background-color: #1a4140">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td>
+                    <h1
+                      style="
+                        margin: 0;
+                        font-size: 38px;
+                        font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande',
+                          'Lucida Sans Unicode', 'Lucida Sans', Tahoma,
+                          sans-serif;
+                        mso-line-height-alt: 16.8px;
+                        color: #63c9cb;
+                        line-height: 1.2;
+                      "
+                    >
+                      <span style="display: block">WELCOME</span>
+                      TO MY NEWSLETTER!
+                    </h1>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 20px 0px 20px 0px">
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 205px"
+                    >
+                      <tr>
+                        <td
+                          align="left"
+                          bgcolor="#ed666a"
+                          style="mso-padding-alt: 10px 15px"
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              display: inline-block;
+                              color: #1a4140;
+                              background-color: #ed666a;
+                              border-radius: 0px;
+                              width: auto;
+                              border-top: 1px solid transparent;
+                              font-weight: undefined;
+                              border-right: 1px solid transparent;
+                              border-bottom: 1px solid transparent;
+                              border-left: 1px solid transparent;
+                              font-family: 'Montserrat', 'Trebuchet MS',
+                                'Lucida Grande', 'Lucida Sans Unicode',
+                                'Lucida Sans', Tahoma, sans-serif;
+                              font-size: 16px;
+                              text-align: center;
+                              mso-border-alt: none;
+                              word-break: keep-all;
+                              padding: 10px 15px;
+                              width: 100%;
+                            "
+                          >
+                            CONFIRM SUBSCRIPTION
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END hero text -->
+
+          <!-- START THREE COLUMNS -->
+          <tr>
+            <td style="padding: 0px 0 0px 0; background-color: #1a4140">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="three-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                        <tr>
+                        <td width="33.33%" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://i.ibb.co/nfq5mc2/welcome-newsletter-1-2.png"
+                                    alt="welcome-newsletter-1-2"
+                                    width="200"
+                                    style="max-width: 200px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                     </td><td width="33.33%" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://i.ibb.co/MSkzdSD/welcome-newsletter-hero.jpg"
+                                    alt="welcome-newsletter-hero"
+                                    width="200"
+                                    style="max-width: 200px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                     </td><td width="33.33%" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://i.ibb.co/Sm29Xmk/welcome-newsletter-3-1.png"
+                                    alt="welcome-newsletter-3-1"
+                                    width="200"
+                                    style="max-width: 200px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                     <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END THREE COLUMNS -->
+
+          <!-- START THREE COLUMNS -->
+          <tr>
+            <td style="padding: 0px 0 0px 0; background-color: #1a4140">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="three-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                        <tr>
+                        <td width="33.33%" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://i.ibb.co/1TtWN5f/welcome-newsletter-4-1.png"
+                                    alt="welcome-newsletter-4-1"
+                                    width="200"
+                                    style="max-width: 200px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                     </td><td width="33.33%" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://i.ibb.co/7WyF6VQ/welcome-newsletter-5-1.png"
+                                    alt="welcome-newsletter-5-1"
+                                    width="200"
+                                    style="max-width: 200px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                     </td><td width="33.33%" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img three-col-img-last"
+                                    src="https://i.ibb.co/3mTXWS6/welcome-newsletter-6-1.png"
+                                    alt="welcome-newsletter-6-1"
+                                    width="200"
+                                    style="max-width: 200px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                     <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END THREE COLUMNS -->
+
+          <!-- START THREE COLUMNS -->
+          <tr>
+            <td style="padding: 0px 0 0px 0; background-color: #1a4140">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="three-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                        <tr>
+                        <td width="33.33%" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://i.ibb.co/84z9MWQ/welcome-newsletter-7-1.png"
+                                    alt="welcome-newsletter-7-1"
+                                    width="200"
+                                    style="max-width: 200px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                     </td><td width="33.33%" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://i.ibb.co/Xs2Hhqn/welcome-newsletter-8-1.png"
+                                    alt="welcome-newsletter-8-1"
+                                    width="200"
+                                    style="max-width: 200px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                     </td><td width="33.33%" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img three-col-img-last"
+                                    src="https://i.ibb.co/NxNv0my/welcome-newsletter-9.png"
+                                    alt="welcome-newsletter-9"
+                                    width="200"
+                                    style="max-width: 200px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                     <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END THREE COLUMNS -->
+
+          <!-- Your box btn and image -->
+          <tr>
+            <td style="background-color: #1a4140">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0px 10px 0px 10px; text-align: center">
+                    <tr>
+                      <td style="text-align: center; padding: 30px 0px">
+                        <img
+                          src="https://i.ibb.co/p2HxGTH/welcome-newsletter-wave-line.png"
+                          alt="welcome-newsletter-wave-line"
+                          width="600"
+                          height=""
+                          border="0"
+                          style="
+                            width: 100%;
+                            max-width: 600px;
+                            height: auto;
+                            display: block;
+                          "
+                          class="g-img"
+                        />
+                      </td>
+                    </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Your box btn and image end -->
+
+          <!-- START hero text -->
+          <tr>
+            <td style="padding: 0">
+              <table
+                width="100%"
+                style="border-spacing: 0; background-color: #1a4140"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    style="padding: 20px 0px 20px 0px; text-align: center"
+                    align="center"
+                  >
+                    <h3
+                      style="
+                        margin: 0;
+                        font-size: 30px;
+                        font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande',
+                          'Lucida Sans Unicode', 'Lucida Sans', Tahoma,
+                          sans-serif;
+                        mso-line-height-alt: 16.8px;
+                        color: #f7c857;
+                        line-height: 1.2;
+                      "
+                    >
+                      KEEP YOUR ACCOUNT
+                      <span style="display: block">
+                        SECURE AND GET STARTED.
+                      </span>
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 20px 0px 20px 0px; text-align: center"
+                    align="center"
+                  >
+                    <p
+                      style="
+                        margin: 0;
+                        font-size: 14px;
+                        text-align: center;
+                        mso-line-height-alt: 28px;
+                        font-family: Arial, Helvetica Neue, Helvetica,
+                          sans-serif;
+                        color: #63c9cb;
+                        line-height: 2;
+                      "
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do
+                      <span style="display: block">
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 20px 0px 20px 0px; text-align: center"
+                    align="center"
+                  >
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 205px"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          align="left"
+                          bgcolor="#ed666a"
+                          style="mso-padding-alt: 10px 15px"
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              display: inline-block;
+                              color: #1a4140;
+                              background-color: #ed666a;
+                              border-radius: 0px;
+                              width: auto;
+                              border-top: 1px solid transparent;
+                              font-weight: undefined;
+                              border-right: 1px solid transparent;
+                              border-bottom: 1px solid transparent;
+                              border-left: 1px solid transparent;
+                              font-family: 'Montserrat', 'Trebuchet MS',
+                                'Lucida Grande', 'Lucida Sans Unicode',
+                                'Lucida Sans', Tahoma, sans-serif;
+                              font-size: 16px;
+                              text-align: center;
+                              mso-border-alt: none;
+                              word-break: keep-all;
+                              padding: 10px 15px;
+                            "
+                          >
+                            CONFIRM SUBSCRIPTION
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END hero text -->
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #1a4140; padding: 30px 0px 20px">
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                [CLIENTS.COMPANY_NAME], [CLIENTS.ADDRESS1], [CLIENTS.ADDRESS2],
+              </p>
+
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                [CLIENTS.CITY], [CLIENTS.PROVINCE], [CLIENTS.COUNTRY],
+                [CLIENTS.POSTAL_CODE],
+              </p>
+
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                [CLIENTS.PHONE]
+              </p>
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                "
+              >
+                You've received this email because you signed up to
+                [CLIENTS.WEBSITE].
+              </p>
+            </td>
+          </tr>
+          <!-- Footer -->
+
+          <!-- Footer links -->
+          <tr>
+            <td style="background-color: #1a4140">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="social"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" role="presentation">
+                        <tr>
+                          <td width="300" valign="top" style="padding: 0"></td>
+                        </tr>
+                      </table>
+                    <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 500px;
+                        width: 100%;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 10px 20px 20px 20px"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td style="padding: 0px 0px 0px 0px">
+                                <a
+                                  style="
+                                    max-width: 100%;
+                                    color: #9b9b9b;
+                                    text-decoration: underline;
+                                    font-family: Helvetica, Arial;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    word-wrap: break-word;
+                                    display: inline-block;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    padding-left: 5px;
+                                    padding-right: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://example.com"
+                                >
+                                  View in browser
+                                </a>
+                              </td>
+
+                              <td style="padding: 0px 0px 0px 0px">
+                                <a
+                                  style="
+                                    max-width: 100%;
+                                    color: #9b9b9b;
+                                    text-decoration: underline;
+                                    font-family: Helvetica, Arial;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    word-wrap: break-word;
+                                    display: inline-block;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    padding-left: 5px;
+                                    padding-right: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://www.twitter.com/"
+                                >
+                                  Unsubscribe
+                                </a>
+                              </td>
+
+                              <td style="padding: 0px 0px 0px 0px">
+                                <a
+                                  style="
+                                    max-width: 100%;
+                                    color: #9b9b9b;
+                                    text-decoration: underline;
+                                    font-family: Helvetica, Arial;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    word-wrap: break-word;
+                                    display: inline-block;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    padding-left: 5px;
+                                    padding-right: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://www.pinterest.com/"
+                                >
+                                  Global unsubscribe
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer links -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>

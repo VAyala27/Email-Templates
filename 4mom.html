@@ -1,0 +1,1159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .two-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .two-third-columns .padding.first {
+          padding-bottom: 0 !important;
+        }
+
+        .two-third-columns .padding.last {
+          padding-top: 0 !important;
+        }
+
+        .two-third-columns .content {
+          text-align: center !important;
+        }
+
+        .one-third-col-img,
+        .three-col-img-last {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .banner {
+          height: auto !important;
+          padding-top: 40px !important;
+          padding-bottom: 60px !important;
+        }
+
+        .two-col-img-container img {
+          max-width: 175px !important;
+          width: 175px !important;
+          margin-bottom: 10px;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+
+        .logo {
+          padding: 10px 0px !important;
+        }
+
+        .logo img {
+          max-width: 125px !important;
+          width: 125px !important;
+        }
+
+        .hero-text h1 {
+          font-size: 28px !important;
+        }
+
+        .hero-text p {
+          font-size: 14px !important;
+          line-height: 1.5 !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .your-books h3 {
+          font-size: 20px !important;
+        }
+
+        .your-books p {
+          font-size: 14px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .three-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .banner {
+          padding-top: 10px !important;
+          padding-bottom: 40px !important;
+        }
+
+        .two-col-img-container img {
+          max-width: 175px !important;
+          width: 175px !important;
+          margin-bottom: 10px;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+
+        .logo {
+          padding: 10px 0px !important;
+        }
+
+        .logo img {
+          max-width: 100px !important;
+          width: 100px !important;
+        }
+
+        .hero-text h1 {
+          font-size: 28px !important;
+        }
+
+        .hero-text p {
+          font-size: 14px !important;
+          line-height: 1.5 !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .your-books h3 {
+          font-size: 20px !important;
+        }
+
+        .your-books p {
+          font-size: 14px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START LOGO -->
+          <tr>
+            <td style="padding: 0">
+              <table
+                width="100%"
+                style="border-spacing: 0; background-color: #fafdfe"
+                role="presentation"
+              >
+                <tr>
+                  <td style="padding: 20px 0px 20px 0px" align="center">
+                    <a href="https://example.com" target="_blank">
+                      <img
+                        width="160"
+                        style="width: 100%; max-width: 160px"
+                        src="https://i.ibb.co/TYx3QKZ/4mom-Natural-Logo-Aqua.png"
+                        alt="4mom-Natural-Logo-Aqua"
+                        border="0"
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END LOGO -->
+
+          <!-- START hero -->
+          <tr>
+            <td
+              class="hero"
+              valign="top"
+              background="https://i.ibb.co/DWtt0tY/4mom-bg.jpg"
+              bgcolor="#b5e4dc"
+              width="600"
+              height="800"
+              valign="top"
+              style="
+                background-repeat: no-repeat;
+                max-width: 600px;
+                background-size: cover;
+              "
+            >
+              <!--[if gte mso 9]>
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:680px; height: 800px">
+                    <v:fill type="tile" src="https://i.ibb.co/DWtt0tY/4mom-bg.jpg" color="#b5e4dc"/>
+                    <v:textbox inset="0,0,0,0">
+                    <![endif]-->
+              <div>
+                <table
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  width="600px"
+                >
+                  <tr>
+                    <td align="center" style="padding: 15px 0px 0px">
+                      <a href="https://example.com" target="_blank">
+                        <img
+                          width="250"
+                          style="width: 100%; max-width: 250px"
+                          src="https://i.ibb.co/yy0Nz2k/4mom.png"
+                          alt="4mom"
+                          border="0"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="padding: 15px 0px">
+                      <p
+                        style="
+                          margin: 0;
+                          color: #00c4cc;
+                          font-size: 24px;
+                          text-align: center;
+                        "
+                      >
+                        MOTHER'S DAY | 05.09.21
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center">
+                      <h1
+                        style="
+                          margin: 0;
+                          color: #fff;
+                          direction: ltr;
+                          font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                          font-size: 48px;
+                          font-weight: 400;
+                          letter-spacing: normal;
+                          line-height: 120%;
+                          text-align: center;
+                          margin-top: 0;
+                          margin-bottom: 0;
+                        "
+                      >
+                        GIVE MOM
+                      </h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <h1
+                        style="
+                          margin: 0;
+                          color: #fff;
+                          direction: ltr;
+                          font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                          font-size: 48px;
+                          font-weight: 400;
+                          letter-spacing: normal;
+                          line-height: 120%;
+                          text-align: center;
+                          margin-top: 0;
+                          margin-bottom: 0;
+                        "
+                      >
+                        A TIME MACHINE
+                      </h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <h1
+                        style="
+                          margin: 0;
+                          color: #fff;
+                          direction: ltr;
+                          font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                          font-size: 48px;
+                          font-weight: 400;
+                          letter-spacing: normal;
+                          line-height: 120%;
+                          text-align: center;
+                          margin-top: 0;
+                          margin-bottom: 0;
+                        "
+                      >
+                        IN A BOTTLE
+                      </h1>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      style="padding: 20px 0px 20px 0px; text-align: center"
+                      align="center"
+                      class="btn-container"
+                    >
+                      <table
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="width: 170px"
+                        align="center"
+                        class="btn"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            bgcolor="#ff879e"
+                            style="
+                              mso-padding-alt: 10px 25px;
+                              border-radius: 32px;
+                            "
+                          >
+                            <a
+                              href="https://example.com"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                display: inline-block;
+                                color: #ffffff;
+                                background-color: #ff879e;
+                                border-radius: 32px;
+                                width: auto;
+                                border-top: 0px solid transparent;
+                                font-weight: undefined;
+                                border-right: 0px solid transparent;
+                                border-bottom: 0px solid transparent;
+                                border-left: 0px solid transparent;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                font-family: Lato, Tahoma, Verdana, Segoe,
+                                  sans-serif;
+                                font-size: 22px;
+                                text-align: center;
+                                mso-border-alt: none;
+                                word-break: keep-all;
+                                padding: 10px 25px;
+                              "
+                            >
+                              Listen Now
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="padding: 15px 0px">
+                      <a href="https://example.com" target="_blank">
+                        <img
+                          src="https://media2.giphy.com/media/UrzWDQ3VTiDU84R5dx/giphy.gif?cid=20eb4e9de9pgg4eurhgwwuwlhyzvjfqwctvijb2lx7zh7uwz&rid=giphy.gif"
+                          alt="books-divider"
+                          width="190"
+                          height=""
+                          border="0"
+                          style="
+                            width: 100%;
+                            max-width: 190px;
+                            height: auto;
+                            display: block;
+                          "
+                          class="g-img"
+                          border="0"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding: 15px 0px">
+                      <a href="https://example.com" target="_blank">
+                        <img
+                          src="https://media2.giphy.com/media/UrzWDQ3VTiDU84R5dx/giphy.gif?cid=20eb4e9de9pgg4eurhgwwuwlhyzvjfqwctvijb2lx7zh7uwz&rid=giphy.gif"
+                          alt="books-divider"
+                          width="190"
+                          height=""
+                          border="0"
+                          style="
+                            width: 100%;
+                            max-width: 190px;
+                            height: auto;
+                            display: block;
+                          "
+                          class="g-img"
+                          border="0"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding: 15px 0px">
+                      <a href="https://example.com" target="_blank">
+                        <img
+                          src="https://media2.giphy.com/media/UrzWDQ3VTiDU84R5dx/giphy.gif?cid=20eb4e9de9pgg4eurhgwwuwlhyzvjfqwctvijb2lx7zh7uwz&rid=giphy.gif"
+                          alt="books-divider"
+                          width="190"
+                          height=""
+                          border="0"
+                          style="
+                            width: 100%;
+                            max-width: 190px;
+                            height: auto;
+                            display: block;
+                          "
+                          class="g-img"
+                          border="0"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if gte mso 9]>
+                    </v:textbox>
+                    </v:rect>
+                    <![endif]-->
+            </td>
+          </tr>
+          <!-- END hero -->
+
+          <!-- START hero text -->
+          <tr>
+            <td style="padding: 40px 0px 20px">
+              <table
+                width="100%"
+                style="border-spacing: 0; background-color: #fafdfe"
+                role="presentation"
+                class="hero-text"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 20px 0px 20px; text-align: center"
+                    align="center"
+                  >
+                    <h3
+                      style="
+                        margin: 0;
+                        color: #00c4cc;
+                        direction: ltr;
+                        font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                        font-size: 32px;
+                        font-weight: 400;
+                        letter-spacing: normal;
+                        line-height: 120%;
+                        text-align: center;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                      "
+                    >
+                      JUST IN TIME FOR MOTHER'S DAY!
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 10px; text-align: center" align="center">
+                    <p
+                      style="
+                        margin: 0;
+                        font-size: 14px;
+                        font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                        mso-line-height-alt: 14.399999999999999px;
+                        color: #393d47;
+                        line-height: 1.2;
+                        font-style: italic;
+                      "
+                    >
+                      ANTI-AGING BOTANICALS TO RESTORE HER SKIN TO ALL ITS
+                      PRE-KID GLORY.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END hero text -->
+
+          <!-- START FOUR COLUMNS -->
+          <tr>
+            <td style="padding: 10px 0px">
+              <table
+                width="100%"
+                style="border-spacing: 0; background-color: #fafdfe"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    class="four-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                  <td width="150" valign="top" style="padding: 0;">
+                               <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 150px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td>
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 5px">
+                                <a href="https://example.com">
+                                  <img
+                                    src="https://i.ibb.co/xgsc4Mz/4mom-item-1.jpg"
+                                    alt="4mom-item-1"
+                                    width="150"
+                                    style="max-width: 150px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                               </td>
+                               <td width="150" valign="top" style="padding: 0;">
+                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 150px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td>
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 5px">
+                                <a href="https://example.com">
+                                  <img
+                                    src="https://i.ibb.co/0sKgxF4/4mom-item-2.jpg"
+                                    alt="4mom-item-2"
+                                    width="150"
+                                    style="max-width: 150px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                               </td>
+                               <td width="150" valign="top" style="padding: 0;">
+                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 150px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td>
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 5px">
+                                <a href="https://example.com">
+                                  <img
+                                    src="https://i.ibb.co/TWR2pK7/4mom-item-3.jpg"
+                                    alt="4mom-item-3"
+                                    width="150"
+                                    style="max-width: 150px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                               </td>
+                               <td width="150" valign="top" style="padding: 0;">
+                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 150px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td>
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 5px">
+                                <a href="https://example.com">
+                                  <img
+                                    src="https://i.ibb.co/yBmKqCm/4mom-item-4.jpg"
+                                    alt="4mom-item-4"
+                                    width="150"
+                                    style="max-width: 150px; width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                  </tr>
+                                  </table>
+                               <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END FOUR COLUMNS -->
+
+          <!-- START hero text -->
+          <tr>
+            <td style="padding: 15px 0px">
+              <table
+                width="100%"
+                style="border-spacing: 0; background-color: #fafdfe"
+                role="presentation"
+                class="hero-text"
+              >
+                <tr>
+                  <td
+                    style="padding: 10px 20px px 20px; text-align: center"
+                    align="center"
+                  >
+                    <p
+                      style="
+                        margin: 0;
+                        font-size: 16px;
+                        font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                        mso-line-height-alt: 14.399999999999999px;
+                        color: #555;
+                        line-height: 1.2;
+                      "
+                    >
+                      Look no further for the perfect prezzie...
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: px 20px 10px 20px; text-align: center"
+                    align="center"
+                  >
+                    <p
+                      style="
+                        margin: 0;
+                        font-size: 16px;
+                        font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                        mso-line-height-alt: 14.399999999999999px;
+                        color: #555;
+                        line-height: 1.2;
+                      "
+                    >
+                      give the gift of self-care and gorgeous skin all in one.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 25px 10px; text-align: center"
+                    align="center"
+                  >
+                    <p
+                      style="
+                        margin: 0;
+                        font-size: 24px;
+                        color: #00c4cc;
+                        font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                        mso-line-height-alt: 14.399999999999999px;
+                        line-height: 1.2;
+                        text-align: center;
+                      "
+                    >
+                      PROMO CODE: TBT4MOM
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 20px 0px 20px 0px; text-align: center"
+                    align="center"
+                    class="btn-container"
+                  >
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 125px"
+                      align="center"
+                      class="btn"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#ff879e"
+                          style="
+                            mso-padding-alt: 10px 15px;
+                            border-radius: 32px;
+                          "
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              display: inline-block;
+                              color: #ffffff;
+                              background-color: #ff879e;
+                              border-radius: 32px;
+                              width: auto;
+                              border-top: 0px solid transparent;
+                              font-weight: undefined;
+                              border-right: 0px solid transparent;
+                              border-bottom: 0px solid transparent;
+                              border-left: 0px solid transparent;
+                              padding-top: 0px;
+                              padding-bottom: 0px;
+                              font-family: Lato, Tahoma, Verdana, Segoe,
+                                sans-serif;
+                              font-size: 16px;
+                              text-align: center;
+                              mso-border-alt: none;
+                              word-break: keep-all;
+                              padding: 10px 15px;
+                            "
+                          >
+                            Shop Now
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END hero text -->
+
+          <!-- Footer -->
+          <tr>
+            <td
+              style="background-color: #fff; padding: 30px 10px 20px"
+              class="footer"
+            >
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                [CLIENTS.COMPANY_NAME], [CLIENTS.ADDRESS1], [CLIENTS.ADDRESS2],
+              </p>
+
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                [CLIENTS.CITY], [CLIENTS.PROVINCE], [CLIENTS.COUNTRY],
+                [CLIENTS.POSTAL_CODE],
+              </p>
+
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                [CLIENTS.PHONE]
+              </p>
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                "
+              >
+                You've received this email because you signed up to
+                [CLIENTS.WEBSITE].
+              </p>
+            </td>
+          </tr>
+          <!-- Footer -->
+
+          <!-- Footer links -->
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="footer-links"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" role="presentation">
+                        <tr>
+                          <td width="300" valign="top" style="padding: 0"></td>
+                        </tr>
+                      </table>
+                    <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 500px;
+                        width: 100%;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 10px 20px 20px 20px"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td
+                                style="
+                                  padding: 5px 5px 5px 5px;
+                                  mso-padding-alt: 5px;
+                                "
+                              >
+                                <a
+                                  style="
+                                    max-width: 100%;
+                                    color: #9b9b9b;
+                                    text-decoration: underline;
+                                    font-family: Helvetica, Arial;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    word-wrap: break-word;
+                                    display: inline-block;
+                                    mso-padding-alt: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://example.com"
+                                >
+                                  View in browser
+                                </a>
+                              </td>
+
+                              <td
+                                style="
+                                  padding: 5px 5px 5px 5px;
+                                  mso-padding-alt: 5px;
+                                "
+                              >
+                                <a
+                                  style="
+                                    max-width: 100%;
+                                    color: #9b9b9b;
+                                    text-decoration: underline;
+                                    font-family: Helvetica, Arial;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    word-wrap: break-word;
+                                    display: inline-block;
+                                    mso-padding-alt: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://www.twitter.com/"
+                                >
+                                  Unsubscribe
+                                </a>
+                              </td>
+
+                              <td
+                                style="
+                                  padding: 5px 5px 5px 5px;
+                                  mso-padding-alt: 5px;
+                                "
+                              >
+                                <a
+                                  style="
+                                    max-width: 100%;
+                                    color: #9b9b9b;
+                                    text-decoration: underline;
+                                    font-family: Helvetica, Arial;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    word-wrap: break-word;
+                                    display: inline-block;
+                                    mso-padding-alt: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://www.pinterest.com/"
+                                >
+                                  Global unsubscribe
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer links -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
