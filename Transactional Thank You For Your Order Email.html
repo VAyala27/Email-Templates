@@ -1,0 +1,1767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .two-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .two-third-columns .padding.first {
+          padding-bottom: 0 !important;
+        }
+
+        .two-third-columns .padding.last {
+          padding-top: 0 !important;
+        }
+
+        .two-third-columns .content {
+          text-align: center !important;
+        }
+
+        .one-third-col-img,
+        .three-col-img-last {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .banner {
+          height: auto !important;
+          padding-top: 40px !important;
+          padding-bottom: 60px !important;
+        }
+
+        .logo {
+          padding: 10px 0px !important;
+        }
+
+        .logo img {
+          max-width: 125px !important;
+          width: 125px !important;
+        }
+
+        .hero-text h1 {
+          font-size: 24px !important;
+        }
+
+        .hero-text p {
+          font-size: 14px !important;
+          line-height: 1.5 !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .order-text .btn span {
+          font-size: 20px !important;
+        }
+
+        .order-text h3 {
+          font-size: 20px !important;
+        }
+
+        .order-text p {
+          font-size: 14px !important;
+        }
+
+        .order-text .small-text {
+          font-size: 12px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .three-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .banner {
+          padding-top: 10px !important;
+          padding-bottom: 40px !important;
+        }
+
+        .two-col-img-container img {
+          max-width: 175px !important;
+          width: 175px !important;
+          margin-bottom: 10px;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+
+        .logo {
+          padding: 10px 0px !important;
+        }
+
+        .logo img {
+          max-width: 100px !important;
+          width: 100px !important;
+        }
+
+        .hero-text h1 {
+          font-size: 22px !important;
+        }
+
+        .hero-text p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .hero-text .padding {
+          padding: 10px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .order-text .btn span {
+          font-size: 18px !important;
+        }
+
+        .order-text h3 {
+          font-size: 18px !important;
+        }
+
+        .order-text p {
+          font-size: 12px !important;
+        }
+
+        .order-text .padding {
+          padding: 10px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START hero -->
+          <tr>
+            <td
+              class="hero"
+              background="https://i.ibb.co/ZGYGbvZ/Transactional-Thank-You-For-Your-Order-Email-bg.jpg"
+              bgcolor="#07071f"
+              width="600"
+              height="550"
+              style="
+                background-repeat: no-repeat;
+                max-width: 599px;
+                background-size: cover;
+                vertical-align: top;
+              "
+            >
+              <!--[if gte mso 9]>
+                          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:680px; height: 1000px;background-repeat: no-repeat;
+                    max-width: 600px;
+                    background-size: contain;
+                  vertical-align: top;
+                    background-position: top;">
+                          <v:fill type="tile" src="https://i.ibb.co/ZGYGbvZ/Transactional-Thank-You-For-Your-Order-Email-bg.jpg" color="#07071f"/>
+                          <v:textbox inset="0,0,0,0">
+                          <![endif]-->
+              <div>
+                <table
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  width="600px"
+                >
+                  <tr>
+                    <td align="center" style="padding: 20px 0px 50px">
+                      <p
+                        style="
+                          margin: 0;
+                          font-size: 12px;
+                          text-align: center;
+                          mso-line-height-alt: 14.399999999999999px;
+                          letter-spacing: 9px;
+                          color: #fff;
+                        "
+                      >
+                        WWW.ARKABOUTIQUE.COM
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="logo" style="padding: 10px 0px 120px">
+                      <table
+                        align="center"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        width="300px"
+                      >
+                        <tr>
+                          <td align="center">
+                            <a href="https://example.com" target="_blank">
+                              <img
+                                width="130"
+                                style="width: 100%; max-width: 130px"
+                                src="https://i.ibb.co/2smG3jm/Transactional-Thank-You-For-Your-Order-Email-logo.png"
+                                alt="Transactional-Thank-You-For-Your-Order-Email-logo"
+                                border="0"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="padding: 10px 0px">
+                      <table
+                        align="center"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        width="100px"
+                      >
+                        <tr>
+                          <td
+                            height="2"
+                            style="border-top: 1px dashed #7de5e5"
+                          ></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="padding: 0px">
+                      <h1
+                        style="
+                          margin: 0;
+                          color: #fff;
+                          direction: ltr;
+                          font-family: Oswald, Arial, 'Helvetica Neue',
+                            Helvetica, sans-serif;
+                          font-size: 64px;
+                          font-weight: 400;
+                          letter-spacing: normal;
+                          line-height: 120%;
+                          text-align: center;
+                          margin-top: 0;
+                          margin-bottom: 0;
+                        "
+                      >
+                        THANK YOU FOR YOUR ORDER
+                      </h1>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="padding: 10px 15px 60px">
+                      <p
+                        style="
+                          margin: 0;
+                          color: #fff;
+                          font-size: 17px;
+                          font-family: 'Helvetica Neue', Helvetica, Arial,
+                            sans-serif;
+                          mso-line-height-alt: 18px;
+                          line-height: 1.5;
+                        "
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut fermentum libero purus, quis luctus ex vestibulum
+                        vel. Integer velit dolor.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="padding: 10px 0px">
+                      <table
+                        align="center"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        width="40px"
+                      >
+                        <tr>
+                          <td
+                            height="2"
+                            style="border-top: 1px dashed #7de5e5"
+                          ></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="padding: 5px 10px 10px">
+                      <p
+                        style="
+                          margin: 0;
+                          color: #fff;
+                          font-size: 20px;
+                          font-family: Arial, Helvetica Neue, Helvetica,
+                            sans-serif;
+                          mso-line-height-alt: 18px;
+                          line-height: 1.5;
+                          font-weight: bold;
+                        "
+                      >
+                        <span style="color: #b23ab6">ORDER NUMBER:</span>
+
+                        <span style="color: #7de5e5">
+                          #4534 · PRODUCTS ORDERED
+                        </span>
+
+                        <span style="color: #b23ab6">(2)</span>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if gte mso 9]>
+                          </v:textbox>
+                          </v:rect>
+                          <![endif]-->
+            </td>
+          </tr>
+          <!-- END hero -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td style="padding: 35px 0 30px 0; background-color: #07071f">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                              <td width="300" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                      <tr>
+                      <td width="300" valign="top" style="padding: 0;">
+                   <![endif]-->
+                                <table style="width: 300px" align="center">
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.ibb.co/NVhw8Hf/Transactional-Thank-You-For-Your-Order-Email-product-1.jpg"
+                                          alt="Transactional-Thank-You-For-Your-Order-Email-product-1"
+                                          width="240"
+                                          style="max-width: 240px; width: 100%"
+                                          border="0"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                   </td><td width="300" valign="top" style="padding: 0;">
+                   <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                           </td><td width="300" valign="top" style="padding: 0;">
+                           <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                      <tr>
+                      <td width="300" valign="top" style="padding: 0;">
+                   <![endif]-->
+                                <table style="width: 300px; padding: 0px 20px">
+                                  <tr>
+                                    <td align="center">
+                                      <h2
+                                        style="
+                                          margin: 0;
+                                          color: #b23ab6;
+                                          direction: ltr;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          font-size: 24px;
+                                          font-weight: 400;
+                                          letter-spacing: normal;
+                                          line-height: 120%;
+                                          text-align: left;
+                                          margin-top: 0;
+                                          margin-bottom: 0;
+                                        "
+                                      >
+                                        PRODUCT NAME
+                                      </h2>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 0px">
+                                      <p style="color: #7de5e5; margin: 0">
+                                        $23.00
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 10px 0px">
+                                      <table
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        role="presentation"
+                                        width="50px"
+                                      >
+                                        <tr>
+                                          <td
+                                            height="2"
+                                            style="
+                                              border-top: 1px dashed #7de5e5;
+                                            "
+                                          ></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 10px 0px 20px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-size: 17px;
+                                          text-align: left;
+                                          mso-line-height-alt: 25.5px;
+                                          letter-spacing: normal;
+                                        "
+                                      >
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 10px 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-size: 17px;
+                                          text-align: left;
+                                          mso-line-height-alt: 25.5px;
+                                          letter-spacing: normal;
+                                        "
+                                      >
+                                        <span style="color: #b23ab6">
+                                          Quantity:
+                                        </span>
+                                        1
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 10px 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-size: 17px;
+                                          text-align: left;
+                                          mso-line-height-alt: 25.5px;
+                                          letter-spacing: normal;
+                                        "
+                                      >
+                                        <span style="color: #b23ab6">
+                                          Color:
+                                        </span>
+                                        Gray
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      style="padding: 10px 0px 10px 0px"
+                                      class="btn-container"
+                                    >
+                                      <table
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        style="width: 120px"
+                                        class="btn"
+                                      >
+                                        <tr>
+                                          <td
+                                            bgcolor="#b23ab6"
+                                            style="mso-padding-alt: 10px"
+                                          >
+                                            <a
+                                              href="https://example.com"
+                                              target="_blank"
+                                              style="
+                                                text-decoration: none;
+                                                display: inline-block;
+                                                color: #ffffff;
+                                                background-color: #b23ab6;
+                                                border-radius: 0px;
+                                                width: auto;
+                                                border-top: 1px solid
+                                                  transparent;
+                                                font-weight: undefined;
+                                                border-right: 1px solid
+                                                  transparent;
+                                                border-bottom: 1px solid
+                                                  transparent;
+                                                border-left: 1px solid
+                                                  transparent;
+                                                padding: 10px;
+                                                font-family: Arial,
+                                                  Helvetica Neue, Helvetica,
+                                                  sans-serif;
+                                                font-size: 16px;
+                                                text-align: center;
+                                                mso-border-alt: none;
+                                                word-break: keep-all;
+                                              "
+                                            >
+                                              View Product
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                   </td><td width="300" valign="top" style="padding: 0;">
+                   <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td style="padding: 35px 0 30px 0; background-color: #07071f">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                  <td width="300" valign="top" style="padding: 0;">
+                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                          <tr>
+                          <td width="300" valign="top" style="padding: 0;">
+                       <![endif]-->
+                                <table style="width: 300px" align="center">
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.ibb.co/NVhw8Hf/Transactional-Thank-You-For-Your-Order-Email-product-1.jpg"
+                                          alt="Transactional-Thank-You-For-Your-Order-Email-product-1"
+                                          width="240"
+                                          style="max-width: 240px; width: 100%"
+                                          border="0"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                       </td><td width="300" valign="top" style="padding: 0;">
+                       <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                               </td><td width="300" valign="top" style="padding: 0;">
+                               <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                          <tr>
+                          <td width="300" valign="top" style="padding: 0;">
+                       <![endif]-->
+                                <table style="width: 300px; padding: 0px 20px">
+                                  <tr>
+                                    <td align="center">
+                                      <h2
+                                        style="
+                                          margin: 0;
+                                          color: #b23ab6;
+                                          direction: ltr;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          font-size: 24px;
+                                          font-weight: 400;
+                                          letter-spacing: normal;
+                                          line-height: 120%;
+                                          text-align: left;
+                                          margin-top: 0;
+                                          margin-bottom: 0;
+                                        "
+                                      >
+                                        PRODUCT NAME
+                                      </h2>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 0px">
+                                      <p style="color: #7de5e5; margin: 0">
+                                        $23.00
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 10px 0px">
+                                      <table
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        role="presentation"
+                                        width="50px"
+                                      >
+                                        <tr>
+                                          <td
+                                            height="2"
+                                            style="
+                                              border-top: 1px dashed #7de5e5;
+                                            "
+                                          ></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 10px 0px 20px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-size: 17px;
+                                          text-align: left;
+                                          mso-line-height-alt: 25.5px;
+                                          letter-spacing: normal;
+                                        "
+                                      >
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 10px 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-size: 17px;
+                                          text-align: left;
+                                          mso-line-height-alt: 25.5px;
+                                          letter-spacing: normal;
+                                        "
+                                      >
+                                        <span style="color: #b23ab6">
+                                          Quantity:
+                                        </span>
+                                        1
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 10px 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-size: 17px;
+                                          text-align: left;
+                                          mso-line-height-alt: 25.5px;
+                                          letter-spacing: normal;
+                                        "
+                                      >
+                                        <span style="color: #b23ab6">
+                                          Color:
+                                        </span>
+                                        Gray
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      style="padding: 10px 0px 10px 0px"
+                                      class="btn-container"
+                                    >
+                                      <table
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        style="width: 120px"
+                                        class="btn"
+                                      >
+                                        <tr>
+                                          <td
+                                            bgcolor="#b23ab6"
+                                            style="mso-padding-alt: 10px"
+                                          >
+                                            <a
+                                              href="https://example.com"
+                                              target="_blank"
+                                              style="
+                                                text-decoration: none;
+                                                display: inline-block;
+                                                color: #ffffff;
+                                                background-color: #b23ab6;
+                                                border-radius: 0px;
+                                                width: auto;
+                                                border-top: 1px solid
+                                                  transparent;
+                                                font-weight: undefined;
+                                                border-right: 1px solid
+                                                  transparent;
+                                                border-bottom: 1px solid
+                                                  transparent;
+                                                border-left: 1px solid
+                                                  transparent;
+                                                padding: 10px;
+                                                font-family: Arial,
+                                                  Helvetica Neue, Helvetica,
+                                                  sans-serif;
+                                                font-size: 16px;
+                                                text-align: center;
+                                                mso-border-alt: none;
+                                                word-break: keep-all;
+                                              "
+                                            >
+                                              View Product
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                       </td><td width="300" valign="top" style="padding: 0;">
+                       <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                  </tr>
+                                  </table>
+                               <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- Dotted Line Start -->
+          <tr>
+            <td
+              class="padding"
+              style="padding: 10px 0px 10px 0px; background-color: #07071f"
+            >
+              <table
+                class="content"
+                style="border-spacing: 0; width: 540px"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td height="2" style="border-top: 2px dotted #b23ab6"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Dotted Line End -->
+
+          <!-- START THREE COLUMNS -->
+          <tr>
+            <td style="padding: 0px 0 0px 0; background: #07071f">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="three-columns" style="padding: 0px; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                      <tr>
+                      <td width="200" valign="top" style="padding: 0;">
+                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 0px 10px 0px 10px">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 17px;
+                                    font-family: Oswald, Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    mso-line-height-alt: 21px;
+                                    color: #b23ab6;
+                                    line-height: 1.5;
+                                  "
+                                >
+                                  Payment Method
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0px 10px 0px 10px">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 17px;
+                                    font-family: Oswald, Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    mso-line-height-alt: 21px;
+                                    color: #b23ab6;
+                                    line-height: 1.5;
+                                  "
+                                >
+                                  Subtotal
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0px 10px 0px 10px">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 17px;
+                                    font-family: Oswald, Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    mso-line-height-alt: 21px;
+                                    color: #b23ab6;
+                                    line-height: 1.5;
+                                  "
+                                >
+                                  Shipping
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0px 10px 0px 10px">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 17px;
+                                    font-family: Oswald, Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    mso-line-height-alt: 21px;
+                                    color: #b23ab6;
+                                    line-height: 1.5;
+                                  "
+                                >
+                                  Tax
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 20px 10px 0px 10px">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 17px;
+                                    font-family: Oswald, Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    mso-line-height-alt: 21px;
+                                    color: #b23ab6;
+                                    line-height: 1.5;
+                                  "
+                                >
+                                  Total
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                   </td><td width="200" valign="top" style="padding: 0;">
+                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  style="
+                                    width: 200px;
+                                    max-width: 200px;
+                                    padding: 20px;
+                                  "
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 17px;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          color: #fff;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        Bank Transfer
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 17px;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          color: #fff;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        $46.00
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 17px;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          color: #fff;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        $3.99
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 17px;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          color: #fff;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        $1.99
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 20px 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 17px;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          color: #fff;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        $51.98
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                   </td><td width="200" valign="top" style="padding: 0;">
+                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  style="
+                                    width: 200px;
+                                    max-width: 200px;
+                                    padding: 20px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 17px;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          mso-line-height-alt: 16.8px;
+                                          color: #b23ab6;
+                                          line-height: 1.2;
+                                        "
+                                      >
+                                        SHIPPING ADRESS
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 20px 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          mso-line-height-alt: 16.8px;
+                                          color: #fff;
+                                          line-height: 1.2;
+                                        "
+                                      >
+                                        Via Castelleone, 108,
+                                      </p>
+
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Oswald, Arial,
+                                            'Helvetica Neue', Helvetica,
+                                            sans-serif;
+                                          mso-line-height-alt: 16.8px;
+                                          color: #fff;
+                                          line-height: 1.2;
+                                        "
+                                      >
+                                        26100 Cremona CR, Italia
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                      </table>
+                   <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END THREE COLUMNS -->
+
+          <!-- Dotted Line Start -->
+          <tr>
+            <td
+              class="padding"
+              style="padding: 10px 0px 10px 0px; background-color: #07071f"
+            >
+              <table
+                class="content"
+                style="border-spacing: 0; width: 540px"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td height="2" style="border-top: 2px dotted #b23ab6"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Dotted Line End -->
+
+          <!-- START order text -->
+          <tr>
+            <td style="padding: 15px 0px; background-color: #07071f">
+              <table
+                width="100%"
+                style="border-spacing: 0"
+                role="presentation"
+                class="order-text"
+              >
+                <tr>
+                  <td
+                    class="padding"
+                    style="padding: 10px 20px 10px 20px; text-align: center"
+                    align="center"
+                  >
+                    <p
+                      class="small-text"
+                      style="
+                        margin: 0;
+                        font-size: 17px;
+                        font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                        mso-line-height-alt: 14.399999999999999px;
+                        color: #fff;
+                        line-height: 1.2;
+                      "
+                    >
+                      Please note that the payment is non-refundable in the case
+                      of cancellation. Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 10px 0px 10px 0px; text-align: center"
+                    align="center"
+                    class="btn-container"
+                  >
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 125px"
+                      align="center"
+                      class="btn"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#b23ab6"
+                          style="mso-padding-alt: 10px 15px"
+                        >
+                          <a
+                            href="https://example.com"
+                            style="
+                              text-decoration: none;
+                              display: inline-block;
+                              color: #ffffff;
+                              background-color: #b23ab6;
+                              border-radius: 0px;
+                              width: auto;
+                              border-top: 1px solid transparent;
+                              font-weight: undefined;
+                              border-right: 1px solid transparent;
+                              border-bottom: 1px solid transparent;
+                              border-left: 1px solid transparent;
+                              padding: 10px;
+                              font-family: Arial, Helvetica Neue, Helvetica,
+                                sans-serif;
+                              font-size: 16px;
+                              text-align: center;
+                              mso-border-alt: none;
+                              word-break: keep-all;
+                            "
+                          >
+                            View More
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END order text -->
+
+          <!-- Footer -->
+          <tr>
+            <td
+              style="background-color: #fff; padding: 30px 10px 20px"
+              class="footer"
+            >
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                [CLIENTS.COMPANY_NAME], [CLIENTS.ADDRESS1], [CLIENTS.ADDRESS2],
+              </p>
+
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                [CLIENTS.CITY], [CLIENTS.PROVINCE], [CLIENTS.COUNTRY],
+                [CLIENTS.POSTAL_CODE],
+              </p>
+
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                [CLIENTS.PHONE]
+              </p>
+              <p
+                style="
+                  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                  color: #9b9b9b;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.3;
+                  text-align: center;
+                  margin: 0;
+                "
+              >
+                You've received this email because you signed up to
+                [CLIENTS.WEBSITE].
+              </p>
+            </td>
+          </tr>
+          <!-- Footer -->
+
+          <!-- Footer links -->
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="footer-links"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" role="presentation">
+                        <tr>
+                          <td width="300" valign="top" style="padding: 0"></td>
+                        </tr>
+                      </table>
+                    <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 500px;
+                        width: 100%;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 10px 20px 20px 20px"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td
+                                style="
+                                  padding: 5px 5px 5px 5px;
+                                  mso-padding-alt: 5px;
+                                "
+                              >
+                                <a
+                                  style="
+                                    max-width: 100%;
+                                    color: #9b9b9b;
+                                    text-decoration: underline;
+                                    font-family: Helvetica, Arial;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    word-wrap: break-word;
+                                    display: inline-block;
+                                    mso-padding-alt: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://example.com"
+                                >
+                                  View in browser
+                                </a>
+                              </td>
+
+                              <td
+                                style="
+                                  padding: 5px 5px 5px 5px;
+                                  mso-padding-alt: 5px;
+                                "
+                              >
+                                <a
+                                  style="
+                                    max-width: 100%;
+                                    color: #9b9b9b;
+                                    text-decoration: underline;
+                                    font-family: Helvetica, Arial;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    word-wrap: break-word;
+                                    display: inline-block;
+                                    mso-padding-alt: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://www.twitter.com/"
+                                >
+                                  Unsubscribe
+                                </a>
+                              </td>
+
+                              <td
+                                style="
+                                  padding: 5px 5px 5px 5px;
+                                  mso-padding-alt: 5px;
+                                "
+                              >
+                                <a
+                                  style="
+                                    max-width: 100%;
+                                    color: #9b9b9b;
+                                    text-decoration: underline;
+                                    font-family: Helvetica, Arial;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    word-wrap: break-word;
+                                    display: inline-block;
+                                    mso-padding-alt: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://www.pinterest.com/"
+                                >
+                                  Global unsubscribe
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer links -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
