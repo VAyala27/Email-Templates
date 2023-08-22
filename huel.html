@@ -1,0 +1,1195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .two-columns-container {
+          width: 90% !important;
+          margin: 0 auto !important;
+          text-align: center !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .content table {
+          margin: 0 auto !important;
+          width: 250px !important;
+          max-width: 100% !important;
+        }
+
+        .one-col p {
+          font-size: 13px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h2 {
+          font-size: 20px !important;
+          padding: 10px !important;
+        }
+
+        .one-col img {
+          width: 90% !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+          width: 150px !important;
+        }
+
+        .btn-container a {
+          font-size: 13px !important;
+          padding: 12px 10px !important;
+        }
+
+        .social-media table tr td a {
+          padding: 0px 10px !important;
+        }
+
+        .social-media table tr td a img {
+          width: 20px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header p {
+          font-size: 13px !important;
+        }
+
+        .one-col p {
+          font-size: 12px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h2 {
+          font-size: 18px !important;
+          padding: 10px !important;
+        }
+
+        .one-col img {
+          width: 90% !important;
+          margin: 0 auto !important;
+        }
+
+        .btn-container {
+          width: 150px !important;
+        }
+
+        .btn-container a {
+          font-size: 13px !important;
+          padding: 12px 10px !important;
+        }
+
+        .two-columns-container {
+          width: 90% !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .content table {
+          margin: 0 auto !important;
+          width: 160px !important;
+          max-width: 100% !important;
+          min-width: 120px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .social-media a {
+          padding: 0px 10px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START header-->
+          <tr>
+            <td style="padding: 15px 0px" class="one-col header">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      style="
+                        font-family: 'Helvetica Neue', Arial, sans-serif;
+                        font-size: 12px;
+                        color: #0b0b0b;
+                        text-decoration: underline;
+                        line-height: 1.2;
+                      "
+                      href="http://example.com"
+                    >
+                      Open in browser
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END header-->
+
+          <!-- START one-col hero-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #f8f8f8"
+              class="one-col hero"
+            >
+              <table
+                width="95%"
+                style="
+                  border-spacing: 0;
+                  background-color: #fff;
+                  border-radius: 20px;
+                "
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a href="http://example.com">
+                      <img
+                        src="https://i.postimg.cc/CxrRggqw/huel-hero.png"
+                        alt="huel-hero"
+                        width="600"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                          border-radius: 20px;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h2
+                      style="
+                        margin: 0;
+                        font-family: 'Helvetica Neue', Arial, sans-serif;
+                        font-size: 20px;
+                        color: #0b0b0b;
+                        font-weight: bold;
+                        line-height: 1.3;
+                        text-align: center;
+                        padding: 40px 40px 20px;
+                      "
+                    >
+                      Convenient, nutritious, affordable… What's not to love? 🖤
+                    </h2>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-family: 'Helvetica Neue', Arial, sans-serif;
+                        font-size: 16px;
+                        color: #1d1d1d;
+                        font-weight: normal;
+                        line-height: 1.5;
+                        padding: 0px 60px 40px;
+                      "
+                    >
+                      But look, don't just take our word for it. Here’s what
+                      happy Hueligans all over the world are saying about our
+                      nutritionally complete meals.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 20px; text-align: center">
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 175px"
+                      class="btn-container"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#0b0b0b"
+                          style="
+                            text-align: center;
+                            mso-padding: 10px;
+                            border-radius: 12px;
+                          "
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              display: inline-block;
+                              padding: 18px 32px;
+                              font-size: 14px;
+                              color: #ffffff;
+                              border-radius: 12px;
+                              font-weight: normal;
+                              text-decoration: none;
+                              display: block;
+                              font-family: Georgia, Times, Times New Roman,
+                                serif;
+                              font-size: 16px;
+                              font-weight: bold;
+                              text-align: center;
+                              mso-border-alt: none;
+                              word-break: keep-all;
+                              background-color: #0b0b0b;
+                            "
+                          >
+                            Shop now
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: 'Helvetica Neue', Arial, sans-serif;
+                        font-size: 12px;
+                        color: #1d1d1d;
+                        font-weight: normal;
+                        line-height: 1.5;
+                        margin: 0;
+                        text-align: center;
+                        padding: 0px 60px 40px;
+                      "
+                    >
+                      Huel as a meal provides the right amount of protein,
+                      essential fats, carbohydrates, fiber, vitamins & minerals.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              class="one-col divider"
+              style="padding: 20px 0px; background-color: #f8f8f8"
+            >
+              <table
+                width="90%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 0px 0px;
+                      text-align: center;
+                      height: 2px;
+                      background-color: rgb(175, 175, 175);
+                    "
+                    align="center"
+                  ></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td class="one-col" style="padding: 0px; background-color: #f8f8f8">
+              <table
+                width="100%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center">
+                    <img
+                      src="https://i.postimg.cc/JzpkzX9V/huel-black-edition.png"
+                      alt=""
+                      width="560"
+                      border="0"
+                      style="
+                        width: 100%;
+                        max-width: 560px;
+                        height: auto;
+                        display: block;
+                        border-radius: 20px;
+                      "
+                    />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td
+              class="one-col"
+              style="padding: 20px 0px; background-color: #f8f8f8"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center">
+                    <img
+                      src="https://i.postimg.cc/zX5bwpNY/huel-taste-savory.png"
+                      alt=""
+                      width="560"
+                      border="0"
+                      style="
+                        width: 100%;
+                        max-width: 560px;
+                        height: auto;
+                        display: block;
+                        border-radius: 20px;
+                      "
+                    />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td class="one-col" style="padding: 0px; background-color: #f8f8f8">
+              <table
+                width="100%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center">
+                    <img
+                      src="https://i.postimg.cc/Wp0qJCQ7/huel-shake.png"
+                      alt=""
+                      width="560"
+                      border="0"
+                      style="
+                        width: 100%;
+                        max-width: 560px;
+                        height: auto;
+                        display: block;
+                        border-radius: 20px;
+                      "
+                    />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              class="one-col divider"
+              style="padding: 20px 0px; background-color: #f8f8f8"
+            >
+              <table
+                width="90%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 0px 0px;
+                      text-align: center;
+                      height: 2px;
+                      background-color: rgb(175, 175, 175);
+                    "
+                    align="center"
+                  ></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col hero-->
+          <tr>
+            <td style="padding: 0px; background-color: #f8f8f8" class="one-col">
+              <table
+                width="95%"
+                align="center"
+                style="
+                  border-spacing: 0;
+                  border-radius: 20px;
+                  background-color: #fff;
+                  text-align: center;
+                "
+                role="presentation"
+              >
+                <tr>
+                  <td>
+                    <h2
+                      style="
+                        margin: 0;
+                        font-family: 'Helvetica Neue', Arial, sans-serif;
+                        font-size: 20px;
+                        color: #0b0b0b;
+                        font-weight: bold;
+                        line-height: 1.3;
+                        text-align: center;
+                        padding: 40px 40px 20px;
+                      "
+                    >
+                      So, what are you waiting for?
+                    </h2>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-family: 'Helvetica Neue', Arial, sans-serif;
+                        font-size: 16px;
+                        color: #1d1d1d;
+                        font-weight: normal;
+                        line-height: 1.5;
+                        padding: 0px 60px 40px;
+                      "
+                    >
+                      Supercharge your summer and start your Huel journey today.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 20px; text-align: center">
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 175px"
+                      class="btn-container"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#0b0b0b"
+                          style="
+                            text-align: center;
+                            mso-padding: 10px;
+                            border-radius: 12px;
+                          "
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              display: inline-block;
+                              padding: 18px 32px;
+                              font-size: 14px;
+                              color: #ffffff;
+                              border-radius: 12px;
+                              font-weight: normal;
+                              text-decoration: none;
+                              display: block;
+                              font-family: Georgia, Times, Times New Roman,
+                                serif;
+                              font-size: 16px;
+                              font-weight: bold;
+                              text-align: center;
+                              mso-border-alt: none;
+                              word-break: keep-all;
+                              background-color: #0b0b0b;
+                            "
+                          >
+                            Shop now
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              class="one-col divider"
+              style="padding: 20px 0px; background-color: #f8f8f8"
+            >
+              <table
+                width="90%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 0px 0px;
+                      text-align: center;
+                      height: 2px;
+                      background-color: rgb(175, 175, 175);
+                    "
+                    align="center"
+                  ></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px; background-color: #f8f8f8">
+              <table
+                width="90%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+                class="two-columns-container"
+              >
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                        <tr>
+                        <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                        background-color: #f8f8f8;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  width="260px"
+                                  style="
+                                    text-align: center;
+                                    padding: 20px 0px;
+                                    border-radius: 20px;
+                                    background-color: #fff;
+                                  "
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td>
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          class="two-col-img"
+                                          width="25"
+                                          src="https://i.postimg.cc/zBgb7c38/huel-search-icon.png"
+                                          alt="happy-planner-rewards"
+                                          border="0"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <a href="http://example.com">
+                                        <p
+                                          style="
+                                            margin: 0;
+                                            text-align: center;
+                                            line-height: 1.5;
+                                            font-family: 'Helvetica Neue', Arial,
+                                              sans-serif;
+                                            font-size: 16px;
+                                            color: #0b0b0b;
+                                            font-weight: bold;
+                                            text-decoration: none;
+                                            font-style: normal;
+                                            padding: 10px 0px;
+                                          "
+                                        >
+                                          Shop Huel
+                                        </p>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                        background-color: #f8f8f8;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  width="260px"
+                                  style="
+                                    background-color: #fff;
+                                    text-align: center;
+                                    padding: 20px 0px;
+                                    border-radius: 20px;
+                                  "
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td>
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          class="two-col-img"
+                                          width="25"
+                                          src="https://i.postimg.cc/W4tJF3vD/huel-home-icon.png"
+                                          alt="huel-home-icon"
+                                          border="0"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <a href="http://example.com">
+                                        <p
+                                          style="
+                                            margin: 0;
+                                            text-align: center;
+                                            line-height: 1.5;
+                                            font-family: 'Helvetica Neue', Arial,
+                                              sans-serif;
+                                            font-size: 16px;
+                                            color: #0b0b0b;
+                                            font-weight: bold;
+                                            text-decoration: none;
+                                            font-style: normal;
+                                            padding: 10px 0px;
+                                          "
+                                        >
+                                          Shop Huel
+                                        </p>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              class="one-col divider"
+              style="padding: 20px 0px; background-color: #f8f8f8"
+            >
+              <table
+                width="90%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 0px 0px;
+                      text-align: center;
+                      height: 2px;
+                      background-color: rgb(175, 175, 175);
+                    "
+                    align="center"
+                  ></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START social-media -->
+          <tr>
+            <td
+              style="padding: 20px 0px; background-color: #f8f8f8"
+              class="social-media"
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0px; text-align: center" align="center">
+                    <a href="http://example.com" style="padding: 0px 30px">
+                      <img
+                        src="https://i.postimg.cc/J0Cy25BJ/huel-message.png"
+                        alt=""
+                        width="24"
+                      />
+                    </a>
+                    <a href="http://example.com" style="padding: 0px 30px">
+                      <img
+                        src="https://i.postimg.cc/WzmDLqMy/huel-instagram.png"
+                        alt=""
+                        width="20"
+                      />
+                    </a>
+                    <a href="http://example.com" style="padding: 0px 30px">
+                      <img
+                        src="https://i.postimg.cc/m2wcmMZz/huel-tiktok.png"
+                        alt=""
+                        width="21"
+                      />
+                    </a>
+                    <a href="http://example.com" style="padding: 0px 30px">
+                      <img
+                        src="https://i.postimg.cc/dVVhp1DW/huel-youtube.png"
+                        alt=""
+                        width="30"
+                      />
+                    </a>
+                    <a href="http://example.com" style="padding: 0px 30px">
+                      <img
+                        src="https://i.postimg.cc/9fSwGhmL/huel-reddit.png"
+                        alt=""
+                        width="24"
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END social-media -->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              class="one-col divider"
+              style="padding: 20px 0px; background-color: #f8f8f8"
+            >
+              <table
+                width="90%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 0px 0px;
+                      text-align: center;
+                      height: 2px;
+                      background-color: rgb(175, 175, 175);
+                    "
+                    align="center"
+                  ></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- Footer -->
+          <tr>
+            <td
+              style="background-color: #f8f8f8; padding: 0px 30px"
+              class="footer"
+            >
+              <p
+                style="
+                  font-family: 'Helvetica Neue', Arial, sans-serif;
+                  font-size: 12px;
+                  color: #1d1d1d;
+                  line-height: 1.3;
+                  margin: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                Huel Inc, 45 Main Street, Suite 604, Brooklyn, NY 11201, United
+                States
+              </p>
+            </td>
+          </tr>
+          <!-- Footer -->
+
+          <!-- Footer links -->
+          <tr>
+            <td style="background-color: #f8f8f8">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="footer-links"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" role="presentation">
+                        <tr>
+                          <td width="300" valign="top" style="padding: 0"></td>
+                        </tr>
+                      </table>
+                    <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 500px;
+                        width: 100%;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 10px 20px 20px 20px"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td
+                                style="
+                                  padding: 5px 5px 5px 5px;
+                                  mso-padding-alt: 5px;
+                                "
+                              >
+                                <a
+                                  style="
+                                    line-height: 1.2;
+                                    font-family: 'Helvetica Neue', Arial,
+                                      sans-serif;
+                                    font-size: 16px;
+                                    color: #0b0b0b;
+                                    font-weight: normal;
+                                    text-decoration: underline;
+                                    font-style: normal;
+                                    mso-padding-alt: 5px;
+                                    letter-spacing: 0;
+                                  "
+                                  href="https://example.com"
+                                >
+                                  Unsubscribe
+                                </a>
+                              </td>
+
+                              <td
+                                style="
+                                  padding: 5px 5px 5px 5px;
+                                  mso-padding-alt: 5px;
+                                "
+                              >
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 12px;
+                                    line-height: 1.2;
+                                    font-family: 'Helvetica Neue', Arial,
+                                      sans-serif;
+                                    font-size: 16px;
+                                    color: #0b0b0b;
+                                    font-weight: normal;
+                                    text-decoration: underline;
+                                    font-style: normal;
+                                  "
+                                >
+                                  |
+                                </p>
+                              </td>
+
+                              <td
+                                style="
+                                  padding: 5px 5px 5px 5px;
+                                  mso-padding-alt: 5px;
+                                "
+                              >
+                                <a
+                                  style="
+                                    line-height: 1.2;
+                                    font-family: 'Helvetica Neue', Arial,
+                                      sans-serif;
+                                    font-size: 16px;
+                                    color: #0b0b0b;
+                                    font-weight: normal;
+                                    text-decoration: underline;
+                                    font-style: normal;
+                                  "
+                                  href="https://www.pinterest.com/"
+                                >
+                                  Manage my preferences
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer links -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>

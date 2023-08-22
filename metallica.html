@@ -1,0 +1,992 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .two-columns-container {
+          width: 90% !important;
+          margin: 0 auto !important;
+          text-align: center !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .content table {
+          margin: 0 auto !important;
+          width: 250px !important;
+          max-width: 100% !important;
+        }
+
+        .one-col p {
+          font-size: 13px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h2 {
+          font-size: 20px !important;
+          padding: 10px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+          width: 150px !important;
+        }
+
+        .btn-container a {
+          font-size: 13px !important;
+          padding: 12px 10px !important;
+        }
+
+        .social-media table tr td a {
+          padding: 0px 10px !important;
+        }
+
+        .social-media table tr td a img {
+          width: 20px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header p {
+          font-size: 13px !important;
+        }
+
+        .one-col p {
+          font-size: 12px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h2 {
+          font-size: 18px !important;
+          padding: 10px !important;
+        }
+
+        .btn-container {
+          width: 150px !important;
+        }
+
+        .btn-container a {
+          font-size: 13px !important;
+          padding: 12px 10px !important;
+        }
+
+        .two-columns-container {
+          width: 90% !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .content table {
+          margin: 0 auto !important;
+          width: 160px !important;
+          max-width: 100% !important;
+          min-width: 120px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .social-media a img {
+          width: 30px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START header-->
+          <tr>
+            <td style="padding: 0px" class="one-col header">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a style="text-decoration: none" href="http://example.com">
+                      <img
+                        src="https://i.postimg.cc/SKbcZCC8/metallica-logo.png"
+                        alt="metallica-logo"
+                        width="600"
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                        class="logo"
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END header-->
+
+          <!-- START one-col hero-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col hero"
+            >
+              <table
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  background-color: #fff;
+                  border-radius: 20px;
+                "
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a href="http://example.com">
+                      <img
+                        src="https://i.postimg.cc/g0y81jH7/metallica-hero.jpg"
+                        alt="metallica-hero"
+                        width="600"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START one-col hero-text-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #ffff00"
+              class="one-col hero-text"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <h3
+                      style="
+                        margin: 0;
+                        color: #000000;
+                        font-family: Constantia, 'Lucida Bright', 'DejaVu Serif',
+                          Georgia, 'serif';
+                        font-size: 24px;
+                        line-height: 1.5;
+                        padding: 15px 20px 10px;
+                        font-weight: bold;
+                      "
+                    >
+                      M72 LIVE IN CINEMAS IN ONE WEEK
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: Constantia, 'Lucida Bright', 'DejaVu Serif',
+                          Georgia, 'serif';
+                        color: #000000;
+                        font-size: 15px;
+                        line-height: 1.5;
+                        padding: 10px 20px;
+                      "
+                    >
+                      Don’t miss the two-night cinematic event: M72 Live from
+                      Arlington, Texas, on August 18 & 20!
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: Constantia, 'Lucida Bright', 'DejaVu Serif',
+                          Georgia, 'serif';
+                        color: #000000;
+                        font-size: 15px;
+                        line-height: 1.5;
+                        padding: 10px 20px;
+                      "
+                    >
+                      Both shows will broadcast live* to over 2,600 cinemas
+                      worldwide, and not a single song will be repeated across
+                      the two nights. So if you want the full M72 experience,
+                      make sure you grab your tickets for both nights!
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: Constantia, 'Lucida Bright', 'DejaVu Serif',
+                          Georgia, 'serif';
+                        color: #000000;
+                        font-size: 15px;
+                        line-height: 1.5;
+                        padding: 10px 20px;
+                      "
+                    >
+                      Already have your tickets? Get ready to share your
+                      experience. We know the Metallica Family will be out in
+                      full force around the globe, and we want to see you enjoy
+                      the show wherever you are! Use #M72LiveInCinemas for the
+                      chance to be featured on
+                      <a href="http://example.com">metallica.film.</a>
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: Constantia, 'Lucida Bright', 'DejaVu Serif',
+                          Georgia, 'serif';
+                        color: #000000;
+                        font-size: 15px;
+                        line-height: 1.5;
+                        padding: 10px 20px;
+                      "
+                    >
+                      Into the art? Our friend Andrew Cremeans created the
+                      official graphic to commemorate this global theatrical
+                      event. Grab your souvenir now; the Live From Arlington
+                      2023 T-Shirt featuring Andrew’s art is available
+                      exclusively in the Metallica Store and the Probity UK
+                      Shop.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: Constantia, 'Lucida Bright', 'DejaVu Serif',
+                          Georgia, 'serif';
+                        color: #000000;
+                        font-size: 15px;
+                        line-height: 1.5;
+                        padding: 10px 20px;
+                        font-style: italic;
+                      "
+                    >
+                      *Some international screenings will be shown later to suit
+                      local time zones.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 350px; padding: 20px 0px 20px"
+                      class="btn-container"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#ffff00"
+                          style="text-align: center; mso-padding: 12px"
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              color: #000;
+                              background-color: #ffff00;
+                              border: 2px solid #000000;
+                              font-weight: bold;
+                              font-weight: normal;
+                              display: inline-block;
+                              font-family: Constantia, 'Lucida Bright',
+                                'DejaVu Serif', Georgia, 'serif';
+                              font-size: 16px;
+                              line-height: 1.2;
+                              padding: 12px 0;
+                              text-align: center;
+                              mso-border-alt: none;
+                              width: 100%;
+                              word-break: keep-all;
+                              mso-padding: 12px;
+                            "
+                          >
+                            GET TICKETS FOR NIGHT ONE
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 350px; padding: 0px 0px 20px"
+                      class="btn-container"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#ffff00"
+                          style="text-align: center; mso-padding: 12px"
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              color: #000;
+                              background-color: #ffff00;
+                              border: 2px solid #000000;
+                              font-weight: bold;
+                              font-weight: normal;
+                              display: inline-block;
+                              font-family: Constantia, 'Lucida Bright',
+                                'DejaVu Serif', Georgia, 'serif';
+                              font-size: 16px;
+                              line-height: 1.2;
+                              padding: 12px 0;
+                              text-align: center;
+                              mso-border-alt: none;
+                              width: 100%;
+                              word-break: keep-all;
+                              mso-padding: 12px;
+                            "
+                          >
+                            GET TICKETS FOR NIGHT TWO
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 350px; padding: 0px 0px 20px"
+                      class="btn-container"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#ffff00"
+                          style="text-align: center; mso-padding: 12px"
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              color: #000;
+                              background-color: #ffff00;
+                              border: 2px solid #000000;
+                              font-weight: bold;
+                              font-weight: normal;
+                              display: inline-block;
+                              font-family: Constantia, 'Lucida Bright',
+                                'DejaVu Serif', Georgia, 'serif';
+                              font-size: 16px;
+                              line-height: 1.2;
+                              padding: 12px 0;
+                              text-align: center;
+                              mso-border-alt: none;
+                              width: 100%;
+                              word-break: keep-all;
+                              mso-padding: 12px;
+                            "
+                          >
+                            GET THE OFFICIAL T-SHIRT
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 350px; padding: 0px 0px 20px"
+                      class="btn-container"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#ffff00"
+                          style="text-align: center; mso-padding: 12px"
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              color: #000;
+                              background-color: #ffff00;
+                              border: 2px solid #000000;
+                              font-weight: bold;
+                              font-weight: normal;
+                              display: inline-block;
+                              font-family: Constantia, 'Lucida Bright',
+                                'DejaVu Serif', Georgia, 'serif';
+                              font-size: 16px;
+                              line-height: 1.2;
+                              padding: 12px 0;
+                              text-align: center;
+                              mso-border-alt: none;
+                              width: 100%;
+                              word-break: keep-all;
+                              mso-padding: 12px;
+                            "
+                          >
+                            WATCH THE TRAILER
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 350px; padding: 0px 0px 20px"
+                      class="btn-container"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          bgcolor="#ffff00"
+                          style="text-align: center; mso-padding: 12px"
+                        >
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            style="
+                              text-decoration: none;
+                              color: #000;
+                              background-color: #ffff00;
+                              border: 2px solid #000000;
+                              font-weight: bold;
+                              font-weight: normal;
+                              display: inline-block;
+                              font-family: Constantia, 'Lucida Bright',
+                                'DejaVu Serif', Georgia, 'serif';
+                              font-size: 16px;
+                              line-height: 1.2;
+                              padding: 12px 0;
+                              text-align: center;
+                              mso-border-alt: none;
+                              width: 100%;
+                              word-break: keep-all;
+                              mso-padding: 12px;
+                            "
+                          >
+                            SEE ALL SHOWTIMES
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-text -->
+
+          <!-- START bg image with text -->
+          <tr>
+            <td
+              class="bg-image footer"
+              valign="top"
+              background="https://i.postimg.cc/6pvdLY2t/metallica-bg.png"
+              bgcolor="#000"
+              width="100%"
+              height="350"
+              style="
+                background-repeat: no-repeat;
+                max-width: 600px;
+                background-size: cover;
+                background-position: top;
+              "
+            >
+              <!--[if gte mso 9]>
+                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 800px; height: 500px;" src="https://i.postimg.cc/6pvdLY2t/metallica-bg.png" />                
+                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 800px; height:500px;">
+    <v:fill  opacity="0%" color="#000000”  />
+    <v:textbox inset="0,0,0,0">
+                          <![endif]-->
+              <div>
+                <!--add your content here-->
+                <table
+                  class="content"
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td style="padding: 40px 0px 0px">
+                      <h4
+                        style="
+                          margin: 0;
+                          font-size: 18px;
+                          color: #ffff00;
+                          text-align: center;
+                          margin-bottom: 25px;
+                          font-weight: bold;
+                        "
+                      >
+                        FOLLOW METALLICA
+                      </h4>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p
+                        style="
+                          color: #ffff00;
+                          font-size: 11px;
+                          padding: 0;
+                          margin: 0;
+                          margin-bottom: 30px;
+                          text-align: center;
+                        "
+                      >
+                        You are receiving this email because you have subscribed
+                        to receive updates from Metallica.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      align="center"
+                      style="padding: 0px 0px 20px"
+                      class="social-media"
+                    >
+                      <a
+                        href="http://example.com"
+                        style="
+                          text-decoration: none;
+                          font-size: 0;
+                          padding: 0px 5px;
+                        "
+                      >
+                        <img
+                          width="36"
+                          style="width: 36px"
+                          src="https://i.postimg.cc/fbHYfLjQ/metallica-facebook.png"
+                          alt="metallica-facebook"
+                        />
+                      </a>
+                      <a
+                        href="http://example.com"
+                        style="
+                          text-decoration: none;
+                          font-size: 0;
+                          padding: 0px 5px;
+                        "
+                      >
+                        <img
+                          width="36"
+                          style="width: 36px"
+                          src="https://i.postimg.cc/nc8BkN7r/metallica-twitter.png"
+                          alt="metallica-twitter"
+                        />
+                      </a>
+                      <a
+                        href="http://example.com"
+                        style="
+                          text-decoration: none;
+                          font-size: 0;
+                          padding: 0px 5px;
+                        "
+                      >
+                        <img
+                          width="36"
+                          style="width: 36px"
+                          src="https://i.postimg.cc/JnvJS22T/metallica-instagram.png"
+                          alt="metallica-instagram"
+                        />
+                      </a>
+                      <a
+                        href="http://example.com"
+                        style="
+                          text-decoration: none;
+                          font-size: 0;
+                          padding: 0px 5px;
+                        "
+                      >
+                        <img
+                          width="36"
+                          style="width: 36px"
+                          src="https://i.postimg.cc/xjNLL9XB/metallica-youtube.png"
+                          alt="metallica-youtube"
+                        />
+                      </a>
+                      <a
+                        href="http://example.com"
+                        style="
+                          text-decoration: none;
+                          font-size: 0;
+                          padding: 0px 5px;
+                        "
+                      >
+                        <img
+                          width="36"
+                          style="width: 36px"
+                          src="https://i.postimg.cc/FKFjScSx/metallica-apple.png"
+                          alt="metallica-apple"
+                        />
+                      </a>
+                      <a
+                        href="http://example.com"
+                        style="
+                          text-decoration: none;
+                          font-size: 0;
+                          padding: 0px 5px;
+                        "
+                      >
+                        <img
+                          width="36"
+                          style="width: 36px"
+                          src="https://i.postimg.cc/qqKnrGfp/metallica-spotify.png"
+                          alt="metallica-spotify"
+                        />
+                      </a>
+                      <a
+                        href="http://example.com"
+                        style="
+                          text-decoration: none;
+                          font-size: 0;
+                          padding: 0px 5px;
+                        "
+                      >
+                        <img
+                          width="36"
+                          style="width: 36px"
+                          src="https://i.postimg.cc/PxPY3j2p/metallica-link.png"
+                          alt="metallica-link"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p
+                        style="
+                          margin: 0;
+                          text-align: center;
+                          margin-bottom: 20px;
+                        "
+                      >
+                        <a
+                          style="
+                            color: #ffff00;
+                            text-decoration: underline;
+                            font-size: 13px;
+                            padding: 0;
+                          "
+                          href="http://example.com"
+                        >
+                          View this email in your browser
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p
+                        style="
+                          margin: 0;
+                          text-align: center;
+                          margin-bottom: 20px;
+                        "
+                      >
+                        <a
+                          style="
+                            color: #ffff00;
+                            text-decoration: underline;
+                            font-size: 13px;
+                            padding: 0;
+                          "
+                          href="http://example.com"
+                        >
+                          Unsubscribe
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p
+                        style="
+                          margin: 0;
+                          text-align: center;
+                          color: #ffff00;
+                          text-decoration: underline;
+                          font-size: 13px;
+                          padding: 0;
+                        "
+                      >
+                        Metallica, 369-B Third Street #194, San Rafael, CA 94901
+                        US
+                      </p>
+                      <p
+                        style="
+                          margin: 0;
+                          text-align: center;
+                          color: #ffff00;
+                          text-decoration: underline;
+                          font-size: 13px;
+                          padding: 0;
+                        "
+                      >
+                        © 2023 Metallica
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if gte mso 9]>
+                 </v:textbox>
+                  </v:fill>
+                  </v:rect>
+                  </v:image>
+                  <![endif]-->
+            </td>
+          </tr>
+          <!-- END bg image with text -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>

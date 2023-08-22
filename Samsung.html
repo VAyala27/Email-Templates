@@ -1,0 +1,975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      .one-col {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-col p {
+          font-size: 13px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h1 {
+          margin-top: 20px !important;
+          margin-bottom: 10px !important;
+          font-size: 24px !important;
+          padding: 10px !important;
+        }
+
+        .btn {
+          width: 220px !important;
+        }
+
+        .social-media table tr td a {
+          padding: 0px 10px !important;
+        }
+
+        .social-media table tr td a img {
+          width: 20px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header p a {
+          font-size: 10px !important;
+        }
+
+        .header p {
+          margin-top: 5px !important;
+          margin-bottom: 5px !important;
+        }
+
+        .one-col p {
+          font-size: 12px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h2 {
+          font-size: 18px !important;
+          padding: 10px !important;
+        }
+
+        .btn {
+          width: 220px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+        .footer a {
+          font-size: 9px !important;
+        }
+
+        .footer .padding {
+          padding: 0px 10px !important;
+        }
+
+        .footer p {
+          font-size: 9px !important;
+          line-height: 130% !important;
+        }
+
+        .footer .social-media a {
+          font-size: 0px !important;
+        }
+
+        .footer .social-media img {
+          width: 50px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START one-col header-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #f4f4f4"
+              class="one-col header"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <p
+                      style="
+                        text-align: center;
+                        margin: 0;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                      "
+                    >
+                      <a
+                        href="http://example.com"
+                        style="
+                          text-align: center;
+                          font: 11px Arial, Helvetica, sans-serif;
+                          mso-line-height-rule: exactly;
+                          line-height: 14px;
+                          color: #727272;
+                          text-decoration: underline;
+                        "
+                      >
+                        Act now to make the most of these pre-order offers.
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col header-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #f4f4f4"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        text-align: center;
+                      "
+                    >
+                      <img
+                        src="https://i.postimg.cc/RFk93JgV/Samsung-logo.png"
+                        alt="Samsung-logo"
+                        border="0"
+                        width="560"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 560px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        text-align: center;
+                      "
+                    >
+                      <img
+                        src="https://i.postimg.cc/tR6pKDg1/Samsung-preorder.jpg"
+                        alt="Samsung-preorder"
+                        border="0"
+                        width="560"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 560px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START one-col hero-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #f4f4f4"
+              class="one-col hero"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/gJXmkHqT/Samsung-hero.jpg"
+                        width="560"
+                        height=""
+                        alt="Vivo-Baredfoot-hero"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 560px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #f4f4f4"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/C58hJsRq/Samsung-compact.jpg"
+                        alt="Samsung-compact"
+                        border="0"
+                        width="560"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 560px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #f4f4f4"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/nh2Hdzh0/Samsung-galaxy-fold.png"
+                        alt="Samsung-galaxy-fold"
+                        border="0"
+                        width="560"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 560px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #f4f4f4"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/SxS4zhf8/Samsung-watch.jpg"
+                        alt="Samsung-watch"
+                        border="0"
+                        width="560"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 560px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- Footer -->
+          <tr>
+            <td
+              style="padding: 15px 0px 15px; background-color: #f4f4f4"
+              class="footer"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    style="text-align: center"
+                    class="social-media"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="text-decoration: none; font-size: 0px"
+                    >
+                      <img
+                        width="77"
+                        style="width: 77px; max-width: 77px"
+                        src="https://i.postimg.cc/QxLxCwzk/Samsung-facebook.png"
+                        alt="Samsung-facebook"
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="text-decoration: none; font-size: 0px"
+                    >
+                      <img
+                        width="77"
+                        style="width: 77px; max-width: 77px"
+                        src="https://i.postimg.cc/T1nxn2sj/Samsung-instagram.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="text-decoration: none; font-size: 0px"
+                    >
+                      <img
+                        width="77"
+                        style="width: 77px; max-width: 77px"
+                        src="https://i.postimg.cc/FsQNNcfT/Samsung-twitter.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="text-decoration: none; font-size: 0px"
+                    >
+                      <img
+                        width="77"
+                        style="width: 77px; max-width: 77px"
+                        src="https://i.postimg.cc/15cPttws/Samsung-youtube.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="text-decoration: none; font-size: 0px"
+                    >
+                      <img
+                        width="77"
+                        style="width: 77px; max-width: 77px"
+                        src="https://i.postimg.cc/dQZVqw5V/Samsung-discord.png"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/q7ZpT5nK/Samsung-footer-text-1.jpg"
+                        width="480"
+                        height=""
+                        alt="Samsung-footer-text-1"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 480px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/XY4jcF4r/Samsung-footer-text-2.jpg"
+                        width="480"
+                        height=""
+                        alt="Samsung-footer-text-2"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 480px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/FsjFLG5t/Samsung-footer-text-3.jpg"
+                        width="480"
+                        height=""
+                        alt="Samsung-footer-text-3"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 480px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/9ffcsh4V/Samsung-footer-text-4.jpg"
+                        width="480"
+                        height=""
+                        alt="Samsung-footer-text-4"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 480px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 55px" class="padding">
+                    <p
+                      style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        margin: 0;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        color: #727272;
+                      "
+                    >
+                      You received this email as a valued subscriber of Samsung
+                      updates and promotions.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 55px" class="padding">
+                    <p
+                      style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        color: #727272;
+                        margin-bottom: 10px;
+                        margin: 0;
+                      "
+                    >
+                      To ensure delivery, please add
+                      samsung@innovations.samsungusa.com to your address book.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 55px" class="padding">
+                    <p
+                      style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        margin: 0;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        color: #727272;
+                      "
+                    >
+                      Please do not reply to this email. If you need to contact
+                      us with questions or feedback, please
+                      <a
+                        style="
+                          text-decoration: underline;
+                          font-size: 12px;
+                          font-family: Arial, Helvetica, sans-serif;
+                          mso-height-rule: exactly;
+                          line-height: 16px;
+                          text-align: left;
+                          color: #727272;
+                        "
+                        href="http://example.com"
+                      >
+                        contact Customer Service.
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 55px" class="padding">
+                    <p
+                      style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        margin: 0;
+                        margin-bottom: 10px;
+                        color: #727272;
+                      "
+                    >
+                      If you no longer wish to receive email from Samsung,
+                      <a
+                        style="
+                          text-decoration: underline;
+                          font-size: 12px;
+                          font-family: Arial, Helvetica, sans-serif;
+                          mso-height-rule: exactly;
+                          line-height: 16px;
+                          text-align: left;
+                          color: #727272;
+                        "
+                        href="http://example.com"
+                      >
+                        click here
+                      </a>
+                      to unsubscribe.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 55px" class="padding">
+                    <a
+                      style="
+                        text-decoration: underline;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        color: #727272;
+                        display: inline-block;
+                      "
+                      href="http://example.com"
+                    >
+                      Legal
+                    </a>
+                    <span
+                      style="
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        color: #727272;
+                        display: inline-block;
+                      "
+                    >
+                      |
+                    </span>
+                    <a
+                      style="
+                        text-decoration: underline;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        color: #727272;
+                        display: inline-block;
+                      "
+                      href="http://example.com"
+                    >
+                      Privacy Policy
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 55px" class="padding">
+                    <p
+                      style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        margin: 0;
+                        margin-bottom: 10px;
+                        color: #727272;
+                      "
+                    >
+                      ⓒ 2023 Samsung Electronics America, Inc. Samsung and all
+                      other trademarks and service marks in the preceding are
+                      owned by Samsung Electronics Co., Ltd. or its affiliates.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 55px" class="padding">
+                    <p
+                      style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        margin: 0;
+                        color: #727272;
+                      "
+                    >
+                      Samsung Eletronics America
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 55px" class="padding">
+                    <p
+                      style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        margin: 0;
+                        color: #727272;
+                      "
+                    >
+                      85 Challenger Road
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 55px" class="padding">
+                    <p
+                      style="
+                        width: 100%;
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 16px;
+                        text-align: left;
+                        margin: 0;
+                        margin-bottom: 10px;
+                        color: #727272;
+                      "
+                    >
+                      Ridgefield Park, NJ 07660
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>

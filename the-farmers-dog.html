@@ -1,0 +1,1249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      .one-col {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-col p {
+          font-size: 13px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h1 {
+          margin-top: 20px !important;
+          margin-bottom: 10px !important;
+          font-size: 24px !important;
+          padding: 10px !important;
+        }
+
+        .btn {
+          width: 220px !important;
+        }
+
+        .social-media table tr td a {
+          padding: 0px 10px !important;
+        }
+
+        .social-media table tr td a img {
+          width: 20px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header p a {
+          font-size: 10px !important;
+        }
+
+        .header p {
+          margin-top: 5px !important;
+          margin-bottom: 5px !important;
+        }
+
+        .one-col p {
+          font-size: 12px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h2 {
+          font-size: 18px !important;
+          padding: 10px !important;
+        }
+
+        .btn {
+          width: 220px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+        .footer a {
+          font-size: 9px !important;
+        }
+
+        .footer .padding {
+          padding: 0px 10px !important;
+        }
+
+        .footer p {
+          font-size: 9px !important;
+          line-height: 130% !important;
+        }
+
+        .footer .social-media a {
+          font-size: 0px !important;
+        }
+
+        .footer .social-media img {
+          width: 50px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START one-col hero-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #e1eee3"
+              class="one-col hero"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        text-align: center;
+                      "
+                    >
+                      <img
+                        src="https://i.postimg.cc/SxfvCYxN/the-farmers-dog-logo.png"
+                        alt="the-farmers-dog-logo"
+                        border="0"
+                        width="100"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 100px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                          margin-bottom: 40px;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h1
+                      style="
+                        font-family: neue-haas-grotesk-display, Helvetica Neue,
+                          sans-serif;
+                        font-size: 74px;
+                        line-height: 76px;
+                        font-weight: 900;
+                        text-align: center;
+                        color: #173b33;
+                        margin: 0;
+                        margin-bottom: 30px;
+                      "
+                    >
+                      Switching To Fresh Is Easy
+                    </h1>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: neue-haas-grotesk-display, Helvetica Neue,
+                          sans-serif;
+                        font-size: 26px;
+                        line-height: 30px;
+                        font-weight: 700;
+                        text-align: center;
+                        color: #173b33;
+                        margin: 0;
+                        margin-bottom: 30px;
+                      "
+                    >
+                      Which makes quitting kibble even easier.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <div>
+                      <!--[if mso]>
+                        <v:rect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 40px;
+                            v-text-anchor: middle;
+                            width: 150px;
+                          "
+                          strokecolor="#F2674B"
+                          fillcolor="#F2674B"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #fff;
+                              font-family: sans-serif;
+                              font-size: 18px;
+                              font-weight: bold;
+                            "
+                          >
+                            Get 60% Off
+                          </center>
+                        </v:rect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #f2674b;
+                          border: 1px solid #f2674b;
+                          color: #fff;
+                          display: inline-block;
+                          font-family: sans-serif;
+                          font-size: 18px;
+                          font-weight: bold;
+                          line-height: 40px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 150px;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                      >
+                        Get 60% Off
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col header-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td
+              style="padding: 0px 0px; background-color: #e1eee3"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        text-align: center;
+                      "
+                    >
+                      <img
+                        src="https://s11.gifyu.com/images/SgNzc.gif"
+                        alt="the-farmers-dog-1"
+                        border="0"
+                        width="560"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 560px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        text-align: center;
+                        margin: 0;
+                        font-family: Tiempos, Georgia, 'Times New Roman', Times,
+                          serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: #173b33;
+                        padding: 0px 30px;
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                      "
+                    >
+                      When you switch to feeding your dog real, healthy food, we
+                      don't want you to have to throw out your leftover kibble!
+                      So we've come up with a few alternative uses so it doesn't
+                      go to waste.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START one-col steps-->
+          <tr>
+            <td
+              style="padding: 0px 0px; background-color: #e1eee3"
+              class="one-col hero"
+            >
+              <table
+                width="90%"
+                style="
+                  border-spacing: 0;
+                  border: none;
+                  background-color: #fff;
+                  padding-bottom: 40px;
+                "
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/pr5fZ4QJ/the-farmers-dog-1.png"
+                        width="210"
+                        height=""
+                        alt="Vivo-Baredfoot-hero"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 210px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h2
+                      style="
+                        text-align: center;
+                        font-family: neue-haas-grotesk-display, Helvetica Neue,
+                          sans-serif;
+                        font-size: 28px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        text-align: center;
+                        color: #153a33;
+                        margin: 0;
+                        margin-bottom: 15px;
+                      "
+                    >
+                      Dry Your Cell Phone
+                    </h2>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      class=""
+                      style="
+                        font-family: Tiempos, Georgia, 'Times New Roman', Times,
+                          serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: #173b33;
+                        margin: 0;
+                        padding: 0px 20px;
+                      "
+                    >
+                      Immerse your cell phone in it to reverse water damage!
+                      Kibble is super dry, so it's great at absorbing water if
+                      you run out of rice.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/zDy66f00/the-farmers-dog-2.png"
+                        width="210"
+                        height=""
+                        alt="the-farmers-dog-2"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 210px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h2
+                      style="
+                        text-align: center;
+                        font-family: neue-haas-grotesk-display, Helvetica Neue,
+                          sans-serif;
+                        font-size: 28px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        text-align: center;
+                        color: #153a33;
+                        margin: 0;
+                        margin-bottom: 15px;
+                      "
+                    >
+                      Gravel Your Driveway
+                    </h2>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      class=""
+                      style="
+                        font-family: Tiempos, Georgia, 'Times New Roman', Times,
+                          serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: #173b33;
+                        margin: 0;
+                        padding: 0px 20px;
+                      "
+                    >
+                      Kibble's a cheap alternative to asphalt.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/23p4XG2R/the-farmers-dog-3.png"
+                        width="210"
+                        height=""
+                        alt="the-farmers-dog-3"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 210px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h2
+                      style="
+                        text-align: center;
+                        font-family: neue-haas-grotesk-display, Helvetica Neue,
+                          sans-serif;
+                        font-size: 28px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        text-align: center;
+                        color: #153a33;
+                        margin: 0;
+                        margin-bottom: 15px;
+                      "
+                    >
+                      Create Maracas
+                    </h2>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      class=""
+                      style="
+                        font-family: Tiempos, Georgia, 'Times New Roman', Times,
+                          serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: #173b33;
+                        margin: 0;
+                        padding: 0px 20px;
+                      "
+                    >
+                      Hard kibble is the perfect filler for maracas, so now you
+                      can finally start that mariachi band you’ve always wanted
+                      to be in.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START one-col text with btn -->
+          <tr>
+            <td style="padding: 0px; background-color: #e1eee3" class="one-col">
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 30px; text-align: center"
+                    align="center"
+                  >
+                    <p
+                      style="
+                        font-family: Tiempos, Georgia, 'Times New Roman', Times,
+                          serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: #173b33;
+                        margin: 0;
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                      "
+                    >
+                      <span style="font-weight: bold">
+                        Although fresh food can't do a single thing on this
+                        list, what it can do is help dogs live fuller, healthier
+                        lives
+                      </span>
+                      - and isn't that enough?
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    align="center"
+                    class="padding"
+                    style="padding: 0px 0px 40px; mso-padding-alt: 40px"
+                  >
+                    <div>
+                      <!--[if mso]>
+                        <v:rect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 40px;
+                            v-text-anchor: middle;
+                            width: 150px;
+                          "
+                          strokecolor="#F2674B"
+                          fillcolor="#F2674B"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #fff;
+                              font-family: sans-serif;
+                              font-size: 18px;
+                              font-weight: bold;
+                            "
+                          >
+                            Get 60% Off
+                          </center>
+                        </v:rect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #f2674b;
+                          border: 1px solid #f2674b;
+                          color: #fff;
+                          display: inline-block;
+                          font-family: sans-serif;
+                          font-size: 18px;
+                          font-weight: bold;
+                          line-height: 40px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 150px;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                      >
+                        Get 60% Off
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text with btn -->
+
+          <!-- START one-col img-->
+          <tr>
+            <td style="padding: 0px" class="one-col img">
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/nLdSw8my/the-farmers-dog-trail.png"
+                        alt="Samsung-watch"
+                        border="0"
+                        width="560"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 560px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START THREE COLUMNS -->
+          <tr>
+            <td style="padding: 30px 0 40px 0; background-color: #f5f5f5">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="three-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                          <tr>
+                          <td width="200" valign="top" style="padding: 0;">
+                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  style="
+                                    width: 200px;
+                                    max-width: 200px;
+                                    padding: 20px;
+                                  "
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td>
+                                      <h4
+                                        style="
+                                          margin: 0;
+                                          font-size: 12px;
+                                          line-height: 14px;
+                                          font-family: neue-haas-grotesk-display,
+                                            Helvetica Neue, sans-serif;
+                                          color: #153a33;
+                                          font-weight: 700;
+                                          mso-line-height-rule: exactly;
+                                        "
+                                      >
+                                        The Farmer’s Dog
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p style="margin: 0; text-align: center">
+                                        <a
+                                          style="
+                                            margin: 0;
+                                            font-size: 12px;
+                                            line-height: 14px;
+                                            font-family: neue-haas-grotesk-display,
+                                              Helvetica Neue, sans-serif;
+                                            color: #153a33;
+                                            font-weight: 700;
+                                            mso-line-height-rule: exactly;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          201 Varick Street,
+                                        </a>
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p style="margin: 0; text-align: center">
+                                        <a
+                                          style="
+                                            margin: 0;
+                                            font-size: 12px;
+                                            line-height: 14px;
+                                            font-family: neue-haas-grotesk-display,
+                                              Helvetica Neue, sans-serif;
+                                            color: #153a33;
+                                            font-weight: 700;
+                                            mso-line-height-rule: exactly;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          P.O. Box #984
+                                        </a>
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p style="margin: 0; text-align: center">
+                                        <a
+                                          style="
+                                            margin: 0;
+                                            font-size: 12px;
+                                            line-height: 14px;
+                                            font-family: neue-haas-grotesk-display,
+                                              Helvetica Neue, sans-serif;
+                                            color: #153a33;
+                                            font-weight: 700;
+                                            mso-line-height-rule: exactly;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          New York, NY 10014
+                                        </a>
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                       </td><td width="200" valign="top" style="padding: 0;">
+                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  style="
+                                    width: 200px;
+                                    max-width: 200px;
+                                    padding: 20px;
+                                  "
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          text-align: center;
+                                          margin: 0;
+                                          margin-bottom: 10px;
+                                        "
+                                      >
+                                        <a
+                                          style="
+                                            font-size: 14px;
+                                            font-family: Arial, Helvetica Neue,
+                                              Helvetica, sans-serif;
+                                            mso-line-height-alt: 25.2px;
+                                            color: #153a33;
+                                            font-weight: bold;
+                                            line-height: 1.8;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          Email
+                                        </a>
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          text-align: center;
+                                          margin: 0;
+                                          margin-bottom: 10px;
+                                        "
+                                      >
+                                        <a
+                                          style="
+                                            font-size: 14px;
+                                            font-family: Arial, Helvetica Neue,
+                                              Helvetica, sans-serif;
+                                            mso-line-height-alt: 25.2px;
+                                            color: #153a33;
+                                            font-weight: bold;
+                                            line-height: 1.8;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          FAQ
+                                        </a>
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          text-align: center;
+                                          margin: 0;
+                                          margin-bottom: 10px;
+                                        "
+                                      >
+                                        <a
+                                          style="
+                                            font-size: 14px;
+                                            font-family: Arial, Helvetica Neue,
+                                              Helvetica, sans-serif;
+                                            mso-line-height-alt: 25.2px;
+                                            color: #153a33;
+                                            font-weight: bold;
+                                            line-height: 1.8;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          Terms of Service
+                                        </a>
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                       </td><td width="200" valign="top" style="padding: 0;">
+                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  style="width: 200px; max-width: 200px"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="margin-right: 15px"
+                                      >
+                                        <img
+                                          width="24"
+                                          style="width: 100%; max-width: 24px"
+                                          src="https://i.postimg.cc/Vk8hJW1V/the-farmers-dog-instagram.png"
+                                          alt="the-farmers-dog-instagram"
+                                          border="0"
+                                        />
+                                      </a>
+
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="margin-right: 15px"
+                                      >
+                                        <img
+                                          width="24"
+                                          style="width: 100%; max-width: 24px"
+                                          src="https://i.postimg.cc/fbWgKWV7/the-farmers-dog-twitter.png"
+                                          alt="the-farmers-dog-twitter"
+                                          border="0"
+                                        />
+                                      </a>
+
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="margin-right: 15px"
+                                      >
+                                        <img
+                                          width="24"
+                                          style="width: 100%; max-width: 24px"
+                                          src="https://i.postimg.cc/CM9XgV2Y/the-farmers-dog-facebook.png"
+                                          alt="the-farmers-dog-facebook"
+                                          border="0"
+                                        />
+                                      </a>
+
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="margin-right: 15px"
+                                      >
+                                        <img
+                                          width="24"
+                                          style="width: 100%; max-width: 24px"
+                                          src="https://i.postimg.cc/VLMTsVyt/the-farmers-dog-tiktok.png"
+                                          alt="the-farmers-dog-tiktok"
+                                          border="0"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 12px;
+                                          line-height: 16px;
+                                          font-family: Tiempos, Georgia,
+                                            'Times New Roman', Times, serif;
+                                          color: #153a33;
+                                          font-weight: 300;
+                                          mso-line-height-rule: exactly;
+                                          margin-top: 20px;
+                                        "
+                                      >
+                                        This email was sent to
+                                        campmonsales@gmail.com. Manage
+                                        preferences
+                                        <a
+                                          style="
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            font-family: Tiempos, Georgia,
+                                              'Times New Roman', Times, serif;
+                                            color: #153a33;
+                                            font-weight: 300;
+                                            text-decoration: underline;
+                                            display: inline-block;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          here
+                                        </a>
+                                        or unsubscribe
+                                        <a
+                                          style="
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            font-family: Tiempos, Georgia,
+                                              'Times New Roman', Times, serif;
+                                            color: #153a33;
+                                            font-weight: 300;
+                                            text-decoration: underline;
+                                            display: inline-block;
+                                          "
+                                          href="http://example.com"
+                                        >
+                                          here.
+                                        </a>
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                          </tr>
+                          </table>
+                       <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END THREE COLUMNS -->
+          <!-- Footer -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>

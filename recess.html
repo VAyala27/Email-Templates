@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .two-columns-container {
+          width: 90% !important;
+          margin: 0 auto !important;
+          text-align: center !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .content table {
+          margin: 0 auto !important;
+          width: 250px !important;
+          max-width: 100% !important;
+        }
+
+        .one-col p {
+          font-size: 13px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h2 {
+          font-size: 20px !important;
+          padding: 10px !important;
+        }
+
+        .nav a {
+          padding: 20px 10px !important;
+          font-size: 12px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+          width: 150px !important;
+        }
+
+        .btn-container a {
+          font-size: 13px !important;
+          padding: 12px 10px !important;
+        }
+
+        .social-media table tr td a {
+          padding: 0px 10px !important;
+        }
+
+        .social-media table tr td a img {
+          width: 20px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header p {
+          font-size: 13px !important;
+        }
+
+        .one-col p {
+          font-size: 12px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h2 {
+          font-size: 18px !important;
+          padding: 10px !important;
+        }
+
+        .nav a {
+          padding: 20px 10px !important;
+          font-size: 12px !important;
+        }
+
+        .btn-container {
+          width: 150px !important;
+        }
+
+        .btn-container a {
+          font-size: 13px !important;
+          padding: 12px 10px !important;
+        }
+
+        .two-columns-container {
+          width: 90% !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .content table {
+          margin: 0 auto !important;
+          width: 160px !important;
+          max-width: 100% !important;
+          min-width: 120px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .social-media a {
+          padding: 0px 10px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START header-->
+          <tr>
+            <td style="padding: 0px" class="one-col header">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    style="
+                      padding: 15px 0px;
+                      text-align: center;
+                      mso-padding-alt: 15px 0px;
+                    "
+                    align="center"
+                  >
+                    <a
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        text-align: center;
+                      "
+                      href="http://example.com"
+                    >
+                      <img
+                        src="https://i.postimg.cc/9QKHsRvB/recess-logo.png"
+                        width="150"
+                        height=""
+                        alt="recess-logo"
+                        border="0"
+                        style="
+                          width: 150px;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END header-->
+
+          <!-- START nav-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #f2f2f2"
+              class="one-col nav"
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      style="
+                        color: #1d2a58;
+                        font-style: normal;
+                        font-weight: 400;
+                        text-decoration: none;
+                        display: inline-block;
+                        background: transparent;
+                        font-family: 'Helvetica Neue', Arial;
+                        font-size: 16px;
+                        line-height: 100%;
+                        letter-spacing: 0;
+                        margin: 0;
+                        text-transform: none;
+                        padding: 20px;
+                        mso-padding-alt: 20px;
+                        border-radius: 5px;
+                      "
+                      href="http://example.com"
+                    >
+                      subscribe & save
+                    </a>
+                    <a
+                      style="
+                        color: #1d2a58;
+                        font-style: normal;
+                        font-weight: 400;
+                        text-decoration: none;
+                        display: inline-block;
+                        background: transparent;
+                        font-family: 'Helvetica Neue', Arial;
+                        font-size: 16px;
+                        line-height: 100%;
+                        letter-spacing: 0;
+                        margin: 0;
+                        text-transform: none;
+                        padding: 10px 10px 10px 10px;
+                        mso-padding-alt: 0;
+                        border-radius: 5px;
+                      "
+                      href="http://example.com"
+                    >
+                      what's inside
+                    </a>
+                    <a
+                      style="
+                        color: #1d2a58;
+                        font-style: normal;
+                        font-weight: 400;
+                        text-decoration: none;
+                        display: inline-block;
+                        background: transparent;
+                        font-family: 'Helvetica Neue', Arial;
+                        font-size: 16px;
+                        line-height: 100%;
+                        letter-spacing: 0;
+                        margin: 0;
+                        text-transform: none;
+                        padding: 10px 10px 10px 10px;
+                        mso-padding-alt: 0;
+                        border-radius: 5px;
+                      "
+                      href="http://example.com"
+                    >
+                      give $10, get $10
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END nav-->
+
+          <!-- START one-col hero-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #f8f8f8"
+              class="one-col hero"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/HnpqbQyT/recess-hero.png"
+                        width="640"
+                        height=""
+                        alt="recess-hero"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td style="padding: 0px" class="one-col img">
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://s11.gifyu.com/images/SgN27.gif"
+                        alt="recess magnesium"
+                        border="0"
+                        width="640"
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td style="padding: 0px" class="one-col img">
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/hGQcGb9w/recess-discount.png"
+                        width="640"
+                        height=""
+                        alt="recess-discount"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- START one-col img-->
+          <tr>
+            <td style="padding: 0px" class="one-col img">
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/66hsQMxQ/recess-subscribe-2.png"
+                        width="640"
+                        height=""
+                        alt="recess-subscribe-2"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img-->
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 20px 0px 0px" class="footer">
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center" style="text-align: center">
+                    <a
+                      href="http://example.com"
+                      style="text-decoration: none; font-size: 0px"
+                    >
+                      <img
+                        width="50"
+                        style="width: 50px; max-width: 50px"
+                        src="https://i.postimg.cc/nLmfxVxf/recess-tiktok.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="text-decoration: none; font-size: 0px"
+                    >
+                      <img
+                        width="50"
+                        style="width: 50px; max-width: 50px"
+                        src="https://i.postimg.cc/jd8bQkcm/recess-facebook.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="text-decoration: none; font-size: 0px"
+                    >
+                      <img
+                        width="50"
+                        style="width: 50px; max-width: 50px"
+                        src="https://i.postimg.cc/V6cQkysr/recess-twitter.png"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 20px 0px 0px; mso-padding-alt: 20px 0px 0px"
+                  >
+                    <p
+                      style="
+                        padding-bottom: 0;
+                        margin: 0;
+                        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        color: #000;
+                        letter-spacing: 0.5px;
+                        text-align: center;
+                      "
+                    >
+                      Made with ❤️ in
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        padding-bottom: 0;
+                        margin: 0;
+                        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        color: #000;
+                        letter-spacing: 0.5px;
+                        text-align: center;
+                      "
+                    >
+                      NYC + The Hudson Valley
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        padding-bottom: 0;
+                        margin: 0;
+                        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        color: #000;
+                        letter-spacing: 0.5px;
+                        text-align: center;
+                      "
+                    >
+                      34 Howard St Fl 4 New York, NY 10013-3150
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="margin: 0; margin-bottom: 20px; text-align: center"
+                    >
+                      <a
+                        style="
+                          font-family: 'Montserrat', Helvetica, Arial,
+                            sans-serif;
+                          font-size: 14px;
+                          color: #7e7e7e;
+                          font-style: normal;
+                          font-weight: normal;
+                          text-decoration: underline;
+                          cursor: default;
+                        "
+                        href="http://example.com"
+                      >
+                        Unsubscribe
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>

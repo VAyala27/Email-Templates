@@ -1,0 +1,897 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-col p {
+          font-size: 13px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h1 {
+          margin-top: 20px !important;
+          margin-bottom: 10px !important;
+          font-size: 24px !important;
+          padding: 10px !important;
+        }
+
+        .btn {
+          font-size: 14px;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header p a {
+          font-size: 10px !important;
+        }
+
+        .header p {
+          margin-top: 5px !important;
+          margin-bottom: 5px !important;
+        }
+
+        .one-col p {
+          font-size: 12px !important;
+          padding: 10px !important;
+        }
+
+        .one-col h2 {
+          font-size: 18px !important;
+          padding: 10px !important;
+        }
+
+        .btn {
+          font-size: 14px !important;
+        }
+
+        .social-media img {
+          width: 28px !important;
+        }
+
+        .links p a {
+          font-size: 16px !important;
+        }
+
+        .footer a {
+          font-size: 9px !important;
+        }
+
+        .footer .padding {
+          padding: 0px 10px !important;
+        }
+
+        .footer p {
+          font-size: 12px !important;
+          line-height: 130% !important;
+        }
+
+        .footer p a {
+          font-size: 12px !important;
+        }
+
+        .footer .social-media a {
+          font-size: 0px !important;
+        }
+
+        .footer .social-media img {
+          width: 50px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START one-col header-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col header"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        text-align: center;
+                      "
+                    >
+                      <img
+                        src="https://i.postimg.cc/V6cDdYjP/Liquid-Death-logo.png"
+                        alt="Liquid-Death-logo"
+                        border="0"
+                        width="320"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 320px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col header-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="95%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 3px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <h2
+                      style="
+                        margin: 0;
+                        color: #fff;
+                        font-family: acumin-pro-condensed, 'Arial Narrow', Arial,
+                          'Helvetica Neue', Helvetica, sans-serif;
+                        font-size: 24px;
+                        font-style: Normal;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 100%;
+                        margin-bottom: 0;
+                        text-align: left;
+                        margin-left: 15px;
+                      "
+                    >
+                      Never heard of Slaughter Berries? There’s a good reason.
+                    </h2>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="95%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 3px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col hero-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col hero"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/6QZMW74h/Liquid-Death-hero.jpg"
+                        width="560"
+                        height=""
+                        alt="Vivo-Baredfoot-hero"
+                        border="0"
+                        style="
+                          width: 100%;
+                          max-width: 560px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="padding" style="padding: 0px 15px">
+                    <p
+                      style="
+                        margin: 0;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+                        font-size: 14px;
+                        text-align: left;
+                        color: #fff;
+                        line-height: 150%;
+                      "
+                    >
+                      Slaughter Berries are the world’s most exotic and
+                      sought-after fruit. Harvested high in the Golgoroth
+                      Mountains by half-man, half-pigs who have been sewn
+                      together by orphans and picked on just one day a year,
+                      these demented berries are valued at over $9,000/oz at
+                      market.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="padding" style="padding: 0px 15px">
+                    <p
+                      style="
+                        margin: 0;
+                        margin-bottom: 25px;
+                        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+                        font-size: 14px;
+                        text-align: left;
+                        color: #fff;
+                        line-height: 150%;
+                      "
+                    >
+                      Lucky for you, we got our hands on a few bushels and put
+                      them into our new Slaughter Berry Iced Tea for a very
+                      limited time only. It’s so exclusive, it’s ONLY available
+                      at select Walmarts. And it's going fast. See if there's a
+                      Walmart near you that still has some left.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <div>
+                      <!--[if mso]>
+                        <v:rect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 40px;
+                            v-text-anchor: middle;
+                            width: 200px;
+                          "
+                          strokecolor="#D2AC5A"
+                          fillcolor="#D2AC5A"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #000;
+                              font-family: sans-serif;
+                              font-size: 16px;
+                              font-weight: bold;
+                            "
+                          >
+                            Hell Yes
+                          </center>
+                        </v:rect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #d2ac5a;
+                          border: 1px solid #d2ac5a;
+                          color: #000;
+                          display: inline-block;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-weight: bold;
+                          line-height: 40px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 200px;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                        class="btn"
+                      >
+                        Hell Yes
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    aria-hidden="true"
+                    height="40"
+                    style="font-size: 0; line-height: 0px"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="95%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 3px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col social-media"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    style="text-align: center; padding: 10px 0px"
+                    class="social-media"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0px;
+                        margin-right: 20px;
+                      "
+                    >
+                      <img
+                        width="32"
+                        style="width: 32px; max-width: 32px"
+                        src="https://i.postimg.cc/ncdR0ftq/Liquid-Death-instagram.png"
+                        alt="Liquid-Death-instagram"
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0px;
+                        margin-right: 20px;
+                      "
+                    >
+                      <img
+                        width="32"
+                        style="width: 32px; max-width: 32px"
+                        src="https://i.postimg.cc/7ZfBRtxd/Liquid-Death-youtube.png"
+                        alt="Samsung-youtube"
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0px;
+                        margin-right: 20px;
+                      "
+                    >
+                      <img
+                        width="32"
+                        style="width: 32px; max-width: 32px"
+                        src="https://i.postimg.cc/dVpWcR31/Liquid-Death-tiktok.png"
+                        alt="Liquid-Death-tiktok"
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0px;
+                        margin-right: 20px;
+                      "
+                    >
+                      <img
+                        width="32"
+                        style="width: 32px; max-width: 32px"
+                        src="https://i.postimg.cc/xTjpvTB0/Liquid-Death-facebook.png"
+                        alt="Liquid-Death-facebook"
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="text-decoration: none; font-size: 0px"
+                    >
+                      <img
+                        width="32"
+                        style="width: 32px; max-width: 32px"
+                        src="https://i.postimg.cc/PfQFv833/Liquid-Death-custom.png"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="95%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 3px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col Links-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col links"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        margin-bottom: 0;
+                        margin-left: 15px;
+                        margin-right: 0;
+                        margin-top: 0;
+                        padding-bottom: 0;
+                        font-family: acumin-pro-condensed, Arial,
+                          'Helvetica Neue', Helvetica, sans-serif;
+                        font-weight: 600;
+                        font-size: 22px;
+                        text-align: left;
+                        color: #fff;
+                        line-height: 110%;
+                      "
+                    >
+                      <a
+                        href="http://example.com"
+                        style="
+                          color: #fff;
+                          font-style: normal;
+                          font-weight: 600;
+                          text-decoration: none;
+                          font-family: acumin-pro-condensed, Arial,
+                            'Helvetica Neue', Helvetica, sans-serif;
+                          font-size: 22px;
+                          text-align: left;
+                          line-height: 110%;
+                        "
+                      >
+                        FAQ
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        margin-bottom: 0;
+                        margin-left: 15px;
+                        margin-right: 0;
+                        margin-top: 0;
+                        padding-bottom: 0;
+                        font-family: acumin-pro-condensed, Arial,
+                          'Helvetica Neue', Helvetica, sans-serif;
+                        font-weight: 600;
+                        font-size: 22px;
+                        text-align: left;
+                        color: #fff;
+                        line-height: 110%;
+                      "
+                    >
+                      <a
+                        href="http://example.com"
+                        style="
+                          color: #fff;
+                          font-style: normal;
+                          font-weight: 600;
+                          text-decoration: none;
+                          font-family: acumin-pro-condensed, Arial,
+                            'Helvetica Neue', Helvetica, sans-serif;
+                          font-size: 22px;
+                          text-align: left;
+                          line-height: 110%;
+                        "
+                      >
+                        PRIVACY POLICY
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        margin-bottom: 0;
+                        margin-left: 15px;
+                        margin-right: 0;
+                        margin-top: 0;
+                        padding-bottom: 0;
+                        font-family: acumin-pro-condensed, Arial,
+                          'Helvetica Neue', Helvetica, sans-serif;
+                        font-weight: 600;
+                        font-size: 22px;
+                        text-align: left;
+                        color: #fff;
+                        line-height: 110%;
+                      "
+                    >
+                      <a
+                        href="http://example.com"
+                        style="
+                          color: #fff;
+                          font-style: normal;
+                          font-weight: 600;
+                          text-decoration: none;
+                          font-family: acumin-pro-condensed, Arial,
+                            'Helvetica Neue', Helvetica, sans-serif;
+                          font-size: 22px;
+                          text-align: left;
+                          line-height: 110%;
+                        "
+                      >
+                        CONTACT
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col Links-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="95%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 3px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- Footer -->
+          <tr>
+            <td
+              style="padding: 15px 0px 15px; background-color: #000"
+              class="footer"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td style="padding: 0px" class="padding">
+                    <p
+                      style="
+                        margin-bottom: 0;
+                        margin-left: 15px;
+                        margin-right: 0;
+                        margin-top: 0;
+                        padding-bottom: 10px;
+                        color: #fff;
+                        font-family: acumin-pro-condensed, Arial,
+                          'Helvetica Neue', Helvetica, sans-serif;
+                        font-weight: bold;
+                        font-size: 14px;
+                      "
+                    >
+                      <a
+                        style="
+                          color: #fff;
+                          font-style: normal;
+                          font-weight: 400;
+                          text-decoration: none;
+                          font-family: acumin-pro-condensed, Arial,
+                            'Helvetica Neue', Helvetica, sans-serif;
+                        "
+                        href="http://exmaple.com"
+                      >
+                        Unsubscribe
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="padding">
+                    <p
+                      style="
+                        margin-bottom: 0;
+                        margin-left: 15px;
+                        margin-right: 0;
+                        margin-top: 0;
+                        padding-bottom: 10px;
+                        color: #fff;
+                        font-family: acumin-pro-condensed, Arial,
+                          'Helvetica Neue', Helvetica, sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                      "
+                    >
+                      © 2023 Liquid Death Mountain Water. All rights reserved.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="padding">
+                    <p
+                      style="
+                        margin-bottom: 0;
+                        margin-left: 15px;
+                        margin-right: 0;
+                        margin-top: 0;
+                        padding-bottom: 10px;
+                        color: #fff;
+                        font-family: acumin-pro-condensed, Arial,
+                          'Helvetica Neue', Helvetica, sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                      "
+                    >
+                      Supplying Demand Inc., 4077 Redwood Ave., Los Angeles, CA,
+                      90066
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
