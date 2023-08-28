@@ -1,0 +1,2370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-col .content table h4 {
+          padding: 30px 20px 10px !important;
+        }
+
+        .one-col .content table p {
+          padding: 10px 20px 10px !important;
+        }
+
+        .one-col .content table .btn {
+          padding: 10px 20px 30px !important;
+        }
+
+        .two-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .two-columns .column {
+          max-width: 600px !important;
+          width: 100% !important;
+        }
+
+        .two-columns-links .column {
+          max-width: 600px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .two-thirds-columns .column table tr td {
+          text-align: left !important;
+        }
+
+        .two-thirds-columns .column .padding {
+          padding: 10px 20px !important;
+        }
+
+        .two-columns-links .column .content {
+          padding: 0px !important;
+        }
+
+        .two-col-img-container {
+          width: 100% !important;
+          max-width: 600px !important;
+        }
+
+        .two-columns .column img {
+          max-width: 100% !important;
+          width: 600px !important;
+        }
+
+        .two-third-columns .content {
+          text-align: center !important;
+        }
+
+        .logo {
+          padding: 10px 0px !important;
+        }
+
+        .logo img {
+          max-width: 125px !important;
+          width: 125px !important;
+        }
+
+        .two-columns .column .content table {
+          width: 100% !important;
+        }
+
+        .two-columns .column .content table p,
+        .two-columns .column .content table h2 {
+          text-align: center !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header .logo {
+          width: 90px !important;
+        }
+
+        .header h1 {
+          font-size: 22px !important;
+        }
+
+        .header p {
+          font-size: 13px !important;
+        }
+
+        .btn-container {
+          width: 100% !important;
+        }
+
+        .two-col-img-container img {
+          max-width: 175px !important;
+          width: 175px !important;
+          margin-bottom: 10px;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+
+        .two-columns .column h2 {
+          font-size: 26px !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 10px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .three-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-bottom: 15px !important;
+        }
+
+        .three-columns .column p {
+          padding: 0px 10px;
+        }
+
+        .three-columns .column .three-col-img {
+          width: 100% !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START bg image with text -->
+          <tr>
+            <td
+              class="bg-image"
+              valign="top"
+              background="https://s11.gifyu.com/images/SgNzg.gif"
+              bgcolor="#fff"
+              width="100%"
+              height="450"
+              style="
+                background-repeat: no-repeat;
+                max-width: 600px;
+                background-size: cover;
+                background-position: top;
+                padding: 40px 30px 40px;
+                mso-padding-alt: 40px 30px 40px 30px;
+              "
+            >
+              <!--[if gte mso 9]>
+              <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 800px; height: 400px;" src="https://i.ibb.co/BCZNrPw/Together-For-Women-multiple-squares-bg.png" />                
+              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 800px; height:400px;">
+<v:fill  opacity="0%" color="#000000”  />
+<v:textbox inset="0,0,0,0">
+                  <![endif]-->
+              <!--add your content here-->
+              <table
+                class="content"
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding-bottom: 40px;
+                      mso-padding-alt: 0px 0px 40px 0px;
+                    "
+                  >
+                    <img
+                      width="150"
+                      src="https://i.postimg.cc/bvzQwqq9/epic-mountain-rentals-logo-white-2.png"
+                      alt="Epic-Mountain-Rentals-logo-white"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Prompt', Arial, sans-serif;
+                        color: #fff;
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-weight: bold;
+                        margin-top: 0;
+                        padding-bottom: 15px;
+                        mso-padding-alt: 0px 0px 15px 0px;
+                      "
+                    >
+                      Pedal Toward the Weekend with
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h1
+                      style="
+                        margin: 0;
+                        font-family: 'Prompt', Arial, sans-serif;
+                        color: #fff;
+                        font-size: 60px;
+                        font-weight: 700;
+                        font-style: normal;
+                        letter-spacing: 0px;
+                      "
+                    >
+                      A Bike for
+                    </h1>
+
+                    <h1
+                      style="
+                        margin: 0;
+                        font-family: 'Prompt', Arial, sans-serif;
+                        color: #fff;
+                        font-size: 60px;
+                        font-weight: 700;
+                        font-style: normal;
+                        letter-spacing: 0px;
+                        padding: 0px 0px 20px 0px;
+                        mso-padding-alt: 0px 0px 20px 0px;
+                      "
+                    >
+                      Every Rider!
+                    </h1>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 200px"
+                    >
+                      <div>
+                        <!--[if mso]>
+                          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" stroke="f" fillcolor="#f8951f">
+                            <w:anchorlock/>
+                            <center>
+                          <![endif]-->
+                        <a
+                          href="http://example.com"
+                          style="
+                            background-color: #f8951f;
+                            color: #161d65;
+                            display: inline-block;
+                            font-family: sans-serif;
+                            font-size: 13px;
+                            font-weight: bold;
+                            line-height: 40px;
+                            text-align: center;
+                            text-decoration: none;
+                            width: 200px;
+                            -webkit-text-size-adjust: none;
+                          "
+                        >
+                          Book Rentals Now
+                        </a>
+                        <!--[if mso]>
+                            </center>
+                          </v:rect>
+                        <![endif]-->
+                      </div>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END bg image with text -->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="
+                padding: 30px 30px 50px 30px;
+                mso-padding-alt: 30px 30px 50px 30px;
+                background-color: #fafafa;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <h1
+                      style="
+                        margin: 0;
+                        font-family: 'Prompt', Arial, sans-serif;
+                        color: #161d65;
+                        font-weight: 700;
+                        font-size: 42px;
+                        line-height: 44px;
+                        font-style: normal;
+                        padding-bottom: 15px;
+                        mso-padding-alt: 0px 0px 15px 0px;
+                      "
+                    >
+                      Choose Your Adventure
+                    </h1>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        color: #4d4d4f;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-style: normal;
+                        padding-bottom: 25px;
+                        mso-padding-alt: 0px 0px 25px 0px;
+                      "
+                    >
+                      From the bike park to scenic cruisy trails, our rental
+                      shops have bike options for riders of every skill level
+                      and age. With locations throughout North America, find the
+                      rental shop nearest you to start your bike adventure.
+                      *Kids bikes available for select bike types.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="width: 200px"
+                    >
+                      <div>
+                        <!--[if mso]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" stroke="f" fillcolor="#f8951f">
+                          <w:anchorlock/>
+                          <center>
+                        <![endif]-->
+                        <a
+                          href="http://example.com"
+                          style="
+                            background-color: #f8951f;
+                            color: #161d65;
+                            display: inline-block;
+                            font-family: sans-serif;
+                            font-size: 13px;
+                            font-weight: bold;
+                            line-height: 40px;
+                            text-align: center;
+                            text-decoration: none;
+                            width: 200px;
+                            -webkit-text-size-adjust: none;
+                          "
+                        >
+                          Explore Bike Rentals
+                        </a>
+                        <!--[if mso]>
+                          </center>
+                        </v:rect>
+                      <![endif]-->
+                      </div>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 30px 0px 50px 0px;
+                max-width: 800px;
+                mso-padding-alt: 30px 0px 50px 0px;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="200" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 5px;
+                            mso-padding-alt: 0px 5px 0px 5px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table style="width: 200px">
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/4dmLD8bm/Epic-Mountain-Rentals-article-1.jpg"
+                                        width="170"
+                                        alt="Epic-Mountain-Rentals-article-1"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                       </td><td width="400" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 10px;
+                            mso-padding-alt: 0px 10px 0px 10px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <h3
+                                  style="
+                                    margin: 0;
+                                    font-family: 'Open Sans', Arial, sans-serif;
+                                    color: #161d65;
+                                    font-size: 24px;
+                                    line-height: 28px;
+                                    font-weight: 700;
+                                    padding: 0px 0px 10px 0px;
+                                    mso-padding-alt: 0px 0px 10px 0px;
+                                  "
+                                >
+                                  Thrill Seeker = Downhill Bike
+                                </h3>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    margin: 0;
+                                    color: #000000;
+                                    font-family: adobe-clean, Helvetica Neue,
+                                      Helvetica, Verdana, Arial, sans-serif;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    padding-bottom: 10px;
+                                    mso-padding-alt: 0px 0px 10px 0px;
+                                  "
+                                >
+                                  From hitting the bike park to navigating steep
+                                  mountain trails, this bike is perfect for the
+                                  thrill seeker.*
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <a
+                                  style="
+                                    font-family: 'Open Sans', Arial, sans-serif;
+                                    color: #161d65;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 700;
+                                    padding: 0px 0px 0px 0px;
+                                  "
+                                  href="http://example.com"
+                                >
+                                  Drop-in on Your Rental
+                                  <img
+                                    style="
+                                      margin-left: 10px;
+                                      vertical-align: middle;
+                                      display: inline-block;
+                                      margin-bottom: 3px;
+                                    "
+                                    width="16px"
+                                    src="https://i.postimg.cc/fbpsFJg2/epic-mountain-rentals-arrow-2.png"
+                                    alt="epic-mountain-rentals-arrow-2"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                       <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 30px 0px 50px 0px;
+                max-width: 800px;
+                mso-padding-alt: 30px 0px 50px 0px;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                        <td width="200" valign="top" style="padding: 0;">
+                                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 5px;
+                            mso-padding-alt: 0px 5px 0px 5px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table style="width: 200px">
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/pT4GRDqk/Epic-Mountain-Rentals-article-2.jpg"
+                                        width="170"
+                                        alt="Epic-Mountain-Rentals-article-2"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                     </td><td width="400" valign="top" style="padding: 0;">
+                                     <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 10px;
+                            mso-padding-alt: 0px 10px 0px 10px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <h3
+                                  style="
+                                    margin: 0;
+                                    font-family: 'Open Sans', Arial, sans-serif;
+                                    color: #161d65;
+                                    font-size: 24px;
+                                    line-height: 28px;
+                                    font-weight: 700;
+                                    padding: 0px 0px 10px 0px;
+                                    mso-padding-alt: 0px 0px 10px 0px;
+                                  "
+                                >
+                                  Everyday Explorer = Trail Bike
+                                </h3>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    margin: 0;
+                                    color: #000000;
+                                    font-family: adobe-clean, Helvetica Neue,
+                                      Helvetica, Verdana, Arial, sans-serif;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    padding-bottom: 10px;
+                                    mso-padding-alt: 0px 0px 10px 0px;
+                                  "
+                                >
+                                  Lightweight with full suspension. Our trail
+                                  bikes are best for exploring any single-track
+                                  mountain trails.*
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <a
+                                  style="
+                                    font-family: 'Open Sans', Arial, sans-serif;
+                                    color: #161d65;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 700;
+                                    padding: 0px 0px 0px 0px;
+                                  "
+                                  href="http://example.com"
+                                >
+                                  Happy Trails
+                                  <img
+                                    style="
+                                      margin-left: 10px;
+                                      vertical-align: middle;
+                                      display: inline-block;
+                                      margin-bottom: 3px;
+                                    "
+                                    width="16px"
+                                    src="https://i.postimg.cc/fbpsFJg2/epic-mountain-rentals-arrow-2.png"
+                                    alt="epic-mountain-rentals-arrow-2"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        </tr>
+                                        </table>
+                                     <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 30px 0px 50px 0px;
+                max-width: 800px;
+                mso-padding-alt: 30px 0px 50px 0px;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="200" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 5px;
+                            mso-padding-alt: 0px 5px 0px 5px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table style="width: 200px">
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/PJD6xP7H/Epic-Mountain-Rentals-article-3.jpg"
+                                        width="170"
+                                        alt="Epic-Mountain-Rentals-article-3"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                       </td><td width="400" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 10px;
+                            mso-padding-alt: 0px 10px 0px 10px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <h3
+                                  style="
+                                    margin: 0;
+                                    font-family: 'Open Sans', Arial, sans-serif;
+                                    color: #161d65;
+                                    font-size: 24px;
+                                    line-height: 28px;
+                                    font-weight: 700;
+                                    padding: 0px 0px 10px 0px;
+                                    mso-padding-alt: 0px 0px 10px 0px;
+                                  "
+                                >
+                                  Chill Cruiser = Path Bike
+                                </h3>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    margin: 0;
+                                    color: #000000;
+                                    font-family: adobe-clean, Helvetica Neue,
+                                      Helvetica, Verdana, Arial, sans-serif;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    padding-bottom: 10px;
+                                    mso-padding-alt: 0px 0px 10px 0px;
+                                  "
+                                >
+                                  Wanting a smooth ride to take in the views?
+                                  Path bikes are the perfect comfort bike for
+                                  riders of every skill level.*
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <a
+                                  style="
+                                    font-family: 'Open Sans', Arial, sans-serif;
+                                    color: #161d65;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 700;
+                                    padding: 0px 0px 0px 0px;
+                                  "
+                                  href="http://example.com"
+                                >
+                                  Recreational Rentals
+                                  <img
+                                    style="
+                                      margin-left: 10px;
+                                      vertical-align: middle;
+                                      display: inline-block;
+                                      margin-bottom: 3px;
+                                    "
+                                    width="16px"
+                                    src="https://i.postimg.cc/fbpsFJg2/epic-mountain-rentals-arrow-2.png"
+                                    alt="epic-mountain-rentals-arrow-2"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                       <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 30px 0px 50px 0px;
+                max-width: 800px;
+                mso-padding-alt: 30px 0px 50px 0px;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                                            <tr>
+                                            <td width="200" valign="top" style="padding: 0;">
+                                         <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 5px;
+                            mso-padding-alt: 0px 5px 0px 5px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table style="width: 200px">
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/T25NQ43s/Epic-Mountain-Rentals-article-4.jpg"
+                                        width="170"
+                                        alt="Epic-Mountain-Rentals-article-4"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                         </td><td width="400" valign="top" style="padding: 0;">
+                                         <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 10px;
+                            mso-padding-alt: 0px 10px 0px 10px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <h3
+                                  style="
+                                    margin: 0;
+                                    font-family: 'Open Sans', Arial, sans-serif;
+                                    color: #161d65;
+                                    font-size: 24px;
+                                    line-height: 28px;
+                                    font-weight: 700;
+                                    padding: 0px 0px 10px 0px;
+                                    mso-padding-alt: 0px 0px 10px 0px;
+                                  "
+                                >
+                                  Bike Boost = Electric Bike
+                                </h3>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    margin: 0;
+                                    color: #000000;
+                                    font-family: adobe-clean, Helvetica Neue,
+                                      Helvetica, Verdana, Arial, sans-serif;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    padding-bottom: 10px;
+                                    mso-padding-alt: 0px 0px 10px 0px;
+                                  "
+                                >
+                                  Explore the great outdoors but don't overexert
+                                  yourself with our battery-powered electric
+                                  bikes (e-bikes).
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <a
+                                  style="
+                                    font-family: 'Open Sans', Arial, sans-serif;
+                                    color: #161d65;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 700;
+                                    padding: 0px 0px 0px 0px;
+                                  "
+                                  href="http://example.com"
+                                >
+                                  Boost Your Rental
+                                  <img
+                                    style="
+                                      margin-left: 10px;
+                                      vertical-align: middle;
+                                      display: inline-block;
+                                      margin-bottom: 3px;
+                                    "
+                                    width="16px"
+                                    src="https://i.postimg.cc/fbpsFJg2/epic-mountain-rentals-arrow-2.png"
+                                    alt="epic-mountain-rentals-arrow-2"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                         <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 30px 0 50px 0;
+                mso-padding-alt: 30px 0px 50px 0px;
+                max-width: 800px;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                                              <tr>
+                                              <td width="300" valign="top" style="padding: 0;">
+                                           <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                    table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                            <td width="300" valign="top" style="padding: 0;">
+                                <![endif]-->
+                                <table
+                                  style="
+                                    width: 300px;
+                                    padding: 0px 20px;
+                                    mso-padding-alt: 0px 20px 0px 20px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <h4
+                                        style="
+                                          margin: 0;
+                                          font-family: 'Open Sans', Arial,
+                                            sans-serif;
+                                          color: #161d65;
+                                          font-size: 24px;
+                                          line-height: 28px;
+                                          font-weight: bold;
+                                          padding: 0px 0px 10px 0px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Recommendations Beyond Your Bike
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-family: 'Open Sans', Arial,
+                                            sans-serif;
+                                          color: #4d4d4f;
+                                          font-size: 14px;
+                                          line-height: 18px;
+                                          padding: 0px 0px 20px 0px;
+                                          mso-padding-alt: 0px 0px 20px 0px;
+                                        "
+                                      >
+                                        Bike like a local with pro-tips from our
+                                        expert staff. With extensive bike
+                                        knowledge and experience, take our
+                                        advice on the best terrain in the area,
+                                        trail essentials, and much more!
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 0px 0px 0px">
+                                      <div>
+                                        <!--[if mso]>
+                                          <v:rect
+                                            xmlns:v="urn:schemas-microsoft-com:vml"
+                                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                                            href="http://example.com"
+                                            style="
+                                              height: 40px;
+                                              v-text-anchor: middle;
+                                              width: 150px;
+                                            "
+                                            strokecolor="#f8951f"
+                                            fillcolor="#fff"
+                                          >
+                                            <w:anchorlock />
+                                            <center
+                                              style="
+                                                color: #161d65;
+                                                font-family: sans-serif;
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                              "
+                                            >
+                                              What to Expect
+                                            </center>
+                                          </v:rect>
+                                        <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #fff;
+                                            border: 1px solid #f8951f;
+                                            color: #161d65;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 150px;
+                                            -webkit-text-size-adjust: none;
+                                            mso-hide: all;
+                                          "
+                                        >
+                                          What to Expect
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td><td width="300" valign="top" style="padding: 0;">
+                                <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                           </td><td width="300" valign="top" style="padding: 0;">
+                                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300px" align="center">
+                                  <tr>
+                                    <td>
+                                      <!--[if (gte mso 9)|(IE)]>
+                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                    <tr>
+                                      <td width="300" valign="top" style="padding: 0;">
+                                <![endif]-->
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/yYqQGyJ8/Epic-Mountain-Rentals-article-5.jpg"
+                                          alt="Epic-Mountain-Rentals-article-5"
+                                          width="260"
+                                          style="
+                                            width: 260px;
+                                            max-width: 260px;
+                                            display: block;
+                                            margin: 0 auto;
+                                          "
+                                          border="0"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                              </td>
+                                              </tr>
+                                              </table>
+                                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 30px 0px 50px 0px;
+                mso-padding-alt: 30px 0px 50px 0px;
+                max-width: 800px;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                <td width="300" valign="top" style="padding: 0;">
+                                             <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300px" align="center">
+                                  <tr>
+                                    <td>
+                                      <!--[if (gte mso 9)|(IE)]>
+                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                    <td width="300" valign="top" style="padding: 0;">
+                              <![endif]-->
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/7LLmzBRm/Epic-Mountain-Rentals-article-6.jpg"
+                                          alt="Epic-Mountain-Rentals-article-5"
+                                          width="260"
+                                          style="
+                                            width: 260px;
+                                            max-width: 260px;
+                                            display: block;
+                                            margin: 0 auto;
+                                          "
+                                          border="0"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                             </td><td width="300" valign="top" style="padding: 0;">
+                                             <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                  table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                          <td width="300" valign="top" style="padding: 0;">
+                              <![endif]-->
+                                <table
+                                  style="
+                                    width: 300px;
+                                    padding: 0px 20px;
+                                    mso-padding-alt: 0px 20px 0px 20px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <h4
+                                        style="
+                                          margin: 0;
+                                          font-family: 'Open Sans', Arial,
+                                            sans-serif;
+                                          color: #161d65;
+                                          font-size: 24px;
+                                          line-height: 28px;
+                                          font-weight: bold;
+                                          padding: 0px 0px 10px 0px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        How to Conquer the Bike Park like a Pro
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-family: 'Open Sans', Arial,
+                                            sans-serif;
+                                          color: #4d4d4f;
+                                          font-size: 14px;
+                                          line-height: 18px;
+                                          padding: 0px 0px 20px 0px;
+                                          mso-padding-alt: 0px 0px 20px 0px;
+                                        "
+                                      >
+                                        Take your skills to the next level with
+                                        expert tips in our blog. With the right
+                                        skills, knowledge, and protective gear,
+                                        you'll be on your way to conquering your
+                                        next bike adventure.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 0px 0px 0px">
+                                      <div>
+                                        <!--[if mso]>
+                                          <v:rect
+                                            xmlns:v="urn:schemas-microsoft-com:vml"
+                                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                                            href="http://example.com"
+                                            style="
+                                              height: 40px;
+                                              v-text-anchor: middle;
+                                              width: 150px;
+                                            "
+                                            strokecolor="#f8951f"
+                                            fillcolor="#fff"
+                                          >
+                                            <w:anchorlock />
+                                            <center
+                                              style="
+                                                color: #161d65;
+                                                font-family: sans-serif;
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                              "
+                                            >
+                                              Read the Blog
+                                            </center>
+                                          </v:rect>
+                                        <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #fff;
+                                            border: 1px solid #f8951f;
+                                            color: #161d65;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 150px;
+                                            -webkit-text-size-adjust: none;
+                                            mso-hide: all;
+                                          "
+                                        >
+                                          Read the Blog
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                              </td><td width="300" valign="top" style="padding: 0;">
+                              <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                             <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 30px 0 50px 0;
+                mso-padding-alt: 30px 0px 50px 0px;
+                max-width: 800px;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                  <tr>
+                                                  <td width="300" valign="top" style="padding: 0;">
+                                               <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                        table width="100%" style="border-spacing: 0;" role="presentation">
+                                            <tr>
+                                                <td width="300" valign="top" style="padding: 0;">
+                                    <![endif]-->
+                                <table
+                                  style="
+                                    width: 300px;
+                                    padding: 0px 20px;
+                                    mso-padding-alt: 0px 20px 0px 20px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <h4
+                                        style="
+                                          margin: 0;
+                                          font-family: 'Open Sans', Arial,
+                                            sans-serif;
+                                          color: #161d65;
+                                          font-size: 24px;
+                                          line-height: 28px;
+                                          font-weight: bold;
+                                          padding: 0px 0px 10px 0px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Crankworx Whistler is on NOW - July 30!
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-family: 'Open Sans', Arial,
+                                            sans-serif;
+                                          color: #4d4d4f;
+                                          font-size: 14px;
+                                          line-height: 18px;
+                                          padding: 0px 0px 20px 0px;
+                                          mso-padding-alt: 0px 0px 20px 0px;
+                                        "
+                                      >
+                                        Crankworx is multi-stop series bringing
+                                        together the very best in the mountain
+                                        biking industry to compete in top-level
+                                        events. From BMX to downhill racing,
+                                        enduro to pump track, and more, get
+                                        ready for an adrenaline-filled week of
+                                        biking and entertainment!
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                    </td><td width="300" valign="top" style="padding: 0;">
+                                    <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                               </td><td width="300" valign="top" style="padding: 0;">
+                                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300px" align="center">
+                                  <tr>
+                                    <td>
+                                      <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                          <td width="300" valign="top" style="padding: 0;">
+                                    <![endif]-->
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/y8jLkqLD/Epic-Mountain-Rentals-article-7.jpg"
+                                          alt="Epic-Mountain-Rentals-article-7"
+                                          width="260"
+                                          style="
+                                            width: 260px;
+                                            max-width: 260px;
+                                            display: block;
+                                            margin: 0 auto;
+                                          "
+                                          border="0"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                                  </td>
+                                                  </tr>
+                                                  </table>
+                                               <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- START bg image with text -->
+          <tr>
+            <td
+              class="bg-image"
+              valign="middle"
+              background="https://i.postimg.cc/pXKMGFrG/epic-mountain-rentals-resort-bg.jpg"
+              bgcolor="#fff"
+              width="100%"
+              height="300"
+              style="
+                background-repeat: no-repeat;
+                max-width: 600px;
+                background-size: cover;
+                background-position: top;
+              "
+            >
+              <!--[if gte mso 9]>
+                  <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 800px; height: 400px;" src="https://i.ibb.co/BCZNrPw/Together-For-Women-multiple-squares-bg.png" />                
+                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 800px; height:400px;">
+<v:fill  opacity="0%" color="#000000”  />
+<v:textbox inset="0,0,0,0">
+                      <![endif]-->
+              <!--add your content here-->
+              <table
+                class="content"
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="100%"
+              >
+                <!-- START TWO COLUMNS -->
+                <tr>
+                  <td style="padding: 0px 0 0px 0; max-width: 800px">
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="two-columns"
+                          style="padding: 0; font-size: 0; text-align: center"
+                        >
+                          <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="300" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                          <table
+                            class="column"
+                            style="
+                              border-spacing: 0;
+                              vertical-align: top;
+                              width: 100%;
+                              max-width: 300px;
+                              display: inline-block;
+                              vertical-align: top;
+                            "
+                            role="presentation"
+                          >
+                            <tr>
+                              <td class="padding" style="padding: 0px">
+                                <table
+                                  class="content"
+                                  style="border-spacing: 0; text-align: left"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td>
+                                      <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                            <td width="300" valign="top" style="padding: 0;">
+                         <![endif]-->
+                                      <table
+                                        style="width: 300px; padding: 0px 20px"
+                                      ></table>
+                                      <!--[if (gte mso 9)|(IE)]>
+                         </td><td width="300" valign="top" style="padding: 0;">
+                         <![endif]-->
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <!--[if (gte mso 9)|(IE)]>
+                                   </td><td width="300" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                          <table
+                            class="column"
+                            style="
+                              border-spacing: 0;
+                              vertical-align: middle;
+                              width: 100%;
+                              max-width: 300px;
+                              display: inline-block;
+                            "
+                            role="presentation"
+                          >
+                            <tr>
+                              <td class="padding" style="padding: 0px">
+                                <table
+                                  class="content"
+                                  style="border-spacing: 0; text-align: left"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td>
+                                      <!--[if (gte mso 9)|(IE)]>
+                                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                                           <tr>
+                                           <td width="300" valign="top" style="padding: 0;">
+                                        <![endif]-->
+                                      <table width="300">
+                                        <tr>
+                                          <td>
+                                            <h4
+                                              style="
+                                                margin: 0;
+                                                font-family: 'Open Sans', Arial,
+                                                  sans-serif;
+                                                color: #161d65;
+                                                font-size: 24px;
+                                                line-height: 28px;
+                                                font-weight: bold;
+                                                padding: 0px 0px 10px 0px;
+                                                mso-padding-alt: 0px 0px 10px
+                                                  0px;
+                                              "
+                                            >
+                                              2023/24 WINTER RENTALS ARE LIVE!
+                                            </h4>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            <p
+                                              style="
+                                                margin: 0;
+                                                font-family: 'Open Sans', Arial,
+                                                  sans-serif;
+                                                color: #4d4d4f;
+                                                font-size: 14px;
+                                                line-height: 18px;
+                                                padding: 0px 20px 20px 0px;
+                                                mso-padding-alt: 0px 20px 20px
+                                                  0px;
+                                              "
+                                            >
+                                              Ski and snowboard rentals are now
+                                              available for the 2023/24 winter
+                                              season! Choose from convenient
+                                              in-store pick-up to delivery by
+                                              our expert staff.
+                                            </p>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td style="padding: 0px 0px 0px">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:rect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 40px;
+                                                    v-text-anchor: middle;
+                                                    width: 150px;
+                                                  "
+                                                  strokecolor="#f8951f"
+                                                  fillcolor="transparent"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #161d65;
+                                                      font-family: sans-serif;
+                                                      font-size: 13px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    Book Now & Save
+                                                  </center>
+                                                </v:rect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: transparent;
+                                                  border: 1px solid #f8951f;
+                                                  color: #161d65;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 13px;
+                                                  font-weight: bold;
+                                                  line-height: 40px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 150px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                "
+                                              >
+                                                Book Now & Save
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <!--[if (gte mso 9)|(IE)]>
+                                        </td><td width="300" valign="top" style="padding: 0;">
+                                        <![endif]-->
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <!--[if (gte mso 9)|(IE)]>
+                                      </td>
+                                      </tr>
+                                      </table>
+                                   <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- END TWO COLUMNS -->
+              </table>
+            </td>
+          </tr>
+          <!-- END bg image with text -->
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 30px 30px; background: #161d65" class="footer">
+              <table
+                class="content"
+                style="border-spacing: 0"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    style="padding: 0px 0px 20px"
+                    class="social-media"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0;
+                        padding: 0px 40px;
+                        mso-padding-alt: 0px 40px 0px 40px;
+                      "
+                    >
+                      <img
+                        width="40"
+                        style="width: 40px"
+                        src="https://i.postimg.cc/Yq1nBLgf/Epic-Mountain-Rentals-facebook.png"
+                        alt="Epic-Mountain-Rentals-facebook"
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0;
+                        padding: 0px 40px;
+                        mso-padding-alt: 0px 40px 0px 40px;
+                      "
+                    >
+                      <img
+                        width="40"
+                        style="width: 40px"
+                        src="https://i.postimg.cc/sgsnjf4F/Epic-Mountain-Rentals-instagram.png"
+                        alt="Epic-Mountain-Rentals-instagram"
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0;
+                        padding: 0px 40px;
+                        mso-padding-alt: 0px 40px 0px 40px;
+                      "
+                    >
+                      <img
+                        width="40"
+                        style="width: 40px"
+                        src="https://i.postimg.cc/bJ7TKqwB/Epic-Mountain-Rentals-youtube.png"
+                        alt="Epic-Mountain-Rentals-youtube"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="
+                      padding: 10px 0px 30px 0px;
+                      mso-padding-alt: 10px 0px 30px 0px;
+                    "
+                    align="center"
+                  >
+                    <a
+                      style="
+                       padding: 0px 1px 0px 1px;
+                        mso-padding-alt: 0px 1px 0px 1px;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        font-size: 14px;
+                        color: #ffffff;
+                        line-height: 20px;
+                        font-weight: 700;
+                        letter-spacing: 0;
+                        display: inline-block;
+                      "
+                      href="https://example.com"
+                    >
+                      View in browser
+                    </a>
+
+                    <span
+                      style="
+                       padding: 0px 1px 0px 1px;
+                        mso-padding-alt: 0px 1px 0px 1px;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        font-size: 14px;
+                        color: #ffffff;
+                        line-height: 20px;
+                        font-weight: 700;
+                        letter-spacing: 0;
+                        display: inline-block;
+                      "
+                    >
+                      |
+                    </span>
+
+                    <a
+                      style="
+                         padding: 0px 1px 0px 1px;
+                        mso-padding-alt: 0px 1px 0px 1px;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        font-size: 14px;
+                        color: #ffffff;
+                        line-height: 20px;
+                        font-weight: 700;
+                        letter-spacing: 0;
+                        display: inline-block;
+                      "
+                      href="https://www.twitter.com/"
+                    >
+                      Unsubscribe
+                    </a>
+
+                    <span
+                      style="
+                        padding: 0px 1px 0px 1px;
+                        mso-padding-alt: 0px 1px 0px 1px;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        font-size: 14px;
+                        color: #ffffff;
+                        line-height: 20px;
+                        font-weight: 700;
+                        letter-spacing: 0;
+                        display: inline-block;
+                      "
+                    >
+                      |
+                    </span>
+
+                    <a
+                      style="
+                        padding: 0px 1px 0px 1px;
+                        mso-padding-alt: 0px 1px 0px 1px;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        font-size: 14px;
+                        color: #ffffff;
+                        line-height: 20px;
+                        font-weight: 700;
+                        letter-spacing: 0;
+                        display: inline-block;
+                      "
+                      href="https://www.pinterest.com/"
+                    >
+                      Global unsubscribe
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        font-size: 12px;
+                        color: #ffffff;
+                        line-height: 16px;
+                        text-align: center;
+                      "
+                    >
+                      Vail Resorts Management Company
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        font-size: 12px;
+                        color: #ffffff;
+                        line-height: 16px;
+                        text-align: center;
+                      "
+                    >
+                      390 Interlocken Crescent, Suite 1000, Broomfield, CO,
+                      80021
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img
+                      width="640"
+                      style="width: 640px; max-width: 640px"
+                      src="https://i.postimg.cc/mDzjXPB9/Epic-Mountain-Rentals-logo.png"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+              </table>
+              <!-- Footer -->
+            </td>
+          </tr>
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
