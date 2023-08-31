@@ -1,0 +1,3435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .one-col .content table h4 {
+          padding: 30px 20px 10px !important;
+        }
+
+        .one-col .content table p {
+          padding: 10px 20px 10px !important;
+        }
+
+        .one-col .content table .btn {
+          padding: 10px 20px 30px !important;
+        }
+
+        .two-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .two-columns .column {
+          max-width: 600px !important;
+          width: 100% !important;
+        }
+
+        .two-columns-links .column {
+          max-width: 600px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .two-thirds-columns .column .padding {
+          padding: 10px 20px !important;
+        }
+
+        .two-thirds-columns .column .content tr td table {
+          width: 100% !important;
+          max-width: 600px !important;
+        }
+
+        .two-third-columns .column .content tr td table tr td img {
+          width: 100% !important;
+        }
+
+        .two-columns-links .column .content {
+          padding: 0px !important;
+        }
+
+        .two-col-img-container {
+          width: 100% !important;
+          max-width: 600px !important;
+        }
+
+        .two-columns .column img {
+          max-width: 100% !important;
+          width: 600px !important;
+        }
+
+        .two-third-columns .content {
+          text-align: center !important;
+        }
+
+        .logo {
+          padding: 10px 0px !important;
+        }
+
+        .logo img {
+          max-width: 125px !important;
+          width: 125px !important;
+        }
+
+        .two-columns .column .content table {
+          width: 100% !important;
+        }
+
+        .two-columns .column .content table p,
+        .two-columns .column .content table h3,
+        .two-columns .column .content table div {
+          text-align: center !important;
+          margin: 0 auto;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header .logo {
+          width: 90px !important;
+        }
+
+        .header h1 {
+          font-size: 22px !important;
+        }
+
+        .header p {
+          font-size: 13px !important;
+        }
+
+        .btn-container {
+          width: 100% !important;
+        }
+
+        .two-col-img-container img {
+          max-width: 175px !important;
+          width: 175px !important;
+          margin-bottom: 10px;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+
+        .two-columns .column h2 {
+          font-size: 26px !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 10px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .three-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-bottom: 15px !important;
+        }
+
+        .three-columns .column p {
+          padding: 0px 10px;
+        }
+
+        .three-columns .column .three-col-img {
+          width: 100% !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 5px 0px; background-color: #2b3940">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300" style="padding: 15px 20px">
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: left;
+                                          font-size: 13px;
+                                          color: #8c9497;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          color: #555;
+                                          line-height: 1.2;
+                                        "
+                                      >
+                                        +1 0000 000000
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300" style="padding: 15px 20px">
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: right;
+                                          font-size: 13px;
+                                          color: #8c9497;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          color: #555;
+                                          line-height: 1.2;
+                                        "
+                                      >
+                                        support@realestate.com
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- START one-col border-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #2b3940"
+              class="one-col border-col"
+            >
+              <table
+                width="90%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 1px; background-color: #404d53"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col border-->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px; background-color: #2b3940">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300" style="padding: 15px 20px">
+                                  <tr>
+                                    <td>
+                                      <a href="http://example.com">
+                                        <img
+                                          width="126"
+                                          style="max-width: 126px; width: 126px"
+                                          src="https://i.postimg.cc/SQ2c6rK9/listings-logo.png"
+                                          alt=""
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300" style="padding: 15px 20px">
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: right;
+                                          font-size: 13px;
+                                          color: #ffffff;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          line-height: 1.2;
+                                        "
+                                      >
+                                        VIEW ALL LISTINGS
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="
+                padding: 60px 0px 40px 0px;
+                mso-padding-alt: 60px 0px 40px 0px;
+                background: #f6f8f8;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <h1
+                      style="
+                        margin: 0;
+                        font-size: 30px;
+                        color: #2b3940;
+                        text-align: center;
+                        mso-line-height-alt: 21px;
+                        line-height: 1.2;
+                        font-family: Montserrat, Trebuchet MS, Lucida Grande,
+                          Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+                        padding: 0px 30px 15px 30px;
+                      "
+                    >
+                      A friendly reminder about your favorite properties
+                    </h1>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        color: #7e8989;
+                        font-size: 14x;
+                        font-weight: normal;
+                        font-family: Montserrat, Trebuchet MS, Lucida Grande,
+                          Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+                        mso-line-height-alt: 21px;
+                        line-height: 1.2;
+                        text-align: center;
+                        padding: 0px 30px 30px;
+                        mso-padding-alt: 0px 30px 30px 30px;
+                      "
+                    >
+                      Are you still interested in these properties?
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 10px 0px 10px 0px;
+                max-width: 800px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #f6f8f8;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                                              <tr>
+                                              <td width="200" valign="top" style="padding: 0;">
+                                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 20px;
+                            mso-padding-alt: 0px 20px 0px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table
+                                  style="
+                                    width: 180px;
+                                    background: #fff;
+                                    padding: 16px 0px;
+                                  "
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/9fLQSvLf/listings-list-1.jpg"
+                                        width="150"
+                                        alt="listings-list-1"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                           </td><td width="400px" valign="top" style="padding: 0;">
+                                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  width="380px"
+                                  style="
+                                    background-color: #fff;
+                                    padding: 16px 16px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 5px 0px;
+                                        "
+                                      >
+                                        $475,000
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #2b3940;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          line-height: 1.5;
+                                          padding-bottom: 10px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Springfield Gardens, New York
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      width="90%"
+                                      style="
+                                        height: 1px;
+                                        background-color: #e9ebeb;
+                                        display: inline-block;
+                                      "
+                                    ></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        5 Bedrooms, 2 Bathrooms, 1075 sq.f.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                              <w:anchorlock/>
+                                              <center>
+                                            <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          View Property
+                                        </a>
+                                        <!--[if mso]>
+                                              </center>
+                                            </v:roundrect>
+                                          <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                              </td>
+                                              </tr>
+                                              </table>
+                                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 10px 0px 10px 0px;
+                max-width: 800px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #f6f8f8;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                  <tr>
+                                                  <td width="200" valign="top" style="padding: 0;">
+                                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 20px;
+                            mso-padding-alt: 0px 20px 0px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table
+                                  style="
+                                    width: 180px;
+                                    background: #fff;
+                                    padding: 16px 0px;
+                                  "
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/SxpRzLXm/listings-list-2.jpg"
+                                        width="150"
+                                        alt="listings-list-2"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                               </td><td width="400px" valign="top" style="padding: 0;">
+                                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  width="380px"
+                                  style="
+                                    background-color: #fff;
+                                    padding: 16px 16px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 5px 0px;
+                                        "
+                                      >
+                                        $475,000
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #2b3940;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          line-height: 1.5;
+                                          padding-bottom: 10px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Springfield Gardens, New York
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      width="90%"
+                                      style="
+                                        height: 1px;
+                                        background-color: #e9ebeb;
+                                        display: inline-block;
+                                      "
+                                    ></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        5 Bedrooms, 2 Bathrooms, 1075 sq.f.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                                  <w:anchorlock/>
+                                                  <center>
+                                                <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          View Property
+                                        </a>
+                                        <!--[if mso]>
+                                                  </center>
+                                                </v:roundrect>
+                                              <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                                  </td>
+                                                  </tr>
+                                                  </table>
+                                               <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 10px 0px 10px 0px;
+                max-width: 800px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #f6f8f8;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                      <tr>
+                                                      <td width="200" valign="top" style="padding: 0;">
+                                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 20px;
+                            mso-padding-alt: 0px 20px 0px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table
+                                  style="
+                                    width: 180px;
+                                    background: #fff;
+                                    padding: 16px 0px;
+                                  "
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/4dnxTB0Q/listings-list-3.jpg"
+                                        width="150"
+                                        alt="listings-list-3"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                                   </td><td width="400px" valign="top" style="padding: 0;">
+                                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  width="380px"
+                                  style="
+                                    background-color: #fff;
+                                    padding: 16px 16px;
+                                    mso-padding-alt: 16px 16px 16px 16px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 5px 0px;
+                                        "
+                                      >
+                                        $475,000
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #2b3940;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          line-height: 1.5;
+                                          padding-bottom: 10px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Springfield Gardens, New York
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      width="90%"
+                                      style="
+                                        height: 1px;
+                                        background-color: #e9ebeb;
+                                        display: inline-block;
+                                      "
+                                    ></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        5 Bedrooms, 2 Bathrooms, 1075 sq.f.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                                      <w:anchorlock/>
+                                                      <center>
+                                                    <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          View Property
+                                        </a>
+                                        <!--[if mso]>
+                                                      </center>
+                                                    </v:roundrect>
+                                                  <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                                      </td>
+                                                      </tr>
+                                                      </table>
+                                                   <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 10px 0px 10px 0px;
+                max-width: 800px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #f6f8f8;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                          <tr>
+                                                          <td width="200" valign="top" style="padding: 0;">
+                                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 20px;
+                            mso-padding-alt: 0px 20px 0px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center" style="background-color: #fff">
+                                <table
+                                  style="
+                                    width: 180px;
+                                    background: #fff;
+                                    padding: 16px 0px;
+                                  "
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/k5J5TnFZ/listings-list-4.jpg"
+                                        width="150"
+                                        alt="listings-list-4"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                                       </td><td width="400px" valign="top" style="padding: 0;">
+                                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  width="380px"
+                                  style="
+                                    background-color: #fff;
+                                    padding: 16px 16px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 5px 0px;
+                                        "
+                                      >
+                                        $475,000
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #2b3940;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          line-height: 1.5;
+                                          padding-bottom: 10px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Springfield Gardens, New York
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      width="90%"
+                                      style="
+                                        height: 1px;
+                                        background-color: #e9ebeb;
+                                        display: inline-block;
+                                      "
+                                    ></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        5 Bedrooms, 2 Bathrooms, 1075 sq.f.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                                          <w:anchorlock/>
+                                                          <center>
+                                                        <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          View Property
+                                        </a>
+                                        <!--[if mso]>
+                                                          </center>
+                                                        </v:roundrect>
+                                                      <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                                          </td>
+                                                          </tr>
+                                                          </table>
+                                                       <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START bg image with text -->
+          <tr>
+            <td
+              class="bg-image"
+              valign="top"
+              background="https://i.postimg.cc/G3WGqyB5/listings-list-bg.png"
+              bgcolor="#263339"
+              width="100%"
+              height="200"
+              style="
+                background-repeat: no-repeat;
+                max-width: 600px;
+                background-size: cover;
+                background-position: top;
+              "
+            >
+              <!--[if gte mso 9]>
+                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 800px; height: 500px;" src="https://i.postimg.cc/G3WGqyB5/listings-list-bg.png" />                
+                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 800px; height:500px;">
+    <v:fill  opacity="0%" color="#263339  />
+    <v:textbox inset="0,0,0,0">
+                          <![endif]-->
+              <div>
+                <!--add your content here-->
+                <table
+                  class="content"
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 40px 0px 0px;
+                        mso-padding-alt: 40px 0px 0px 0px;
+                      "
+                    >
+                      <h2
+                        style="
+                          margin: 0;
+                          font-size: 30px;
+                          color: #ffffff;
+                          text-align: center;
+                          font-family: Montserrat, Trebuchet MS, Lucida Grande,
+                            Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+                          mso-line-height-alt: 14.399999999999999px;
+                          line-height: 1.2;
+                        "
+                      >
+                        Manage your favorite properties
+                      </h2>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        padding: 20px 0px;
+                        mso-padding-alt: 20px 0px 20px 0px;
+                      "
+                    >
+                      <table width="250px">
+                        <div>
+                          <!--[if mso]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                  <w:anchorlock/>
+                                  <center>
+                                <![endif]-->
+                          <a
+                            href="http://example.com"
+                            style="
+                              background-color: #f75c03;
+                              border-radius: 3px;
+                              color: #ffffff;
+                              display: inline-block;
+                              font-family: sans-serif;
+                              font-size: 16px;
+                              font-weight: bold;
+                              line-height: 40px;
+                              text-align: center;
+                              text-decoration: none;
+                              width: 200px;
+                              -webkit-text-size-adjust: none;
+                            "
+                          >
+                            Discover more houses
+                          </a>
+                          <!--[if mso]>
+                                  </center>
+                                </v:roundrect>
+                              <![endif]-->
+                        </div>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if gte mso 9]>
+                 </v:textbox>
+                  </v:fill>
+                  </v:rect>
+                  </v:image>
+                  <![endif]-->
+            </td>
+          </tr>
+          <!-- END bg image with text -->
+
+          <!-- Start Heading -->
+          <tr>
+            <td
+              style="
+                padding: 60px 0px 15px 0px;
+                mso-padding-alt: 60px 0px 15px 0px;
+                background: #f6f8f8;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <h1
+                      style="
+                        margin: 0;
+                        font-size: 24px;
+                        color: #2b3940;
+                        text-align: center;
+                        mso-line-height-alt: 21px;
+                        line-height: 1.5;
+                        font-family: Montserrat, Trebuchet MS, Lucida Grande,
+                          Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+                        padding: 0px 0px 15px 0px;
+                        mso-padding-alt: 0px 0px 15px 0px;
+                      "
+                    >
+                      Other properties you may like
+                    </h1>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END Heading -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 0px 0 0px 0;
+                max-width: 800px;
+                background-color: #f6f8f8;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                  <tr>
+                                                  <td width="300" valign="top" style="padding: 0;">
+                                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: top;
+                        background-color: #f6f8f8;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 20px 20px;
+                            mso-padding-alt: 0px 20px 20px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                        <td width="300" valign="top" style="padding: 0;">
+                                     <![endif]-->
+                                <table
+                                  style="
+                                    width: 260px;
+                                    background-color: #fff;
+                                    padding: 15px 10px;
+                                    mso-padding-alt: 15px 10px 15px 10px;
+                                  "
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/Qx7VtYd6/listings-list-5.jpg"
+                                        alt="listings-list-5"
+                                        width="220"
+                                      />
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      style="
+                                        padding: 20px 0px 20px;
+                                        mso-padding-alt: 20px 0px 20px 0px;
+                                      "
+                                    >
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          display: inline-block;
+                                          color: #00b074;
+                                          background-color: #e5f7f1;
+                                          border-radius: 3px;
+                                          width: auto;
+                                          border-top: 0 solid transparent;
+                                          font-weight: undefined;
+                                          border-right: 0 solid transparent;
+                                          border-bottom: 0 solid transparent;
+                                          border-left: 0 solid transparent;
+                                          padding: 10px;
+                                          mso-padding-alt: 10px 10px 10px 10px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          font-size: 12px;
+                                          text-align: center;
+                                          mso-border-alt: none;
+                                          word-break: keep-all;
+                                        "
+                                      >
+                                        JUST LISTED
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 5px 0px;
+                                        "
+                                      >
+                                        $475,000
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #2b3940;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          line-height: 1.5;
+                                          padding-bottom: 10px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Springfield Gardens, New York
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          mso-padding-alt: 14px 14px 14px 14px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        Quisque vitae tristique sem. Nullam
+                                        vulputate nisi sed purus pulvinar
+                                        dictum. Vestibulum ante ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      width="90%"
+                                      style="
+                                        height: 1px;
+                                        background-color: #e9ebeb;
+                                        display: inline-block;
+                                      "
+                                    ></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          mso-padding-alt: 14px 0px 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        5 Bedrooms, 2 Bathrooms, 1075 sq.f.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                                  <w:anchorlock/>
+                                                  <center>
+                                                <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          Contact Us
+                                        </a>
+                                        <!--[if mso]>
+                                                  </center>
+                                                </v:roundrect>
+                                              <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                     </td><td width="300" valign="top" style="padding: 0;">
+                                     <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                               </td><td width="300" valign="top" style="padding: 0;">
+                                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: top;
+                        background-color: #f6f8f8;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 20px 20px;
+                            mso-padding-alt: 0px 20px 20px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                                 <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                                 <tr>
+                                                                 <td width="300" valign="top" style="padding: 0;">
+                                                              <![endif]-->
+                                <table
+                                  style="
+                                    width: 260px;
+                                    background-color: #fff;
+                                    padding: 15px 10px;
+                                    mso-padding-alt: 15px 10px 15px 10px;
+                                  "
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/GmJ2PBYG/listings-list-6.jpg"
+                                        alt="listings-list-6"
+                                        width="220"
+                                      />
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      style="
+                                        padding: 20px 0px 20px;
+                                        mso-padding-alt: 20px 0px 20px 0px;
+                                      "
+                                    >
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          display: inline-block;
+                                          color: #00b074;
+                                          background-color: #e5f7f1;
+                                          border-radius: 3px;
+                                          width: auto;
+                                          border-top: 0 solid transparent;
+                                          font-weight: undefined;
+                                          border-right: 0 solid transparent;
+                                          border-bottom: 0 solid transparent;
+                                          border-left: 0 solid transparent;
+                                          padding: 10px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          font-size: 12px;
+                                          text-align: center;
+                                          mso-border-alt: none;
+                                          word-break: keep-all;
+                                        "
+                                      >
+                                        JUST LISTED
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 5px 0px;
+                                        "
+                                      >
+                                        $475,000
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #2b3940;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          line-height: 1.5;
+                                          padding-bottom: 10px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Springfield Gardens, New York
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          mso-padding-alt: 14px 0px 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        Quisque vitae tristique sem. Nullam
+                                        vulputate nisi sed purus pulvinar
+                                        dictum. Vestibulum ante ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      width="90%"
+                                      style="
+                                        height: 1px;
+                                        background-color: #e9ebeb;
+                                        display: inline-block;
+                                      "
+                                    ></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          mso-padding-alt: 14px 0px 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        5 Bedrooms, 2 Bathrooms, 1075 sq.f.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                                                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                                                           <w:anchorlock/>
+                                                                           <center>
+                                                                         <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          Contact Us
+                                        </a>
+                                        <!--[if mso]>
+                                                                           </center>
+                                                                         </v:roundrect>
+                                                                       <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                              </td><td width="300" valign="top" style="padding: 0;">
+                                                              <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                                  </td>
+                                                  </tr>
+                                                  </table>
+                                               <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 0px 0 0px 0;
+                max-width: 800px;
+                background-color: #f6f8f8;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="300" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: top;
+                        background-color: #f6f8f8;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                <tr>
+                                <td width="300" valign="top" style="padding: 0;">
+                             <![endif]-->
+                                <table
+                                  style="
+                                    width: 260px;
+                                    background-color: #fff;
+                                    padding: 15px 10px;
+                                    mso-padding-alt: 15px 20px 15px 20px;
+                                  "
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/NGS5QvB9/listings-list-7.jpg"
+                                        alt="listings-list-7"
+                                        width="220"
+                                      />
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 20px 0px 20px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          display: inline-block;
+                                          color: #00b074;
+                                          background-color: #e5f7f1;
+                                          border-radius: 3px;
+                                          width: auto;
+                                          border-top: 0 solid transparent;
+                                          font-weight: undefined;
+                                          border-right: 0 solid transparent;
+                                          border-bottom: 0 solid transparent;
+                                          border-left: 0 solid transparent;
+                                          padding: 10px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          font-size: 12px;
+                                          text-align: center;
+                                          mso-border-alt: none;
+                                          word-break: keep-all;
+                                        "
+                                      >
+                                        JUST LISTED
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        $475,000
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #2b3940;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          line-height: 1.5;
+                                          padding-bottom: 10px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Springfield Gardens, New York
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        Quisque vitae tristique sem. Nullam
+                                        vulputate nisi sed purus pulvinar
+                                        dictum. Vestibulum ante ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      width="90%"
+                                      style="
+                                        height: 1px;
+                                        background-color: #e9ebeb;
+                                        display: inline-block;
+                                      "
+                                    ></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        5 Bedrooms, 2 Bathrooms, 1075 sq.f.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                          <w:anchorlock/>
+                                          <center>
+                                        <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          Contact Us
+                                        </a>
+                                        <!--[if mso]>
+                                          </center>
+                                        </v:roundrect>
+                                      <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                             </td><td width="300" valign="top" style="padding: 0;">
+                             <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                       </td><td width="300" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: top;
+                        background-color: #f6f8f8;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                         <tr>
+                                                         <td width="300" valign="top" style="padding: 0;">
+                                                      <![endif]-->
+                                <table
+                                  style="
+                                    width: 260px;
+                                    background-color: #fff;
+                                    padding: 15px 10px;
+                                    mso-padding-alt: 15px 20px 15px 20px;
+                                  "
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/PJwfCNTL/listings-list-8.jpg"
+                                        alt="listings-list-8"
+                                        width="220"
+                                      />
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 20px 0px 20px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          display: inline-block;
+                                          color: #00b074;
+                                          background-color: #e5f7f1;
+                                          border-radius: 3px;
+                                          width: auto;
+                                          border-top: 0 solid transparent;
+                                          font-weight: undefined;
+                                          border-right: 0 solid transparent;
+                                          border-bottom: 0 solid transparent;
+                                          border-left: 0 solid transparent;
+                                          padding: 10px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          font-size: 12px;
+                                          text-align: center;
+                                          mso-border-alt: none;
+                                          word-break: keep-all;
+                                        "
+                                      >
+                                        JUST LISTED
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        $475,000
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #2b3940;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          line-height: 1.5;
+                                          padding-bottom: 10px;
+                                          mso-padding-alt: 0px 0px 10px 0px;
+                                        "
+                                      >
+                                        Springfield Gardens, New York
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        Quisque vitae tristique sem. Nullam
+                                        vulputate nisi sed purus pulvinar
+                                        dictum. Vestibulum ante ipsum.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      width="90%"
+                                      style="
+                                        height: 1px;
+                                        background-color: #e9ebeb;
+                                        display: inline-block;
+                                      "
+                                    ></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        5 Bedrooms, 2 Bathrooms, 1075 sq.f.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                                                   <w:anchorlock/>
+                                                                   <center>
+                                                                 <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          Contact Us
+                                        </a>
+                                        <!--[if mso]>
+                                                                   </center>
+                                                                 </v:roundrect>
+                                                               <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                      </td><td width="300" valign="top" style="padding: 0;">
+                                                      <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                       <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 0px 0 0px 0;
+                max-width: 800px;
+                background-color: #f6f8f8;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="300" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: top;
+                        background-color: #fff;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 30px 20px 30px;
+                            mso-padding-alt: 30px 20px 30px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                <tr>
+                                <td width="300" valign="top" style="padding: 0;">
+                             <![endif]-->
+                                <table
+                                  style="
+                                    width: 260px;
+                                    background-color: #f6f8f8;
+                                    padding: 15px 10px;
+                                    mso-padding-alt: 15px 10px 15px 10px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 5px 0px;
+                                        "
+                                      >
+                                        Discover your next dream home
+                                      </h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        Quisque vitae tristique sem, nullam
+                                        vulputate nisi sed purus.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                          <w:anchorlock/>
+                                          <center>
+                                        <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          Get Started Now
+                                        </a>
+                                        <!--[if mso]>
+                                          </center>
+                                        </v:roundrect>
+                                      <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                             </td><td width="300" valign="top" style="padding: 0;">
+                             <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                       </td><td width="300" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: top;
+                        background-color: #fff;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 30px 20px 30px;
+                            mso-padding-alt: 30px 20px 30px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                         <tr>
+                                                         <td width="300" valign="top" style="padding: 0;">
+                                                      <![endif]-->
+                                <table
+                                  style="
+                                    width: 260px;
+                                    background-color: #f6f8f8;
+                                    padding: 15px 10px;
+                                    mso-padding-alt: 15px 10px 15px 10px;
+                                  "
+                                >
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          font-size: 20px;
+                                          color: #2b3940;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          font-weight: bold;
+                                          line-height: 1.2;
+                                          padding: 0px 0px 5px 0px;
+                                          mso-padding-alt: 0px 0px 5px 0px;
+                                        "
+                                      >
+                                        How much is your house worth?
+                                      </h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          color: #7e8989;
+                                          margin: 0;
+                                          font-size: 14px;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 21px;
+                                          padding: 14px 0px;
+                                          line-height: 1.5;
+                                        "
+                                      >
+                                        Quisque vitae tristique sem, nullam
+                                        vulputate nisi sed purus.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://example.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#f75c03">
+                                                                   <w:anchorlock/>
+                                                                   <center>
+                                                                 <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #f75c03;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                          "
+                                        >
+                                          Get Started Now
+                                        </a>
+                                        <!--[if mso]>
+                                                                   </center>
+                                                                 </v:roundrect>
+                                                               <![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                      </td><td width="300" valign="top" style="padding: 0;">
+                                                      <![endif]-->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                       <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 5px 0px; background-color: #2b3940">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                           <tr>
+                           <td width="50%" valign="top" style="padding: 0;">
+                        <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300" style="padding: 15px 20px">
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: left;
+                                          font-size: 13px;
+                                          color: #8c9497;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          color: #555;
+                                          line-height: 1.2;
+                                        "
+                                      >
+                                        +1 0000 000000
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top" style="padding: 0;">
+                        <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300" style="padding: 15px 20px">
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: right;
+                                          font-size: 13px;
+                                          color: #8c9497;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          color: #555;
+                                          line-height: 1.2;
+                                        "
+                                      >
+                                        support@realestate.com
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                           </td>
+                           </tr>
+                           </table>
+                        <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- START one-col border-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #2b3940"
+              class="one-col border-col"
+            >
+              <table
+                width="90%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 1px; background-color: #404d53"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col border-->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px; background-color: #2b3940">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                           <tr>
+                           <td width="50%" valign="top" style="padding: 0;">
+                        <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300" style="padding: 15px 20px">
+                                  <tr>
+                                    <td>
+                                      <a href="http://example.com">
+                                        <img
+                                          width="126"
+                                          style="max-width: 126px; width: 126px"
+                                          src="https://i.postimg.cc/SQ2c6rK9/listings-logo.png"
+                                          alt=""
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top" style="padding: 0;">
+                        <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="300" style="padding: 15px 20px">
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: right;
+                                          font-size: 13px;
+                                          color: #ffffff;
+                                          font-family: Montserrat, Trebuchet MS,
+                                            Lucida Grande, Lucida Sans Unicode,
+                                            Lucida Sans, Tahoma, sans-serif;
+                                          mso-line-height-alt: 14.399999999999999px;
+                                          line-height: 1.2;
+                                        "
+                                      >
+                                        VIEW ALL LISTINGS
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                           </td>
+                           </tr>
+                           </table>
+                        <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- Footer -->
+          <tr>
+            <td
+              style="
+                background-color: #f8f8f8;
+                padding: 30px 10px 20px;
+                mso-padding-alt: 30px 10px 20px 10px;
+              "
+              class="footer"
+            >
+              <table
+                class="content"
+                style="border-spacing: 0; text-align: center"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, 'Helvetica Neue', Helvetica,
+                          sans-serif;
+                        color: #9b9b9b;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      [CLIENTS.COMPANY_NAME], [CLIENTS.ADDRESS1],
+                      [CLIENTS.ADDRESS2],
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, 'Helvetica Neue', Helvetica,
+                          sans-serif;
+                        color: #9b9b9b;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      [CLIENTS.CITY], [CLIENTS.PROVINCE], [CLIENTS.COUNTRY],
+                      [CLIENTS.POSTAL_CODE],
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, 'Helvetica Neue', Helvetica,
+                          sans-serif;
+                        color: #9b9b9b;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      [CLIENTS.PHONE]
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, 'Helvetica Neue', Helvetica,
+                          sans-serif;
+                        color: #9b9b9b;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      You've received this email because you signed up to
+                      [CLIENTS.WEBSITE].
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="
+                      padding: 15px 5px 5px 5px;
+                      mso-padding-alt: 15px 5px 5px 5px;
+                    "
+                    class="footer-links"
+                  >
+                    <a
+                      style="
+                        max-width: 100%;
+                        color: #9b9b9b;
+                        text-decoration: underline;
+                        font-family: Helvetica, Arial;
+                        font-size: 12px;
+                        font-weight: normal;
+                        line-height: 100%;
+                        text-align: center;
+                        word-wrap: break-word;
+                        display: inline-block;
+                        mso-padding-alt: 5px;
+                        letter-spacing: 0;
+                      "
+                      href="https://example.com"
+                    >
+                      View in browser
+                    </a>
+
+                    <a
+                      style="
+                        max-width: 100%;
+                        color: #9b9b9b;
+                        text-decoration: underline;
+                        font-family: Helvetica, Arial;
+                        font-size: 12px;
+                        font-weight: normal;
+                        line-height: 100%;
+                        text-align: center;
+                        word-wrap: break-word;
+                        display: inline-block;
+                        mso-padding-alt: 5px;
+                        letter-spacing: 0;
+                      "
+                      href="https://www.twitter.com/"
+                    >
+                      Unsubscribe
+                    </a>
+                    <a
+                      style="
+                        max-width: 100%;
+                        color: #9b9b9b;
+                        text-decoration: underline;
+                        font-family: Helvetica, Arial;
+                        font-size: 12px;
+                        font-weight: normal;
+                        line-height: 100%;
+                        text-align: center;
+                        word-wrap: break-word;
+                        display: inline-block;
+                        mso-padding-alt: 5px;
+                        letter-spacing: 0;
+                      "
+                      href="https://www.pinterest.com/"
+                    >
+                      Global unsubscribe
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <!-- Footer -->
+            </td>
+          </tr>
+          <!-- END FOOTER -->
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
