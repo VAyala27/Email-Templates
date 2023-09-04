@@ -1,0 +1,1871 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .one-col .content table h4 {
+          padding: 30px 20px 10px !important;
+        }
+
+        .one-col .content table p {
+          padding: 10px 20px 10px !important;
+        }
+
+        .one-col .content table .btn {
+          padding: 10px 20px 30px !important;
+        }
+
+        .two-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .two-columns .column {
+          max-width: 600px !important;
+          width: 100% !important;
+        }
+
+        .two-columns-links .column {
+          max-width: 600px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .two-thirds-columns .column .padding {
+          padding: 10px 20px !important;
+        }
+
+        .two-thirds-columns .column .content tr td table {
+          width: 100% !important;
+          max-width: 600px !important;
+        }
+
+        .two-third-columns .column .content tr td table tr td img {
+          width: 100% !important;
+        }
+
+        .two-columns-links .column .content {
+          padding: 0px !important;
+        }
+
+        .two-col-img-container {
+          width: 100% !important;
+          max-width: 600px !important;
+        }
+
+        .two-columns .column img {
+          max-width: 100% !important;
+          width: 600px !important;
+        }
+
+        .two-third-columns .content {
+          text-align: center !important;
+        }
+
+        .logo {
+          padding: 10px 0px !important;
+        }
+
+        .logo img {
+          max-width: 125px !important;
+          width: 125px !important;
+        }
+
+        .two-columns .column .content table {
+          width: 100% !important;
+        }
+
+        .two-columns .column .content table p,
+        .two-columns .column .content table h3,
+        .two-columns .column .content table div {
+          text-align: center !important;
+          margin: 0 auto;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header .logo {
+          width: 90px !important;
+        }
+
+        .header h1 {
+          font-size: 22px !important;
+        }
+
+        .header p {
+          font-size: 13px !important;
+        }
+
+        .btn-container {
+          width: 100% !important;
+        }
+
+        .two-col-img-container img {
+          max-width: 175px !important;
+          width: 175px !important;
+          margin-bottom: 10px;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+
+        .two-columns .column h2 {
+          font-size: 26px !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 10px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .three-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-bottom: 15px !important;
+        }
+
+        .three-columns .column p {
+          padding: 0px 10px;
+        }
+
+        .three-columns .column .three-col-img {
+          width: 100% !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START HEader -->
+          <tr>
+            <td
+              style="
+                padding: 15px 0px 15px 0px;
+                max-width: 800px;
+                mso-padding-alt: 15px 0px 15px 0px;
+                background-color: #000;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="header"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="200" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 75px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 0px;
+                            mso-padding-alt: 0px 20px 0px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table style="width: 75px; padding: 0px">
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/xCkNPf9Q/netflix-logo.png"
+                                        width="24"
+                                        alt="listings-list-1"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                   </td><td width="400px" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 525px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="525px">
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-family: NetflixSans-Bold,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 700;
+                                          font-size: 18px;
+                                          line-height: 22px;
+                                          letter-spacing: -0.35px;
+                                        "
+                                      >
+                                        Continue Watching for Rob
+                                      </h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 300;
+                                          font-size: 14px;
+                                          line-height: 18px;
+                                          letter-spacing: -0.25px;
+                                        "
+                                      >
+                                        Pick up where you left off
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                      </td>
+                                      </tr>
+                                      </table>
+                                   <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END HEader -->
+
+          <!-- START one-col hero-->
+          <tr>
+            <td style="padding: 0px 0px 0px" class="one-col hero">
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td>
+                    <a href="http://example.com">
+                      <img
+                        src="https://i.postimg.cc/ncKj2wfX/netflix-hero.png"
+                        alt="netflix-hero"
+                        width="600px"
+                        style="
+                          width: 600px;
+                          max-width: 640px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="
+                padding: 10px 20px 10px 20px;
+                mso-padding-alt: 10px 20px 10px 20px;
+                background: #191a1b;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        padding-top: 0px;
+                        color: #ffffff;
+                        font-family: NetflixSans-Bold, Helvetica, Roboto,
+                          Segoe UI, sans-serif;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 22px;
+                        letter-spacing: -0.35px;
+                      "
+                    >
+                      Episodes
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 10px 0px 10px 0px;
+                max-width: 800px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #191a1b;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                                              <tr>
+                                              <td width="200" valign="top" style="padding: 0;">
+                                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table style="width: 200px; text-align: center">
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://i.postimg.cc/m27MqgC2/netflix-episode-6.png"
+                                        width="160"
+                                        alt="netflix-episode-6"
+                                      />
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://i.postimg.cc/XX6jd3Ys/netflix-bar.png"
+                                        width="160"
+                                        alt=""
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                           </td><td width="400px" valign="top" style="padding: 0;">
+                                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="400px">
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-family: NetflixSans-Bold,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 700;
+                                          font-size: 18px;
+                                          line-height: 22px;
+                                          letter-spacing: -0.35px;
+                                        "
+                                      >
+                                        Episode 6
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                              </td>
+                                              </tr>
+                                              </table>
+                                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 10px 0px 10px 0px;
+                max-width: 800px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #191a1b;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                  <tr>
+                                                  <td width="200" valign="top" style="padding: 0;">
+                                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table style="width: 200px; text-align: center">
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://i.postimg.cc/0yxmq10G/netflix-episode-7.png"
+                                        width="160"
+                                        alt="netflix-episode-6"
+                                      />
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://i.postimg.cc/XX6jd3Ys/netflix-bar.png"
+                                        width="160"
+                                        alt=""
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                               </td><td width="400px" valign="top" style="padding: 0;">
+                                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="400px">
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-family: NetflixSans-Bold,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 700;
+                                          font-size: 18px;
+                                          line-height: 22px;
+                                          letter-spacing: -0.35px;
+                                        "
+                                      >
+                                        Episode 7
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                                  </td>
+                                                  </tr>
+                                                  </table>
+                                               <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 10px 20px 10px 20px;
+                max-width: 800px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #191a1b;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                      <tr>
+                                                      <td width="250" valign="top" style="padding: 0;">
+                                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        width: 100%;
+                        max-width: 250;
+                        display: inline-block;
+                        vertical-align: middle;
+                        background: #e50914;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table style="width: 180px; text-align: center">
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://i.postimg.cc/0yxmq10G/netflix-episode-7.png"
+                                        width="200"
+                                        alt="netflix-episode-6"
+                                      />
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://i.postimg.cc/XX6jd3Ys/netflix-bar.png"
+                                        width="200"
+                                        alt=""
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                                   </td><td width="400px" valign="top" style="padding: 0;">
+                                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="400px">
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-family: NetflixSans-Bold,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 700;
+                                          font-size: 18px;
+                                          line-height: 22px;
+                                          letter-spacing: -0.35px;
+                                        "
+                                      >
+                                        Episode 7
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                                      </td>
+                                                      </tr>
+                                                      </table>
+                                                   <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 10px 0px 10px 0px;
+                max-width: 800px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #191a1b;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                <td width="200" valign="top" style="padding: 0;">
+                                             <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table style="width: 200px; text-align: center">
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://i.postimg.cc/bvwts0Ms/netflix-episode-9.jpg"
+                                        width="160"
+                                        alt="netflix-episode-9"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                             </td><td width="400px" valign="top" style="padding: 0;">
+                                             <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="400px">
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-family: NetflixSans-Bold,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 700;
+                                          font-size: 18px;
+                                          line-height: 22px;
+                                          letter-spacing: -0.35px;
+                                        "
+                                      >
+                                        Episode 9
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                             <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- START TWO-thirds COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 10px 0px 10px 0px;
+                max-width: 800px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #191a1b;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                <td width="200" valign="top" style="padding: 0;">
+                                             <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table style="width: 200px; text-align: center">
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://i.postimg.cc/tgvVPZQD/netflix-episode-10.jpg"
+                                        width="160"
+                                        alt="netflix-episode-10"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                             </td><td width="400px" valign="top" style="padding: 0;">
+                                             <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="400px">
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          color: #ffffff;
+                                          font-family: NetflixSans-Bold,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 700;
+                                          font-size: 18px;
+                                          line-height: 22px;
+                                          letter-spacing: -0.35px;
+                                        "
+                                      >
+                                        Episode 10
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                             <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-thirds COLUMNS -->
+
+          <!-- Start btn -->
+          <tr>
+            <td
+              style="
+                padding: 20px 20px 20px 20px;
+                mso-padding-alt: 20px 0px 20px 0px;
+                background: #191a1b;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center">
+                    <div>
+                      <!--[if mso]>
+                        <v:roundrect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 45px;
+                            v-text-anchor: middle;
+                            width: 100%;
+                          "
+                          arcsize="10%"
+                          strokecolor="#414141"
+                          fillcolor="#414141"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #ffffff;
+                              font-family: sans-serif;
+                              font-size: 13px;
+                              font-weight: bold;
+                            "
+                          >
+                            View All Episodes
+                          </center>
+                        </v:roundrect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #414141;
+                          border: 1px solid #414141;
+                          border-radius: 4px;
+                          color: #ffffff;
+                          display: block;
+                          font-family: sans-serif;
+                          font-size: 13px;
+                          font-weight: bold;
+                          line-height: 45px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 100%;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                      >
+                        View All Episodes
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END btn -->
+
+          <!-- Start heading -->
+          <tr>
+            <td
+              style="
+                padding: 20px 20px 10px 20px;
+                mso-padding-alt: 20px 20px 10px 20px;
+                background: #191a1b;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <h3
+                      style="
+                        margin: 0;
+                        color: #ffffff;
+                        font-family: NetflixSans-Bold, Helvetica, Roboto,
+                          Segoe UI, sans-serif;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 22px;
+                        letter-spacing: -0.35px;
+                      "
+                    >
+                      Because you watched The Last Kingdom
+                    </h3>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END heading -->
+
+          <!-- START THREE COLUMNS -->
+          <tr>
+            <td style="padding: 30px 20px 40px 20px; background: #191a1b">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="three-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                      <tr>
+                      <td width="33.33%" valign="top" style="padding: 0;">
+                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://i.postimg.cc/8k6rJzyB/netflix-troy-fall-of-a-city.jpg"
+                                    width="100%"
+                                    style="
+                                      max-width: 100%;
+                                      border-radius: 8px;
+                                      padding: 0px 5px 0px 0px;
+                                    "
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                   </td><td width="33.33%" valign="top" style="padding: 0;">
+                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://i.postimg.cc/8k6rJzyB/netflix-troy-fall-of-a-city.jpg"
+                                    width="100%"
+                                    style="
+                                      max-width: 100%;
+                                      border-radius: 8px;
+                                      padding: 0px 0px 0px 0px;
+                                    "
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                   </td><td width="33.33%" valign="top" style="padding: 0;">
+                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 33.33%;
+                        max-width: 33.33%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img three-col-img-last"
+                                    src="https://i.postimg.cc/8k6rJzyB/netflix-troy-fall-of-a-city.jpg"
+                                    width="100%"
+                                    style="
+                                      max-width: 100%;
+                                      border-radius: 8px;
+                                      padding: 0px 5px;
+                                    "
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                      </table>
+                   <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END THREE COLUMNS -->
+
+          <!-- Start btn -->
+          <tr>
+            <td
+              style="
+                padding: 20px 20px 20px 20px;
+                mso-padding-alt: 20px 0px 20px 0px;
+                background: #191a1b;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center">
+                    <div>
+                      <!--[if mso]>
+                        <v:roundrect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 45px;
+                            v-text-anchor: middle;
+                            width: 100%;
+                          "
+                          arcsize="10%"
+                          strokecolor="#414141"
+                          fillcolor="#414141"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #ffffff;
+                              font-family: sans-serif;
+                              font-size: 13px;
+                              font-weight: bold;
+                            "
+                          >
+                            View All Episodes
+                          </center>
+                        </v:roundrect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #414141;
+                          border: 1px solid #414141;
+                          border-radius: 4px;
+                          color: #ffffff;
+                          display: block;
+                          font-family: sans-serif;
+                          font-size: 13px;
+                          font-weight: bold;
+                          line-height: 45px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 100%;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                      >
+                        View All Episodes
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END btn -->
+
+          <!-- FOOTER -->
+          <tr>
+            <td
+              style="
+                padding: 15px 0px 15px 0px;
+                max-width: 800px;
+                mso-padding-alt: 15px 0px 15px 0px;
+                background-color: #000;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="header"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="200" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 75px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 0px;
+                            mso-padding-alt: 0px 20px 0px 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table style="width: 75px; padding: 0px">
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://i.postimg.cc/xCkNPf9Q/netflix-logo.png"
+                                        width="24"
+                                        alt="listings-list-1"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                   </td><td width="400px" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 525px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="padding: 0px; mso-padding-alt: 0px"
+                          align=" center"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table width="525px">
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-family: NetflixSans-Medium,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 500;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 300;
+                                          font-size: 14px;
+                                          line-height: 18px;
+                                          letter-spacing: -0.25px;
+                                          color: rgb(169, 166, 166);
+                                        "
+                                      >
+                                        Questions? Call 0 800-990-312
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-family: NetflixSans-Medium,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 500;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 300;
+                                          font-size: 12px;
+                                          line-height: 18px;
+                                          letter-spacing: -0.25px;
+                                          color: rgb(169, 166, 166);
+                                        "
+                                      >
+                                        Netflix International B.V.‬
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 20px 0px 0px">
+                                      <a
+                                        style="
+                                          font-family: NetflixSans-Medium,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 500;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-size: 12px;
+                                          line-height: 20px;
+                                          text-decoration: underline;
+                                          color: rgb(169, 166, 166);
+                                        "
+                                        href="http://www.example.com"
+                                      >
+                                        Unsubscribe
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <a
+                                        style="
+                                          font-family: NetflixSans-Medium,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 500;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-size: 12px;
+                                          line-height: 20px;
+                                          text-decoration: underline;
+                                          color: rgb(169, 166, 166);
+                                        "
+                                        href="http://www.example.com"
+                                      >
+                                        Terms of Use
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <a
+                                        style="
+                                          font-family: NetflixSans-Medium,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 500;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-size: 12px;
+                                          line-height: 20px;
+                                          text-decoration: underline;
+                                          color: rgb(169, 166, 166);
+                                        "
+                                        href="http://www.example.com"
+                                      >
+                                        Privacy
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <a
+                                        style="
+                                          font-family: NetflixSans-Medium,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 500;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-size: 12px;
+                                          line-height: 20px;
+                                          text-decoration: underline;
+                                          color: rgb(169, 166, 166);
+                                        "
+                                        href="http://www.example.com"
+                                      >
+                                        Help Center
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 10px 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 11px;
+                                          line-height: 14px;
+                                          letter-spacing: -0.1px;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 300;
+                                          color: rgb(169, 166, 166);
+                                        "
+                                      >
+                                        This message was mailed to
+                                        [robdelete@gmail.com] by Netflix as part
+                                        of
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 11px;
+                                          line-height: 14px;
+                                          letter-spacing: -0.1px;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 300;
+                                          color: rgb(169, 166, 166);
+                                        "
+                                      >
+                                        your Netflix membership.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 11px;
+                                          line-height: 14px;
+                                          letter-spacing: -0.1px;
+                                          font-family: NetflixSans-Light,
+                                            Helvetica, Roboto, Segoe UI,
+                                            sans-serif;
+                                          font-weight: 300;
+                                          color: rgb(169, 166, 166);
+                                        "
+                                      >
+                                        SRC: 15317_en_ZA
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                      </td>
+                                      </tr>
+                                      </table>
+                                   <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END FOOTER -->
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>

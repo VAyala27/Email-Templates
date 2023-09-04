@@ -1,0 +1,1571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-col .content table h4 {
+          padding: 30px 20px 10px !important;
+        }
+
+        .one-col .content table p {
+          padding: 10px 20px 10px !important;
+        }
+
+        .one-col .content table .btn {
+          padding: 10px 20px 30px !important;
+        }
+
+        .two-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .two-columns .column {
+          max-width: 600px !important;
+          width: 100% !important;
+        }
+
+        .two-columns-links .column {
+          max-width: 600px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .two-thirds-columns .column table tr td {
+          text-align: left !important;
+        }
+
+        .two-thirds-columns .column .padding {
+          padding: 10px 20px !important;
+        }
+
+        .two-columns-links .column .content {
+          padding: 0px !important;
+        }
+
+        .two-col-img-container {
+          width: 100% !important;
+          max-width: 600px !important;
+        }
+
+        .two-columns .column img {
+          max-width: 100% !important;
+          width: 600px !important;
+        }
+
+        .two-third-columns .content {
+          text-align: center !important;
+        }
+
+        .logo {
+          padding: 10px 0px !important;
+        }
+
+        .logo img {
+          max-width: 125px !important;
+          width: 125px !important;
+        }
+
+        .two-columns .column .content table {
+          width: 100% !important;
+        }
+
+        .two-columns .column .content table p,
+        .two-columns .column .content table h2 {
+          text-align: center !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header .logo {
+          width: 90px !important;
+        }
+
+        .header h1 {
+          font-size: 22px !important;
+        }
+
+        .header p {
+          font-size: 13px !important;
+        }
+
+        .btn-container {
+          width: 100% !important;
+        }
+
+        .two-col-img-container img {
+          max-width: 175px !important;
+          width: 175px !important;
+          margin-bottom: 10px;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+
+        .two-columns .column h2 {
+          font-size: 26px !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 10px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .three-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-bottom: 15px !important;
+        }
+
+        .three-columns .column p {
+          padding: 0px 10px;
+        }
+
+        .three-columns .column .three-col-img {
+          width: 100% !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START header-->
+          <tr>
+            <td
+              style="padding: 15px 0px 15px 0px; background-color: #000"
+              class="one-col header"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td style="padding: 0px 40px">
+                    <h3
+                      style="
+                        margin: 0;
+                        color: #fff;
+                        direction: ltr;
+                        font-family: 'Bodoni Moda', serif;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 120%;
+                        text-align: center;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                      "
+                    >
+                      MODÈLE
+                    </h3>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END header-->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="
+                padding: 0px 0px 0px 0px;
+                mso-padding-alt: 0px 0px 0px 0px;
+                background-color: #000;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <!-- START TWO-thirds COLUMNS -->
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="200" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 0px;
+                            mso-padding-alt: 0px 0px 0px 0px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table style="width: 200px">
+                                  <tr>
+                                    <td
+                                      align="right"
+                                      style="padding: 0px 15px 0px 0px"
+                                    >
+                                      <img
+                                        src="https://i.postimg.cc/858NqNhN/paris-fashion-week-live-event-line-2.png"
+                                        width="160"
+                                        alt="paris-fashion-week-live-event-line-2"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                       </td><td width="400" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 0px;
+                            mso-padding-alt: 0px 0px 0px 0px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <span
+                                  style="
+                                    margin: 0;
+                                    color: #f24462;
+                                    direction: ltr;
+                                    font-family: 'Bodoni Moda', serif;
+                                    font-size: 60px;
+                                    font-weight: 400;
+                                    line-height: 120%;
+                                    text-align: center;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    padding: 30px 0px 0px;
+                                    mso-padding-alt: 30px 0px 0px 0px;
+                                  "
+                                >
+                                  PARIS
+                                </span>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                       <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- END TWO-thirds COLUMNS -->
+
+                <tr>
+                  <td>
+                    <span
+                      style="
+                        margin: 0;
+                        color: #f24462;
+                        direction: ltr;
+                        font-family: 'Bodoni Moda', serif;
+                        font-size: 60px;
+                        font-weight: 400;
+                        line-height: 120%;
+                        text-align: center;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        text-align: center;
+                        display: block;
+                      "
+                    >
+                      FASHION
+                    </span>
+                  </td>
+                </tr>
+
+                <!-- START TWO-thirds COLUMNS -->
+                <tr>
+                  <td
+                    class="two-thirds-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="400" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                        vertical-align: middle;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 0px;
+                            mso-padding-alt: 0px 0px 0px 0px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: right"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table style="width: 400px">
+                                  <tr>
+                                    <td style="padding: 0px 15px 0px 0px">
+                                      <span
+                                        style="
+                                          margin: 0;
+                                          color: #f24462;
+                                          direction: ltr;
+                                          font-family: 'Bodoni Moda', serif;
+                                          font-size: 60px;
+                                          font-weight: 400;
+                                          line-height: 120%;
+                                          margin-top: 0;
+                                          margin-bottom: 0;
+                                          padding: 30px 0px 0px;
+                                          mso-padding-alt: 30px 0px 0px 0px;
+                                        "
+                                      >
+                                        WEEK
+                                      </span>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                       </td><td width="200" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 0px;
+                            mso-padding-alt: 0px 0px 0px 0px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table style="width: 200px">
+                                  <tr>
+                                    <td
+                                      align="left"
+                                      style="padding: 0px 15px 0px 0px"
+                                    >
+                                      <img
+                                        src="https://i.postimg.cc/g0LGSnLg/paris-fashion-week-live-event-line-1.png"
+                                        width="160"
+                                        alt="paris-fashion-week-live-event-line-1"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                       <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- END TWO-thirds COLUMNS -->
+
+                <tr>
+                  <td>
+                    <h3
+                      style="
+                        margin: 0;
+                        font-size: 22px;
+                        font-family: 'Bodoni Moda', serif;
+                        mso-line-height-alt: 18px;
+                        color: #d2cfcb;
+                        line-height: 1.5;
+                        text-align: center;
+                        mso-line-height-alt: 33px;
+                      "
+                    >
+                      ATTEND THE MODÈLE EXCLUSIVE PREMIERE
+                    </h3>
+
+                    <h3
+                      style="
+                        margin: 0;
+                        font-size: 22px;
+                        font-family: 'Bodoni Moda', serif;
+                        mso-line-height-alt: 18px;
+                        color: #f24462;
+                        line-height: 1.5;
+                        text-align: center;
+                        mso-line-height-alt: 33px;
+                      "
+                    >
+                      01 . 30 . 21 ~ 5PM
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-size: 16px;
+                        font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+                        mso-line-height-alt: 14.399999999999999px;
+                        color: #d2cfcb;
+                        line-height: 1.2;
+                        padding: 20px 30px;
+                      "
+                    >
+                      Join us for our exclusive Paris Fashion Week collection
+                      reveal. See the all new Spring 2021 Collection. From
+                      designers: Hansel Burgess, and Bev Deslin.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" style="padding: 0px 0px">
+                    <div>
+                      <!--[if mso]>
+                        <v:rect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 40px;
+                            v-text-anchor: middle;
+                            width: 250px;
+                          "
+                          strokecolor="#fff"
+                          fillcolor="#f24462"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #ffffff;
+                              font-family: sans-serif;
+                              font-size: 13px;
+                              font-weight: bold;
+                            "
+                          >
+                            REGISTER NOW
+                          </center>
+                        </v:rect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #f24462;
+
+                          color: #ffffff;
+                          display: inline-block;
+                          font-family: sans-serif;
+                          font-size: 13px;
+                          font-weight: bold;
+                          line-height: 40px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 250px;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                      >
+                        REGISTER NOW
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START one-col hero-->
+          <tr>
+            <td
+              style="padding: 0px 0px; background-color: #000"
+              class="one-col hero"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td style="padding: 0px">
+                    <img
+                      width="640"
+                      style="
+                        max-width: 640px;
+                        width: 100%;
+                        display: block;
+                        margin: 0 auto;
+                      "
+                      src="https://i.postimg.cc/nhCxrC2n/paris-fashion-week-live-event-luiz-fernando.png"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- Start Heading -->
+          <tr>
+            <td
+              style="
+                padding: 60px 0px 15px 0px;
+                mso-padding-alt: 60px 0px 15px 0px;
+                background: #000;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <h3
+                      style="
+                        margin: 0;
+                        font-size: 30px;
+                        text-align: center;
+                        font-family: 'Bodoni Moda', serif;
+                        font-weight: bold;
+                        mso-line-height-alt: 18px;
+                        color: #d2cfcb;
+                        line-height: 1.5;
+                        padding: 0px 0px 15px 0px;
+                        mso-padding-alt: 0px 0px 15px 0px;
+                      "
+                    >
+                      MEET THE DESIGNERS
+                    </h3>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END Heading -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td
+              style="
+                padding: 0px 0 0px 0;
+                max-width: 800px;
+                background-color: #000;
+              "
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                <td width="300" valign="top" style="padding: 0;">
+                                             <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 10px 0px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                                      <tr>
+                                                                      <td width="300" valign="top" style="padding: 0;">
+                                                                   <![endif]-->
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    src="https://i.postimg.cc/t4MXNhJ1/paris-fashion-week-live-event-hansel.jpg"
+                                    alt="paris-fashion-week-live-event-hansel"
+                                    width="260"
+                                    style="
+                                      max-width: 260px;
+                                      margin: 0 auto;
+                                      display: block;
+                                      width: 100%;
+                                    "
+                                    border="0"
+                                  />
+                                </a>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                                   </td><td width="300" valign="top" style="padding: 0;">
+                                                                   <![endif]-->
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <h2
+                                  style="
+                                    margin: 0;
+                                    font-size: 30px;
+                                    text-align: center;
+                                    mso-line-height-alt: 16.8px;
+                                    font-family: 'Bodoni Moda', serif;
+                                    mso-line-height-alt: 14.399999999999999px;
+                                    color: #f24462;
+                                    line-height: 1.2;
+                                  "
+                                >
+                                  Hansel Burgess
+                                </h2>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    font-size: 16px;
+                                    text-align: center;
+                                    font-family: Lato, Tahoma, Verdana, Segoe,
+                                      sans-serif;
+                                    mso-line-height-alt: 18px;
+                                    color: #d2cfcb;
+                                    line-height: 1.5;
+                                  "
+                                >
+                                  Hansel’s unique style melds bold, heroic
+                                  imagery with clean, wearable fashion.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    color: #f24462;
+                                    vertical-align: middle;
+                                    letter-spacing: undefined;
+                                    text-align: center;
+                                  "
+                                >
+                                  <a
+                                    style="
+                                      text-decoration: none;
+                                      color: #f24462;
+                                      font-size: 16px;
+                                      font-family: 'Bodoni Moda', serif;
+                                    "
+                                    href="http://example.com"
+                                  >
+                                    Discover The Collection
+                                    <span>
+                                      <img
+                                        width="20"
+                                        src="https://i.postimg.cc/3wzxYgHM/paris-fashion-week-live-event-arrow.png"
+                                        alt="paris-fashion-week-live-event-arrow"
+                                      />
+                                    </span>
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                             </td><td width="300" valign="top" style="padding: 0;">
+                                             <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px 0px 10px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                                                             <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                                                             <tr>
+                                                                                             <td width="300" valign="top" style="padding: 0;">
+                                                                                          <![endif]-->
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    src="https://i.postimg.cc/ZY85zB7g/paris-fashion-week-live-event-bev.jpg"
+                                    alt="paris-fashion-week-live-event-hansel"
+                                    width="260"
+                                    style="
+                                      max-width: 260px;
+                                      margin: 0 auto;
+                                      display: block;
+                                      width: 100%;
+                                    "
+                                    border="0"
+                                  />
+                                </a>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                                                          </td><td width="300" valign="top" style="padding: 0;">
+                                                                                          <![endif]-->
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <h2
+                                  style="
+                                    margin: 0;
+                                    font-size: 30px;
+                                    text-align: center;
+                                    mso-line-height-alt: 16.8px;
+                                    font-family: 'Bodoni Moda', serif;
+                                    mso-line-height-alt: 14.399999999999999px;
+                                    color: #f24462;
+                                    line-height: 1.2;
+                                  "
+                                >
+                                  Bev Deslin
+                                </h2>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    font-size: 16px;
+                                    text-align: center;
+                                    font-family: Lato, Tahoma, Verdana, Segoe,
+                                      sans-serif;
+                                    mso-line-height-alt: 18px;
+                                    color: #d2cfcb;
+                                    line-height: 1.5;
+                                  "
+                                >
+                                  Bev has taken the fashion world by storm, her
+                                  eye-catching work is unmistakable.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    color: #f24462;
+                                    vertical-align: middle;
+                                    letter-spacing: undefined;
+                                    text-align: center;
+                                  "
+                                >
+                                  <a
+                                    style="
+                                      text-decoration: none;
+                                      color: #f24462;
+                                      font-size: 16px;
+                                      font-family: 'Bodoni Moda', serif;
+                                    "
+                                    href="http://example.com"
+                                  >
+                                    Discover The Collection
+                                    <span>
+                                      <img
+                                        width="20"
+                                        src="https://i.postimg.cc/3wzxYgHM/paris-fashion-week-live-event-arrow.png"
+                                        alt="paris-fashion-week-live-event-arrow"
+                                      />
+                                    </span>
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                             <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="
+                padding: 0px 30px 50px 30px;
+                mso-padding-alt: 0px 30px 30px 30px;
+                background: #000;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <h3
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-size: 22px;
+                        font-weight: bold;
+                        font-family: 'Bodoni Moda', serif;
+                        mso-line-height-alt: 18px;
+                        color: #d2cfcb;
+                        line-height: 1.5;
+                        font-weight: 200;
+                        padding: 30px 0px 15px;
+                        mso-padding-alt: 30px 0px 5px 0px;
+                      "
+                    >
+                      ATTEND THE LIVE EVENT
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" style="padding: 0px 0px">
+                    <div>
+                      <!--[if mso]>
+                        <v:rect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 40px;
+                            v-text-anchor: middle;
+                            width: 200px;
+                          "
+                          strokecolor="#fff"
+                          fillcolor="#f24462"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #ffffff;
+                              font-family: sans-serif;
+                              font-size: 16px;
+                              font-weight: bold;
+                            "
+                          >
+                            REGISTER NOW
+                          </center>
+                        </v:rect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #f24462;
+
+                          color: #ffffff;
+                          display: inline-block;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-weight: bold;
+                          line-height: 40px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 200px;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                      >
+                        REGISTER NOW
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START one-col border-->
+          <tr>
+            <td style="background-color: #000" class="one-col border-col">
+              <table
+                width="90%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 1px; background-color: #3c3c3c"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col border-->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="
+                padding: 0px 30px 30px 30px;
+                mso-padding-alt: 0px 30px 30px 30px;
+                background: #000;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="padding: 20px 0px 0px">
+                    <h3
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-size: 22px;
+                        font-weight: bold;
+                        font-family: 'Bodoni Moda', serif;
+                        mso-line-height-alt: 18px;
+                        color: #d2cfcb;
+                        line-height: 1.5;
+                        font-weight: 200;
+                        padding: 30px 0px 15px;
+                        mso-padding-alt: 30px 0px 5px 0px;
+                      "
+                    >
+                      CONNECT WITH US
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    align="center"
+                    style="padding: 0px 0px 20px"
+                    class="social-media"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0;
+                        padding: 0px 10px;
+                      "
+                    >
+                      <img
+                        width="32"
+                        style="width: 32px"
+                        src="https://i.postimg.cc/28TjVpf7/paris-fashion-week-live-event-facebook.png"
+                        alt="paris-fashion-week-live-event-facebook"
+                      />
+                    </a>
+
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0;
+                        padding: 0px 10px;
+                      "
+                    >
+                      <img
+                        width="32"
+                        style="width: 32px"
+                        src="https://i.postimg.cc/2yrmSGct/paris-fashion-week-live-event-twitter.png"
+                        alt="paris-fashion-week-live-event-twitter"
+                      />
+                    </a>
+
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0;
+                        padding: 0px 10px;
+                      "
+                    >
+                      <img
+                        width="32"
+                        style="width: 32px"
+                        src="https://i.postimg.cc/264rYMwv/paris-fashion-week-live-event-linkedin.png"
+                        alt="paris-fashion-week-live-event-linkedin"
+                      />
+                    </a>
+
+                    <a
+                      href="http://example.com"
+                      style="
+                        text-decoration: none;
+                        font-size: 0;
+                        padding: 0px 10px;
+                      "
+                    >
+                      <img
+                        width="32"
+                        style="width: 32px"
+                        src="https://i.postimg.cc/4xdfc8fk/paris-fashion-week-live-event-instagram.png"
+                        alt="paris-fashion-week-live-event-instagram"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        color: #d2cfcb;
+                        font-family: Arial, Helvetica Neue, Helvetica,
+                          sans-serif;
+                        mso-line-height-alt: 14.399999999999999px;
+                        line-height: 1.2;
+                        text-decoration: underline;
+                        font-size: 14px;
+                      "
+                    >
+                      © All rights reserved | 2021
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        color: #d2cfcb;
+                        font-family: Arial, Helvetica Neue, Helvetica,
+                          sans-serif;
+                        mso-line-height-alt: 14.399999999999999px;
+                        line-height: 1.2;
+                        font-size: 12px;
+                      "
+                    >
+                      Changed your mind? You can
+
+                      <a
+                        style="
+                          color: #d2cfcb;
+                          font-family: Arial, Helvetica Neue, Helvetica,
+                            sans-serif;
+                          mso-line-height-alt: 14.399999999999999px;
+                          line-height: 1.2;
+                          text-decoration: underline;
+                          font-size: 12px;
+                          padding: 0;
+                        "
+                        href="http://example.com"
+                      >
+                        Unsubscribe
+                      </a>
+                      at any time.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- Footer -->
+          <tr>
+            <td
+              style="
+                background-color: #1d2026;
+                padding: 60px 10px 30px;
+                mso-padding-alt: 60px 10p 30px;
+              "
+              class="footer"
+            >
+              <table
+                class="content"
+                style="border-spacing: 0; text-align: center"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, 'Helvetica Neue', Helvetica,
+                          sans-serif;
+                        color: #9b9b9b;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      [CLIENTS.COMPANY_NAME], [CLIENTS.ADDRESS1],
+                      [CLIENTS.ADDRESS2],
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, 'Helvetica Neue', Helvetica,
+                          sans-serif;
+                        color: #9b9b9b;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      [CLIENTS.CITY], [CLIENTS.PROVINCE], [CLIENTS.COUNTRY],
+                      [CLIENTS.POSTAL_CODE],
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, 'Helvetica Neue', Helvetica,
+                          sans-serif;
+                        color: #9b9b9b;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      [CLIENTS.PHONE]
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, 'Helvetica Neue', Helvetica,
+                          sans-serif;
+                        color: #9b9b9b;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      You've received this email because you signed up to
+                      [CLIENTS.WEBSITE].
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="
+                      padding: 15px 5px 5px 5px;
+                      mso-padding-alt: 15px 5px 5px 5px;
+                    "
+                    class="footer-links"
+                  >
+                    <a
+                      style="
+                        max-width: 100%;
+                        color: #9b9b9b;
+                        text-decoration: underline;
+                        font-family: Helvetica, Arial;
+                        font-size: 12px;
+                        font-weight: normal;
+                        line-height: 100%;
+                        text-align: center;
+                        word-wrap: break-word;
+                        display: inline-block;
+                        mso-padding-alt: 5px;
+                        letter-spacing: 0;
+                      "
+                      href="https://example.com"
+                    >
+                      View in browser
+                    </a>
+
+                    <a
+                      style="
+                        max-width: 100%;
+                        color: #9b9b9b;
+                        text-decoration: underline;
+                        font-family: Helvetica, Arial;
+                        font-size: 12px;
+                        font-weight: normal;
+                        line-height: 100%;
+                        text-align: center;
+                        word-wrap: break-word;
+                        display: inline-block;
+                        mso-padding-alt: 5px;
+                        letter-spacing: 0;
+                      "
+                      href="https://www.twitter.com/"
+                    >
+                      Unsubscribe
+                    </a>
+                    <a
+                      style="
+                        max-width: 100%;
+                        color: #9b9b9b;
+                        text-decoration: underline;
+                        font-family: Helvetica, Arial;
+                        font-size: 12px;
+                        font-weight: normal;
+                        line-height: 100%;
+                        text-align: center;
+                        word-wrap: break-word;
+                        display: inline-block;
+                        mso-padding-alt: 5px;
+                        letter-spacing: 0;
+                      "
+                      href="https://www.pinterest.com/"
+                    >
+                      Global unsubscribe
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <!-- Footer -->
+            </td>
+          </tr>
+          <!-- END FOOTER -->
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
