@@ -1,0 +1,1160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-col .content table h4 {
+          padding: 30px 20px 10px !important;
+        }
+
+        .one-col .content table p {
+          padding: 10px 20px 10px !important;
+        }
+
+        .one-col .content table .btn {
+          padding: 10px 20px 30px !important;
+        }
+
+        .two-col-img {
+          width: 250px !important;
+          max-width: 250px !important;
+          padding: 10px 0px !important;
+          mso-padding-alt: 10px 0px 10px 0px !important;
+        }
+
+        .three-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .two-columns .column .content p,
+        .two-columns .column .content h4 {
+          text-align: center !important;
+        }
+
+        .logo img {
+          max-width: 125px !important;
+          width: 125px !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .two-columns .column .content tr td table,
+        .three-columns .column .content tr td table,
+        .two-columns .column,
+        .three-columns .column {
+          width: 600px !important;
+          max-width: 600px !important;
+          padding: 0px !important;
+        }
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START one-col hero-->
+          <tr>
+            <td style="padding: 0px 0px 0px" class="one-col hero">
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/7YGf22xD/david-outwear-hero.jpg"
+                        alt="david-outwear-hero"
+                        border="0"
+                        width="640"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td style="padding: 0px 0 0px 0; max-width: 800px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="300" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                      valign="top"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  style="width: 300px; padding: 0px 20px"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          class="two-col-img"
+                                          src="https://i.postimg.cc/9ft4fHc7/david-outwear-product-1.png"
+                                          alt="david-outwear-product-1"
+                                          width="260"
+                                          style="
+                                            width: 260px;
+                                            max-width: 260px;
+                                            display: block;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                          "
+                                          border="0"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                   </td><td width="300" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      valign="middle"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table style="width: 300px; padding: 0px 20px">
+                                  <tr>
+                                    <td align="center" valign="middle">
+                                      <h4
+                                        style="
+                                          margin: 0;
+                                          font-family: 'Helvetica Neue', Arial;
+                                          font-size: 24px;
+                                          font-style: normal;
+                                          font-weight: bold;
+                                          line-height: 1.1;
+                                          letter-spacing: 0;
+                                          margin: 0;
+                                          margin-bottom: 12px;
+                                          text-align: left;
+                                        "
+                                      >
+                                        <a
+                                          style="color: #1f1818"
+                                          href="http://example.com"
+                                        >
+                                          David Outwear Survival Cotton Jacket
+                                        </a>
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="padding: 0px 0px">
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-family: 'Century Gothic',
+                                            AppleGothic, Arial;
+                                          font-size: 14px;
+                                          font-style: normal;
+                                          font-weight: 400;
+                                          letter-spacing: 0px;
+                                          line-height: 1.3;
+                                          text-align: left;
+                                          color: #222222;
+                                        "
+                                      >
+                                        Price: $94.95
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                      </td>
+                                      </tr>
+                                      </table>
+                                   <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="padding: 0px 0px; mso-padding-alt: 0px 0px 0px 0px"
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/65g4jhHy/david-outwear-continue-shopping.jpg"
+                        alt="david-outwear-continue-shopping"
+                        border="0"
+                        width="640"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START THREE COLUMNS -->
+          <tr>
+            <td style="padding: 30px 0 40px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="three-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                              <td width="200" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      valign="top"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  style="width: 200px; max-width: 200px"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a href="https://example.com">
+                                        <img
+                                          class="three-col-img"
+                                          width="160"
+                                          src="https://i.postimg.cc/C1hRBrK6/david-outwear-product-2.png"
+                                          alt="david-outwear-product-2"
+                                          style="
+                                            max-width: 160px;
+                                            width: 160px;
+                                            display: block;
+                                            margin: 0 auto;
+                                          "
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          padding: 5px 40px 0px 40px;
+                                          color: #222222;
+                                          font-family: Century Gothic,
+                                            AppleGothic, Arial;
+                                          font-size: 14px;
+                                          font-weight: bold;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          padding-top: 5px;
+                                          padding-bottom: 0px;
+                                          line-height: 1.3;
+                                        "
+                                      >
+                                        David Outwear Salvador Leather Jacket
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: center;
+                                          color: #222222;
+                                          font-family: Century Gothic,
+                                            AppleGothic, Arial;
+                                          font-size: 14px;
+                                          font-weight: normal;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          padding-top: 5px;
+                                          padding-bottom: 0px;
+                                          padding-left: 1.5px;
+                                          padding-right: 1.5px;
+                                          line-height: 1.3;
+                                        "
+                                      >
+                                        $94.95
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      align="center"
+                                      style="padding: 10px 0px"
+                                    >
+                                      <table width="200px" align="center">
+                                        <tr>
+                                          <td align="center">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:rect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 40px;
+                                                    v-text-anchor: middle;
+                                                    width: 100px;
+                                                  "
+                                                  strokecolor="#000"
+                                                  fillcolor="#000"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #ffffff;
+                                                      font-family: sans-serif;
+                                                      font-size: 14px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    SHOP NOW
+                                                  </center>
+                                                </v:rect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: #000;
+                                                  border: 1px solid #000;
+                                                  color: #ffffff;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 14px;
+                                                  font-weight: bold;
+                                                  line-height: 40px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 100px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                  text-decoration: underline;
+                                                "
+                                              >
+                                                SHOP NOW
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                           </td><td width="200" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      valign="top"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table
+                                  style="width: 200px; max-width: 200px"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a href="https://example.com">
+                                        <img
+                                          class="three-col-img"
+                                          width="160"
+                                          src="https://i.postimg.cc/vTDDX1fr/david-outwear-product-3.png"
+                                          alt="david-outwear-product-3"
+                                          style="
+                                            max-width: 160px;
+                                            width: 160px;
+                                            display: block;
+                                            margin: 0 auto;
+                                          "
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          padding: 5px 40px 0px 40px;
+                                          color: #222222;
+                                          font-family: Century Gothic,
+                                            AppleGothic, Arial;
+                                          font-size: 14px;
+                                          font-weight: bold;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          padding-top: 5px;
+                                          padding-bottom: 0px;
+                                          line-height: 1.3;
+                                        "
+                                      >
+                                        David Outwear Bonanza Leather Jacket
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: center;
+                                          color: #222222;
+                                          font-family: Century Gothic,
+                                            AppleGothic, Arial;
+                                          font-size: 14px;
+                                          font-weight: normal;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          padding-top: 5px;
+                                          padding-bottom: 0px;
+                                          padding-left: 1.5px;
+                                          padding-right: 1.5px;
+                                          line-height: 1.3;
+                                        "
+                                      >
+                                        $94.95
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      align="center"
+                                      style="padding: 10px 0px"
+                                    >
+                                      <table width="200px" align="center">
+                                        <tr>
+                                          <td align="center">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:rect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 40px;
+                                                    v-text-anchor: middle;
+                                                    width: 100px;
+                                                  "
+                                                  strokecolor="#000"
+                                                  fillcolor="#000"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #ffffff;
+                                                      font-family: sans-serif;
+                                                      font-size: 14px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    SHOP NOW
+                                                  </center>
+                                                </v:rect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: #000;
+                                                  border: 1px solid #000;
+                                                  color: #ffffff;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 14px;
+                                                  font-weight: bold;
+                                                  line-height: 40px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 100px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                  text-decoration: underline;
+                                                "
+                                              >
+                                                SHOP NOW
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                           </td><td width="200" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      valign="top"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  style="width: 200px; max-width: 200px"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a href="https://example.com">
+                                        <img
+                                          class="three-col-img"
+                                          width="160"
+                                          src="https://i.postimg.cc/kgWGjP6p/david-outwear-product-4.png"
+                                          alt="david-outwear-product-4"
+                                          style="
+                                            max-width: 160px;
+                                            width: 160px;
+                                            display: block;
+                                            margin: 0 auto;
+                                          "
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          padding: 5px 40px 0px 40px;
+                                          color: #222222;
+                                          font-family: Century Gothic,
+                                            AppleGothic, Arial;
+                                          font-size: 14px;
+                                          font-weight: bold;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          padding-top: 5px;
+                                          padding-bottom: 0px;
+                                          line-height: 1.3;
+                                        "
+                                      >
+                                        David Outwear Engine Leather Jacket
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          text-align: center;
+                                          color: #222222;
+                                          font-family: Century Gothic,
+                                            AppleGothic, Arial;
+                                          font-size: 14px;
+                                          font-weight: normal;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          padding-top: 5px;
+                                          padding-bottom: 0px;
+                                          padding-left: 1.5px;
+                                          padding-right: 1.5px;
+                                          line-height: 1.3;
+                                        "
+                                      >
+                                        $114.95
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      align="center"
+                                      style="padding: 10px 0px"
+                                    >
+                                      <table width="200px" align="center">
+                                        <tr>
+                                          <td align="center">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:rect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 40px;
+                                                    v-text-anchor: middle;
+                                                    width: 100px;
+                                                  "
+                                                  strokecolor="#000"
+                                                  fillcolor="#000"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #ffffff;
+                                                      font-family: sans-serif;
+                                                      font-size: 14px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    SHOP NOW
+                                                  </center>
+                                                </v:rect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: #000;
+                                                  border: 1px solid #000;
+                                                  color: #ffffff;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 14px;
+                                                  font-weight: bold;
+                                                  line-height: 40px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 100px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                  text-decoration: underline;
+                                                "
+                                              >
+                                                SHOP NOW
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END THREE COLUMNS -->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="
+                padding: 0px 0px;
+                mso-padding-alt: 0px 0px 0px 0px;
+                background-color: #000;
+              "
+              class="one-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td>
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/bJmsQ0DY/david-outwear-footer.jpg"
+                        alt="david-outwear-footer"
+                        border="0"
+                        width="640"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START one-col footer-->
+          <tr>
+            <td
+              style="
+                padding: 10px 0px;
+                mso-padding-alt: 10px 0px 10px 0px;
+                background-color: #000;
+              "
+              class="one-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    style="
+                      padding: 0px 0px 10px 0px;
+                      mso-padding-alt: 0px 0px 10px 0px;
+                    "
+                  >
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                    >
+                      <img
+                        src="https://i.postimg.cc/dVCkzTXn/david-outwear-facebook.png"
+                        alt="david-outwear-facebook"
+                        border="0"
+                        width="48"
+                        height=""
+                        style="width: 48px; max-width: 48px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                    >
+                      <img
+                        src="https://i.postimg.cc/rpL0cw2T/david-outwear-instagram.png"
+                        alt="david-outwear-instagram"
+                        border="0"
+                        width="48"
+                        height=""
+                        style="width: 48px; max-width: 48px; height: auto"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Helvetica Neue', Arial;
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        color: #fff;
+                      "
+                    >
+                      No longer want to receive these emails?
+                      <a
+                        style="
+                          font-family: 'Helvetica Neue', Arial;
+                          font-size: 11px;
+                          font-style: normal;
+                          font-weight: 400;
+                          letter-spacing: 0px;
+                          line-height: 1.3;
+                          text-align: center;
+                          color: #fff;
+                          text-decoration: underline;
+                        "
+                        href="http://example.com"
+                      >
+                        Unsubscribe.
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Helvetica Neue', Arial;
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        color: #fff;
+                      "
+                    >
+                      David Outwear - The Vale, United Kingdom NW11 8SR
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col footer-->
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
