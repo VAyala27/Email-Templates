@@ -1,0 +1,1550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 900px) {
+        .btn {
+          width: 300px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-col .content table h4 {
+          padding: 30px 20px 10px !important;
+        }
+
+        .one-col .content table p {
+          padding: 10px 20px 10px !important;
+        }
+
+        .one-col .content table .btn {
+          padding: 10px 20px 30px !important;
+        }
+
+        .two-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+
+        .two-columns .column {
+          max-width: 600px !important;
+          width: 100% !important;
+        }
+
+        .two-columns-links .column {
+          max-width: 600px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .two-thirds-columns .column table tr td {
+          text-align: left !important;
+        }
+
+        .two-thirds-columns .column .padding {
+          padding: 10px 20px !important;
+        }
+
+        .two-columns-links .column .content {
+          padding: 0px !important;
+        }
+
+        .two-col-img-container {
+          width: 100% !important;
+          max-width: 600px !important;
+        }
+
+        .two-columns .column img {
+          max-width: 100% !important;
+          width: 600px !important;
+        }
+
+        .two-third-columns .content {
+          text-align: center !important;
+        }
+
+        .logo {
+          padding: 10px 0px !important;
+        }
+
+        .logo img {
+          max-width: 125px !important;
+          width: 125px !important;
+        }
+
+        .two-columns .column .content table {
+          width: 100% !important;
+        }
+
+        .two-columns .column .content table p,
+        .two-columns .column .content table h2 {
+          text-align: center !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .header h1 {
+          font-size: 22px !important;
+        }
+
+        .header p {
+          font-size: 13px !important;
+        }
+
+        .btn-container {
+          width: 100% !important;
+        }
+
+        .two-col-img-container img {
+          max-width: 175px !important;
+          width: 175px !important;
+          margin-bottom: 10px;
+        }
+
+        .two-col-img-container tr td {
+          text-align: center !important;
+        }
+
+        .two-columns .column h2 {
+          font-size: 26px !important;
+        }
+
+        .two-columns .column p {
+          font-size: 12px !important;
+          line-height: 1.5 !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 10px !important;
+        }
+
+        .two-columns-links .column table {
+          padding: 15px 20px !important;
+        }
+
+        .two-thirds-columns .column {
+          max-width: 600px !important;
+        }
+
+        .btn-container {
+          padding: 10px 0px !important;
+        }
+
+        .three-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-bottom: 15px !important;
+        }
+
+        .three-columns .column p {
+          padding: 0px 10px;
+        }
+
+        .three-columns .column .three-col-img {
+          width: 100% !important;
+        }
+
+        .footer-links .column .padding {
+          padding: 10px 5px !important;
+        }
+
+        .footer-links .column .padding a {
+          font-size: 11px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START header-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col header"
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    style="padding: 10px 20px; text-align: center"
+                    align="center"
+                  >
+                    <a style="text-decoration: none" href="http://example.com">
+                      <img
+                        src="https://i.postimg.cc/RZ008Q5D/pokemon-email-logo.png"
+                        alt="pokemon-email-logo"
+                        width="250"
+                        style="
+                          width: 250px;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                        class="logo"
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END header-->
+
+          <!-- START hero-->
+          <tr>
+            <td
+              style="padding: 0px 0px 0px; background-color: #133950"
+              class="one-col hero"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/QdPjy2qF/pokemon-email-hero.jpg"
+                        alt="pokemon-email-hero"
+                        border="0"
+                        width="640"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 640px;
+                          height: auto;
+                          display: block;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <img
+                      src="https://i.postimg.cc/vByTPRQW/pokemon-email-divider.png"
+                      alt="pokemon-email-divider"
+                      border="0"
+                      width="640"
+                      height=""
+                      style="
+                        width: 100%;
+                        max-width: 640px;
+                        height: auto;
+                        display: block;
+                      "
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <h3
+                      style="
+                        margin: 0px;
+                        margin-top: 25px;
+                        font-family: 'Montserrat', Avenir, sans-serif !important;
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 1.1em;
+                        color: #c7eeff;
+                      "
+                    >
+                      Look at That Drip!
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 50px; text-align: center"
+                    align="center"
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        margin-top: 15px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        font-size: 18px;
+                        color: #fff;
+                        line-height: 1.5em;
+                      "
+                    >
+                      Squirtle is certainly making a splash with this shimmery
+                      pearlescent sheen. Get this new Pokémon Funko Pop! figure
+                      before it drifts away. Then get ready—this collection has
+                      a couple more surprises in store.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col hero-->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="
+                padding: 30px 0px;
+                mso-padding-alt: 30px 0px 30px 0px;
+                background-color: #133950;
+              "
+              class="one-col text-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    style="
+                      padding: 0px 0px 0px 0px;
+                      mso-padding-alt: 0px 0px 0px 0px;
+                    "
+                  >
+                    <div>
+                      <!--[if mso]>
+                        <v:roundrect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 50px;
+                            v-text-anchor: middle;
+                            width: 150px;
+                          "
+                          arcsize="0%"
+                          strokecolor="#C7EEFF"
+                          fillcolor="#133950"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #c7eeff;
+                              font-family: sans-serif;
+                              font-size: 16px;
+                              font-weight: bold;
+                            "
+                          >
+                            Shop Now
+                          </center>
+                        </v:roundrect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #133950;
+                          border: 1px solid #c7eeff;
+                          border-radius: px;
+                          color: #c7eeff;
+                          display: inline-block;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-weight: bold;
+                          line-height: 50px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 150px;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                      >
+                        Shop Now
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START one-col text-->
+          <tr>
+            <td
+              style="
+                padding: 30px 0px 0px;
+                mso-padding-alt: 30px 0px 0px 0px;
+                background-color: #133950;
+              "
+              class="one-col links-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center">
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="65"
+                        src="https://i.postimg.cc/B62ZDmHX/pokemon-email-pokemon-1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="65"
+                        src="https://i.postimg.cc/D0Fvc1P5/pokemon-email-pokemon-2.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="65"
+                        src="https://i.postimg.cc/tJ5Xv7rb/pokemon-email-pokemon-3.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="65"
+                        src="https://i.postimg.cc/VsBLkHzh/pokemon-email-pokemon-4.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="65"
+                        src="https://i.postimg.cc/ZKbYBFR5/pokemon-email-pokemon-hidden.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="65"
+                        src="https://i.postimg.cc/ZKbYBFR5/pokemon-email-pokemon-hidden.png"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text-->
+
+          <!-- START one col btn-->
+          <tr>
+            <td
+              style="padding: 0px 0px 0px; background-color: #133950"
+              class="one-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <h3
+                      style="
+                        margin: 0px;
+                        margin-top: 25px;
+                        font-family: 'Montserrat', Avenir, sans-serif !important;
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 1.1em;
+                        color: #c7eeff;
+                      "
+                    >
+                      Who's Arriving Next?
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    style="padding: 0px 50px; text-align: center"
+                    align="center"
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        margin-top: 15px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        font-size: 18px;
+                        color: #fff;
+                        line-height: 1.5em;
+                      "
+                    >
+                      Four pearlescent Pokémon Funko Pop! figures have been
+                      revealed, but more are on their way. Who do you think will
+                      be next?
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    align="center"
+                    style="
+                      padding: 30px 0px 30px 0px;
+                      mso-padding-alt: 30px 0px 30px 0px;
+                    "
+                  >
+                    <div>
+                      <!--[if mso]>
+                        <v:roundrect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 50px;
+                            v-text-anchor: middle;
+                            width: 150px;
+                          "
+                          arcsize="0%"
+                          strokecolor="#C7EEFF"
+                          fillcolor="#133950"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #c7eeff;
+                              font-family: sans-serif;
+                              font-size: 16px;
+                              font-weight: bold;
+                            "
+                          >
+                            Shop Now
+                          </center>
+                        </v:roundrect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #133950;
+                          border: 1px solid #c7eeff;
+                          border-radius: px;
+                          color: #c7eeff;
+                          display: inline-block;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-weight: bold;
+                          line-height: 50px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 150px;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                      >
+                        Shop Now
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col btn-->
+
+          <!-- START one-col links-->
+          <tr>
+            <td
+              style="
+                padding: 0 0px 0px;
+                mso-padding-alt: 0px 0px 0px 0px;
+                background-color: #000;
+              "
+              class="one-col links-col"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                style="width: 300px"
+              >
+                <tr>
+                  <td style="padding: 10px 10px 10px">
+                    <img
+                      style="vertical-align: middle; display: inline-block"
+                      width="40"
+                      src="https://i.postimg.cc/R0kVNk3k/pokemon-email-new-releases.png"
+                      alt=""
+                    />
+                    <a
+                      style="
+                        vertical-align: middle;
+                        display: inline-block;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                      "
+                      href="#"
+                    >
+                      New Releases
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col links-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 2px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col links-->
+          <tr>
+            <td
+              style="
+                padding: 0 0px 0px;
+                mso-padding-alt: 0px 0px 0px 0px;
+                background-color: #000;
+              "
+              class="one-col links-col"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                style="width: 300px"
+              >
+                <tr>
+                  <td style="padding: 10px 10px 10px">
+                    <img
+                      style="vertical-align: middle; display: inline-block"
+                      width="40"
+                      src="https://i.postimg.cc/K8sYykmv/pokemon-email-plush.png"
+                      alt=""
+                    />
+                    <a
+                      style="
+                        vertical-align: middle;
+                        display: inline-block;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                      "
+                      href="#"
+                    >
+                      Plush
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col links-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 2px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col links-->
+          <tr>
+            <td
+              style="
+                padding: 0 0px 0px;
+                mso-padding-alt: 0px 0px 0px 0px;
+                background-color: #000;
+              "
+              class="one-col links-col"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                style="width: 300px"
+              >
+                <tr>
+                  <td style="padding: 10px 10px 10px">
+                    <img
+                      style="vertical-align: middle; display: inline-block"
+                      width="40"
+                      src="https://i.postimg.cc/nVwXrkf0/pokemon-email-pins.png"
+                      alt="pokemon-email-pins"
+                    />
+                    <a
+                      style="
+                        vertical-align: middle;
+                        display: inline-block;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                      "
+                      href="#"
+                    >
+                      Figures & Pins
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col links-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 2px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col links-->
+          <tr>
+            <td
+              style="
+                padding: 0 0px 0px;
+                mso-padding-alt: 0px 0px 0px 0px;
+                background-color: #000;
+              "
+              class="one-col links-col"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                style="width: 300px"
+              >
+                <tr>
+                  <td style="padding: 10px 10px 10px">
+                    <img
+                      style="vertical-align: middle; display: inline-block"
+                      width="40"
+                      src="https://i.postimg.cc/hthSMDVF/pokemon-email-trading-cards.png"
+                      alt=""
+                    />
+                    <a
+                      style="
+                        vertical-align: middle;
+                        display: inline-block;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                      "
+                      href="#"
+                    >
+                      Trading Card Game
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col links-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 2px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col links-->
+          <tr>
+            <td
+              style="
+                padding: 0 0px 0px;
+                mso-padding-alt: 0px 0px 0px 0px;
+                background-color: #000;
+              "
+              class="one-col links-col"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                style="width: 300px"
+              >
+                <tr>
+                  <td style="padding: 10px 10px 10px">
+                    <img
+                      style="vertical-align: middle; display: inline-block"
+                      width="40"
+                      src="https://i.postimg.cc/4ybdCWxr/pokemon-email-clothing.png"
+                      alt=""
+                    />
+                    <a
+                      style="
+                        vertical-align: middle;
+                        display: inline-block;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                      "
+                      href="#"
+                    >
+                      Clothing
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col links-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 2px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col links-->
+          <tr>
+            <td
+              style="
+                padding: 0 0px 0px;
+                mso-padding-alt: 0px 0px 0px 0px;
+                background-color: #000;
+              "
+              class="one-col links-col"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                style="width: 300px"
+              >
+                <tr>
+                  <td style="padding: 10px 10px 10px">
+                    <img
+                      style="vertical-align: middle; display: inline-block"
+                      width="40"
+                      src="https://i.postimg.cc/WzKzy2wQ/pokemon-email-home.png"
+                      alt="pokemon-email-home"
+                    />
+                    <a
+                      style="
+                        vertical-align: middle;
+                        display: inline-block;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                      "
+                      href="#"
+                    >
+                      Home
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col links-->
+
+          <!-- START one-col divider-->
+          <tr>
+            <td
+              style="padding: 0px; background-color: #000"
+              class="one-col img"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="height: 2px; background-color: #fff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col divider-->
+
+          <!-- START one-col links-->
+          <tr>
+            <td
+              style="
+                padding: 0 0px 0px;
+                mso-padding-alt: 0px 0px 0px 0px;
+                background-color: #000;
+              "
+              class="one-col links-col"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                style="width: 300px"
+              >
+                <tr>
+                  <td style="padding: 10px 10px 10px">
+                    <img
+                      style="vertical-align: middle; display: inline-block"
+                      width="40"
+                      src="https://i.postimg.cc/sDk19gXW/pokemon-email-video-game.png"
+                      alt="pokemon-email-video-game"
+                    />
+                    <a
+                      style="
+                        vertical-align: middle;
+                        display: inline-block;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                      "
+                      href="#"
+                    >
+                      Video Game
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col links-->
+
+          <!-- START one-col social-media-->
+          <tr>
+            <td
+              style="
+                padding: 20px 0px 20px;
+                mso-padding-alt: 20px 0px 20px 0px;
+                background-color: #000;
+              "
+              class="one-col social-media"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center">
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="40"
+                        src="https://i.postimg.cc/Wb5NMFF6/pokemon-email-tiktok.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="40"
+                        src="https://i.postimg.cc/y6FWS8yv/pokemon-email-facebook.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="40"
+                        src="https://i.postimg.cc/3wv35tLn/pokemon-email-twitter.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="40"
+                        src="https://i.postimg.cc/9FbMJgS9/pokemon-email-instagram.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="40"
+                        src="https://i.postimg.cc/sXCsV5qy/pokemon-email-youtube.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                      "
+                      href="#"
+                    >
+                      <img
+                        width="40"
+                        src="https://i.postimg.cc/DzJwfvzQ/pokemon-email-pinterest.png"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col social-media-->
+
+          <!-- START footer-logo-->
+          <tr>
+            <td
+              style="padding: 0px 0px 0px; background-color: #000"
+              class="one-col"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    style="padding: 0px 0px; text-align: center"
+                    align="center"
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://i.postimg.cc/BQ4b5fhs/pokemon-email-footer-logo.png"
+                        alt="pokemon-email-footer-logo"
+                        border="0"
+                        width="300"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 300px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col footer logo-->
+
+          <!-- START one-col social-media-->
+          <tr>
+            <td
+              style="
+                padding: 20px 0px 20px;
+                mso-padding-alt: 20px 0px 20px 0px;
+                background-color: #000;
+              "
+              class="one-col social-media"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center">
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                      href="#"
+                    >
+                      Terms of Use
+                    </a>
+                    <span
+                      style="
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                    >
+                      |
+                    </span>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                      href="#"
+                    >
+                      Privacy Notice
+                    </a>
+                    <span
+                      style="
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                    >
+                      |
+                    </span>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                      href="#"
+                    >
+                      Legal Info
+                    </a>
+                    <span
+                      style="
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                    >
+                      |
+                    </span>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                      href="#"
+                    >
+                      Update Preferences
+                    </a>
+                    <span
+                      style="
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                    >
+                      |
+                    </span>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                      href="#"
+                    >
+                      Unsubscribe
+                    </a>
+                    <span
+                      style="
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                    >
+                      |
+                    </span>
+                    <a
+                      style="
+                        padding: 0px 10px;
+                        mso-padding-alt: 0px 10px 0px 10px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #cdcdcd;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 1.6em;
+                      "
+                      href="#"
+                    >
+                      View as webpage
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col social-media-->
+          <!-- START one-col footer-->
+          <tr>
+            <td
+              style="
+                padding: 20px 0px 20px;
+                mso-padding-alt: 20px 0px 20px 0px;
+                background-color: #000;
+              "
+              class="one-col footer"
+            >
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td align="center">
+                    <p
+                      style="
+                        margin: 0;
+                        margin-bottom: 10px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #707070;
+                        font-size: 13px;
+                        line-height: 14px;
+                        text-align: center;
+                      "
+                    >
+                      ©2023 Pokémon / Nintendo / Creatures / GAME FREAK.
+                    </p>
+
+                    <p
+                      style="
+                        margin: 0;
+                        margin-bottom: 10px;
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #707070;
+                        font-size: 13px;
+                        line-height: 14px;
+                        text-align: center;
+                      "
+                    >
+                      The Pokémon Company International
+                    </p>
+
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Open Sans', sans-serif !important;
+                        color: #707070;
+                        font-size: 13px;
+                        line-height: 14px;
+                        text-align: center;
+                      "
+                    >
+                      10400 NE 4th Street, Suite 2800, Bellevue, WA 98004 USA
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col social-media-->
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
