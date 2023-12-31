@@ -1,0 +1,1262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+
+    <!--[if gte mso 15]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 0px;
+      }
+
+      .two-col-img {
+        width: 300px;
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .btn {
+          font-size: 14px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+      }
+      @media only screen and (max-width: 399.98px) {
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+
+        .social-media img {
+          width: 25px !important;
+          margin: 0 auto !important;
+        }
+
+        .footer .content p a {
+          font-size: 10px !important;
+        }
+        .footer .content p {
+          font-size: 10px !important;
+        }
+
+        .btn {
+          font-size: 13px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      @media (prefers-color-scheme: dark) {
+        .sub-header .column p {
+          color: #383633 !important;
+        }
+      }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+        a{text-decoration: none; !important}
+         div, td {padding:0;}
+        div {margin:0 !important;}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+    <!-- Gmail hack -->
+    <div
+      style="
+        display: none;
+        white-space: nowrap;
+        font: 15px courier;
+        color: #ffffff;
+        line-height: 0;
+        width: 600px !important;
+        min-width: 600px !important;
+        max-width: 600px !important;
+      "
+    >
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+    <!-- /Gmail hack -->
+
+    <!-- Start of HTML EMAIL -->
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <!-- Start of container -->
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          width="600"
+          role="presentation"
+        >
+          <!-- START one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <table
+                      class="content"
+                      style="
+                        border-spacing: 0;
+                        text-align: center;
+                        max-width: 600px;
+                        vertical-align: top;
+                      "
+                      role="presentation"
+                      width="600"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          class="h-10"
+                          height="10"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p style="margin: 0; text-align: center">
+                            <a
+                              style="
+                                color: #666666;
+                                text-decoration: none;
+                                font-size: 10px;
+                                line-height: 14px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                display: inline-block;
+                              "
+                              href="http://example.com"
+                            >
+                              (Hint: 15% OFF Entire Purchase) View On
+                              <span style="text-decoration: underline">
+                                Web Browser
+                              </span>
+                            </a>
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-10"
+                          height="10"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZu8ExEe7BpYKWOrwPlKuFNOw4mMDi0ZvsksvTPEbn693EcC4itgHN3guNM0d-vniDVUGloCUS3O7ski8jyEbbMAZwjeZeShRvPcf-G6Jp9S2cRhX7NDhNuhAfJoX8uDW4tQmgA6mhCxHWPV0dU8rOblCRnEaxarcT3SIQvcEByETEG0uAJdw5GXMO0Gxb3PROK0E4y5C-1XXmsG1w=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/anf_logo_white_bg_4.jpg"
+                        alt="logo"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYFVfNpQsqLEpkuYBefTRACaUrls2GLnqBE0lVixQx3uCjnuies2B545quMe-wrqK48TSwyFg4Vj76GWtL41deeAfIXVqNOZx1KqX8XidsMRiv_w6_qKbwMAVIU5decaH7zk1y19GlrL1f19PRERiMZSBNb05D6GGOLF2qxaSJwvN52GUqH4uyPPLppVrGLHJsTMl-z_hIz=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome/awk_welcome/images/ANF-WELCOME-T2-03-USCA.jpg"
+                        alt="discount"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NbWM4xqIjF2xeEI8IVk9hpRxJ33M1TgO7V7z2mua-1b427Wz74OY2SGdnJOpmMcDWCfRIZFnQqxDgx4R-KEMGT30YhP-GOAGxvI28wDp62LPmYPEak=s0-d-e1-ft#https://img.abercrombie.com/is/content/anf/anf-NLwelcome-T2.gif"
+                        alt="logo"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="h-20"
+                    height="20"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #212121;
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: normal;
+                      "
+                    >
+                      THROUGH 01/11/2024
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="h-20"
+                    height="20"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #212121;
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: normal;
+                      "
+                    >
+                      USE CODE: 4357662437691573 01/11/2024
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    border="0"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NaKjUfT0vHWvxgYTKp-Nc0PFc0y3LDOtNRmEvS5Q68rDMzMn-PuGBkFVW86wxiuYXWzr0TfpJV-FJ5JqsfxFi9A0DGcFboaxLCcLBnls4vwqYWiv6yjEDmD0y14BJZ9fy0IrK7IN5qMnrZ2z_pw7gDrsqZ7PO1zdCIwD2Fo4QUgCadZYQ_haPumE15Wi2SU3BG0iyMWEKWxuBVMWIo=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome/awk_welcome/images/AWK-WELCOME-T2-v3-XMAS17_07.jpg"
+                                    alt="shop-men"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NbIfGphI1Yyl1rsHScSqmFuiPVaz3FUiGVaECeitoGknso6xVKfbW9PzBru4KPWXn3O_KvVBJSXoie6Di2vaQ642kM41oYCcc9vky8XDARlZJeHn62ABpWeN9rbWf76_SKl7t6ELd_RfL2cNwcqNUoakhzEH1170ieI0S6xiwe1JFtprIlNZkMEtpsV8v47VCcybIWWg7Kr1h64fMo=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome/awk_welcome/images/AWK-WELCOME-T2-v3-XMAS17_08.jpg"
+                                    alt="shop-women"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NbdJPE2Hp3FNBMUT710f0u2htA6qjnAnkXG6kvHd7rSM_PpI9XX9OpX9k40Xt77T7bj3A97SWCLrts27yOWKaoUscXzL0eWtUKWiNlFXz5bsAuuhGY83gDqNM_GsZQ_wgYmZUUpCZm31Sm7X5rK-BNv5MHTzqfW4pXB6Krvt_SS84dQqqPTLSZ48ieR5qSMUkVGatG5v7VN14NzMas=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome/awk_welcome/images/AWK-WELCOME-T2-v3-XMAS17_11.jpg"
+                        alt="use-barcode"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYsgbbBPTGHUHPxI7HTz5Y3hY093aH4BgcQarfBN785z-Bp49FqDtxSszP6YDmlqyvMAb7eKC63C_goAe8a29Ig3vbmRSbfIm8KH57F2A=s0-d-e1-ft#http://e.abercrombie.com/bca/z/image?bc=4357662437691573"
+                        alt="barcode"
+                        width="200"
+                        style="
+                          width: 200px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYPb4O4jpN8x94DPP3rOyUhU_wMAQwiIzQAJBuMpFxCDLQh-tLvSfv-4cNH9gd0Ct1iCpZ8udsOkagGeOOalmDHH-cFJXhezngTqQ2fPqOD3UAiGCHe9rH_nK80BECz5odSy0gYYNO8O93QA3FPbx2NtPNJonbYDRYS4sY-tcxDoTf7WxQhvLp1QRc9nZ4KOXrmflWk=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome/awk_welcome/images/BFExclusionTextSlice.jpg"
+                        alt="see-details"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NaZPf02dmKU0LhVy2tKL_cVCX1SyYjCY6IDKCwmz5inMpDCJOFeorBQcV5JP1hRYvtX5sBEf2HRqenAjp7yC4uDUU6rwi6gmOi4MvREzKBcpTLUep5aTxBhPilagMJvWq4jzedJhlG3X-WgCWRiqMQsu6WHxbS9tHB4nIL5eV0PaJx77Vr5Ber44DqzCeCGnkwpO3x0DFuEwWJl_jJl4kybljIK=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/102619_Update_AF_footer_01.jpg"
+                                    alt="get-rewarded"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NajcuChaK5Ae0vkO4s-Ew_WSL2PEWvTuZoGfO6tHMiNLKRaTtJ3r70eUBdn3gLf1nv58Le-JPPdukHQ0fl-ykmc2msv5BXu1TXcKt5Wk5ZXfGOsmN2cDlxWiJcS0lsaYPUIM-QEBw3KoB97HH5P7tVPrk9om0a4K4V_2HYTVVRQ996xqdtZXvbbCn04eX4TwWX6azrnd2bp0KvvGnzH1UbtGcD8=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/102619_Update_AF_footer_02.jpg"
+                                    alt="find-store"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NbUsK5UDAKYSjHplUBjCgyZUEAkJ9ADPZsyEB7a5_81xRr5q-eTYhNlfXEXnfOvz9G_osL_Se5DhokSJJXTRKn1dbhm-zmb0xdt3s0lHunkWrZAtsdcxNQHskQQJH0pWbn29quW5IMjDTE3vVugXoBnlohbNUxMmarc9OeKzcADhthr-s0POJ7_r8rbbj5aq6MiWoJbgQUdB6JAyw64tXp5VHxe=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/102619_Update_AF_footer_03.jpg"
+                        alt="women"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYmtl9PIqCpsjWdWznUMR0Op78_dk0MZAtfz8RQwxb8B3gLJfaXVVFY5VcluGFArL4iqBaTOIW0Ck-I4oai3h0Xhg9-ug-VzitEMztfGNMPaeHG_pd4_fAjpoIEqInQ8kwo1-KxLw6TcyHQAIH68LqZT2nV3ZQJ61blO-tPYdkKEmVzUWriuL83xTmXOyxcnIcLjihZ_s72b6ABi2VbD1gbu5nj=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/102619_Update_AF_footer_04.jpg"
+                        alt="men"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZOTeglm8SoEkU0SH7IzF7MBgzuD9cE9ZwCap_yJY18RW8rKcLOJ-kCOkgoVMGFNBROgmcgozDtks63elXFIxBKqNgGvVexzl1unGLeOsl4AH7ILMy_RFJD8rjYjqa2g8CVRoMlQb4U0QPWZ7IgWx-u3N2F1s71ZMsI2z133cw4_3HUauT5J9heYS0N14hhzG6YKKL4W2DFHJKLxjI2HyJtMGzL=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/102619_Update_AF_footer_05.jpg"
+                        alt="kids"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NblxEx8qMoKHCLIG4ooDOcIfURotk56sIaQrUENzW8ENVlIhQmOs4iDR0dvvLJNKtW7zZY6c9U_q0YrcfW3brSHcFRLCSjKDCDWkDognM6sORdruP3FfHM2MORsCHQiVVXL9AgolQ3QOmpxCfQWRKFZWRf8esxe4d2E8CPPE4aLD1A2w0OdRx14vKyet-s7e1niolowTZKxP_jPMAOv_RnGhM-p=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/102619_Update_AF_footer_06.jpg"
+                        alt="women"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZCi54RqWnQOIhY_U4qDp_polp2cNJ3NMGhMfbaMX2cRtVuTM2b2rMuQ5UEBUqWjneI1qNGuevnEzq2206K2fik4D2282kLsBou_10GkQZB7cqxFoVZ_wbH1BrU8GPJrIOnerxlO4P3qsZX3rT5vmMio9okwuBhvwl2qqxXQ_arSeC99X7sqkYMCPUOuEjJPQhCiTHd2hGI23QGJ2R0coSWa4Rw=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/102619_Update_AF_footer_07.jpg"
+                        alt="women"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZRJ4yuI2iOsvxianObOTvggDNyLAID1QKVpltXsfT3frAwXh7cEt2lXxWi66wFw_Nqo_tufzQbe2RgKmXcdFYDS2Uxq5KMt2KjX8J3kKd6HjvC6QAPGRsCevHygyAVlf-FFP3jGZ92dmRKR55e8olUII_FCGY3a0ikozHP4tnC87WWYPLSz-yNxDtebctd4orTP-CADr7YjkMpk-18H9nXq4CW=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/102619_Update_AF_footer_08.jpg"
+                        alt="women"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_Nb8fSFZZRCAJAnP9Parex4dli_83-aWPGuPc08EX_PS9EgYfYV2U7cCPNRCD1fgkGFxAcWWxlzVBTRnX0j9eW600ztyzWWZ5xs2MALrV7SejmtxNiET2VRz4KoO9j4bkxyszYJNA9faplTK60SYDZhZ3KTPdNo3SLievaKLA_D7q2Rx_osGb-X-gx2LtNZ_V06rIdhViryn-VFw_imo4lHpvslp=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/102619_Update_AF_footer_09.jpg"
+                        alt="women"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="h-70"
+                    height="70"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NZlXOOlwxQbOujfkdZkjGFiHqVRUOjVW1hR1KxC987CGUaNi4-HetMobibGgfRxqEuxIqdixq67NXiakYMFOGqC3QxjY8ZdQ2eG1iHhZwo-KOCaccX0Hg6GoitP9b0HWTMh-KXp73OH7CmlaMRtWZskXNKvqTuRE0anJ3nxIuqFVuaYVKJXhn_Lme7K=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/ios.jpg"
+                                    alt="apple-store"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NZiaQTSTnsCJsO45UhSOcXu31cCUyDrtrjgHHO2YVPOe01IitE-2G5bB-DGrfrE2Vf8ib3WaX-VdcULipP8IPMnnHSgajBoBzT2tIHX54SzQbZye5_mfoNqcqZSwPijCbZx8f_GXOt6g0_gsnscrUNxjIHCytlV0kEcmfz4cpRt2WDVdf-356v744IR9KiSmTdECQ=s0-d-e1-ft#https://e.abercrombie.com/assets/responsysimages/abercrombie/contentlibrary/welcome_2020/shared_content/images/googleplay.jpg"
+                                    alt="googleplay"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!--[if (gte mso 9)|(IE)]>
+                                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                        <td width="600" valign="top" style="padding: 0;">
+                                     <![endif]-->
+
+                    <table
+                      class="content"
+                      style="
+                        border-spacing: 0;
+                        text-align: center;
+                        vertical-align: top;
+                        max-width: 600px;
+                      "
+                      role="presentation"
+                      width="600"
+                      align="center"
+                    >
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            This email is not endorsed or sponsored by any
+                            third-party social media sites.
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            All social media logos and trademarks displayed in
+                            this email are property of their respective owners.
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            To ensure delivery to your inbox, add
+                            <a
+                              style="
+                                color: #666666;
+                                text-decoration: underline;
+                                font-size: 9px;
+                                font-family: Arial, Helvetica, sans-serif;
+                              "
+                              href="http://example.com"
+                            >
+                              Abercrombie@e.abercrombie.com
+                            </a>
+                            to your address book.
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-10"
+                          height="10"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            This is a product offering from Abercrombie & Fitch.
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            You have received this email since you submitted
+                            your email address to our list of subscribers
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            To unsubscribe, please
+                            <a
+                              style="
+                                color: #666666;
+                                text-decoration: underline;
+                                font-size: 9px;
+                                font-family: Arial, Helvetica, sans-serif;
+                              "
+                              href="http://example.com"
+                            >
+                              click here
+                            </a>
+                            and submit your email address.
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-10"
+                          height="10"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            Please see our
+                            <a
+                              style="
+                                color: #666666;
+                                text-decoration: underline;
+                                font-size: 9px;
+                                font-family: Arial, Helvetica, sans-serif;
+                              "
+                              href="http://example.com"
+                            >
+                              Website Terms of Use
+                            </a>
+                            , and to know how we use your personal data,
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            please see our
+                            <a
+                              style="
+                                color: #666666;
+                                text-decoration: underline;
+                                font-size: 9px;
+                                font-family: Arial, Helvetica, sans-serif;
+                              "
+                              href="http://example.com"
+                            >
+                              Privacy Policy
+                            </a>
+                            .
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-10"
+                          height="10"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            Abercrombie & Fitch - 720 Fifth Avenue - Attn: 8th
+                            Floor - New York, NY 10019
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 9px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              color: #666666;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            <a
+                              style="
+                                color: #666666;
+                                text-decoration: underline;
+                                font-size: 9px;
+                                font-family: Arial, Helvetica, sans-serif;
+                              "
+                              href="http://example.com"
+                            >
+                              www.Abercrombie.com
+                            </a>
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-20"
+                          height="20"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                              </tr>
+                            </table>
+                              <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+        </table>
+        <!-- End of container -->
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+      <!-- End of HTML EMAIL -->
+    </center>
+  </body>
+</html>
