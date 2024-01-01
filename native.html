@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+
+    <!--[if gte mso 15]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 0px;
+      }
+
+      .two-col-img {
+        width: 300px;
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .btn {
+          font-size: 14px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+      }
+      @media only screen and (max-width: 399.98px) {
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+
+        .social-media img {
+          width: 25px !important;
+          margin: 0 auto !important;
+        }
+
+        .footer .content p a {
+          font-size: 10px !important;
+        }
+        .footer .content p {
+          font-size: 10px !important;
+        }
+
+        .btn {
+          font-size: 13px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      @media (prefers-color-scheme: dark) {
+        .sub-header .column p {
+          color: #383633 !important;
+        }
+      }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+        a{text-decoration: none; !important}
+         div, td {padding:0;}
+        div {margin:0 !important;}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+    <!-- Gmail hack -->
+    <div
+      style="
+        display: none;
+        white-space: nowrap;
+        font: 15px courier;
+        color: #ffffff;
+        line-height: 0;
+        width: 600px !important;
+        min-width: 600px !important;
+        max-width: 600px !important;
+      "
+    >
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+    <!-- /Gmail hack -->
+
+    <!-- Start of HTML EMAIL -->
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <!-- Start of container -->
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          width="600"
+          role="presentation"
+        >
+          <!-- START one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYiwQiEEhOWzzAxsXhnDXaJSetWcbMSXsOgIZWhSGpdNKq5ZEpHyphU1sowKLBQ8tC6VVq6W2ZWq-YF1RCg1LxCmxB4NG-Ici3Q9iwBnx-Li9fUAn41ti41=s0-d-e1-ft#https://images.emailaptitude.com/native/2023-09-Shipping-Banner.jpg"
+                        alt="2023-09-Shipping-Banner"
+                        border="0"
+                        width="600"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 600px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="one-col">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYbfYkEdaIeNPlLBCgi6FV0HnXWuAWGD5jIw8KFvrPN40h1ojjAffKgSOeQRgdc-zCqC0rQa0mzCmeIaVFuVnhewzqFGC_vkOjKa9tP8oQHrgOgTe-ae8dUyfN65AcfXlz3-eVPyGgRM4hEP2G7_6ZbqVCq-9jmyPMrAQxlFLQ=s0-d-e1-ft#https://images.emailaptitude.com/native/2023/12_December/12.29/12.29-Girl-Scouts-Collab_R6-%281%29_01.jpg"
+                        alt="-Girl-Scouts-Collab_R6-%281%29_01"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="one-col">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZg3pJKbrJFyjfxks1KutHOK4hPX0LSOCvgJxEwONVcuTU8q23AcQg1xR9E-8o2Jce7O3KMbASOlqtprL9vvpvvavyUqSdy--ldchE9psBb8kktlKTQdF06roUKwtlVz9C9Xhtn8yDVLM0K_yZFTCHrsHWPDENZznr11BDLr4A=s0-d-e1-ft#https://images.emailaptitude.com/native/2023/12_December/12.29/12.29-Girl-Scouts-Collab_R6-%281%29_02.jpg"
+                        alt="hero"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaKHNwgSGXIxCE2jQ0ImKqEbQWOkOaxU55KBRKllfGpecJirYlu1hI9jwHlZVgJscfOrAnh6IFlqJiK3cb7a9oQ_4koZti2Iy5ruAJJk_1ECP9UZ2XkEwNfIIPVam4bCitNtx_SzuZPiGEr6etwxiKd-6SsJVFZdS8CqM6CKnI=s0-d-e1-ft#https://images.emailaptitude.com/native/2023/12_December/12.29/12.29-Girl-Scouts-Collab_R6-%281%29_03.jpg"
+                        alt="coconut"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYCp8-vk7cYW8NarxzPAduQXWeo8zx73uK7SNzlax0b4zSlulyGhegdjBI0YHcyd1Q_6jQxUUN7QBvNZWiLWc-RKqk1RgowTIp-IAyUw_Q9JwpMRfIOvBVGEzvcb_b6rkT6I3KwfTn-deEiWMipW6_hRhBBChKk4FlFhBI3kRY=s0-d-e1-ft#https://images.emailaptitude.com/native/2023/12_December/12.29/12.29-Girl-Scouts-Collab_R6-%281%29_04.jpg"
+                        alt="trefoils"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NbCuwa-B-oGZIE40hbuiTuXdDKeEAmQwz7T5YicRlLpEFmDPsOF8Hjwa1OpLAFFmh5SM7ckVaNDUTys65-r_e3EcKsI1LkVnvLnSjXHwWmCA8rsOE-kgLmbFFS3NM9k5x6HZMSKgnqnpm62qEKz0-H58S_MH5DoKPzHU1f0LHY=s0-d-e1-ft#https://images.emailaptitude.com/native/2023/12_December/12.29/12.29-Girl-Scouts-Collab_R6-%281%29_05.jpg"
+                        alt="thin-mints"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZfu14q1--loG_yMVqGwN4uC-wZk0uxSteHxXj0E92qLpTAMrDqLBR5Wo8y85dQxYXJHmLVN3fTSHfqTlWZ8vqYqzx1rQ0GbxjOsbbzVhZD2WYW9Su4A4mtIKrwvGocUqniSQ80rHI3LYgoTs9dxZJVedVEUzN5ohuMh64hn4o=s0-d-e1-ft#https://images.emailaptitude.com/native/2023/12_December/12.29/12.29-Girl-Scouts-Collab_R6-%281%29_06.jpg"
+                        alt="lemon"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZZpYv6H_s5fGhHtWUoEDsZ6nltJiuXQ7wLDwC8bltojxMX63UX0s7UQKkYtQ7m8p2pkAfa1xjXpe9YYMAxBKGW-xIkW84bj_zb4eIH4qpMTrhIu1bPZ6w_7doIbFODRZnjnX9uvvtyThWYbSiA1ayBkoIBbOmnYFN3O4wN7Gs=s0-d-e1-ft#https://images.emailaptitude.com/native/2023/12_December/12.29/12.29-Girl-Scouts-Collab_R6-%281%29_07.jpg"
+                        alt="peanut-butter"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaiCFDbV3qP1NTJKbR08xHHUHzwpu8i6O8iIIQLhtwP_TZIFzANR3KfKytj-IKdMYWZPYtDr_6gWvo2egTa02QmzEknJmrGKvvhUlAn7ovv8I-SQULusnbH88lRoRQ=s0-d-e1-ft#https://images.emailaptitude.com/native/2023/12_December/12.29/12_08.jpg"
+                        alt="shop-collection"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td
+              style="padding: 0px 0 0px 0; background: rgb(246, 246, 244)"
+              class="one-col"
+            >
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!--[if (gte mso 9)|(IE)]>
+                                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                        <td width="600" valign="top" style="padding: 0;">
+                                     <![endif]-->
+
+                    <table
+                      class="content"
+                      style="
+                        border-spacing: 0;
+                        text-align: center;
+                        vertical-align: top;
+                        max-width: 600px;
+                      "
+                      role="presentation"
+                      width="600"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          class="h-40"
+                          height="40"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <img
+                            src="https://ci3.googleusercontent.com/meips/ADKq_Nbw2p6LbanoGvDrhr5fsY4EgPKKCsKAmSSL6tNZOrq_TCgX-PvgjLrfHoMzI7ha0fABhiH2GoQSP876mUBJmn6K6_NknEdtXE4lk98WC-6vD6vzuxgQaESQgXsXVZKyaZ5e7wbEUewmupCh=s0-d-e1-ft#https://images.emailaptitude.com/native/2018/08-August/Labor_Day_Sale_Launch/logo.png"
+                            alt="logo"
+                            border="0"
+                            width="110"
+                            height=""
+                            style="
+                              width: 110px;
+                              max-width: 600px;
+                              height: auto;
+                              display: block;
+                              margin: 0 auto;
+                            "
+                          />
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-15"
+                          height="15"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 15px;
+                              color: #171a1a;
+                              font-family: Brandon, 'Trebuchet MS', Arial,
+                                sans-serif;
+                              line-height: 23px;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            Our mailing address is:
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 15px;
+                              color: #171a1a;
+                              font-family: Brandon, 'Trebuchet MS', Arial,
+                                sans-serif;
+                              line-height: 23px;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            201 California St, Suite 450, San Francisco, CA
+                            94111
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-10"
+                          height="10"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 15px;
+                              color: #171a1a;
+                              font-family: Brandon, 'Trebuchet MS', Arial,
+                                sans-serif;
+                              line-height: 23px;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            <a
+                              href="http://example.com"
+                              style="
+                                text-decoration: underline;
+                                color: #00237e;
+                                font-size: 15px;
+                                display: inline-block;
+                              "
+                            >
+                              Unsubscribe
+                            </a>
+                            |
+                            <a
+                              href="http://example.com"
+                              style="
+                                text-decoration: underline;
+                                color: #00237e;
+                                font-size: 15px;
+                                display: inline-block;
+                              "
+                            >
+                              View in Browser
+                            </a>
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-10"
+                          height="10"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-size: 15px;
+                              color: #171a1a;
+                              font-family: Brandon, 'Trebuchet MS', Arial,
+                                sans-serif;
+                              line-height: 23px;
+                              margin: 0;
+                              text-align: center;
+                            "
+                          >
+                            TM & ©️ Girl Scouts of the USA
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-40"
+                          height="40"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                              </tr>
+                            </table>
+                              <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+        </table>
+        <!-- End of container -->
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+      <!-- End of HTML EMAIL -->
+    </center>
+  </body>
+</html>
