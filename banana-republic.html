@@ -1,0 +1,951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+
+    <!--[if gte mso 15]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 0px;
+      }
+
+      .two-col-img {
+        width: 300px;
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .btn {
+          font-size: 14px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+      }
+      @media only screen and (max-width: 399.98px) {
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+
+        .social-media img {
+          width: 25px !important;
+          margin: 0 auto !important;
+        }
+
+        .footer .content p a {
+          font-size: 10px !important;
+        }
+        .footer .content p {
+          font-size: 10px !important;
+        }
+
+        .btn {
+          font-size: 13px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      @media (prefers-color-scheme: dark) {
+        .sub-header .column p {
+          color: #383633 !important;
+        }
+      }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+        a{text-decoration: none; !important}
+         div, td {padding:0;}
+        div {margin:0 !important;}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+    <!-- Gmail hack -->
+    <div
+      style="
+        display: none;
+        white-space: nowrap;
+        font: 15px courier;
+        color: #ffffff;
+        line-height: 0;
+        width: 600px !important;
+        min-width: 600px !important;
+        max-width: 600px !important;
+      "
+    >
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+    <!-- /Gmail hack -->
+
+    <!-- Start of HTML EMAIL -->
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <!-- Start of container -->
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          width="600"
+          role="presentation"
+        >
+          <!-- START TWO-THIRDS COLUMNS -->
+          <tr>
+            <td style="padding: 10px 0px 10px 0px">
+              <table
+                width="100%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    class="two-third-columns"
+                    style="padding: 0; font-size: 0"
+                    align="center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                              <td width="400" valign="middle" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 380px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <p style="margin: 0; line-height: 1.4">
+                                  <a
+                                    href="http://example.com"
+                                    style="
+                                      text-decoration: underline;
+                                      color: #000000;
+                                      font-size: 14px;
+                                      font-family: Arial, Helvetica, sans-serif;
+                                    "
+                                  >
+                                    Cut in rich Italian Melton wool and
+                                    herringbone.
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                           </td><td width="200" valign="middle" style="padding: 0;">
+                           <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              text-align: right;
+                              width: 200px;
+                            "
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <p style="margin: 0">
+                                  <a
+                                    style="
+                                      color: #000000;
+                                      text-decoration: underline;
+                                      font-family: Arial, Helvetica, sans-serif;
+                                      font-size: 10px;
+                                      line-height: 1.2;
+                                    "
+                                    href="http://example.com"
+                                  >
+                                    View in browser
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-THIRDS COLUMNS -->
+
+          <!-- START one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaslB078N65luUNe-tj4NbjPlGxcMdXf_h7FOBVeTfOv9ntFStUCScJV4E994TCxkswlruCTccGrL6Ui9nfQL_6kM904u3p6-kZNMkT68mKPfE4dq64ODkUEICPaZIrJV9_iUAwLhLv-8HYBsl50wN6-r0IVP8=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/brus-header-logo-v20231114.jpg"
+                        alt="logo"
+                        border="0"
+                        width="600"
+                        height=""
+                        style="
+                          width: 100%;
+                          max-width: 600px;
+                          height: auto;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col -->
+
+          <!--Start of NAV -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="NAV">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYnUYrxLXOxB2UA7Ya-WhS06j5K6GCPW41FenvbtdQM1YtPw6BZjxL4HLNofDdZBVCQVwxg3lHD_LjYlotQzgPp5vB7lyPFNL2FstcE23NoM7pNhSk6fjvo6o-bAgzJ7od_AbmCWpoVxSvBYeV2rkQ8Q0Q=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/brus-header-nav---women.jpg"
+                        alt=""
+                        width="200"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                          width: 200px;
+                        "
+                      />
+                    </a>
+
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZR-JlHKxvWnYXqakGFdoVKnpaAIOEESIv6vg-jj04wFBc7YRD6GIuZpLl1-WCm4MhoTw9vEzBf8mtgo4fmsT1k89rT2zuZDGJDssxT5GkCW3boMSpcOQl5kvZsDY5-hAcHX8g_Q8RR_AgUfUwWXU8s=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/brus-header-nav---men.jpg"
+                        alt="men"
+                        width="100"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                          width: 100px;
+                        "
+                      />
+                    </a>
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYd2KK2lIshEViW6abG22LLZapKaMdnFFtJ40jVmeVGF-naGkc0g6IpwAPdo1drIoi3rNzkevurORgLPe23FbiZApEj8-BKb_oG-8ALGJk7MBQtDy-jS0GPc3Se5YHdXlZbBLvWr-75_EgjMYCqb_x-zQ=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/brus-header-nav---home.jpg"
+                        alt="home"
+                        width="200"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                          width: 200px;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of NAV   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="one-col">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaOXPTxRm3g6qgKRn_XTa7PiLRPf_GMuSEXHwP1u1UErVnrzxct9LoxCISYmiRCtqbnZ1_ZSTNhC6qKuS5EbR-_9MNa-CaKzItMTDiDZia22xWdxzhgT1Y-g4hzSB0GTF6GINLM1zNJXtaxgz16bdD1KriECi4kNUSl7HaZAvYVRw3se4JD5g=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/5jdvnw18jx_B01_FS_LimitedTime_Order1500_BLK.jpg"
+                        alt="men"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZLTjyqGPZLua5QqDz1ZUeQBarafiW9jJVHEhu3A2ZnecTWcpRAcMgR_n4A1vcNmcax7Wot7hcLg9AgU4U56ZIL-GTNzemdEDteHNkEsznZ_qxdqJQLEEOJmfIeoND0AdydWllybR7Ej-M=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/d6nnve296e_R01.jpg"
+                        alt="hero"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NZxN6FG9lNPP6xMdqIrzotnKOY1NTLAFlBn-yZogILs3MSRL4CqXIFyalXuedyiLjfUCt8cupjvEZzXdXglgBK2rwkfyXL4Ec9BIxRwL-95MZCVKoqxY_AWGg5xywKsStZuJV9zYtgiulf4=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/djl2ve4mqp_R02A.jpg"
+                                    alt="shop-women"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NZdnOZDJEnayo7U-UfKDmDbiMQTYXAOe6rJ1XxQs7EbmPduxrcleUbE1BmAiSfL5wMNjL8cMzIsBpnlG3Jrm-UqREE7FdI_kTDP-GxlzT6K2-lNzGcAS6X8Amu-wTTOJTHBuk9U-EGY4Ul3=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/eq4me5ngqv_R02B.jpg"
+                                    alt="shop-men"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NainjKGCmAA6UO7XXJrelalZW74HHev2Z19RDfi2fCBrhkK9pkysOyVPwzoNzjT6gh0zBTqoEDOHzUZTnU4u_t6-dsKOHMxVky9KMiwzso7OgS3CbV_a3G7Uf3ItCW4OGcEX7cptKPFd_BxJMaB4nC7-E25d87hAs0fWaGNeTFgCwR0vxNAcsrEOwA5p-Vm5LfwjHPc3xea18GUq1g4w6cC_xv0XX1ckF54lNSRMPho=s0-d-e1-ft#https://mi.bananarepublic.com/p/rp/33367d4fa786fe2c.png?mi_u=360955978&EV=BRUSPMSCPATHTSTPTJOB5244495_UNKNCPSP01062024&DI=360955978&CD=BRNCNL_BPR&cvosrc="
+                        alt="latest-style"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NY726TERwSPxSI_XF-6OHB5BFDT6HNqFiximcOYe-8ts3rG9LPvBk2_2l_97ag4p036CS7pfBovWxr8PHD9OSH1amNzEVXXs40tbdS0ACywTAPz3W6JXEstTgl8kpEobnrqzoriPdHbj9Z8Kru0hUWlYmDNB_3g0Qppg7f4ZCs5rfcuN1MB5oaVydkUXsdHejRK4NzCWjb8v02yvsca_I6SdVsFXw1q0cJn0y-f8nFAJLpCmfqcmIKh4oG6eO0hONc=s0-d-e1-ft#https://mi.bananarepublic.com/p/rp/e5f5e3c29ebab462.png?mi_u=360955978&EV=BRUSPMSCPATHTSTPTJOB5244495_UNKNCPSP01062024&DI=360955978&CD=BRNCNL_BPR&cvosrc=&mi_version=BRUSW"
+                        alt="Display images to show real-time content"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYsVsHzePh83JoO6n5Ipw9psd2MFGA0UK-Bp5Zb4z6WEgrCYGTCBkIKpuqWTyC3UgUhnq2aVMqw-X-vNrostCN9GXY7DlFdGbjQLAPs1RhRnuadYIYphukCKFj7NlbZYJaXPNLuejrRLeI=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/zqp4y33kqo_B01.jpg"
+                        alt="sales"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_Na9bpnFQ9L6FH_Vul1vvLWvl4Qv1haMEcbm8hPbrFOZL5EqIcek3-1mNhylL2QcTwUlPFZklqWfTWdyG5P9Ku5M-VcVVrXML9SQKXF-JpZlTbWe1IMhJkQ-LYfV64FTKVJ87WHvmlFW1Wid=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/06w2077e6g_B02A.jpg"
+                                    alt="shop-women"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="300"
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NbC_fT8oTYebNyPAQq4Q6teYGN2743sB-XTwNtvPXI4wNvNQl6GxdEla5TYd0Ln4dFci-x3hu1HSbMMXW8xWpGfVZ7ZMy2Tat_lQCeOfdSRb40P2CYzgvWOGHqnxZfLXNT_8DDSaFaeDYVc=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/oq5x5ww4j1_B02B.jpg"
+                                    alt="shop-men"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        width="200"
+                        style="max-width: 200px"
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaxbBlu-5019hnyb_ShS6LjTG4NciaIk3iOfx_9S6A5sGOjaTbvhFH1DdEZU6gAB7g22UlGREVmJe11Oixy5VGd5kgQXiVtIpOZSdVYwTYGueDSB0JmU07jDmU8Gjb76IvJMFRDmzTZhna3CpbZ=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/brus-footer-stores.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        width="300"
+                        style="max-width: 300px"
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYuBD6YCyoI0mmwZMcnPBiOY7QijyvKgX0maxV3xO33r64rNihtp7FLC8bbTOfBP0zJ7mIfT5dTnKZ-ZbAio8XeCQzUL2geQmPB0eYxdnxhSScBjhNg7rU6rclNlZJMmlewyb1hefYQrsGxow6czbccgw=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/brus-footer-br-rewards.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaHZvpniw7gQrCfHt00X0d3qW0dJzSww0g0Rrj2cXH1hJDBnYbwNIoWoUsseVyur6UXrQuKn4KkCN6PUiDw6XFU8wF7X1pQ5z6VKHFHeWax6dVUhb429_qVfEaKeJHM8R7BswwKEITnKazqioVG97v7HkE=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/BR-Privacy-Policy-v0921.jpg"
+                        alt=""
+                        width="200"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                          width: 200px;
+                        "
+                      />
+                    </a>
+
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYFuB5xvg5wDX-gr9kUxlgodNNgK0eTPRX7WfaNUcFDxG6iuXAAPNHxqGTZwQjj4GW_rZVkC4qQ52wOyDGHXAW3x-geFuTzdPsoRWzc5oo3uHWHcyO2-jBAg5lPTv69-EwzCgWF7itZW-cWTtW0XK64SE1Qc_g=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/BR-Email-Preferences-v0921.jpg"
+                        alt="men"
+                        width="100"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                          width: 100px;
+                        "
+                      />
+                    </a>
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZnEqMyANXOo0viXNp-QlSdI9SAq4KUdY83Wkb36gKkMt_2B9ene_iYqqTiMoVWC_UrPfx4uKtfhiWeVtpwRwzWxBGmx_2eGq90WfiYWb9go_r0B9ikEUtEqtdP2-DHk6mfdZwyMNAJWmsdrA5knPM=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/BR-Unsubscribe-v0921.jpg"
+                        alt="home"
+                        width="200"
+                        style="
+                          max-width: 600px;
+                          display: inline-block;
+                          margin: 0 auto;
+                          width: 200px;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <img
+                      width="600"
+                      style="
+                        max-width: 600px;
+                        width: 100%;
+                        display: block;
+                        margin: 0 auto;
+                      "
+                      src="https://ci3.googleusercontent.com/meips/ADKq_NY_s9MB32cte2ZC4hgugDr4OGtfQIJH62Yq9JIrjQV3VWLX104TGPOZ5sNJqVzAYdzFrQe8boPMHIiijiQaCar4w9lTIFNLSQvqahhPq5N5ieBsdklCBS48Q6jZKUsqln4xXwWlg9DITwZg0sb3zXykO7U=s0-d-e1-ft#https://image.email.bananarepublic.com/lib/fe9a13707564037d72/m/1/BRUS-Legal-Spacer-v0921.jpg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        width="600"
+                        style="
+                          max-width: 600px;
+                          width: 100%;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaIFJi5m3AU1-ioSB3lFHWBwQ1FX7xhdl2YZQhLhszub_9ehfknjI6Z_4L4lZD3YQnnxk3fRBPO0s4EJw8kTda2PMElqJPkaw0hjXsd36O2DztWjE50wQegQkJGEtAr4-xb6NMzt8fSz9aKCzO9yLHzRMBdT1WN2NOMW9kJcN9gMzgvYOuLymkVtp5ke5X7fReIUHqOJe8vrm5DKQGamJRhdYDuifa4oAq-rXfZS4e1=s0-d-e1-ft#https://mi.bananarepublic.com/p/rp/ce0a46a010a0dfa7.png?mi_u=360955978&EV=BRUSPMSCPATHTSTPTJOB5244495_UNKNCPSP01062024&DI=360955978&CD=BRNCNL_BPR&cvosrc="
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        width="600"
+                        style="
+                          max-width: 600px;
+                          width: 100%;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                        src="https://ci3.googleusercontent.com/meips/ADKq_Nb67d8LHXGZt7staFt8mOnWkYIUFBnN_dXLoFVWmD-p8VTwEnzYsQPf5-J9EYb1h3DazJVe6KREqP66KE99AZ9DqgPehJSYd3Su_ssqJDjn1v47v_K1u5TmnKFutzb28z4vY0yRhnPcKJZ6cbRNM-AdFj7vOgPz2F_b-19DnW64gEzJ6DuL4fYjTYMsaPd_rY7WzifFLZRJhPumxuqDHfWS10Uk8nLav6J47qH2oFxo=s0-d-e1-ft#https://mi.bananarepublic.com/p/rp/ddf6ad6811d5c3a3.png?mi_u=360955978&EV=BRUSPMSCPATHTSTPTJOB5244495_UNKNCPSP01062024&DI=360955978&CD=BRNCNL_BPR&cvosrc="
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        width="600"
+                        style="
+                          max-width: 600px;
+                          width: 100%;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYIhAB2ggMy3Du2pX_nkbq5OLFrCazB-q6274w7uC2iZFw4bsdO0c3uoO5gjztKBkTEdKDsPjIFayvvARoBgjduIApqL66Kolhv17uFFf6N4nHJFYdnTCgznIMukqDU7PXILvy6QrHgUI8rXPm6Pe8zewy7eG06WfpwEpx0wAI7QQ1OlQFHsX7UlfN6LIHtrRoN3c5_jkrBqgVL6c_2gESjqPmVMZDvB5C80w4mvFxD084Bqf3kdi_2bth7mQwtqa58jooqP8cWVK7e8P5UusQ6PYetuWLqPg5KsHMDNuSfmh2abXAXMY_zFgbATfGMvfSs-XooOobyhXBbNJznPNxiTC9GnNw-8S6LEbb4rRPtKidRTbs0dY7nh2MFZn_zst1Zw03fJeGtQ_AS26HrRdhVfCok8-azVcq3fbIfJqvgsn_Q8RQLETyd3reON_JkagOcHYqD_UzIkEXggMtNIBW-eOOWw2uPdSnfXf3G8N9y4wmAN8ufpQ=s0-d-e1-ft#https://mi.bananarepublic.com/p/rp/ff684fd9eb08c832.png?mi_u=360955978&EV=BRUSPMSCPATHTSTPTJOB5244495_UNKNCPSP01062024&DI=360955978&CD=BRNCNL_BPR&ilp_promo_start_date=&ilp_promo_end_date=&ilp_promo_start_date_long=&ilp_promo_end_date_long=&ilp_brand=BR&ilp_bonus_points=&mi_now=&ilp_widget_version=&ilp_container_version=&displayILPAcqWidget=&year=2024"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        width="600"
+                        style="
+                          max-width: 600px;
+                          width: 100%;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaGkWPy--Cxnb-snTDFlU-QL3Vwly9VP24U5HLrFIhwl8uwY9hFJHt6feXSiB6GJYVCjHfTz4VA4ZgLKXVNAmWX_izi1_hTVoIXAXY_uvSg0TGXKJoKJBf4G39q6_lpDigf1BuBACCXpD814rkY9z3pXCWmk2_OA9_lD-tuY06lmk6Ldpt4t5PD4S8xrVjOfGiv8SaEb7wUPIwDHwWCLj5Z8_aeA8z80tl04o1WiQ0UIrIMIUIlvd0KFtCqceFeiJYNYOQ5IXt-Ykh_6473L77n5g5fNB6lmBDgmGM5zLljNqqasZG3m7b_Jx2KIi4kmVMgyadCdSz4guSXhdX6N_lrmNtWSb90Gd1i7EyyY1AF29KJiDjdjbcla9DAgg3ALOi4EdzUXqvYV_KUH1CIC13S9uPRidJ7MHpF_VICw8SnHeHtTG_hYmsCKKnEeFMFIS2QrTdEWKZJXQWc7dyG0EEXOdYp76T1VVmG4dO9Z-wlsONAEEA-5Q=s0-d-e1-ft#https://mi.bananarepublic.com/p/rp/66430f15a4364476.png?mi_u=360955978&EV=BRUSPMSCPATHTSTPTJOB5244495_UNKNCPSP01062024&DI=360955978&CD=BRNCNL_BPR&ilp_promo_start_date=&ilp_promo_end_date=&ilp_promo_start_date_long=&ilp_promo_end_date_long=&ilp_brand=BR&ilp_bonus_points=&mi_now=&ilp_widget_version=&ilp_container_version=&displayILPAcqWidget=&year=2024"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com" style="font-size: 0px">
+                      <img
+                        width="600"
+                        style="
+                          max-width: 600px;
+                          width: 100%;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYRHYqjI-kZLSpdDyo-aDPGPPuMORzzZwJgm0fFhYeXSdtMCp48Gsm1P9jn0c8ORQQGf-KET9JOVZWAn1bMogPGG9ZM6O94mdaKnowJNLePQQ3C9xoH7nHbBsMMl4UTmVCa5MVhtcQkkqyUfgbTlcJytjY4QZ9YRDMc9CcAXxXI3k09gkDS2DEjPZQ_PI5zAleLMyHYw1sMlm7M_NtCEroijUKiEARd4FzNBz0IMoBi-yTPats6pk53T1-WKgFMqIWF0awcdYY3Zqb1F3Dc5gXg-9GMYQv2HWJVlLySAQKSHaeVfCMnlZAPkqMZ7fUeXqGtmK8LvhvH3ObYaT3s7BUhciICq5Bwefj5tBfOCSfR_v-zayS8mNRtaw1gfyTNYP_btbYnshpBhoLEK7ZXfj_ijJRjJ0mIJAjSQv7hLk60he1lWVsE3X0ulFai_EnEyha8ZRVpq27OWjMxfT7AwTpjBGa6qo4wQnhyoQSep_ssAzt4zFOICQ=s0-d-e1-ft#https://mi.bananarepublic.com/p/rp/c4e5cef9e297341e.png?mi_u=360955978&EV=BRUSPMSCPATHTSTPTJOB5244495_UNKNCPSP01062024&DI=360955978&CD=BRNCNL_BPR&ilp_promo_start_date=&ilp_promo_end_date=&ilp_promo_start_date_long=&ilp_promo_end_date_long=&ilp_brand=BR&ilp_bonus_points=&mi_now=&ilp_widget_version=&ilp_container_version=&displayILPAcqWidget=&year=2024"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+        </table>
+        <!-- End of container -->
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+      <!-- End of HTML EMAIL -->
+    </center>
+  </body>
+</html>
