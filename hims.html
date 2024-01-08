@@ -1,0 +1,1020 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+
+    <!--[if gte mso 15]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .one-column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .column .content {
+          margin: 0 !important;
+        }
+
+        .two-columns .column .two-column-img-last {
+          max-width: 100% !important;
+          width: 600px !important;
+        }
+
+        .two-columns .column {
+          max-width: 100% !important;
+          text-align: center !important;
+          width: 100% !important;
+          display: block !important;
+        }
+
+        .two-columns .column .content tr td table {
+          width: 100% !important;
+        }
+
+        /* .footer p {
+          font-size: 10px !important;
+        }
+
+        .footer p a {
+          font-size: 10px !important;
+        } */
+      }
+      @media screen and (max-width: 399.98px) {
+        .two-columns .column .content {
+          margin: 0 !important;
+        }
+
+        .two-columns .column .two-column-img-last {
+          max-width: 100% !important;
+          width: 600px !important;
+        }
+
+        .two-columns .column {
+          max-width: 100% !important;
+          text-align: center !important;
+          width: 100% !important;
+          display: block !important;
+        }
+
+        .two-columns .column .content tr td table {
+          width: 100% !important;
+        }
+
+        /* .footer p {
+          font-size: 10px !important;
+        }
+
+        .footer p a {
+          font-size: 10px !important;
+        } */
+      }
+
+      /* Custom Dark Mode Colors */
+
+      :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      /* @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+
+        .one-column p,
+        .one-column h2,
+        .two-columns .column h1,
+        .two-columns .column h4,
+        .two-columns .column h5,
+        .two-columns .column p {
+          color: #fff !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START LOGO -->
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="h-20"
+                    height="20"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="200px" align="center">
+                      <tr>
+                        <td align="center">
+                          <img
+                            src="https://ci3.googleusercontent.com/meips/ADKq_NawMnMOfSJDqw5Cj7J1My7mB_nCn0jBeasNdWmCrTe-rH1PrBF1ZlTtjAaxbYfT5gx-mhhavsADv7R2WGCbRjIkMqfdV_0cwRgXC8_RIHNB8Y2BfZFUVTuf8d61Bdx2v7-KG2N_OG5o7kM8xvO1NS8RClOnzHPTmWtbmkv8Bd9zBOiTZyKVC5EHbErMTSBl3Q=s0-d-e1-ft#https://appboy-images.com/appboy/communication/assets/image_assets/images/5d5dd57b28274536ccd6fa7e/original.png?1566430587"
+                            alt="logo"
+                            width="80"
+                            style="
+                              width: 80px;
+                              max-width: 100px;
+                              display: block;
+                              margin: 0 auto;
+                            "
+                          />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="h-20"
+                    height="20"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END LOGO -->
+
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td style="padding: 0px; background: #f5f0e8">
+              <table
+                width="100%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0"
+                    align="center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                              <td width="300" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          style="
+                            padding: 0px 20px;
+                            mso-padding-right-alt: 20px;
+                            mso-padding-left-alt: 20px;
+                          "
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td
+                                class="h-40"
+                                height="40"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <h1
+                                  style="
+                                    font-size: 44px;
+                                    line-height: 115%;
+                                    font-weight: 400;
+                                    color: #000;
+                                    letter-spacing: -2px;
+                                    margin: 0;
+                                  "
+                                >
+                                  Feel your best
+                                  <span style="color: #ad6657">in 2024</span>
+                                </h1>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    margin: 0;
+                                    color: #000;
+                                    font-family: 'SofiaPro', 'Helvetica Neue',
+                                      Helvetica, Arial, sans-serif;
+                                    text-align: left;
+                                    padding-top: 5px;
+                                    font-size: 18px;
+                                    line-height: 130%;
+                                    font-weight: normal;
+                                  "
+                                >
+                                  Rx treatments for hair, sex, mental health,
+                                  and weight loss.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td
+                                class="h-20"
+                                height="20"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td
+                                style="
+                                  padding: 5px 0px 5px;
+                                  mso-padding-right-alt: 5px;
+                                  mso-padding-left-alt: 5px;
+                                  mso-padding-top-alt: 5px;
+                                  mso-padding-bottom-alt: 5px;
+                                "
+                              >
+                                <img
+                                  style="
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                  "
+                                  width="20"
+                                  src="https://ci3.googleusercontent.com/meips/ADKq_NYLI9WMxQYP_7qP4zr-YIssf41numt18VbErlpEq8ypeFR303ikP3qAxKx-C75jykf6ndhIGWjHJQy9lvJUpg8Fr3QGbuzLeG15cyAkOMxv5yn1xZyth_g1yD5zgDDGemFdeAoffwyOu5DhFmYzr8Oq_9HY0bKJuTUCj3armQZiEuBRgTLgmcqOXyNDhSBK=s0-d-e1-ft#https://braze-images.com/appboy/communication/assets/image_assets/images/657ccd15249f50004d28f4d9/original.png?1702677781"
+                                  alt=""
+                                />
+                                <span
+                                  style="
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                    padding: 0px;
+                                    margin: 0;
+                                    font-size: 18px;
+                                    font-weight: normal;
+                                    line-height: 130%;
+                                    margin-left: 10px;
+                                    mso-padding-left-alt: 10px;
+                                  "
+                                  href="#"
+                                >
+                                  Doctor-trusted treatments
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                style="
+                                  padding: 5px 0px 5px;
+                                  mso-padding-right-alt: 5px;
+                                  mso-padding-left-alt: 5px;
+                                  mso-padding-top-alt: 5px;
+                                  mso-padding-bottom-alt: 5px;
+                                "
+                              >
+                                <img
+                                  style="
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                  "
+                                  width="20"
+                                  src="https://ci3.googleusercontent.com/meips/ADKq_NYLI9WMxQYP_7qP4zr-YIssf41numt18VbErlpEq8ypeFR303ikP3qAxKx-C75jykf6ndhIGWjHJQy9lvJUpg8Fr3QGbuzLeG15cyAkOMxv5yn1xZyth_g1yD5zgDDGemFdeAoffwyOu5DhFmYzr8Oq_9HY0bKJuTUCj3armQZiEuBRgTLgmcqOXyNDhSBK=s0-d-e1-ft#https://braze-images.com/appboy/communication/assets/image_assets/images/657ccd15249f50004d28f4d9/original.png?1702677781"
+                                  alt=""
+                                />
+                                <span
+                                  style="
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                    padding: 0px;
+                                    margin: 0;
+                                    font-size: 18px;
+                                    font-weight: normal;
+                                    line-height: 130%;
+                                    margin-left: 10px;
+                                    mso-padding-left-alt: 10px;
+                                  "
+                                  href="#"
+                                >
+                                  No office visits required
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                style="
+                                  padding: 5px 0px 5px;
+                                  mso-padding-right-alt: 5px;
+                                  mso-padding-left-alt: 5px;
+                                  mso-padding-top-alt: 5px;
+                                  mso-padding-bottom-alt: 5px;
+                                "
+                              >
+                                <img
+                                  style="
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                  "
+                                  width="20"
+                                  src="https://ci3.googleusercontent.com/meips/ADKq_NYLI9WMxQYP_7qP4zr-YIssf41numt18VbErlpEq8ypeFR303ikP3qAxKx-C75jykf6ndhIGWjHJQy9lvJUpg8Fr3QGbuzLeG15cyAkOMxv5yn1xZyth_g1yD5zgDDGemFdeAoffwyOu5DhFmYzr8Oq_9HY0bKJuTUCj3armQZiEuBRgTLgmcqOXyNDhSBK=s0-d-e1-ft#https://braze-images.com/appboy/communication/assets/image_assets/images/657ccd15249f50004d28f4d9/original.png?1702677781"
+                                  alt=""
+                                />
+                                <span
+                                  style="
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                    padding: 0px;
+                                    margin: 0;
+                                    font-size: 18px;
+                                    font-weight: normal;
+                                    line-height: 130%;
+                                    margin-left: 10px;
+                                    mso-padding-left-alt: 10px;
+                                  "
+                                  href="#"
+                                >
+                                  Free shipping, if prescribed
+                                </span>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td
+                                class="h-20"
+                                height="20"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <table width="200px">
+                                  <tr>
+                                    <td>
+                                      <div>
+                                        <!--[if mso]>
+                                          <v:roundrect
+                                            xmlns:v="urn:schemas-microsoft-com:vml"
+                                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                                            href="http://example.com"
+                                            style="
+                                              height: 40px;
+                                              v-text-anchor: middle;
+                                              width: 100px;
+                                            "
+                                            arcsize="63%"
+                                            strokecolor="#000"
+                                            fillcolor="#000"
+                                          >
+                                            <w:anchorlock />
+                                            <center
+                                              style="
+                                                color: #ffffff;
+                                                font-family: sans-serif;
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                              "
+                                            >
+                                              Shop now
+                                            </center>
+                                          </v:roundrect>
+                                        <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #000;
+                                            border: 1px solid #000;
+                                            border-radius: 25px;
+                                            color: #ffffff;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 100px;
+                                            -webkit-text-size-adjust: none;
+                                            mso-hide: all;
+                                          "
+                                        >
+                                          Shop now
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td
+                                class="h-20"
+                                height="20"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                           </td><td width="300" valign="top" style="padding: 0;">
+                           <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  class="two-column-img two-column-img-last"
+                                  src="https://ci3.googleusercontent.com/meips/ADKq_NYIBWiBO1sXcCFsra0JEx2tCZdQYzGUeGToH3DeXhP5U4heYhE-zXK3lwiPFLlE5zaP1MT0-9hBwzgPXYhy7Xmi_T5WnDsvwO9Oi9EPI47qOpj44PFW267DMxobn1t8e4gUtWh6-6aQkNmGAUxLZPP_PV6O3Or6i2TkC9YvyZwx9WHSeCSFbO45iMIVf6Zi=s0-d-e1-ft#https://braze-images.com/appboy/communication/assets/image_assets/images/657cda4a6b9c88004b1c742f/original.png?1702681161"
+                                  alt=""
+                                  width="300"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!-- START TOP FOOTER-->
+          <tr>
+            <td style="padding: 0px 0 0px 0; background-color: #000">
+              <table
+                width="90%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td
+                                class="h-30"
+                                height="30"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <p
+                                  style="
+                                    color: #fff;
+                                    font-family: 'SofiaPro', Helvetica, Arial,
+                                      sans-serif !important;
+                                    text-align: center;
+                                    font-size: 12px !important;
+                                    line-height: 130% !important;
+                                    font-weight: normal;
+                                    margin: 0;
+                                    padding: 0px 10px;
+                                  "
+                                >
+                                  Some featured products are compounded products
+                                  and have not been approved by the FDA. The FDA
+                                  does not verify the safety or effectiveness of
+                                  compounded drugs. Prescription products
+                                  require an online consultation with a
+                                  healthcare provider who will determine if a
+                                  prescription is appropriate. Restrictions
+                                  apply. See website for full details and
+                                  important safety information.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td
+                                class="h-40"
+                                height="40"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <h3
+                                  style="
+                                    color: #fff;
+                                    font-family: 'SofiaPro', 'Helvetica Neue',
+                                      Helvetica, Arial, sans-serif;
+                                    text-align: center;
+                                    font-size: 24px;
+                                    line-height: 130%;
+                                    font-weight: 500;
+                                    margin: 0;
+                                  "
+                                >
+                                  Future you thanks you.
+                                </h3>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TOP FOOTER -->
+
+          <!-- START Social Media -->
+          <tr>
+            <td style="padding: 0px 0 0px 0; background: #000">
+              <table
+                width="60%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <table
+                      class="social-media"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px 20px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td
+                                class="h-20"
+                                height="20"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="width: 83px" align="center">
+                                <a href="https://imgbb.com/">
+                                  <img
+                                    width="40"
+                                    style="
+                                      width: 40px;
+                                      height: auto;
+                                      margin: 0 auto;
+                                    "
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NYRA_jr-JZPD_yhQQAkgwG6h9xrRIdtPZJ8DfrZ18-j2_frkL5xFwONPVo2tpgsFAVNiIXqxgFryfJyEv6eZ-aKc-0e3retGlNzHUV1NeTGN9K6JLboQbMUngN6bO21UxOe3Qspi44nTkEU2SG9BWOCnvBzeqJzCGV1_NUtn0QWb5-LcNE-1EEdLLFm-Oqh=s0-d-e1-ft#https://braze-images.com/appboy/communication/assets/image_assets/images/62686d898894923dbccbe0f3/original.png?1651010953"
+                                    alt="facebook"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+
+                              <td style="width: 83px" align="center">
+                                <a href="https://imgbb.com/">
+                                  <img
+                                    width="40"
+                                    style="
+                                      width: 40px;
+                                      height: auto;
+                                      margin: 0 auto;
+                                    "
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NbXInGlT1L9IU0hqxRrCGN97oCbJbvOwjhwZokDSSn-OcSoKhgCk7rGcNXQjIpwyGq01v_O5wNXkpdK1f1lfm4zbarf0Y5ukHQBEyC7BGJtmjYDSRVG3COxRh6F6DJMpE93D_Z4re4ByRb6zi67f7XmI6knOcscs-LRTfu7wXl8XxCMkp2IwvgbMsJHxsSx=s0-d-e1-ft#https://braze-images.com/appboy/communication/assets/image_assets/images/62686e24e16c7b4d0f084c56/original.png?1651011108"
+                                    alt="twitter"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+
+                              <td style="width: 83px" align="center">
+                                <a href="https://imgbb.com/">
+                                  <img
+                                    width="40"
+                                    style="
+                                      width: 40px;
+                                      height: auto;
+                                      margin: 0 auto;
+                                    "
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NaRUORn5fHLjYogWuVitkig_Ca_Yrowh_u83wXaBbQbyPj7EMZpb1VF51hk7-Ot07_PVIzxYsGlkH61dDre2CYvba_ZDOot6RlnN-B3vR99_JjfjDdGt88ps625JRwIYKC7LHHYWjxg4T0tTYf88zNTC_Vd4Y5wLC-da274DGXU8EYJ8haaKMEaUrX5KIuj=s0-d-e1-ft#https://braze-images.com/appboy/communication/assets/image_assets/images/62686ea5e16c7b509f084c1c/original.png?1651011237"
+                                    alt="instagram"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+
+                              <td style="width: 83px" align="center">
+                                <a href="https://imgbb.com/">
+                                  <img
+                                    width="40"
+                                    style="
+                                      width: 40px;
+                                      height: auto;
+                                      margin: 0 auto;
+                                    "
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NYStz3CC2UVvpDzpwSqMAyDL0a2W17eJwmSnGMaNqrtqtvJUeCtzEefgMI7Z4vJ3arFXEN1Yj3vJlLYF4iQ9BKsMS-nZxekTjWZzqTU7gnrUjDs0-GOMd0Yofxz4GSiKlAlb6c4oO0-LWjZJlOWBOh4Gscpaw0G9CpePfHPh0Z5Bdxr6pP8gVjdoTvlSR02=s0-d-e1-ft#https://braze-images.com/appboy/communication/assets/image_assets/images/62686f5e2c638a2b0da50c2f/original.png?1651011422"
+                                    alt="tiktok"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END Social Media -->
+
+          <!-- START footer -->
+          <tr>
+            <td style="padding: 0px 0 0px 0; background: #000">
+              <table
+                width="90%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <table
+                      class="content"
+                      style="
+                        border-spacing: 0;
+                        text-align: center;
+                        vertical-align: top;
+                        max-width: 600px;
+                        width: 600px;
+                      "
+                      role="presentation"
+                      width="600"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          class="h-10"
+                          height="10"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              margin: 0;
+                              color: #9d9d9d;
+                              font-size: 10px;
+                              line-height: 12px;
+                              text-align: center;
+                            "
+                          >
+                            © 2024 Hims, Inc.
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              margin: 0;
+                              color: #9d9d9d;
+                              font-size: 10px;
+                              line-height: 12px;
+                              text-align: center;
+                            "
+                          >
+                            2269 Chestnut Street #523 | San Francisco | CA 94123
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              margin: 0;
+                              color: #9d9d9d;
+                              font-size: 10px;
+                              line-height: 12px;
+                              text-align: center;
+                            "
+                          >
+                            Hims:
+                            <a
+                              style="
+                                color: #9d9d9d;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 10px;
+                                text-decoration: underline;
+                                font-weight: 400;
+                              "
+                              href="https://www.google.com/"
+                              target="_blank"
+                            >
+                              privacy policy
+                            </a>
+                            |
+                            <a
+                              style="
+                                color: #9d9d9d;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 10px;
+                                text-decoration: underline;
+                                font-weight: 400;
+                              "
+                              href="https://www.google.com/"
+                              target="_blank"
+                            >
+                              terms of service
+                            </a>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              margin: 0;
+                              color: #9d9d9d;
+                              font-size: 10px;
+                              line-height: 12px;
+                              text-align: center;
+                            "
+                          >
+                            <a
+                              style="
+                                color: #9d9d9d;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 10px;
+                                text-decoration: underline;
+                                font-weight: 400;
+                              "
+                              href="https://www.google.com/"
+                              target="_blank"
+                            >
+                              unsubscribe
+                            </a>
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-20"
+                          height="20"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END footer -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
