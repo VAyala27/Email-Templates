@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+
+    <!--[if gte mso 15]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 0px;
+      }
+
+      .two-col-img {
+        width: 300px;
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .btn {
+          font-size: 14px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+      }
+      @media only screen and (max-width: 399.98px) {
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+
+        .social-media img {
+          width: 25px !important;
+          margin: 0 auto !important;
+        }
+
+        .footer .content p a {
+          font-size: 10px !important;
+        }
+        .footer .content p {
+          font-size: 10px !important;
+        }
+
+        .btn {
+          font-size: 13px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      @media (prefers-color-scheme: dark) {
+        .sub-header .column p {
+          color: #383633 !important;
+        }
+      }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+        a{text-decoration: none; !important}
+         div, td {padding:0;}
+        div {margin:0 !important;}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+    <!-- Gmail hack -->
+    <div
+      style="
+        display: none;
+        white-space: nowrap;
+        font: 15px courier;
+        color: #ffffff;
+        line-height: 0;
+        width: 600px !important;
+        min-width: 600px !important;
+        max-width: 600px !important;
+      "
+    >
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+    <!-- /Gmail hack -->
+
+    <!-- Start of HTML EMAIL -->
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <!-- Start of container -->
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          width="600"
+          role="presentation"
+        >
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="one-col">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYFFuXCDp03t2wu9Uyo1tXKmsYlIfvzoVcXm2K3JBAZtvQ1T2FNIsX8UcQfv0dvUBfWrfIdVCWlM4cU3hwQBUGqBxLJvrG88962PjRjyg=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/md_62514.gif"
+                        alt="hero"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="one-col">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZoT0zxiu2HRzUEhFzp17wNhRrMUj3YGCKUhg2Lr8rvOdhLWiYxg-DFU7iiCV_Ohu6__PgtBDdOmYEJLRpBdMS-0TavTJQXNOdsh8YqGA=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/md_62510.jpg"
+                        alt="heading"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="one-col">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZMvFZvH_M_7Dp3NrR_IlfPIvVwTiC9CPOlZqCS-Ujv0vkqWgWk2aZHaaCwRDws8BIbq8DRrqTs28H3G4Wku-jtYSL9ANQK0YPQxC0LFA=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/md_62515.gif"
+                        alt="Shop Sale"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYyc3NeCvwJ78kr7liQnVzTWtJbwGuDRSGZtzK54jqR_HqzWNjgSu6cmtvrKd2WmjxRl3OpcnCMRoDSil-slR9cDa1hc3Pmka7OzP6INw=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/md_62511.jpg"
+                        alt="Shop Sale Button"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="one-col nav">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZTWj49hS4ctPNrT1mbqSr-NGyJM35tVbyfPrTvp0WWwi3UqKa1BdhvU9m6FJVu8HSnl807O-rPy6Y2Lt1X80GGwRclFBPxPfkebcM2jXjWaTMWeY_uPQ=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/Footer-Nav/eng_01.jpg"
+                        alt="Clothing"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaARB64Dq-vlhQP6I7Eb8Eh1Qj9ieOiLPho9Z1bXGTV_wuYrIGGvogrX1ACkJ04FZVhhI5UDnNDE7aKdIAfWMNJ1BNZEplyXmDvdBukO4pVFwxdtBPlWw=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/Footer-Nav/eng_03.jpg"
+                        alt="boutique"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_Na63BKDwL6N1TuArytZxt2uGNRa5sZ2_ETN3k_P_rUyD5oH-1N5kNp7g9lMxldUdGJAyjB3i1mLNYvnLA5Z5gRdb66ZLxjx9V_R6x9xKG7a-8Qrk3bnFQ=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/Footer-Nav/eng_04.jpg"
+                        alt="service"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NbeE19T0utXUqMEpg7HfM4hUXF166HdxUIOzadWl6T-XuRvYvZdXFJZry6NlbNEGc4KBUAjyC0dsh9KZ1lz_KMCxjaKqT8eaNUq8Fua8A=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/md_13607.jpg"
+                        alt="careers"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="one-col">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NY5N3_xiqOoSgRkhjv2HiADvwhTAvbLQUkzEwHYsAyrEQI89zZgQfAnFd6lw21G5dm8lf7WmwiBDH6_aB2WQWPfP8KcDA4xkO3yltOrWLpw2nipXjXGfw=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/Footer-Nav/eng_05.jpg"
+                        alt="everyday luxury"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    align="center"
+                    style="
+                      padding: 15px 0px 15px 0px;
+                      mso-padding-bottom-alt: 15px;
+                      mso-padding-top-alt: 15px;
+                    "
+                  >
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NYxkTq44kSMBJflYdGdXQf4pMmm-1fG_GGJTaR5HaI_0FDDzo1Mqi2OZFYfeys-4Q3KV4G0CfFPEKOXueOhBLVVjZ_f_q-sJ0M2v5ZLzUnd3JiaUG6yGQ=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/Footer-Nav/eng_06.jpg"
+                        alt="instagram"
+                        border="0"
+                        width="110"
+                        height=""
+                        style="width: 110px; max-width: 110px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NbGel6PrBiTznVdILsJY5b9Ha76y1tOk9mnqVm0DbMngdGYFxociyY6kNw0DAEF35MQqTugCs1BHgOI7TG7beGrLji4wG3V3YtPZATc7cNmLf4xEOLo-A=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/Footer-Nav/eng_07.jpg"
+                        alt="tiktok"
+                        border="0"
+                        width="110"
+                        height=""
+                        style="width: 110px; max-width: 110px; height: auto"
+                      />
+                    </a>
+
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_Nau2gDkSP2xt50EEEk_-KbtOjsArPJNba4Cv4-wusc_IEvKfU1HDkFnG9UZICDk6YxaK_TIyhobemo6JpJ8rraQf0d5MlgU9Akyt_GAIt86GoztfubwKA=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/Footer-Nav/eng_08.jpg"
+                        alt="facebook"
+                        border="0"
+                        width="110"
+                        height=""
+                        style="width: 110px; max-width: 110px; height: auto"
+                      />
+                    </a>
+
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaF4OkOcA8zKnVAdmlUx5k4_SMhD8KimlvWvKCGN6tGOxmBT0nb_FxWeKx426MWRXpoVZ_V2I7fb1yAB54vxHVdZ_Li-yRWPeKwnWgaitNAypS_GnwkUg=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/Footer-Nav/eng_09.jpg"
+                        alt="twitter"
+                        border="0"
+                        width="110"
+                        height=""
+                        style="width: 110px; max-width: 110px; height: auto"
+                      />
+                    </a>
+
+                    <a
+                      href="http://example.com"
+                      style="font-size: 0px; text-decoration: none"
+                    >
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaCOvJQd_69FxAIjECQWhMj4tuvEc_0XGHtccnjxe9yDWaJJseRSLM0vt8-8BzJkKImk0AwRWGfBlZ1QnHolsvtRmhhp9gLD6yUYnViD9J0ZKpGsFYVUw=s0-d-e1-ft#https://li.aritzia.com/custloads/1034956434/Footer-Nav/eng_10.jpg"
+                        alt="pinterest"
+                        border="0"
+                        width="110"
+                        height=""
+                        style="width: 110px; max-width: 110px; height: auto"
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="footer">
+              <table
+                width="95%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    class="h-10"
+                    height="10"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        color: #000000;
+                        line-height: 1.2;
+                        margin: 0;
+                        text-align: left;
+                      "
+                    >
+                      Prices as marked online reflect discount and sale pricing
+                      will be reflective on product pages. Offer valid at
+                      aritzia.com from Monday, January 8, 2024 at 12:01 AM PST
+                      until Sunday, February 11, 2024 at 11:59 PM PST and in
+                      stores from Monday, January 8, 2024 until Sunday, February
+                      11, 2024. Please note not all brands are carried at all
+                      stores. Offer cannot be applied to previous purchases or
+                      the purchase of gift cards and cannot be redeemed for
+                      cash. Terms of offer are subject to change. U.S.A. only.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="h-10"
+                    height="10"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        color: #000000;
+                        line-height: 1.2;
+                        margin: 0;
+                        text-align: left;
+                      "
+                    >
+                      Have to leave? We'll really miss you. Please click here to
+                      manage your preferences or unsubscribe.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="h-10"
+                    height="10"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        color: #000000;
+                        line-height: 1.2;
+                        margin: 0;
+                        text-align: left;
+                      "
+                    >
+                      Shall we take this to text? Sign up to get texts or calls
+                      with insider info, invites and other fun surprises by
+                      clicking here.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="h-10"
+                    height="10"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        color: #000000;
+                        line-height: 1.2;
+                        margin: 0;
+                        text-align: left;
+                      "
+                    >
+                      Trouble viewing this email? Please click here.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="h-10"
+                    height="10"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        color: #000000;
+                        line-height: 1.2;
+                        margin: 0;
+                        text-align: left;
+                      "
+                    >
+                      United States of Aritzia Inc., 611 Alexander Street, Suite
+                      118
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        color: #000000;
+                        line-height: 1.2;
+                        margin: 0;
+                        text-align: left;
+                      "
+                    >
+                      Vancouver, BC, V6A 1E1
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="h-10"
+                    height="10"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                        color: #000000;
+                        line-height: 1.2;
+                        margin: 0;
+                        text-align: left;
+                      "
+                    >
+                      .© 2024 Aritzia LP. All rights reserved.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="h-10"
+                    height="10"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+        </table>
+        <!-- End of container -->
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+      <!-- End of HTML EMAIL -->
+    </center>
+  </body>
+</html>
