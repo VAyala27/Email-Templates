@@ -1,0 +1,2597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <!--[if (gte mso 9)|(IE)]>
+         <xml>
+            <o:OfficeDocumentSettings>
+               <o:AllowPNG></o:AllowPNG>
+               <o:PixelsPerInch>
+               96</o:PixelsPerInch
+            </o:OfficeDocumentSettings>
+         </xml>
+         <![endif]-->
+
+    <!--[if gte mso 15]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .column .content {
+          margin: 0 !important;
+        }
+
+        /* .footer p {
+          font-size: 10px !important;
+        }
+
+        .footer p a {
+          font-size: 10px !important;
+        } */
+      }
+      @media screen and (max-width: 399.98px) {
+        .two-columns .column .content {
+          margin: 0 !important;
+        }
+
+        /* .footer p {
+          font-size: 10px !important;
+        }
+
+        .footer p a {
+          font-size: 10px !important;
+        } */
+      }
+
+      /* Custom Dark Mode Colors */
+
+      :root {
+        color-scheme: light dark;
+        supported-color-scheme: light dark;
+      }
+
+      /* @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #fff !important;
+        }
+
+        .darkmode-transparent {
+          background: transparent !important;
+        }
+
+        .one-column p,
+        .one-column h2,
+        .two-columns .column h1,
+        .two-columns .column h4,
+        .two-columns .column h5,
+        .two-columns .column p {
+          color: #fff !important;
+        }
+      } */
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START TWO COLUMNS -->
+          <tr>
+            <td style="padding: 20px 0px 20px 0px">
+              <table
+                width="540px"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0"
+                    align="center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                              <td width="180" valign="middle" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 180px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      align="left"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              text-align: left;
+                              margin-right: 20px;
+                            "
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NYzIQHsoNKaH5hNrD4oCcM5liLsLR-RSrRCuwBqnMEzxJtkIHU660aY2KRj4pYphnaGNDBD5Qw7cDSi-_srw7Nsefev9FvO9ETAZdfrZL2kiLb0fgG2ehMdtVtpvorG2To6amW4lo3L2JX3oxwLyL4Y0I0pAMjBfqmM=s0-d-e1-ft#https://d3k81ch9hvuctc.cloudfront.net/company/KXbYHF/images/4b1c7bd5-3974-4313-9e7a-24c25de5ff36.png"
+                                    alt="logo"
+                                    width="115"
+                                    style="max-width: 115px"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                           </td><td width="340" valign="middle" style="padding: 0;">
+                           <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 340px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      align="right"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px">
+                          <table
+                            class="content"
+                            width="310"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a
+                                  style="
+                                    color: #332bb8;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    text-decoration: underline;
+                                    display: inline-block;
+                                    background: transparent;
+                                    font-family: Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    font-size: 11px;
+                                    line-height: 100%;
+                                    letter-spacing: 0;
+                                    margin: 0;
+                                    text-transform: none;
+                                    border-radius: 0;
+                                  "
+                                  href="http://example.com"
+                                >
+                                  Coming Soon
+                                </a>
+                              </td>
+
+                              <td
+                                style="width: 7px; display: inline-block"
+                              ></td>
+
+                              <td align="center">
+                                <a
+                                  style="
+                                    color: #332bb8;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    text-decoration: underline;
+                                    display: inline-block;
+                                    background: transparent;
+                                    font-family: Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    font-size: 11px;
+                                    line-height: 100%;
+                                    letter-spacing: 0;
+                                    margin: 0;
+                                    text-transform: none;
+                                    border-radius: 0;
+                                  "
+                                  href="http://example.com"
+                                >
+                                  Ending Soon
+                                </a>
+                              </td>
+
+                              <td
+                                style="width: 7px; display: inline-block"
+                              ></td>
+
+                              <td align="center">
+                                <a
+                                  style="
+                                    color: #332bb8;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    text-decoration: underline;
+                                    display: inline-block;
+                                    background: transparent;
+                                    font-family: Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    font-size: 11px;
+                                    line-height: 100%;
+                                    letter-spacing: 0;
+                                    margin: 0;
+                                    text-transform: none;
+                                    border-radius: 0;
+                                  "
+                                  href="http://example.com"
+                                >
+                                  Explore All
+                                </a>
+                              </td>
+
+                              <td
+                                style="width: 7px; display: inline-block"
+                              ></td>
+
+                              <td align="center">
+                                <a
+                                  style="
+                                    color: #332bb8;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    text-decoration: underline;
+                                    display: inline-block;
+                                    background: transparent;
+                                    font-family: Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    font-size: 11px;
+                                    line-height: 100%;
+                                    letter-spacing: 0;
+                                    margin: 0;
+                                    text-transform: none;
+                                    border-radius: 0;
+                                  "
+                                  href="http://example.com"
+                                >
+                                  How It Works
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO COLUMNS -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <a href="http://example.com">
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NbrUHBiS2-JEp3mWcArb0RlM_myp-7KHFW5xUspb7YTd-PA6cVLCcfySgDBX2mQ99P9EXNUdvB_mCj7grlAxpO611gP3J0Jtk75BgJob1hCLDqZrXYbdXllaCNTQh9xAz6cyk8qostOR0KJLvMday2WyMETyUl3lsGX=s0-d-e1-ft#https://d3k81ch9hvuctc.cloudfront.net/company/KXbYHF/images/fb66f205-9ebf-4613-9bab-21defd4c9a44.png"
+                        alt="hero"
+                        width="600"
+                        style="
+                          width: 600px;
+                          max-width: 600px;
+                          display: block;
+                          margin: 0 auto;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="h-35"
+                    height="35"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="middle" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              max-width: 300px;
+                              width: 300px;
+                            "
+                            role="presentation"
+                            align="center"
+                            width="300"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  width="300"
+                                  width="300px; max-width: 300px;"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="font-size: 0px"
+                                      >
+                                        <img
+                                          width="150"
+                                          border="0"
+                                          class="two-col-img"
+                                          style="
+                                            display: block;
+                                            width: 150px;
+                                            max-width: 150px;
+                                            margin: 0 auto;
+                                          "
+                                          src="https://ci3.googleusercontent.com/meips/ADKq_NZ4PjTV--bZU0YIoXmq9rObJxHFpV26wsAbD8qDenR_HS196_ari-iD_bjAH216L-aTsP9YF_Gb3_xQInpHJj1x0NGI9aiKwzesZcbjhp3qsi5RMq6m2BWsysnmhrL1rccqYX0Nh18RG-z16nlAGDx_toCBDLRC3CSWfMOoqVyxt4tSb_u5sjAkU6KJ=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0125/8261/7145/products/tKdBjA-8NDUTiI8Awvi1famRFKJv3gFLnDoSGLjtfwg.png?v=1704484824"
+                                          alt="product-1"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <h4
+                                        style="
+                                          color: #735ded;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        Sybil Plush
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <p
+                                        style="
+                                          color: #222427;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          letter-spacing: 0px;
+                                          text-align: center;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        By rittzler
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <table width="200" align="center">
+                                        <tr>
+                                          <td align="center">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:roundrect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 35px;
+                                                    v-text-anchor: middle;
+                                                    width: 125px;
+                                                  "
+                                                  arcsize="72%"
+                                                  strokecolor="#735ded"
+                                                  fillcolor="#fff"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #735ded;
+                                                      font-family: sans-serif;
+                                                      font-size: 13px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    Shop now
+                                                  </center>
+                                                </v:roundrect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: #fff;
+                                                  border: 1px solid #735ded;
+                                                  border-radius: 25px;
+                                                  color: #735ded;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 13px;
+                                                  font-weight: bold;
+                                                  line-height: 35px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 125px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                "
+                                              >
+                                                Shop now
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              max-width: 300px;
+                              width: 300px;
+                            "
+                            role="presentation"
+                            align="center"
+                            width="300"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  width="300"
+                                  width="300px; max-width: 300px;"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="font-size: 0px"
+                                      >
+                                        <img
+                                          width="150"
+                                          border="0"
+                                          class="two-col-img"
+                                          style="
+                                            display: block;
+                                            width: 150px;
+                                            max-width: 150px;
+                                            margin: 0 auto;
+                                          "
+                                          src="https://ci3.googleusercontent.com/meips/ADKq_NaUg63bAGX3SbNjg9HutmPxfyO2vbc-_50TuOM7dMaVo3Nm-Y3JRxdiuTofWeMfc2_4cS-R-wZhMLyIgO4MJN7VBk2nUAyV-gHRRavqA-wfEX9SOaQPNhGFthtWvZU1vb42nhcfm-6XBZ_NlI24M0fA3rGRZlAwfQSyGEd8RnRx5BgGf2DjtQdeoG1-=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0125/8261/7145/products/ieQeafGYHIoUccb8cWRW8t_EyZL8gDVtLoH1isowPuY.png?v=1704283220"
+                                          alt="product-2"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <h4
+                                        style="
+                                          color: #735ded;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        Pablo the Race Cat
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <p
+                                        style="
+                                          color: #222427;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          letter-spacing: 0px;
+                                          text-align: center;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        By Pablo the Race Cat
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <table width="200" align="center">
+                                        <tr>
+                                          <td align="center">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:roundrect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 35px;
+                                                    v-text-anchor: middle;
+                                                    width: 125px;
+                                                  "
+                                                  arcsize="72%"
+                                                  strokecolor="#735ded"
+                                                  fillcolor="#fff"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #735ded;
+                                                      font-family: sans-serif;
+                                                      font-size: 13px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    Shop now
+                                                  </center>
+                                                </v:roundrect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: #fff;
+                                                  border: 1px solid #735ded;
+                                                  border-radius: 25px;
+                                                  color: #735ded;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 13px;
+                                                  font-weight: bold;
+                                                  line-height: 35px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 125px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                "
+                                              >
+                                                Shop now
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="h-35"
+                    height="35"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="middle" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table
+                                  width="300"
+                                  width="300px; max-width: 300px;"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="font-size: 0px"
+                                      >
+                                        <img
+                                          width="150"
+                                          border="0"
+                                          class="two-col-img"
+                                          style="
+                                            display: block;
+                                            width: 150px;
+                                            max-width: 150px;
+                                            margin: 0 auto;
+                                          "
+                                          src="https://ci3.googleusercontent.com/meips/ADKq_NbHOAPywNi_oLRvZmEswFWw1yVOfgs9U-AYz5_Rob3BVxVGEZurLLISJNRSRJeCrQdOxgFYEogJx1TtsnyrNAfvwH8eeg5kcfdTYixNzfvGXyDT0loIP39U_krxKFa5Kqel9AWnCy7kCU-twes0B6su6gJ6cIE2hzG3ahB1uD1CEhstnXMoaWlr58mw=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0125/8261/7145/products/ziu3d5vrKR_g9zEPO5K2s95dMLyVZTxoFIFkqEctKJg.png?v=1704225613"
+                                          alt="product-3"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <h4
+                                        style="
+                                          color: #735ded;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        Happy Shade / Angst
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <p
+                                        style="
+                                          color: #222427;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          letter-spacing: 0px;
+                                          text-align: center;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        By Studio Seufz
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <table width="200" align="center">
+                                        <tr>
+                                          <td align="center">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:roundrect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 35px;
+                                                    v-text-anchor: middle;
+                                                    width: 125px;
+                                                  "
+                                                  arcsize="72%"
+                                                  strokecolor="#735ded"
+                                                  fillcolor="#fff"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #735ded;
+                                                      font-family: sans-serif;
+                                                      font-size: 13px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    Shop now
+                                                  </center>
+                                                </v:roundrect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: #fff;
+                                                  border: 1px solid #735ded;
+                                                  border-radius: 25px;
+                                                  color: #735ded;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 13px;
+                                                  font-weight: bold;
+                                                  line-height: 35px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 125px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                "
+                                              >
+                                                Shop now
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table
+                                  width="300"
+                                  width="300px; max-width: 300px;"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="font-size: 0px"
+                                      >
+                                        <img
+                                          width="150"
+                                          border="0"
+                                          class="two-col-img"
+                                          style="
+                                            display: block;
+                                            width: 150px;
+                                            max-width: 150px;
+                                            margin: 0 auto;
+                                          "
+                                          src="https://ci3.googleusercontent.com/meips/ADKq_NY3lJcTQNghRklBe7K3VofnxTlbewFGKEYncpYjdsB-hb9Jf4ZkZ76zMlZXXWGzscAfF3z_ukHf38vqtg2dY9rVCqrfKQWuV_gOF561US9yDjrNQTMFJEyHM145U529N9M6figSGoVEUfCRqihoNxN1wYqGzv9M_VJR2wIrbGgbzCa7D49DxbwH=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0125/8261/7145/files/oQcEnKU2gzJASKdDIXkxLYhlw3nd7PI06mXgoAt2hJ4.png?v=1702666823"
+                                          alt="product-4"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <h4
+                                        style="
+                                          color: #735ded;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        Rune Fencer Illyia Plush
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <p
+                                        style="
+                                          color: #222427;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          letter-spacing: 0px;
+                                          text-align: center;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        By Nootbox Games
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <table width="200" align="center">
+                                        <tr>
+                                          <td align="center">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:roundrect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 35px;
+                                                    v-text-anchor: middle;
+                                                    width: 125px;
+                                                  "
+                                                  arcsize="72%"
+                                                  strokecolor="#735ded"
+                                                  fillcolor="#fff"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #735ded;
+                                                      font-family: sans-serif;
+                                                      font-size: 13px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    Shop now
+                                                  </center>
+                                                </v:roundrect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: #fff;
+                                                  border: 1px solid #735ded;
+                                                  border-radius: 25px;
+                                                  color: #735ded;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 13px;
+                                                  font-weight: bold;
+                                                  line-height: 35px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 125px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                "
+                                              >
+                                                Shop now
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="h-35"
+                    height="35"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="middle" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table
+                                  width="300"
+                                  width="300px; max-width: 300px;"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="font-size: 0px"
+                                      >
+                                        <img
+                                          width="150"
+                                          border="0"
+                                          class="two-col-img"
+                                          style="
+                                            display: block;
+                                            width: 150px;
+                                            max-width: 150px;
+                                            margin: 0 auto;
+                                          "
+                                          src="https://ci3.googleusercontent.com/meips/ADKq_NbIUnOiz4j8h78_rujuCkBgY9Wy75RaeS-Nb5funtm6QVY1O9jDjnov472-oYmBb-hbGL6SaMNZ64REY2w6Lr6HKn--nVEz5mRTRiHoYge8QOqSoxRRfCgfRC2j2jhbCe_TZxa6qbFjgC9fr_HCYLmn2lT2ZfiDTEKR1GoBMcHvb4IrKrbexyLRYnD_=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0125/8261/7145/products/v_5qkNRaNcWzqJpy5KqPMjdqu3RGBdU1C5txfhcksoU.png?v=1703877086"
+                                          alt="product-5"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <h4
+                                        style="
+                                          color: #735ded;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        "Gabriel" Plush
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <p
+                                        style="
+                                          color: #222427;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          letter-spacing: 0px;
+                                          text-align: center;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        By The Mandela Catalogue
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <table width="200" align="center">
+                                        <tr>
+                                          <td align="center">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:roundrect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 35px;
+                                                    v-text-anchor: middle;
+                                                    width: 125px;
+                                                  "
+                                                  arcsize="72%"
+                                                  strokecolor="#735ded"
+                                                  fillcolor="#fff"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #735ded;
+                                                      font-family: sans-serif;
+                                                      font-size: 13px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    Shop now
+                                                  </center>
+                                                </v:roundrect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: #fff;
+                                                  border: 1px solid #735ded;
+                                                  border-radius: 25px;
+                                                  color: #735ded;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 13px;
+                                                  font-weight: bold;
+                                                  line-height: 35px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 125px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                "
+                                              >
+                                                Shop now
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" align="center">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <table
+                                  width="300"
+                                  width="300px; max-width: 300px;"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                        style="font-size: 0px"
+                                      >
+                                        <img
+                                          width="150"
+                                          border="0"
+                                          class="two-col-img"
+                                          style="
+                                            display: block;
+                                            width: 150px;
+                                            max-width: 150px;
+                                            margin: 0 auto;
+                                          "
+                                          src="https://ci3.googleusercontent.com/meips/ADKq_NbIwriZE6y9BlHM0gX8VqnU5i_RZRAIGQYd1D4PsdeNntGRM4Y1wzgalzwkAu-T5047AK-XxgL68-1shzCJ5l1nrkvEFViO1WgK6i0Id9a4FBPjC4WpIprIRm1NIsL97HxZkjdgTfYFSkKYNSGfWmFlXRkrJZ98UK8OYFGbSLW0q2hslzDcn5RhZbpv=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0125/8261/7145/products/wiaT8enPNTRlCuDo5QIRHnM4uqAtl-CxGwgiNYV5kO4.png?v=1704470406"
+                                          alt="product-6"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <h4
+                                        style="
+                                          color: #735ded;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          text-align: center;
+                                          letter-spacing: 0px;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        ConeOfArc Fumo
+                                      </h4>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <p
+                                        style="
+                                          color: #222427;
+                                          font-family: Arial, 'Helvetica Neue',
+                                            Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          font-style: normal;
+                                          letter-spacing: 0px;
+                                          text-align: center;
+                                          line-height: 1.3;
+                                          margin: 0;
+                                        "
+                                      >
+                                        By ConeOfArc
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      class="h-10"
+                                      height="10"
+                                      style="display: block"
+                                      align="center"
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="center">
+                                      <table width="200" align="center">
+                                        <tr>
+                                          <td align="center">
+                                            <div>
+                                              <!--[if mso]>
+                                                <v:roundrect
+                                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                  href="http://example.com"
+                                                  style="
+                                                    height: 35px;
+                                                    v-text-anchor: middle;
+                                                    width: 125px;
+                                                  "
+                                                  arcsize="72%"
+                                                  strokecolor="#735ded"
+                                                  fillcolor="#fff"
+                                                >
+                                                  <w:anchorlock />
+                                                  <center
+                                                    style="
+                                                      color: #735ded;
+                                                      font-family: sans-serif;
+                                                      font-size: 13px;
+                                                      font-weight: bold;
+                                                    "
+                                                  >
+                                                    Shop now
+                                                  </center>
+                                                </v:roundrect>
+                                              <![endif]-->
+                                              <a
+                                                href="http://example.com"
+                                                style="
+                                                  background-color: #fff;
+                                                  border: 1px solid #735ded;
+                                                  border-radius: 25px;
+                                                  color: #735ded;
+                                                  display: inline-block;
+                                                  font-family: sans-serif;
+                                                  font-size: 13px;
+                                                  font-weight: bold;
+                                                  line-height: 35px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  width: 125px;
+                                                  -webkit-text-size-adjust: none;
+                                                  mso-hide: all;
+                                                "
+                                              >
+                                                Shop now
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="h-40"
+                    height="40"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" class="btn-large">
+                    <div>
+                      <!--[if mso]>
+                        <v:roundrect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          xmlns:w="urn:schemas-microsoft-com:office:word"
+                          href="http://example.com"
+                          style="
+                            height: 40px;
+                            v-text-anchor: middle;
+                            width: 540px;
+                            max-width: 540px;
+                          "
+                          arcsize="63%"
+                          strokecolor="#735ded"
+                          fillcolor="#735ded"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #fff;
+                              font-family: sans-serif;
+                              font-size: 13px;
+                              font-weight: bold;
+                            "
+                          >
+                            Shop New Arrivals
+                          </center>
+                        </v:roundrect>
+                      <![endif]-->
+                      <a
+                        href="http://example.com"
+                        style="
+                          background-color: #735ded;
+                          border: 1px solid #735ded;
+                          border-radius: 25px;
+                          color: #fff;
+                          display: inline-block;
+                          font-family: sans-serif;
+                          font-size: 13px;
+                          font-weight: bold;
+                          line-height: 40px;
+                          text-align: center;
+                          text-decoration: none;
+                          width: 540px;
+                          max-width: 540px;
+                          -webkit-text-size-adjust: none;
+                          mso-hide: all;
+                        "
+                      >
+                        Shop New Arrivals
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="h-20"
+                    height="20"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0" class="hero">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td align="center">
+                    <h2
+                      style="
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.3;
+                        text-align: center;
+                        font-family: aktiv-grotesk, Arial, 'Helvetica Neue',
+                          Helvetica, sans-serif;
+                        font-weight: bold;
+                        font-size: 24px;
+                        color: #534aee;
+                        margin: 0;
+                      "
+                    >
+                      You might also like...
+                    </h2>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- START Three COLUMNS -->
+          <tr>
+            <td style="padding: 0px 0px 0px 0px">
+              <table
+                width="600px"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    class="h-20"
+                    height="20"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="three-columns"
+                    style="padding: 0; font-size: 0"
+                    align="center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                  <td width="200" valign="top" style="padding: 0;">
+                               <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NYMq4pgjcKB_Die40tzDqgUBtrT__s9-KYJKcHfrFw4u5-kko88c38n4Id5CvwavkKkLEqho9tw35P8Ls2XSHnoTuroj9_JV_alFhDe4cTqHQaI1eDqidYL1MSjozPZwcUOiZsDEbegMHsUrRaGVEke7MuWOHOEZMzPYj9dZnZmC5m20V1QPhUHJyvp=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0125/8261/7145/products/jtgH3r1y0eppIOS3jfodDymgx5L0VMyCZvsw1Br0n4Y.png?v=1703264419"
+                                    alt="product-7"
+                                    width="125"
+                                    style="
+                                      width: 125px;
+                                      display: block;
+                                      border: none;
+                                      height: auto;
+                                    "
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center">
+                                <h4
+                                  style="
+                                    color: #735ded;
+                                    font-family: Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    text-align: center;
+                                    letter-spacing: 0px;
+                                    line-height: 1.3;
+                                    margin: 0;
+                                  "
+                                >
+                                  Maeve Plush
+                                </h4>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td
+                                class="h-10"
+                                height="10"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center">
+                                <table width="200" align="center">
+                                  <tr>
+                                    <td align="center">
+                                      <div>
+                                        <!--[if mso]>
+                                          <v:roundrect
+                                            xmlns:v="urn:schemas-microsoft-com:vml"
+                                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                                            href="http://example.com"
+                                            style="
+                                              height: 35px;
+                                              v-text-anchor: middle;
+                                              width: 125px;
+                                            "
+                                            arcsize="72%"
+                                            strokecolor="#735ded"
+                                            fillcolor="#fff"
+                                          >
+                                            <w:anchorlock />
+                                            <center
+                                              style="
+                                                color: #735ded;
+                                                font-family: sans-serif;
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                              "
+                                            >
+                                              Shop now
+                                            </center>
+                                          </v:roundrect>
+                                        <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #fff;
+                                            border: 1px solid #735ded;
+                                            border-radius: 25px;
+                                            color: #735ded;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 35px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                            mso-hide: all;
+                                          "
+                                        >
+                                          Shop now
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                               </td><td width="200" valign="top" style="padding: 0;">
+                               <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NbpRnkqCgoA5Ha758gnKoJQjTw9Nu8RwI4Xzg3aypUnFpLwzf4tGK8NFvpNni3bk3X_5qWRgSWdb6OKOGPOJUJmpuK2_PVeIuwa2czV7VSkOcf90Ynu2WL-AEzeepAlFGBhC2gVh9SKI7fAVKiDXR0Ub9YQP_gJ8VxuZoHJW4RRAzcvhBc-OVa7CNWp=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0125/8261/7145/products/8gG2Q9LmG5WksISpZkQfk5epqNcDgMI-mTplt19wvDw.png?v=1702731627"
+                                    alt="product-8"
+                                    width="125"
+                                    style="
+                                      width: 125px;
+                                      display: block;
+                                      border: none;
+                                      height: auto;
+                                    "
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center">
+                                <h4
+                                  style="
+                                    color: #735ded;
+                                    font-family: Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    text-align: center;
+                                    letter-spacing: 0px;
+                                    line-height: 1.3;
+                                    margin: 0;
+                                  "
+                                >
+                                  Maeve Plush
+                                </h4>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td
+                                class="h-10"
+                                height="10"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center">
+                                <table width="200" align="center">
+                                  <tr>
+                                    <td align="center">
+                                      <div>
+                                        <!--[if mso]>
+                                          <v:roundrect
+                                            xmlns:v="urn:schemas-microsoft-com:vml"
+                                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                                            href="http://example.com"
+                                            style="
+                                              height: 35px;
+                                              v-text-anchor: middle;
+                                              width: 125px;
+                                            "
+                                            arcsize="72%"
+                                            strokecolor="#735ded"
+                                            fillcolor="#fff"
+                                          >
+                                            <w:anchorlock />
+                                            <center
+                                              style="
+                                                color: #735ded;
+                                                font-family: sans-serif;
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                              "
+                                            >
+                                              Shop now
+                                            </center>
+                                          </v:roundrect>
+                                        <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #fff;
+                                            border: 1px solid #735ded;
+                                            border-radius: 25px;
+                                            color: #735ded;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 35px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                            mso-hide: all;
+                                          "
+                                        >
+                                          Shop now
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                               </td><td width="200" valign="top" style="padding: 0;">
+                               <![endif]-->
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com">
+                                  <img
+                                    class="three-col-img"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NYKy2NlpOIIrdVb-U0CRxEUv1dtS-LukyMuZdVGGpoH32FucoNS0TyuPTq62TuAWwSCVvcnBgARrw0z-p77azE-kSq92n480Dxzuct7J6kEF02hoVU7Xc8wlI3to7Qdu3q3sT6Z5oClo83vdjDJK4InrYh_InYzffAPxU1O-KQq8h70Y960Ixrwt4jT=s0-d-e1-ft#https://cdn.shopify.com/s/files/1/0125/8261/7145/products/I6tLTvHdOT-eLI-0dVfRgu5q6IX9QgWXBOTcNWavWu0.png?v=1703095203"
+                                    alt="product-9"
+                                    width="125"
+                                    style="
+                                      width: 125px;
+                                      display: block;
+                                      border: none;
+                                      height: auto;
+                                    "
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center">
+                                <h4
+                                  style="
+                                    color: #735ded;
+                                    font-family: Arial, 'Helvetica Neue',
+                                      Helvetica, sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    text-align: center;
+                                    letter-spacing: 0px;
+                                    line-height: 1.3;
+                                    margin: 0;
+                                  "
+                                >
+                                  Maeve Plush
+                                </h4>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td
+                                class="h-10"
+                                height="10"
+                                style="display: block"
+                                align="center"
+                              >
+                                &nbsp;
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center">
+                                <table width="200" align="center">
+                                  <tr>
+                                    <td align="center">
+                                      <div>
+                                        <!--[if mso]>
+                                          <v:roundrect
+                                            xmlns:v="urn:schemas-microsoft-com:vml"
+                                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                                            href="http://example.com"
+                                            style="
+                                              height: 35px;
+                                              v-text-anchor: middle;
+                                              width: 125px;
+                                            "
+                                            arcsize="72%"
+                                            strokecolor="#735ded"
+                                            fillcolor="#fff"
+                                          >
+                                            <w:anchorlock />
+                                            <center
+                                              style="
+                                                color: #735ded;
+                                                font-family: sans-serif;
+                                                font-size: 13px;
+                                                font-weight: bold;
+                                              "
+                                            >
+                                              Shop now
+                                            </center>
+                                          </v:roundrect>
+                                        <![endif]-->
+                                        <a
+                                          href="http://example.com"
+                                          style="
+                                            background-color: #fff;
+                                            border: 1px solid #735ded;
+                                            border-radius: 25px;
+                                            color: #735ded;
+                                            display: inline-block;
+                                            font-family: sans-serif;
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            line-height: 35px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 125px;
+                                            -webkit-text-size-adjust: none;
+                                            mso-hide: all;
+                                          "
+                                        >
+                                          Shop now
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                  </tr>
+                                  </table>
+                               <![endif]-->
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="h-40"
+                    height="40"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END Three COLUMNS -->
+
+          <!-- START DIVIDER -->
+          <tr>
+            <td style="padding: 0px">
+              <table
+                width="100%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    class="divider"
+                    style="
+                      height: 1px;
+                      background-color: #534aee;
+                      width: 550px;
+                      display: block;
+                      margin: 0 auto;
+                    "
+                  ></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END DIVIDER -->
+
+          <!-- START social-media footer-->
+          <tr>
+            <td
+              style="padding: 10px 0px; mso-padding-alt: 10px 0px 10px 0px"
+              class="social-media"
+            >
+              <table
+                width="30%"
+                style="border-spacing: 0; border: none"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td
+                    class="h-30"
+                    height="30"
+                    style="display: block"
+                    align="center"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        display: inline-block;
+                      "
+                    >
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_Naz3dffA_3vbwiAHZ36mPwzVTzOSSMcXzRhxhViqGM_mU87znp5U4xSh67lMoUgIfR7ktOk2lXtMQVJQV3bh0FD9Pt_qAKdqdY0RoI-TkLfazj4Egzhq8KKyruoVzJxZ2Hw_D56y4kKEm1nga2P0CmaesQl34hJYUQN=s0-d-e1-ft#https://d3k81ch9hvuctc.cloudfront.net/company/KXbYHF/images/87d1c953-129f-4113-9f1a-af50aa291b90.png"
+                        alt="facebook"
+                        border="0"
+                        width="32"
+                        height=""
+                        style="
+                          width: 32px;
+                          max-width: 32px;
+                          height: auto;
+                          padding: 0px 10px;
+                          mso-padding-alt: 0px 10px 0px 10px;
+                          mso-para-margin: 0 10px 0 10px;
+                          display: inline-block;
+                        "
+                      />
+                    </a>
+                  </td>
+
+                  <td align="center">
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        display: inline-block;
+                      "
+                    >
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NZe06OkwCJ_s2b7TdvYl8-ybnMGpP4AmvCRRcdSfGeCwtmSm6O6khNsPGiEYcxt0jiT--0TafbzMwxD3hI6539sefVM5MmlORi8QPLVIZbU2Ymbj6O3F3Ay7iXiwhJfdT3fblq8mqKTRzbAlwdsABASjlNNLdaHG75g=s0-d-e1-ft#https://d3k81ch9hvuctc.cloudfront.net/company/KXbYHF/images/420264ff-9ffd-424f-9fca-3f7fd017ed2f.png"
+                        alt="instagram"
+                        border="0"
+                        width="32"
+                        height=""
+                        style="
+                          width: 32px;
+                          max-width: 32px;
+                          height: auto;
+                          padding: 0px 10px;
+                          mso-padding-alt: 0px 10px 0px 10px;
+                          mso-para-margin: 0 10px 0 10px;
+                          display: inline-block;
+                        "
+                      />
+                    </a>
+                  </td>
+
+                  <td align="center">
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        display: inline-block;
+                      "
+                    >
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NaqgT6xERnwcz0UqJ3dQvDtN28y76wtIUV3gEiRPaLgux09Tw8HtCbYu2HBOt7Qda6IhH-4JgtZzUzldAs24ttNUuLuC2__99uQbTYb9nIpJWDbFkyvV0UUeUVq15RJW67drBhL6wQR7fvksTPqxqu1xKz0pn6Af4as=s0-d-e1-ft#https://d3k81ch9hvuctc.cloudfront.net/company/KXbYHF/images/b68b6809-23ea-4f7d-8686-d064af6b84b8.png"
+                        alt="twitter"
+                        border="0"
+                        width="32"
+                        height=""
+                        style="
+                          width: 32px;
+                          max-width: 32px;
+                          height: auto;
+                          padding: 0px 10px;
+                          mso-padding-alt: 0px 10px 0px 10px;
+                          mso-para-margin: 0 10px 0 10px;
+                          display: inline-block;
+                        "
+                      />
+                    </a>
+                  </td>
+
+                  <td align="center">
+                    <a
+                      href="http://example.com"
+                      style="
+                        font-size: 0px;
+                        text-decoration: none;
+                        display: inline-block;
+                      "
+                    >
+                      <img
+                        src="https://ci3.googleusercontent.com/meips/ADKq_NbGsr-Dhxg4If3NsYmpKL-IFTRStdbkDe2PbESAmHjA0RlMTm7hS7E_ROn-ig7qudRCGoFYt3gPBOljcYljQZk4xpupB8SmbYo9F7_mVlBncbhT0n0iZrn8Tf2ZtCoimYlJT6IFP_-3WP0kHqyZQKQbSjJJje-AXcmN=s0-d-e1-ft#https://d3k81ch9hvuctc.cloudfront.net/company/KXbYHF/images/a47d92a0-8510-4b86-a24d-c12515b4add6.png"
+                        alt="tiktok"
+                        border="0"
+                        width="32"
+                        height=""
+                        style="
+                          width: 32px;
+                          max-width: 32px;
+                          height: auto;
+                          padding: 0px 10px;
+                          mso-padding-alt: 0px 10px 0px 10px;
+                          mso-para-margin: 0 10px 0 10px;
+                          display: inline-block;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col footer-->
+
+          <!-- START footer -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table
+                width="90%"
+                style="border-spacing: 0"
+                role="presentation"
+                align="center"
+              >
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <table
+                      class="content"
+                      style="
+                        border-spacing: 0;
+                        text-align: center;
+                        vertical-align: top;
+                        max-width: 600px;
+                        width: 600px;
+                      "
+                      role="presentation"
+                      width="600"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          class="h-20"
+                          height="20"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-family: Arial, 'Helvetica Neue', Helvetica,
+                                sans-serif;
+                              font-size: 13px;
+                              font-style: normal;
+                              font-weight: 400;
+                              letter-spacing: 0px;
+                              line-height: 1.3;
+                              text-align: center;
+                              color: #b4b0fe;
+                              margin: 0;
+                            "
+                          >
+                            No longer want to receive these emails?
+                            <a
+                              href="http://example.com"
+                              style="
+                                color: #197bbd;
+                                font-weight: normal;
+                                text-decoration: underline;
+                              "
+                            >
+                              Unsubscribe.
+                            </a>
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-family: Arial, 'Helvetica Neue', Helvetica,
+                                sans-serif;
+                              font-size: 13px;
+                              font-style: normal;
+                              font-weight: 400;
+                              letter-spacing: 0px;
+                              line-height: 1.3;
+                              text-align: center;
+                              color: #b4b0fe;
+                              margin: 0;
+                            "
+                          >
+                            Makeship 422 Richards St Suite 170 Vancouver,
+                            British Columbia V6B 2Z4
+                          </p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="h-10"
+                          height="10"
+                          style="display: block"
+                          align="center"
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END footer -->
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
