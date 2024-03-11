@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no, url=no"
+    />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--[if mso]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+    <![endif]-->
+    <style type="text/css">
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 15px;
+      }
+      img {
+        border: 0;
+      }
+      a,
+      .bluelink {
+        text-decoration: none;
+        color: #44413d !important;
+      }
+
+      span.Object {
+        color: inherit !important;
+      }
+      span.Object-hover {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      u + .body .gmail-blend-screen {
+        background: #000;
+        mix-blend-mode: screen;
+      }
+      u + .body .gmail-blend-difference {
+        background: #000;
+        mix-blend-mode: difference;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      a[x-apple-data-detectors="true"] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      .column-wrapper {
+        font-size: 0;
+        text-align: center;
+      }
+      .column-wrapper .padding {
+        color: #3d3d3d;
+        padding: 20px;
+      }
+      .column-wrapper .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .column-wrapper .column-one-fourth {
+        max-width: 150px;
+      }
+      .column-wrapper .column-one-third {
+        max-width: 200px;
+      }
+      .column-wrapper .column-one-half {
+        max-width: 300px;
+      }
+      .column-wrapper .column-two-third {
+        max-width: 400px;
+      }
+
+      .two-col-img {
+        width: 300px;
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .column-wrapper .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .column-wrapper {
+          padding: 0 115px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 125px !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+      }
+      @media screen and (max-width: 499.98px) {
+        .column-wrapper {
+          padding: 0 60px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .column-wrapper .column-one-fourth {
+          width: 50% !important;
+          max-width: 50% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 125px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .column-wrapper {
+          padding: 0 25px !important;
+        }
+
+        .column-wrapper .column-one-fourth {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 125px !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+      }
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        [data-ogsc] body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        .darkmode-transparent {
+          background-color: transparent !important;
+        }
+        [data-ogsc] .darkmode-transparent {
+          background-color: transparent !important;
+        }
+      } */
+
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    </style>
+
+    <!--[if mso]>
+      <style type="text/css">
+        body {
+          background-color: #dad4cb !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+        }
+        table {
+          border-spacing: 0 !important;
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    class="body"
+    xml:lang="en"
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dad4cb"
+  >
+    <div
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dad4cb;
+        color: #44413d;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 0 auto;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fcf9f5;
+          color: #44413d;
+          font-family: 'Poppins', Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          box-shadow: 0 0 18px rgba(0, 0, 0, 0.22);
+          margin: 0 auto;
+        "
+      >
+        <div
+          style="
+            font-size: 0px;
+            color: #fcf9f5;
+            mso-line-height-rule: exactly;
+            line-height: 0px;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          The Outs of Maine Collection. New Arrivals are here. Earn 1 Reward
+          Point for every dollar you spend. Refer a Friend and receive a special
+          discount!
+          &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+        </div>
+
+        <!--[if mso]>
+            <table width="600" align="center" style="border-spacing: 0; border-collapse:collapse; color: #44413D;" role="presentation">
+            <tr>
+            <td style="padding:0;">
+         <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            border-collapse: collapse;
+            color: #44413d;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #fcf9f5;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- start of two col -->
+          <tr>
+            <td style="background: #acee20">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="middle" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          align="center"
+                          style="padding: 20px 0px 0px"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; width: 300px"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="210"
+                                    border="0"
+                                    class="two-col-img"
+                                    src="https://d3k81ch9hvuctc.cloudfront.net/company/SVUSTe/images/39595e64-2887-4f13-bab9-50bc6b4c06c7.png"
+                                    alt="logo"
+                                    style="max-width: 100%; width: 210px"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="middle" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          class="padding"
+                          align="center"
+                          style="padding: 20px 0px 0px"
+                        >
+                          <table
+                            class="content"
+                            style="border-spacing: 0; width: 300px"
+                            role="presentation"
+                            align="center"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    width="208"
+                                    class="two-col-img"
+                                    src="https://d3k81ch9hvuctc.cloudfront.net/company/SVUSTe/images/a2096494-272d-450c-8727-22a0b544adfc.png"
+                                    alt="button"
+                                    border="0"
+                                    style="max-width: 100%; width: 208px"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- START one-col img -->
+          <tr>
+            <td style="padding: 0; line-height: 0px; background: #003427">
+              <img
+                src="https://d3k81ch9hvuctc.cloudfront.net/company/SVUSTe/images/fc4914e4-04ec-46e3-9bfb-58c4f80301c1.png"
+                alt="divider"
+                title="divider"
+                width="600"
+                style="border: 0; width: 600px; max-width: 100%"
+              />
+            </td>
+          </tr>
+          <!-- END one-col img -->
+
+          <!-- START one-col img -->
+          <tr>
+            <td
+              style="padding: 0; line-height: 0px; background: #003427"
+              align="center"
+            >
+              <a href="https://example.com">
+                <img
+                  src="https://d3k81ch9hvuctc.cloudfront.net/company/SVUSTe/images/4ace5429-1d29-4cfd-8cc3-a8aeab9868db.png"
+                  alt="hero"
+                  title="hero"
+                  width="540"
+                  style="border: 0; width: 540px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END one-col img -->
+
+          <!-- START one-col text -->
+          <tr>
+            <td
+              style="padding: 0 30px; line-height: 0px; background: #003427"
+              align="center"
+            >
+              <p
+                style="
+                  font-family: Verdana, Geneva, sans-serif;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  letter-spacing: 0px;
+                  line-height: 1.5;
+                  text-align: left;
+                  color: rgb(255, 252, 188);
+                  margin: 0;
+                "
+              >
+                I've been working on something special just for you, Matthew!
+                It's finally ready, so go check it out! And since you signed up
+                to be the first to know, you can use code
+                <span style="font-weight: bold">WELCOME10</span>
+                for 10% off!
+              </p>
+            </td>
+          </tr>
+          <!-- END one-col text -->
+
+          <!-- START one-col img -->
+          <tr>
+            <td
+              style="padding: 0; line-height: 0px; background: #003427"
+              align="center"
+            >
+              <a href="https://example.com">
+                <img
+                  src="https://d3k81ch9hvuctc.cloudfront.net/company/SVUSTe/images/f4716b66-3a1e-4dd4-bb3a-d17ede413bde.png"
+                  alt="check-out-the-new-site"
+                  title="check-out-the-new-site"
+                  width="600"
+                  style="border: 0; width: 600px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END one-col img -->
+
+          <!-- START ONE-COL TEXT -->
+          <tr>
+            <td style="background-color: #003427; padding: 0px 30px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 20px 0px" align="center">
+                    <p
+                      style="
+                        font-family: Verdana, Geneva, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                        text-align: left;
+                        color: rgb(255, 252, 188);
+                        margin: 0;
+                      "
+                    >
+                      I hope you love it as much as I do. Keep an eye out,
+                      though...there's more coming 😉
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px" align="center">
+                    <p
+                      style="
+                        font-family: Verdana, Geneva, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                        text-align: left;
+                        color: rgb(255, 252, 188);
+                        margin: 0;
+                      "
+                    >
+                      Your friend,
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 25px" align="center">
+                    <p
+                      style="
+                        font-family: Verdana, Geneva, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                        text-align: left;
+                        color: rgb(255, 252, 188);
+                        margin: 0;
+                      "
+                    >
+                      Natalie Sideserf
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL TEXT -->
+
+          <!-- START one-col img -->
+          <tr>
+            <td style="padding: 0; line-height: 0px; background: #003427">
+              <img
+                src="https://d3k81ch9hvuctc.cloudfront.net/company/SVUSTe/images/f3aa7d67-d84e-4d94-8fa7-95df1fdeedfd.png"
+                alt="divider"
+                title="divider"
+                width="600"
+                style="border: 0; width: 600px; max-width: 100%"
+              />
+            </td>
+          </tr>
+          <!-- END one-col img -->
+
+          <!-- START one-col img -->
+          <tr>
+            <td style="background: #e6c5fe; padding: 0px 30px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    style="padding: 25px 0px; line-height: 0px"
+                    align="center"
+                  >
+                    <a href="https://example.com">
+                      <img
+                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SVUSTe/images/39595e64-2887-4f13-bab9-50bc6b4c06c7.png"
+                        alt="logo-footer"
+                        title="logo-footer"
+                        width="150"
+                        style="border: 0; width: 150px; max-width: 100%"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p style="text-align: center; margin: 0; font-size: 12px">
+                      Copyright @ 2023 Sideserf Cake Studio. All Rights
+                      Reserved.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p style="text-align: center; margin: 0; font-size: 12px">
+                      <a
+                        href="https://example.com"
+                        style="
+                          color: #156209 !important;
+                          text-decoration: underline;
+                          display: inline-block;
+                          font-weight: bold;
+                          font-size: 12px;
+                        "
+                      >
+                        Manage Preferences
+                      </a>
+                      |
+                      <a
+                        href="https://example.com"
+                        style="
+                          color: #156209 !important;
+                          text-decoration: underline;
+                          display: inline-block;
+                          font-weight: bold;
+                          font-size: 12px;
+                        "
+                      >
+                        Unsubscribe
+                      </a>
+                      (I won't be mad!)
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      class="content"
+                      style="
+                        border-spacing: 0;
+                        text-align: center;
+                        width: 300px;
+                      "
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td style="padding: 10px 0px" align="center">
+                          <table style="border-spacing: 0" role="presentation">
+                            <tr>
+                              <td align="left" style="display: inline-block">
+                                <a href="https://example.com">
+                                  <img
+                                    width="48"
+                                    src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/facebook_96.png"
+                                    alt="facebook"
+                                  />
+                                </a>
+                              </td>
+
+                              <td
+                                align="left"
+                                style="
+                                  display: inline-block;
+                                  padding-left: 10px;
+                                "
+                              >
+                                <a href="https://example.com">
+                                  <img
+                                    width="48"
+                                    src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/instagram_96.png"
+                                    alt="instagram"
+                                  />
+                                </a>
+                              </td>
+
+                              <td
+                                align="left"
+                                style="
+                                  display: inline-block;
+                                  padding-left: 10px;
+                                "
+                              >
+                                <a href="https://example.com">
+                                  <img
+                                    width="48"
+                                    src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/youtube_96.png"
+                                    alt="youtube"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col img -->
+        </table>
+
+        <!--[if mso]>
+         </td>
+         </tr>
+         </table>
+         <![endif]-->
+      </div>
+    </div>
+  </body>
+</html>
