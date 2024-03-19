@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no, url=no"
+    />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--[if mso]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+    <![endif]-->
+    <style type="text/css">
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 15px;
+      }
+      img {
+        border: 0;
+      }
+      a,
+      .bluelink {
+        text-decoration: none;
+        color: #44413d !important;
+      }
+
+      span.Object {
+        color: inherit !important;
+      }
+      span.Object-hover {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      u + .body .gmail-blend-screen {
+        background: #000;
+        mix-blend-mode: screen;
+      }
+      u + .body .gmail-blend-difference {
+        background: #000;
+        mix-blend-mode: difference;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      a[x-apple-data-detectors="true"] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      .column-wrapper {
+        font-size: 0;
+        text-align: center;
+      }
+      .column-wrapper .padding {
+        color: #3d3d3d;
+        padding: 20px;
+      }
+      .column-wrapper .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .column-wrapper .column-one-fourth {
+        max-width: 150px;
+      }
+      .column-wrapper .column-one-third {
+        max-width: 200px;
+      }
+      .column-wrapper .column-one-half {
+        max-width: 300px;
+      }
+      .column-wrapper .column-two-third {
+        max-width: 400px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .column-wrapper .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .column-wrapper {
+          padding: 0 115px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .nav {
+          width: 60% !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      @media screen and (max-width: 499.98px) {
+        .column-wrapper {
+          padding: 0 60px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .column-wrapper .column-one-fourth {
+          width: 50% !important;
+          max-width: 50% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .nav {
+          width: 75% !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .nav {
+          width: 75% !important;
+        }
+        .column-wrapper {
+          padding: 0 25px !important;
+        }
+
+        .column-wrapper .column-one-fourth {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      /* :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        [data-ogsc] body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        .darkmode-transparent {
+          background-color: transparent !important;
+        }
+        [data-ogsc] .darkmode-transparent {
+          background-color: transparent !important;
+        }
+      } */
+
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    </style>
+
+    <!--[if mso]>
+      <style type="text/css">
+        body {
+          background-color: #dad4cb !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+        }
+        table {
+          border-spacing: 0 !important;
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    class="body"
+    xml:lang="en"
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dad4cb"
+  >
+    <div
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dad4cb;
+        color: #44413d;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 0 auto;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fcf9f5;
+          color: #44413d;
+          font-family: 'Poppins', Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          box-shadow: 0 0 18px rgba(0, 0, 0, 0.22);
+          margin: 0 auto;
+        "
+      >
+        <div
+          style="
+            font-size: 0px;
+            color: #fcf9f5;
+            mso-line-height-rule: exactly;
+            line-height: 0px;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          The Outs of Maine Collection. New Arrivals are here. Earn 1 Reward
+          Point for every dollar you spend. Refer a Friend and receive a special
+          discount!
+          &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+        </div>
+
+        <!--[if mso]>
+            <table width="600" align="center" style="border-spacing: 0; border-collapse:collapse; color: #44413D;" role="presentation">
+            <tr>
+            <td style="padding:0;">
+         <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            border-collapse: collapse;
+            color: #44413d;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #fcf9f5;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px">
+              <a href="https://example.com">
+                <img
+                  width="600"
+                  src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/1/8bb18ea0-a093-41a8-aa27-4c76e36bfa8b.png"
+                  alt="espn-header"
+                  title="espn-header"
+                  style="width: 600px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px">
+              <a href="https://example.com">
+                <img
+                  width="600"
+                  src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/1/fd80f169-f0b5-44ef-a60c-2c8719ad14e6.png"
+                  alt="espn-hero"
+                  title="espn-hero"
+                  style="width: 600px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START one-col text -->
+          <tr>
+            <td style="padding: 0; line-height: 0px; background: #000">
+              <table
+                width="100%"
+                role="presentation"
+                style="max-width: 600px; border-spacing: 0"
+              >
+                <tr>
+                  <td style="padding: 48px 0px 10px">
+                    <h3
+                      style="
+                        font-size: 28px;
+                        font-weight: 900;
+                        color: #ffffff;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        letter-spacing: normal;
+                        line-height: 38px;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      Wimbledon
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 40px 25px">
+                    <p
+                      style="
+                        font-size: 20px;
+                        color: #ffffff;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        line-height: 28px;
+                        margin: 0;
+                        text-align: center;
+                      "
+                    >
+                      Get daily coverage of the most prestigious tennis
+                      tournament, with 500+ live matches, a Spanish feed, a
+                      daily highlight show, replays, and more on ESPN+. Plus,
+                      get ready by streaming episodes 1 and 2 of McEnroe's
+                      Places now.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 0px 0px 50px">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 278pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#fab200"
+                                    fillcolor="#fab200"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #000;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: `8px;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                      "
+                                    >
+                                      STREAM LIVE
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    background-image: linear-gradient(
+                                      to bottom,
+                                      #fab200,
+                                      #fb9701 100%
+                                    );
+                                    background-color: #fab200;
+                                    border-radius: 24px;
+                                    color: #000000;
+                                    font-family: 'Roboto', Arial, sans-serif;
+                                    display: inline-block;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    line-height: 50px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    -webkit-text-size-adjust: none;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    padding: 0px 50px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  STREAM LIVE
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #000">
+              <a href="https://example.com">
+                <img
+                  width="560"
+                  src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/1/c1158d78-e940-4e5d-a259-8270c0924b28.jpg"
+                  alt="espn-mlb-draft"
+                  title="espn-mlb-draft"
+                  style="width: 560px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START one-col text -->
+          <tr>
+            <td style="padding: 0; line-height: 0px; background: #000">
+              <table
+                width="100%"
+                role="presentation"
+                style="max-width: 600px; border-spacing: 0"
+              >
+                <tr>
+                  <td style="padding: 48px 0px 10px">
+                    <h3
+                      style="
+                        font-size: 28px;
+                        font-weight: 900;
+                        color: #ffffff;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        letter-spacing: normal;
+                        line-height: 38px;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      MLB Draft
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 40px 25px">
+                    <p
+                      style="
+                        font-size: 20px;
+                        color: #ffffff;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        line-height: 28px;
+                        margin: 0;
+                        text-align: center;
+                      "
+                    >
+                      Led by a comprehensive, on-site coverage team offering a
+                      variety of insights and analysis, stream the first round
+                      of the 2023 MLB First-Year Player Draft this Sunday at 7
+                      ET.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 0px 0px 50px">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 278pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#fab200"
+                                    fillcolor="#fab200"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #000;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: `8px;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                      "
+                                    >
+                                      STREAM LIVE
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    background-image: linear-gradient(
+                                      to bottom,
+                                      #fab200,
+                                      #fb9701 100%
+                                    );
+                                    background-color: #fab200;
+                                    border-radius: 24px;
+                                    color: #000000;
+                                    font-family: 'Roboto', Arial, sans-serif;
+                                    display: inline-block;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    line-height: 50px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    -webkit-text-size-adjust: none;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    padding: 0px 50px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  STREAM LIVE
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #000">
+              <a href="https://example.com">
+                <img
+                  width="560"
+                  src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/1/c9f233b5-5a74-45f5-a7c0-686543392e2f.jpg"
+                  alt="espn-john-deere-classic"
+                  title="espn-john-deere-classic"
+                  style="width: 560px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START one-col text -->
+          <tr>
+            <td style="padding: 0; line-height: 0px; background: #000">
+              <table
+                width="100%"
+                role="presentation"
+                style="max-width: 600px; border-spacing: 0"
+              >
+                <tr>
+                  <td style="padding: 48px 0px 10px">
+                    <h3
+                      style="
+                        font-size: 28px;
+                        font-weight: 900;
+                        color: #ffffff;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        letter-spacing: normal;
+                        line-height: 38px;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      John Deere Classic
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 40px 25px">
+                    <p
+                      style="
+                        font-size: 20px;
+                        color: #ffffff;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        line-height: 28px;
+                        margin: 0;
+                        text-align: center;
+                      "
+                    >
+                      The PGA TOUR returns to TPC Deere Run today! Access the
+                      Main Feed, Featured Groups, Featured Holes, and Marquee
+                      Group—all on ESPN+.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 0px 0px 50px">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 278pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#fab200"
+                                    fillcolor="#fab200"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #000;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: `8px;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                      "
+                                    >
+                                      STREAM LIVE
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    background-image: linear-gradient(
+                                      to bottom,
+                                      #fab200,
+                                      #fb9701 100%
+                                    );
+                                    background-color: #fab200;
+                                    border-radius: 24px;
+                                    color: #000000;
+                                    font-family: 'Roboto', Arial, sans-serif;
+                                    display: inline-block;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    line-height: 50px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    -webkit-text-size-adjust: none;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    padding: 0px 50px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  STREAM LIVE
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text -->
+
+          <!-- START TWO-COL  -->
+          <tr>
+            <td style="padding: 10px 0 10px; background: #000">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="column-wrapper" style="padding: 0; font-size: 0">
+                    <!--[if mso]>
+                              <table width="100%" style="border-spacing:0;" role="presentation">
+                              <tr>
+                              <td width="300" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/1/eda3bfa1-18e0-4bd6-9f01-c7bb5baf3349.jpg"
+                                    alt="espn-mlb"
+                                    width="260"
+                                    style="width: 260px; max-width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 10px 0px 0px">
+                                <h3
+                                  style="
+                                    font-size: 26px;
+                                    font-weight: 700;
+                                    color: #ffffff;
+                                    font-family: 'Roboto', Arial, sans-serif;
+                                    letter-spacing: normal;
+                                    line-height: 34px;
+                                    text-align: center;
+                                    margin: 0;
+                                  "
+                                >
+                                  MLB on ESPN+
+                                </h3>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 10px 0px 0px">
+                                <p
+                                  style="
+                                    font-size: 20px;
+                                    color: #ffffff;
+                                    font-family: 'Roboto', Arial, sans-serif;
+                                    letter-spacing: normal;
+                                    line-height: 28px;
+                                    text-align: center;
+                                    margin: 0;
+                                  "
+                                >
+                                  Catch baseball's best all season, with daily
+                                  games including Pirates at Dodgers tonight at
+                                  10 ET, Cubs at Yankees on Saturday at 1 ET,
+                                  and more.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td
+                                      align="center"
+                                      style="padding: 20px 0px 30px"
+                                    >
+                                      <table
+                                        align="center"
+                                        role="presentation"
+                                        style="border-spacing: 0"
+                                      >
+                                        <tr>
+                                          <td align="center">
+                                            <!--[if mso]>
+                                              <v:roundrect
+                                                xmlns_v="urn:schemas-microsoft-com:vml"
+                                                xmlns_o="urn:schemas-microsoft-com:office:word"
+                                                href="example.com"
+                                                style="
+                                                  height: 34.5pt;
+                                                  width: 143pt;
+                                                  v-text-anchor: middle;
+                                                "
+                                                archsize="14%"
+                                                strokecolor="#fab200"
+                                                fillcolor="#fab200"
+                                              >
+                                                <w:anchorlock />
+                                                <center
+                                                  style="
+                                                    color: #000;
+                                                    font-family: Arial,
+                                                      Helvetica, sans-serif;
+                                                    font-size: `8px;
+                                                    font-weight: 700;
+                                                    letter-spacing: 2px;
+                                                  "
+                                                >
+                                                  STREAM LIVE
+                                                </center>
+                                              </v:roundrect>
+                                            <![endif]-->
+                                            <a
+                                              class="button"
+                                              href="https://example.com"
+                                              target="_blank"
+                                              style="
+                                                background-image: linear-gradient(
+                                                  to bottom,
+                                                  #fab200,
+                                                  #fb9701 100%
+                                                );
+                                                background-color: #fab200;
+                                                border-radius: 24px;
+                                                color: #000000;
+                                                font-family: 'Roboto', Arial,
+                                                  sans-serif;
+                                                display: inline-block;
+                                                font-size: 18px;
+                                                font-weight: bold;
+                                                line-height: 50px;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                -webkit-text-size-adjust: none;
+                                                letter-spacing: 2px;
+                                                text-transform: uppercase;
+                                                padding: 0px 50px;
+                                                mso-hide: all;
+                                              "
+                                            >
+                                              STREAM LIVE
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if mso]>
+                           </td><td width="300" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/1/6c103904-c30e-44dd-b306-ad0c4ddb047c.jpg"
+                                    alt="espn-british-grand-pix"
+                                    width="260"
+                                    style="width: 260px; max-width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 10px 0px 0px">
+                                <h3
+                                  style="
+                                    font-size: 26px;
+                                    font-weight: 700;
+                                    color: #ffffff;
+                                    font-family: 'Roboto', Arial, sans-serif;
+                                    letter-spacing: normal;
+                                    line-height: 34px;
+                                    text-align: center;
+                                    margin: 0;
+                                  "
+                                >
+                                  British Grand Prix
+                                </h3>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 10px 0px 55px">
+                                <p
+                                  style="
+                                    font-size: 20px;
+                                    color: #ffffff;
+                                    font-family: 'Roboto', Arial, sans-serif;
+                                    letter-spacing: normal;
+                                    line-height: 28px;
+                                    text-align: center;
+                                    margin: 0;
+                                  "
+                                >
+                                  Formula 1 is live from England! Stream the
+                                  British Grand Prix live this Sunday at 10 AM
+                                  ET on ESPN+.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td
+                                      align="center"
+                                      style="padding: 20px 0px 30px"
+                                    >
+                                      <table
+                                        align="center"
+                                        role="presentation"
+                                        style="border-spacing: 0"
+                                      >
+                                        <tr>
+                                          <td align="center">
+                                            <!--[if mso]>
+                                              <v:roundrect
+                                                xmlns_v="urn:schemas-microsoft-com:vml"
+                                                xmlns_o="urn:schemas-microsoft-com:office:word"
+                                                href="example.com"
+                                                style="
+                                                  height: 34.5pt;
+                                                  width: 143pt;
+                                                  v-text-anchor: middle;
+                                                "
+                                                archsize="14%"
+                                                strokecolor="#fab200"
+                                                fillcolor="#fab200"
+                                              >
+                                                <w:anchorlock />
+                                                <center
+                                                  style="
+                                                    color: #000;
+                                                    font-family: Arial,
+                                                      Helvetica, sans-serif;
+                                                    font-size: `8px;
+                                                    font-weight: 700;
+                                                    letter-spacing: 2px;
+                                                  "
+                                                >
+                                                  STREAM LIVE
+                                                </center>
+                                              </v:roundrect>
+                                            <![endif]-->
+                                            <a
+                                              class="button"
+                                              href="https://example.com"
+                                              target="_blank"
+                                              style="
+                                                background-image: linear-gradient(
+                                                  to bottom,
+                                                  #fab200,
+                                                  #fb9701 100%
+                                                );
+                                                background-color: #fab200;
+                                                border-radius: 24px;
+                                                color: #000000;
+                                                font-family: 'Roboto', Arial,
+                                                  sans-serif;
+                                                display: inline-block;
+                                                font-size: 18px;
+                                                font-weight: bold;
+                                                line-height: 50px;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                -webkit-text-size-adjust: none;
+                                                letter-spacing: 2px;
+                                                text-transform: uppercase;
+                                                padding: 0px 50px;
+                                                mso-hide: all;
+                                              "
+                                            >
+                                              STREAM LIVE
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if mso]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #000">
+              <a href="https://example.com">
+                <img
+                  width="560"
+                  src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/1/a1b20895-cd76-4be8-9bb0-bd365dc16f44.jpg"
+                  alt="espn-ufc"
+                  title="espn-ufc"
+                  style="width: 560px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START one-col text -->
+          <tr>
+            <td style="padding: 0; line-height: 0px; background: #000">
+              <table
+                width="100%"
+                role="presentation"
+                style="max-width: 600px; border-spacing: 0"
+              >
+                <tr>
+                  <td style="padding: 48px 0px 10px">
+                    <h3
+                      style="
+                        font-size: 28px;
+                        font-weight: 900;
+                        color: #ffffff;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        letter-spacing: normal;
+                        line-height: 38px;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      Volkanovski vs Rodriguez
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 40px 25px">
+                    <p
+                      style="
+                        font-size: 20px;
+                        color: #ffffff;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        line-height: 28px;
+                        margin: 0;
+                        text-align: center;
+                      "
+                    >
+                      Featherweight king Alexander Volkanovski takes on interim
+                      champ Yair Rodriguez for the undisputed crown, and Brandon
+                      Moreno defends his flyweight belt against Alexandre
+                      Pantoja in a rematch this Saturday at 10 ET.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 0px 0px 50px">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 278pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#fab200"
+                                    fillcolor="#fab200"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #000;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: `8px;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                      "
+                                    >
+                                      BUY NOW
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    background-image: linear-gradient(
+                                      to bottom,
+                                      #fab200,
+                                      #fb9701 100%
+                                    );
+                                    background-color: #fab200;
+                                    border-radius: 24px;
+                                    color: #000000;
+                                    font-family: 'Roboto', Arial, sans-serif;
+                                    display: inline-block;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    line-height: 50px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    -webkit-text-size-adjust: none;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    padding: 0px 50px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  BUY NOW
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px">
+              <a href="https://example.com">
+                <img
+                  width="600"
+                  src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/1/95cbcf55-b673-4ac9-9110-b4a1ca9b5340.png"
+                  alt="espn-disney"
+                  title="espn-disney"
+                  style="width: 600px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #000">
+              <a href="https://example.com">
+                <img
+                  width="480"
+                  src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/1/69054166-7741-4d65-afcb-b403ad611d50.png"
+                  alt="espn-stream-on-tv"
+                  title="espn-stream-on-tv"
+                  style="width: 480px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START one-col text -->
+          <tr>
+            <td style="padding: 0; line-height: 0px; background: #000">
+              <table
+                width="100%"
+                role="presentation"
+                style="max-width: 600px; border-spacing: 0"
+              >
+                <tr>
+                  <td style="padding: 25px 0px 0px">
+                    <p
+                      style="
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        font-style: italic;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      Stream on your TV
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 25px 40px 0px">
+                    <p
+                      style="
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #ffffff;
+                        font-weight: normal;
+                        margin: 0;
+                        text-align: center;
+                      "
+                    >
+                      The big screen is always better. Go to the ESPN+ tab in
+                      the ESPN App, available on most supported devices.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 25px 0px 50px">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 278pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#fab200"
+                                    fillcolor="#fab200"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #000;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: `8px;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                      "
+                                    >
+                                      SEE SUPPORTED DEVICES
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    background-image: linear-gradient(
+                                      to bottom,
+                                      #fab200,
+                                      #fb9701 100%
+                                    );
+                                    background-color: #fab200;
+                                    border-radius: 24px;
+                                    color: #000000;
+                                    font-family: 'Roboto', Arial, sans-serif;
+                                    display: inline-block;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    line-height: 50px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    -webkit-text-size-adjust: none;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    padding: 0px 50px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  SEE SUPPORTED DEVICES
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END one-col text -->
+
+          <!-- START ONE-COL IMG + TEXT  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #000">
+              <table width="100%" style="border: 0; border-spacing: 0">
+                <tr>
+                  <td>
+                    <a href="https://example.com">
+                      <img
+                        width="600"
+                        src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/5/ffd6ae34-0ec7-470b-8983-9b4486adb504.jpg"
+                        alt="espn-logo"
+                        title="espn-logo"
+                        style="width: 600px; max-width: 100%"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 25px 40px">
+                    <p style="margin: 0; text-align: center; line-height: 30px">
+                      <a
+                        style="
+                          text-decoration: none;
+                          color: #ffffff !important;
+                          font-family: 'Roboto', Arial, sans-serif;
+                          font-size: 18px;
+                          font-weight: 900;
+                        "
+                        href="https://example.com"
+                      >
+                        Follow Us @ESPNPlus
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 24px 40px 0px 40px">
+                    <p
+                      style="
+                        font-family: 'Roboto', Arial, sans-serif;
+                        font-style: italic;
+                        font-weight: bold;
+                        margin: 0;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #ffffff;
+                        text-align: center;
+                      "
+                    >
+                      Get the ESPN App!
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL IMG + TEXT  -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 20px 0px; background: #000">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="middle" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            width="300px"
+                          >
+                            <tr>
+                              <td align="right">
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/5/5137cea9-8133-419f-9d09-aa67987896c2.png"
+                                    alt="apple-store"
+                                    width="125"
+                                    style="width: 125px; max-width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="middle" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                            width="300px"
+                          >
+                            <tr>
+                              <td
+                                align="left"
+                                style="padding: 0px 0px 0px 30px"
+                              >
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://image.mail.plus.espn.com/lib/fe3415707564067c7c1278/m/5/5137cea9-8133-419f-9d09-aa67987896c2.png"
+                                    alt="apple-store"
+                                    width="125"
+                                    style="width: 125px; max-width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #000">
+              <table width="100%" style="border: 0; border-spacing: 0">
+                <tr>
+                  <td style="padding: 25px 40px">
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      *Disney Bundle: 18+ only. Access content from each service
+                      separately. Location data required to watch certain
+                      content. Offer valid for eligible subscribers only.
+                      Subject to
+                      <a
+                        href="https://example.com"
+                        style="
+                          font-family: 'Roboto', Arial, sans-serif;
+                          font-size: 12px;
+                          line-height: 18px;
+                          color: #ffffff !important;
+                          text-decoration: underline;
+                        "
+                      >
+                        Disney+ and ESPN+ Subscriber Agreement
+                      </a>
+                      .
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" style="font-size: 0px; padding: 0px 40px">
+                    <table width="100%" border="0" style="border-spacing: 0">
+                      <tr>
+                        <td
+                          style="
+                            height: 1px;
+                            display: block;
+                            background: #868686;
+                          "
+                        ></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 10px 40px">
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #979797;
+                      "
+                    >
+                      This email was sent to: hello@SmilesDavis.yeah. Please do
+                      not reply to this email as this address is not monitored.
+                      This email contains an advertisement from Disney Streaming
+                      Services, LLC, 1211 Avenue of Americas New York, NY 10036.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 10px 40px">
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #979797;
+                      "
+                    >
+                      If you do not want to receive future marketing email
+                      messages from ESPN+, please opt-out.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 10px 40px">
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #979797;
+                      "
+                    >
+                      © 2023 Disney and its related entities. All Rights
+                      Reserved
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px 40px">
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'Roboto', Arial, sans-serif;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #979797;
+                      "
+                    >
+                      SRC: 292927_EN_US
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+        </table>
+
+        <!--[if mso]>
+         </td>
+         </tr>
+         </table>
+         <![endif]-->
+      </div>
+    </div>
+  </body>
+</html>
