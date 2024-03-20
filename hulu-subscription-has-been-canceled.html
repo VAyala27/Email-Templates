@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no, url=no"
+    />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--[if mso]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+    <![endif]-->
+    <style type="text/css">
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 15px;
+      }
+      img {
+        border: 0;
+      }
+      a,
+      .bluelink {
+        text-decoration: none;
+        color: #44413d !important;
+      }
+
+      span.Object {
+        color: inherit !important;
+      }
+      span.Object-hover {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      u + .body .gmail-blend-screen {
+        background: #000;
+        mix-blend-mode: screen;
+      }
+      u + .body .gmail-blend-difference {
+        background: #000;
+        mix-blend-mode: difference;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      a[x-apple-data-detectors="true"] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      .column-wrapper {
+        font-size: 0;
+        text-align: center;
+      }
+      .column-wrapper .padding {
+        color: #3d3d3d;
+        padding: 20px;
+      }
+      .column-wrapper .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .column-wrapper .column-one-fourth {
+        max-width: 150px;
+      }
+      .column-wrapper .column-one-third {
+        max-width: 200px;
+      }
+      .column-wrapper .column-one-half {
+        max-width: 300px;
+      }
+      .column-wrapper .column-two-third {
+        max-width: 400px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .column-wrapper .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .column-wrapper {
+          padding: 0 115px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .nav {
+          width: 60% !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      @media screen and (max-width: 499.98px) {
+        .column-wrapper {
+          padding: 0 60px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .column-wrapper .column-one-fourth {
+          width: 50% !important;
+          max-width: 50% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .nav {
+          width: 75% !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .nav {
+          width: 75% !important;
+        }
+        .column-wrapper {
+          padding: 0 25px !important;
+        }
+
+        .column-wrapper .column-one-fourth {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      /* :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        [data-ogsc] body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        .darkmode-transparent {
+          background-color: transparent !important;
+        }
+        [data-ogsc] .darkmode-transparent {
+          background-color: transparent !important;
+        }
+      } */
+
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    </style>
+
+    <!--[if mso]>
+      <style type="text/css">
+        body {
+          background-color: #dad4cb !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+        }
+        table {
+          border-spacing: 0 !important;
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    class="body"
+    xml:lang="en"
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dad4cb"
+  >
+    <div
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dad4cb;
+        color: #44413d;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 0 auto;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fcf9f5;
+          color: #44413d;
+          font-family: 'Poppins', Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          box-shadow: 0 0 18px rgba(0, 0, 0, 0.22);
+          margin: 0 auto;
+        "
+      >
+        <div
+          style="
+            font-size: 0px;
+            color: #fcf9f5;
+            mso-line-height-rule: exactly;
+            line-height: 0px;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          The Outs of Maine Collection. New Arrivals are here. Earn 1 Reward
+          Point for every dollar you spend. Refer a Friend and receive a special
+          discount!
+          &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+        </div>
+
+        <!--[if mso]>
+            <table width="600" align="center" style="border-spacing: 0; border-collapse:collapse; color: #44413D;" role="presentation">
+            <tr>
+            <td style="padding:0;">
+         <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            border-collapse: collapse;
+            color: #44413d;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #fcf9f5;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              align="center"
+              style="font-size: 0px; padding: 20px 0px 40px; background: #fff"
+            >
+              <a href="https://example.com">
+                <img
+                  width="60"
+                  src="http://image.hulumail.com/lib/fe9515707360007972/m/4/header-logo-green_2.png"
+                  alt="hulu-header-logo"
+                  title="hulu-header-logo"
+                  style="width: 60px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #fff">
+              <a href="https://example.com">
+                <img
+                  width="120"
+                  src="http://image.hulumail.com/lib/fe9515707360007972/m/6/659dee7e-a3d7-45c1-a705-c03ac8d7a211.png"
+                  alt="hulu-icon"
+                  title="hulu-icon"
+                  style="width: 120px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #fff">
+              <table width="100%" border="0" style="border-spacing: 0">
+                <tr>
+                  <td align="center" style="padding: 15px 25px 0px">
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'hulustyle_regular', Helvetica, Arial,
+                          sans-serif;
+                        font-size: 31px;
+                        line-height: 36px;
+                        color: #3dbb3d;
+                        text-align: center;
+                      "
+                    >
+                      We're Sorry
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0px 25px 35px 25px" align="center">
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: 'hulustyle_regular', Helvetica, Arial,
+                          sans-serif;
+                        font-size: 31px;
+                        line-height: 36px;
+                        color: #3dbb3d;
+                        text-align: center;
+                      "
+                    >
+                      to See You Go
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #fff">
+              <table width="100%" border="0" style="border-spacing: 0">
+                <tr>
+                  <td align="center" style="padding: 0px 50px 25px 50px">
+                    <p
+                      style="
+                        font-family: 'Graphik-Regular', Helvetica, Arial,
+                          sans-serif;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #757575;
+                        margin: 0;
+                      "
+                    >
+                      Hi Smiles Davis,
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 50px 25px 50px">
+                    <p
+                      style="
+                        font-family: 'Graphik-Regular', Helvetica, Arial,
+                          sans-serif;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #757575;
+                        margin: 0;
+                      "
+                    >
+                      We're just confirming that your Hulu subscription has been
+                      canceled.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 50px 25px 50px">
+                    <p
+                      style="
+                        font-family: 'Graphik-Regular', Helvetica, Arial,
+                          sans-serif;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #757575;
+                        margin: 0;
+                      "
+                    >
+                      We hope you decide to come back soon and enjoy our library
+                      with thousands of episodes of TV. If you’d like to start
+                      streaming with us again, you can reactivate your
+                      subscription any time.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 20px">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 124pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#009966"
+                                    fillcolor="#009966"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #fff;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                        letter-spacing: 1px;
+                                      "
+                                    ></center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    font-weight: bold;
+                                    text-decoration: none;
+                                    color: #ffffff !important;
+                                    font-family: 'hulustyle_medium', Helvetica,
+                                      Arial, sans-serif;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    letter-spacing: 1px;
+                                    text-transform: uppercase;
+                                    padding: 15px 20px 15px 20px;
+                                    background: #009966;
+                                    background: -moz-linear-gradient(
+                                      45deg,
+                                      rgba(0, 153, 102, 1) 0%,
+                                      rgba(102, 204, 51, 1) 100%
+                                    );
+                                    background: -webkit-gradient(
+                                      left bottom,
+                                      right top,
+                                      color-stop(0%, rgba(0, 153, 102, 1)),
+                                      color-stop(100%, rgba(102, 204, 51, 1))
+                                    );
+                                    background: -webkit-linear-gradient(
+                                      45deg,
+                                      rgba(0, 153, 102, 1) 0%,
+                                      rgba(102, 204, 51, 1) 100%
+                                    );
+                                    background: -o-linear-gradient(
+                                      45deg,
+                                      rgba(0, 153, 102, 1) 0%,
+                                      rgba(102, 204, 51, 1) 100%
+                                    );
+                                    background: -ms-linear-gradient(
+                                      45deg,
+                                      rgba(0, 153, 102, 1) 0%,
+                                      rgba(102, 204, 51, 1) 100%
+                                    );
+                                    background: linear-gradient(
+                                      45deg,
+                                      rgba(0, 153, 102, 1) 0%,
+                                      rgba(102, 204, 51, 1) 100%
+                                    );
+
+                                    mso-hide: all;
+                                  "
+                                >
+                                  REACTIVATE HULU
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 5px 0px 15px 0px">
+                    <p
+                      style="
+                        color: #757575;
+                        font-family: 'hulustyle_light', Helvetica, Arial,
+                          sans-serif;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      Questions?
+                      <a
+                        style="
+                          text-decoration: underline;
+                          color: #3dbb3d !important;
+                        "
+                        href="https://example.com"
+                      >
+                        Contact us
+                      </a>
+                      anytime.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #fff">
+              <table width="100%" border="0" style="border-spacing: 0">
+                <tr>
+                  <td align="center" style="padding: 20px 0px 20px">
+                    <table
+                      width="30%"
+                      border="0"
+                      style="border-spacing: 0"
+                      align="center"
+                    >
+                      <tr>
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="http://image.hulumail.com/lib/fe9515707360007972/m/4/170520_instagram.png"
+                              alt="instagram"
+                              width="42"
+                              style="max-width: 100%; width: 42px"
+                            />
+                          </a>
+                        </td>
+
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="http://image.hulumail.com/lib/fe9515707360007972/m/4/170520_facebook.png"
+                              alt="facebook"
+                              width="42"
+                              style="max-width: 100%; width: 42px"
+                            />
+                          </a>
+                        </td>
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="http://image.hulumail.com/lib/fe9515707360007972/m/4/170520_twitter.png"
+                              alt="twitter"
+                              width="42"
+                              style="max-width: 100%; width: 42px"
+                            />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px">
+              <table width="100%">
+                <tr>
+                  <td
+                    style="height: 1px; display: block; background: #adb3bf"
+                  ></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START TWO-COL  -->
+          <tr>
+            <td style="padding: 20px 0 20px; background: #fff">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="column-wrapper" style="padding: 0; font-size: 0">
+                    <!--[if mso]>
+                              <table width="100%" style="border-spacing:0;" role="presentation">
+                              <tr>
+                              <td width="200" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column column-one-third"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 200px;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="http://image.hulumail.com/lib/fe9515707360007972/m/4/170520_hulu.png"
+                                    alt="hulu-logo"
+                                    width="80"
+                                    style="width: 80px; max-width: 100%"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if mso]>
+                           </td><td width="400" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column column-two-third"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 400px;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-family: Helvetica, Arial, sans-serif;
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    color: #adb3bf;
+                                  "
+                                >
+                                  Hulu, LLC. 2500 Broadway, 2nd Floor, Santa
+                                  Monica, CA 90404
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-family: Helvetica, Arial, sans-serif;
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    color: #adb3bf;
+                                  "
+                                >
+                                  <a
+                                    href="https://example.com"
+                                    style="
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 12px;
+                                      line-height: 18px;
+                                      color: #adb3bf !important;
+                                    "
+                                  >
+                                    Preferences
+                                  </a>
+                                  |
+                                  <a
+                                    href="https://example.com"
+                                    style="
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 12px;
+                                      line-height: 18px;
+                                      color: #adb3bf !important;
+                                    "
+                                  >
+                                    Support
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if mso]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-COL  -->
+        </table>
+
+        <!--[if mso]>
+         </td>
+         </tr>
+         </table>
+         <![endif]-->
+      </div>
+    </div>
+  </body>
+</html>
