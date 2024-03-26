@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no, url=no"
+    />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--[if mso]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+    <![endif]-->
+    <style type="text/css">
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 15px;
+      }
+      img {
+        border: 0;
+      }
+      a,
+      .bluelink {
+        text-decoration: none;
+        color: #44413d !important;
+      }
+
+      span.Object {
+        color: inherit !important;
+      }
+      span.Object-hover {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      u + .body .gmail-blend-screen {
+        background: #000;
+        mix-blend-mode: screen;
+      }
+      u + .body .gmail-blend-difference {
+        background: #000;
+        mix-blend-mode: difference;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      a[x-apple-data-detectors="true"] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      .column-wrapper {
+        font-size: 0;
+        text-align: center;
+      }
+      .column-wrapper .padding {
+        color: #3d3d3d;
+        padding: 20px;
+      }
+      .column-wrapper .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .column-wrapper .column-one-fourth {
+        max-width: 150px;
+      }
+      .column-wrapper .column-one-third {
+        max-width: 200px;
+      }
+      .column-wrapper .column-one-half {
+        max-width: 300px;
+      }
+      .column-wrapper .column-two-third {
+        max-width: 400px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .column-wrapper .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .column-wrapper {
+          padding: 0 115px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .nav {
+          width: 60% !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      @media screen and (max-width: 499.98px) {
+        .column-wrapper {
+          padding: 0 60px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .column-wrapper .column-one-fourth {
+          width: 50% !important;
+          max-width: 50% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .nav {
+          width: 75% !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .footer-links td {
+          display: inline-block !important;
+          width: 100% !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .nav {
+          width: 75% !important;
+        }
+        .column-wrapper {
+          padding: 0 25px !important;
+        }
+
+        .column-wrapper .column-one-fourth {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      /* :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        [data-ogsc] body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        .darkmode-transparent {
+          background-color: transparent !important;
+        }
+        [data-ogsc] .darkmode-transparent {
+          background-color: transparent !important;
+        }
+      } */
+
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    </style>
+
+    <!--[if mso]>
+      <style type="text/css">
+        body {
+          background-color: #dad4cb !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+        }
+        table {
+          border-spacing: 0 !important;
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    class="body"
+    xml:lang="en"
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dad4cb"
+  >
+    <div
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dad4cb;
+        color: #44413d;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 0 auto;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fcf9f5;
+          color: #44413d;
+          font-family: 'Poppins', Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          box-shadow: 0 0 18px rgba(0, 0, 0, 0.22);
+          margin: 0 auto;
+        "
+      >
+        <div
+          style="
+            font-size: 0px;
+            color: #fcf9f5;
+            mso-line-height-rule: exactly;
+            line-height: 0px;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          The Outs of Maine Collection. New Arrivals are here. Earn 1 Reward
+          Point for every dollar you spend. Refer a Friend and receive a special
+          discount!
+          &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+        </div>
+
+        <!--[if mso]>
+            <table width="600" align="center" style="border-spacing: 0; border-collapse:collapse; color: #44413D;" role="presentation">
+            <tr>
+            <td style="padding:0;">
+         <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            border-collapse: collapse;
+            color: #44413d;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #fcf9f5;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              align="center"
+              style="font-size: 0px; padding: 5px 0px 5px; background: #fbfaf4"
+            >
+              <a href="https://example.com">
+                <img
+                  width="100"
+                  src="https://d3k81ch9hvuctc.cloudfront.net/company/X9pTrM/images/5a6be74e-ea37-4b90-b305-359f039ad848.png"
+                  alt="logo"
+                  title="logo"
+                  style="width: 100px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #fbfaf4">
+              <a href="https://example.com">
+                <img
+                  width="600"
+                  src="https://d3k81ch9hvuctc.cloudfront.net/company/X9pTrM/images/6dc81b63-99d6-4fed-ba7a-5e16989a6a10.gif"
+                  alt="hero"
+                  title="hero"
+                  style="width: 600px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              align="center"
+              style="
+                font-size: 0px;
+                background: #fbfaf4;
+                padding: 40px 20px 0px;
+              "
+            >
+              <table width="100%" border="0" style="border-spacing: 0">
+                <tr>
+                  <td style="padding: 0px 0px 10px">
+                    <p
+                      style="
+                        font-family: Verdana;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                        text-align: left;
+                        color: #222222;
+                        margin: 0;
+                        font-weight: bold;
+                      "
+                    >
+                      Hi Smiles Davis,
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 10px">
+                    <p
+                      style="
+                        font-family: Verdana;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                        text-align: left;
+                        color: #222222;
+                        margin: 0;
+                      "
+                    >
+                      Your support means the world to us, so we just wanted to
+                      say thank you for your first purchase from us yesterday!
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 10px">
+                    <p
+                      style="
+                        font-family: Verdana;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                        text-align: left;
+                        color: #222222;
+                        margin: 0;
+                      "
+                    >
+                      If you have any feedback, or want to say hi, head to our
+                      website and send us a message using our chat feature. We'd
+                      love to hear from you!
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 30px 0px 0px">
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          style="padding: 15px 20px; background: #f3d8c0"
+                          bgcolor="#f3d8c0"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 124pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#f3d8c0"
+                                    fillcolor="#f3d8c0"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #000;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        letter-spacing: 1px;
+                                      "
+                                    >
+                                      ONYX COFFEE LAB
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    text-decoration: none;
+                                    color: #000 !important;
+                                    background-color: #f3d8c0;
+                                    padding: 0px;
+                                    border: 1px solid #f3d8c0;
+                                    border-radius: 8px;
+                                    display: inline-block;
+                                    letter-spacing: 1px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  ONYX COFFEE LAB
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              align="center"
+              style="
+                font-size: 0px;
+                padding: 50px 0px 50px;
+                background: #fbfaf4;
+              "
+            >
+              <a href="https://example.com">
+                <img
+                  width="100"
+                  src="https://d3k81ch9hvuctc.cloudfront.net/company/X9pTrM/images/6fd92278-d2c7-426d-85c1-73900b3f3242.png"
+                  alt="skull-2"
+                  title="skull-2"
+                  style="width: 100px; max-width: 100%"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- Footer links -->
+          <tr>
+            <td>
+              <table
+                width="100%"
+                style="border-spacing: 0; background-color: #222222"
+                role="presentation"
+              >
+                <tr>
+                  <td
+                    class="footer-links"
+                    style="padding: 10px 20px; font-size: 0; text-align: center"
+                  >
+                    <table
+                      class="content"
+                      width="600px"
+                      style="border-spacing: 0"
+                      role="presentation"
+                      align="center"
+                    >
+                      <tr>
+                        <td style="padding: 5px 5px 5px 5px">
+                          <a
+                            style="
+                              color: #f2f0e1 !important;
+                              font-style: normal;
+                              font-weight: 100;
+                              text-decoration: none;
+                              display: inline-block;
+                              background: transparent;
+                              font-family: Verdana;
+                              font-size: 14px;
+                              line-height: 100%;
+                              letter-spacing: 0;
+                              margin: 0;
+                              text-transform: none;
+                              padding: 10px 10px 10px 10px;
+                            "
+                            href="https://example.com"
+                          >
+                            SHOP COFFEE
+                          </a>
+                        </td>
+
+                        <td style="padding: 5px 5px 5px 5px">
+                          <a
+                            style="
+                              color: #f2f0e1 !important;
+                              font-style: normal;
+                              font-weight: 100;
+                              text-decoration: none;
+                              display: inline-block;
+                              background: transparent;
+                              font-family: Verdana;
+                              font-size: 14px;
+                              line-height: 100%;
+                              letter-spacing: 0;
+                              margin: 0;
+                              text-transform: none;
+                              padding: 10px 10px 10px 10px;
+                            "
+                            href="https://www.twitter.com/"
+                          >
+                            SUBSCRIBE & SAVE
+                          </a>
+                        </td>
+
+                        <td style="padding: 5px 5px 5px 5px">
+                          <a
+                            style="
+                              color: #f2f0e1 !important;
+                              font-style: normal;
+                              font-weight: 100;
+                              text-decoration: none;
+                              display: inline-block;
+                              background: transparent;
+                              font-family: Verdana;
+                              font-size: 14px;
+                              line-height: 100%;
+                              letter-spacing: 0;
+                              margin: 0;
+                              text-transform: none;
+                              padding: 10px 10px 10px 10px;
+                            "
+                            href="https://www.pinterest.com/"
+                          >
+                            SHOP GOODS
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer links -->
+
+          <!-- START ONE-COL SOCIAL -->
+          <tr>
+            <td
+              align="center"
+              style="font-size: 0px; background: #f3d8c0; padding: 35px 0px 0px"
+            >
+              <table width="100%">
+                <tr>
+                  <td align="center">
+                    <a href="https://example.com">
+                      <img
+                        width="100"
+                        src="https://d3k81ch9hvuctc.cloudfront.net/company/X9pTrM/images/7db7bab3-29e7-4c36-ac16-ef51964473f1.png"
+                        alt="onyx-logo"
+                        title="onyx-logo"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 10px 0px 20px" align="center">
+                    <p
+                      style="
+                        font-family: Montserrat, sans-serif;
+                        -webkit-font-smoothing: antialiased;
+                        margin: 0;
+                        border: 0px;
+                        font-size: 10px;
+                        box-sizing: border-box;
+                        vertical-align: baseline;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        caret-color: rgb(0, 0, 0);
+                        color: rgb(0, 0, 0);
+                        text-align: center;
+                      "
+                    >
+                      NEVER SETTLE FOR GOOD ENOUGH
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <table
+                      width="50%"
+                      border="0"
+                      style="border-spacing: 0"
+                      align="center"
+                    >
+                      <tr>
+                        <td
+                          style="
+                            background-color: #1b1613;
+                            height: 1px;
+                            display: block;
+                          "
+                        ></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 10px 0px 20px">
+                    <table
+                      width="30%"
+                      border="0"
+                      style="border-spacing: 0"
+                      align="center"
+                    >
+                      <tr>
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/facebook_96.png"
+                              alt="facebook"
+                              width="48"
+                              style="max-width: 100%; width: 48px"
+                            />
+                          </a>
+                        </td>
+
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/twitter_96.png"
+                              alt="twitter"
+                              width="48"
+                              style="max-width: 100%; width: 48px"
+                            />
+                          </a>
+                        </td>
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/instagram_96.png"
+                              alt="twitter"
+                              width="48"
+                              style="max-width: 100%; width: 48px"
+                            />
+                          </a>
+                        </td>
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/youtube_96.png"
+                              alt="youtube"
+                              width="48"
+                              style="max-width: 100%; width: 48px"
+                            />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL SOCIAL -->
+
+          <tr>
+            <td style="padding: 20px 0px">
+              <table
+                width="100%"
+                border="0"
+                style="border-spacing: 0"
+                align="center"
+              >
+                <tr>
+                  <td align="center" style="padding: 0px 0px 20px">
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: verdana, geneva, sans-serif;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                        text-align: center;
+                        color: #000000;
+                      "
+                    >
+                      Sent with ♡ from Onyx
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: verdana, geneva, sans-serif;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                        text-align: center;
+                        color: #000000;
+                      "
+                    >
+                      No longer want to receive these emails?
+                      <a
+                        href="https://example.com"
+                        style="
+                          color: #f3ceb2 !important;
+                          font-weight: normal;
+                          text-decoration: underline;
+                          display: inline-block;
+                        "
+                      >
+                        Unsubscribe
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-family: verdana, geneva, sans-serif;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        line-height: 1.5;
+                        text-align: center;
+                        color: #000000;
+                      "
+                    >
+                      Onyx Coffee Lab 101 E Walnut St. Rogers, AR 72756
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!--[if mso]>
+         </td>
+         </tr>
+         </table>
+         <![endif]-->
+      </div>
+    </div>
+  </body>
+</html>
