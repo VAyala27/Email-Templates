@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no, url=no"
+    />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--[if mso]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+    <![endif]-->
+    <style type="text/css">
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 15px;
+      }
+      img {
+        border: 0;
+      }
+      a,
+      .bluelink {
+        text-decoration: none;
+        color: #44413d !important;
+      }
+
+      span.Object {
+        color: inherit !important;
+      }
+      span.Object-hover {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      u + .body .gmail-blend-screen {
+        background: #000;
+        mix-blend-mode: screen;
+      }
+      u + .body .gmail-blend-difference {
+        background: #000;
+        mix-blend-mode: difference;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      a[x-apple-data-detectors="true"] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      .column-wrapper {
+        font-size: 0;
+        text-align: center;
+      }
+      .column-wrapper .padding {
+        color: #3d3d3d;
+        padding: 20px;
+      }
+      .column-wrapper .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .column-wrapper .column-one-fourth {
+        max-width: 150px;
+      }
+      .column-wrapper .column-one-third {
+        max-width: 200px;
+      }
+      .column-wrapper .column-one-half {
+        max-width: 300px;
+      }
+      .column-wrapper .column-two-third {
+        max-width: 400px;
+      }
+
+      .two-col-img {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 175px !important;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .column-wrapper .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .column-wrapper {
+          padding: 0 115px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .one-col h1 a {
+          font-size: 28px !important;
+          line-height: 1.3 !important;
+        }
+
+        .one-col p {
+          font-size: 14px !important;
+          line-height: 1.3 !important;
+        }
+
+        .one-col h3 {
+          font-size: 24px !important;
+          line-height: 1.3 !important;
+        }
+
+        .button {
+          padding: 0px 20px !important;
+          font-size: 14px !important;
+          line-height: 40px !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+      }
+      @media screen and (max-width: 499.98px) {
+        .column-wrapper {
+          padding: 0 60px !important;
+        }
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .column-wrapper .column-one-fourth {
+          width: 50% !important;
+          max-width: 50% !important;
+        }
+
+        .one-col h1 a {
+          font-size: 28px !important;
+          line-height: 1.3 !important;
+        }
+
+        .one-col p {
+          font-size: 14px !important;
+          line-height: 1.3 !important;
+        }
+
+        .one-col h3 {
+          font-size: 24px !important;
+          line-height: 1.3 !important;
+        }
+
+        .button {
+          padding: 0px 20px !important;
+          font-size: 14px !important;
+          line-height: 40px !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+          height: 175px !important;
+        }
+      }
+      @media screen and (max-width: 399.98px) {
+        .column-wrapper {
+          padding: 0 25px !important;
+        }
+
+        .one-col h1 a {
+          font-size: 28px !important;
+          line-height: 1.3 !important;
+        }
+
+        .one-col p {
+          font-size: 14px !important;
+          line-height: 1.3 !important;
+        }
+
+        .one-col h3 {
+          font-size: 24px !important;
+          line-height: 1.3 !important;
+        }
+
+        .button {
+          padding: 0px 20px !important;
+          font-size: 14px !important;
+          line-height: 40px !important;
+        }
+
+        .two-columns .content {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 20px 30px 0px !important;
+        }
+
+        .two-col-img {
+          max-width: 100% !important;
+          width: 100% !important;
+          height: 175px !important;
+        }
+      }
+      /* :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        [data-ogsc] body,
+        table,
+        .darkmode-bg {
+          background: #fcf9f5 !important;
+          color: #44413d !important;
+        }
+        .darkmode-transparent {
+          background-color: transparent !important;
+        }
+        [data-ogsc] .darkmode-transparent {
+          background-color: transparent !important;
+        }
+      } */
+
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    </style>
+
+    <!--[if mso]>
+      <style type="text/css">
+        body {
+          background-color: #dad4cb !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+        }
+        table {
+          border-spacing: 0 !important;
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    class="body"
+    xml:lang="en"
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dad4cb;"
+  >
+    <div
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dad4cb;
+        color: #44413d;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 0 auto;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fcf9f5;
+          color: #44413d;
+          font-family: 'Poppins', Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          box-shadow: 0 0 18px rgba(0, 0, 0, 0.22);
+          margin: 0 auto;
+        "
+      >
+        <div
+          style="
+            font-size: 0px;
+            color: #fcf9f5;
+            mso-line-height-rule: exactly;
+            line-height: 0px;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          The Outs of Maine Collection. New Arrivals are here. Earn 1 Reward
+          Point for every dollar you spend. Refer a Friend and receive a special
+          discount!
+          &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+        </div>
+
+        <!--[if mso]>
+            <table width="600" align="center" style="border-spacing: 0; border-collapse:collapse; color: #44413D;" role="presentation">
+            <tr>
+            <td style="padding:0;">
+         <![endif]-->
+
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            border-collapse: collapse;
+            color: #44413d;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #fcf9f5;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              class="one-col"
+              align="center"
+              style="font-size: 0px; background: #000; padding: 10px 0px;"
+            >
+              <a
+                href="https://example.com"
+                style="color: #fff !important; font-size: 36px !important;"
+              >
+                <img
+                  src="https://www.topspeed.com/public/build/images/tps-logo-full-colored-light.svg?v=2.3"
+                  width="200"
+                  alt="logo"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              class="one-col"
+              style="font-size: 0px; background-color: #000; padding: 0px 20px;"
+            >
+              <table width="100%" border="0" style="border-spacing: 0;">
+                <tr>
+                  <td align="center">
+                    <a href="https://example.com">
+                      <img
+                        width="560"
+                        src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/jpg/202205/buying-a-used-yamaha-1.jpg?q=50&fit=crop&w=430&h=260&dpr=1.5"
+                        alt=""
+                        title=""
+                        style="width: 560px; max-width: 100%;"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 40px 0px 10px;">
+                    <h3
+                      style="
+                        font-size: 28px;
+                        font-weight: 900;
+                        color: #ffffff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        letter-spacing: normal;
+                        line-height: 38px;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      Buying a Used Yamaha In The UK? Now You Can With Peace of
+                      Mind
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 25px;">
+                    <p
+                      style="
+                        font-size: 18px;
+                        color: #ffffff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        line-height: 28px;
+                        margin: 0;
+                      "
+                    >
+                      Buying a used motorcycle, from a dealer or as a private
+                      sale, is not one of the most relaxing things you can do.
+                      The are many pitfalls, and the risks great, especially if
+                      you choose not to have an official inspection done by the
+                      AA, RAC, or any other body that looks out for consumers'
+                      interests.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0;"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 0px 0px 50px;">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0;"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 278pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#007eff"
+                                    fillcolor="#007eff"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #fff;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                      "
+                                    >
+                                      READ MORE
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    background-color: #007eff;
+                                    border-radius: 3px;
+                                    color: #fff !important;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    display: inline-block;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    -webkit-text-size-adjust: none;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    padding: 0px 20px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  READ MORE
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              class="one-col"
+              style="font-size: 0px; background-color: #000; padding: 0px 20px;"
+            >
+              <table width="100%" border="0" style="border-spacing: 0;">
+                <tr>
+                  <td align="center">
+                    <a href="https://example.com">
+                      <img
+                        width="560"
+                        src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/jpg/202207/custom_harley_dyna_4.jpg?q=50&fit=crop&w=430&h=260&dpr=1.5"
+                        alt=""
+                        title=""
+                        style="width: 560px; max-width: 100%;"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 40px 0px 10px;">
+                    <h3
+                      style="
+                        font-size: 28px;
+                        font-weight: 900;
+                        color: #ffffff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        letter-spacing: normal;
+                        line-height: 38px;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      This Custom Harley-Davidson Dyna Has A 2,000cc Engine To
+                      Fire Up The Enthusiast In You
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 25px;">
+                    <p
+                      style="
+                        font-size: 18px;
+                        color: #ffffff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        line-height: 28px;
+                        margin: 0;
+                      "
+                    >
+                      The project started its life as a 2013 Harley-Davidson
+                      Dyna and, as you’d expect, not much of it remains now. The
+                      first thing to go was the stock Milwaukee engine, which
+                      made way for an S&S T124, 2,032cc heart. While this is
+                      mighty as it is, the bikemaker topped it with a
+                      free-flowing S&S air filter, custom headers, and an S&S
+                      exhaust. Similarly, a custom clutch and belt-drive system
+                      were put in place to ensure all extra horses reach the
+                      rear wheel efficiently.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0;"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 0px 0px 50px;">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0;"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 278pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#007eff"
+                                    fillcolor="#007eff"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #fff;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                      "
+                                    >
+                                      READ MORE
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    background-color: #007eff;
+                                    border-radius: 3px;
+                                    color: #fff !important;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    display: inline-block;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    -webkit-text-size-adjust: none;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    padding: 0px 20px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  READ MORE
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              class="one-col"
+              style="font-size: 0px; background-color: #000; padding: 0px 20px;"
+            >
+              <table width="100%" border="0" style="border-spacing: 0;">
+                <tr>
+                  <td align="center">
+                    <a href="https://example.com">
+                      <img
+                        width="560"
+                        src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/02/cfmoto-450sr-action.jpg?q=50&fit=crop&w=430&h=260&dpr=1.5"
+                        alt=""
+                        title=""
+                        style="width: 560px; max-width: 100%;"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 40px 0px 10px;">
+                    <h3
+                      style="
+                        font-size: 28px;
+                        font-weight: 900;
+                        color: #ffffff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        letter-spacing: normal;
+                        line-height: 38px;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      New CFMoto 450SR Is Set To Gain A Unique Feature
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 25px;">
+                    <p
+                      style="
+                        font-size: 18px;
+                        color: #ffffff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        line-height: 28px;
+                        margin: 0;
+                      "
+                    >
+                      CFMoto has been on a roll lately. It recently introduced
+                      the 2023 800NK to take on the Honda Hornet, followed by a
+                      new CFMoto 800MT variant that beats KTM in the mid-spec
+                      ADV segment. Now, for its latest accolade, the Chinese
+                      giant is all set to update its flagship sport bike, the
+                      450SR, as revealed by leaked type-approval documents. To
+                      jog your memory, the 450SR is already an
+                      almost-class-leading motorcycle in the 300-500cc sport
+                      bike category, and its latest update will sweeten the pot
+                      further.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0;"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 0px 0px 50px;">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0;"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 278pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#007eff"
+                                    fillcolor="#007eff"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #fff;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                      "
+                                    >
+                                      READ MORE
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    background-color: #007eff;
+                                    border-radius: 3px;
+                                    color: #fff !important;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    display: inline-block;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    -webkit-text-size-adjust: none;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    padding: 0px 20px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  READ MORE
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START TWO-COL  -->
+          <tr>
+            <td style="padding: 10px 0 10px; background: #000;">
+              <table
+                width="100%"
+                style="border-spacing: 0;"
+                role="presentation"
+              >
+                <tr>
+                  <td class="column-wrapper" style="padding: 0; font-size: 0;">
+                    <!--[if mso]>
+                              <table width="100%" style="border-spacing:0;" role="presentation">
+                              <tr>
+                              <td width="300" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px;">
+                          <table
+                            class="content"
+                            style="border-spacing: 0;"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/jpg/202204/2021-kawasaki-ninja-zx-10-3-2.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+                                    alt=""
+                                    width="260"
+                                    style="width: 260px; max-width: 100%;"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 10px 0px 0px;">
+                                <h3
+                                  style="
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    color: #ffffff;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    letter-spacing: normal;
+                                    line-height: 1.3;
+                                    text-align: center;
+                                    margin: 0;
+                                  "
+                                >
+                                  2021 - 2022 Kawasaki Ninja ZX-10R
+                                </h3>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 10px 0px 0px;">
+                                <p
+                                  style="
+                                    font-size: 15px;
+                                    color: #ffffff;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    letter-spacing: normal;
+                                    line-height: 1.3;
+                                    text-align: center;
+                                    margin: 0;
+                                  "
+                                >
+                                  It would be easier to tell you what's NOT new
+                                  on the Ninja ZX-10R
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0;"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td
+                                      align="center"
+                                      style="padding: 20px 0px 50px;"
+                                    >
+                                      <table
+                                        align="center"
+                                        role="presentation"
+                                        style="border-spacing: 0;"
+                                      >
+                                        <tr>
+                                          <td align="center">
+                                            <!--[if mso]>
+                                              <v:roundrect
+                                                xmlns_v="urn:schemas-microsoft-com:vml"
+                                                xmlns_o="urn:schemas-microsoft-com:office:word"
+                                                href="example.com"
+                                                style="
+                                                  height: 34.5pt;
+                                                  width: 278pt;
+                                                  v-text-anchor: middle;
+                                                "
+                                                archsize="14%"
+                                                strokecolor="#007eff"
+                                                fillcolor="#007eff"
+                                              >
+                                                <w:anchorlock />
+                                                <center
+                                                  style="
+                                                    color: #fff;
+                                                    font-family: Arial,
+                                                      Helvetica, sans-serif;
+                                                    font-size: 16px;
+                                                    font-weight: 700;
+                                                    letter-spacing: 2px;
+                                                  "
+                                                >
+                                                  READ MORE
+                                                </center>
+                                              </v:roundrect>
+                                            <![endif]-->
+                                            <a
+                                              class="button"
+                                              href="https://example.com"
+                                              target="_blank"
+                                              style="
+                                                background-color: #007eff;
+                                                border-radius: 3px;
+                                                color: #fff !important;
+                                                font-family: 'Roboto', Arial,
+                                                  sans-serif;
+                                                display: inline-block;
+                                                font-size: 16px;
+                                                font-weight: bold;
+                                                line-height: 40px;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                -webkit-text-size-adjust: none;
+                                                letter-spacing: 2px;
+                                                text-transfor2: uppercase;
+                                                padding: 0px 20px;
+                                                mso-hide: all;
+                                              "
+                                            >
+                                              READ MORE
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if mso]>
+                           </td><td width="300" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 20px;">
+                          <table
+                            class="content"
+                            style="border-spacing: 0;"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/jpg/201811/2019-kawasaki-zx-10r.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+                                    alt="espn-british-grand-pix"
+                                    width="260"
+                                    style="width: 260px; max-width: 100%;"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 10px 0px 0px;">
+                                <h3
+                                  style="
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    color: #ffffff;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    letter-spacing: normal;
+                                    line-height: 1.3;
+                                    text-align: center;
+                                    margin: 0;
+                                  "
+                                >
+                                  2019 - 2020 Kawasaki Ninja ZX-10R
+                                </h3>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 10px 0px 0px;">
+                                <p
+                                  style="
+                                    font-size: 15px;
+                                    color: #ffffff;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    letter-spacing: normal;
+                                    line-height: 1.3;
+                                    text-align: center;
+                                    margin: 0;
+                                  "
+                                >
+                                  It has more power with a wider powerband
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0;"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td
+                                      align="center"
+                                      style="padding: 20px 0px 50px;"
+                                    >
+                                      <table
+                                        align="center"
+                                        role="presentation"
+                                        style="border-spacing: 0;"
+                                      >
+                                        <tr>
+                                          <td align="center">
+                                            <!--[if mso]>
+                                              <v:roundrect
+                                                xmlns_v="urn:schemas-microsoft-com:vml"
+                                                xmlns_o="urn:schemas-microsoft-com:office:word"
+                                                href="example.com"
+                                                style="
+                                                  height: 34.5pt;
+                                                  width: 278pt;
+                                                  v-text-anchor: middle;
+                                                "
+                                                archsize="14%"
+                                                strokecolor="#007eff"
+                                                fillcolor="#007eff"
+                                              >
+                                                <w:anchorlock />
+                                                <center
+                                                  style="
+                                                    color: #fff;
+                                                    font-family: Arial,
+                                                      Helvetica, sans-serif;
+                                                    font-size: 16px;
+                                                    font-weight: 700;
+                                                    letter-spacing: 2px;
+                                                  "
+                                                >
+                                                  READ MORE
+                                                </center>
+                                              </v:roundrect>
+                                            <![endif]-->
+                                            <a
+                                              class="button"
+                                              href="https://example.com"
+                                              target="_blank"
+                                              style="
+                                                background-color: #007eff;
+                                                border-radius: 3px;
+                                                color: #fff !important;
+                                                font-family: 'Roboto', Arial,
+                                                  sans-serif;
+                                                display: inline-block;
+                                                font-size: 16px;
+                                                font-weight: bold;
+                                                line-height: 40px;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                -webkit-text-size-adjust: none;
+                                                letter-spacing: 2px;
+                                                text-transfor2: uppercase;
+                                                padding: 0px 20px;
+                                                mso-hide: all;
+                                              "
+                                            >
+                                              READ MORE
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if mso]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END TWO-COL  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              class="one-col"
+              style="font-size: 0px; background-color: #000; padding: 0px 20px;"
+            >
+              <table width="100%" border="0" style="border-spacing: 0;">
+                <tr>
+                  <td align="center">
+                    <a href="https://example.com">
+                      <img
+                        width="560"
+                        src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2022/11/2022-Suzuki-Hayabusa.jpg?q=50&fit=crop&w=430&h=260&dpr=1.5"
+                        alt=""
+                        title=""
+                        style="width: 560px; max-width: 100%;"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 40px 0px 10px;">
+                    <h3
+                      style="
+                        font-size: 28px;
+                        font-weight: 900;
+                        color: #ffffff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        letter-spacing: normal;
+                        line-height: 38px;
+                        text-align: center;
+                        margin: 0;
+                      "
+                    >
+                      Suzuki Is Taking A Unique And Firm Stance On Electric
+                      Sports Bikes
+                    </h3>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 25px;">
+                    <p
+                      style="
+                        font-size: 18px;
+                        color: #ffffff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        line-height: 28px;
+                        margin: 0;
+                      "
+                    >
+                      For the longest time, Japanese motorcycle manufacturers
+                      have pushed the boundaries of motorcycle technology and
+                      proved their prowess in the craft. So if there was anyone
+                      to find a viable way around EVs, it had to be a Japanese
+                      manufacturer. Doing just that,
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      style="border-spacing: 0;"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="center" style="padding: 0px 0px 50px;">
+                          <table
+                            align="center"
+                            role="presentation"
+                            style="border-spacing: 0;"
+                          >
+                            <tr>
+                              <td align="center">
+                                <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns_v="urn:schemas-microsoft-com:vml"
+                                    xmlns_o="urn:schemas-microsoft-com:office:word"
+                                    href="example.com"
+                                    style="
+                                      height: 34.5pt;
+                                      width: 278pt;
+                                      v-text-anchor: middle;
+                                    "
+                                    archsize="14%"
+                                    strokecolor="#007eff"
+                                    fillcolor="#007eff"
+                                  >
+                                    <w:anchorlock />
+                                    <center
+                                      style="
+                                        color: #fff;
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                      "
+                                    >
+                                      READ MORE
+                                    </center>
+                                  </v:roundrect>
+                                <![endif]-->
+                                <a
+                                  class="button"
+                                  href="https://example.com"
+                                  target="_blank"
+                                  style="
+                                    background-color: #007eff;
+                                    border-radius: 3px;
+                                    color: #fff !important;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    display: inline-block;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    -webkit-text-size-adjust: none;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    padding: 0px 20px;
+                                    mso-hide: all;
+                                  "
+                                >
+                                  READ MORE
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+
+          <!-- START ONE-COL IMG + TEXT  -->
+          <tr>
+            <td align="center" style="font-size: 0px; background: #000;">
+              <table width="100%" style="border: 0; border-spacing: 0;">
+                <tr>
+                  <td style="padding: 10px 0px;">
+                    <p
+                      style="margin: 0; text-align: center; line-height: 30px;"
+                    >
+                      <a
+                        style="
+                          text-decoration: none;
+                          color: #ffffff !important;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-size: 18px;
+                          font-weight: 900;
+                        "
+                        href="https://example.com"
+                      >
+                        Follow Us @TopSpeed
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 10px 0px 20px;">
+                    <table
+                      width="40%"
+                      border="0"
+                      style="border-spacing: 0;"
+                      align="center"
+                    >
+                      <tr>
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/facebook_96.png"
+                              alt="facebook"
+                              width="50"
+                              style="max-width: 100%; width: 50px;"
+                            />
+                          </a>
+                        </td>
+
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/twitter_96.png"
+                              alt="twitter"
+                              width="50"
+                              style="max-width: 100%; width: 50px;"
+                            />
+                          </a>
+                        </td>
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/instagram_96.png"
+                              alt="twitter"
+                              width="50"
+                              style="max-width: 100%; width: 50px;"
+                            />
+                          </a>
+                        </td>
+                        <td align="center">
+                          <a href="https://example.com">
+                            <img
+                              src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/youtube_96.png"
+                              alt="youtube"
+                              width="50"
+                              style="max-width: 100%; width: 50px;"
+                            />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL IMG + TEXT  -->
+
+          <!-- START ONE-COL  -->
+          <tr>
+            <td
+              align="center"
+              class="one-col"
+              style="font-size: 0px; background: #000;"
+            >
+              <table width="100%" style="border: 0; border-spacing: 0;">
+                <tr>
+                  <td style="padding: 10px 0px 5px;">
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      Top Speed
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 5px;">
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      Valnet Inc.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0px 0px 5px;">
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      100 - 7405 Transcanadienne
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0px 0px 10px;">
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: center;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #ffffff;
+                      "
+                    >
+                      St.Laurent, Quebec, H4T 1Z2
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END ONE-COL  -->
+        </table>
+
+        <!--[if mso]>
+         </td>
+         </tr>
+         </table>
+         <![endif]-->
+      </div>
+    </div>
+  </body>
+</html>
